@@ -95,6 +95,9 @@
 		1006BDC420158E770041DC86 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1006BD9220158E770041DC86 /* UIView+WebCacheOperation.m */; };
 		1006BDC520158E770041DC86 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1006BD9320158E770041DC86 /* UIView+WebCache.m */; };
 		1006BDC620158E770041DC86 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1006BD9720158E770041DC86 /* UIButton+WebCache.m */; };
+		104079EA20170D9A00700777 /* DPHomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104079E920170D9A00700777 /* DPHomePageController.m */; };
+		104079ED20170DB100700777 /* DPHomePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 104079EC20170DB100700777 /* DPHomePageView.m */; };
+		104079F020170DC800700777 /* DPHomePageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 104079EF20170DC800700777 /* DPHomePageCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -283,6 +286,12 @@
 		1006BD9720158E770041DC86 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		1006BD9820158E770041DC86 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		1006BDC720158E860041DC86 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		104079E820170D9A00700777 /* DPHomePageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPHomePageController.h; sourceTree = "<group>"; };
+		104079E920170D9A00700777 /* DPHomePageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPHomePageController.m; sourceTree = "<group>"; };
+		104079EB20170DB100700777 /* DPHomePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPHomePageView.h; sourceTree = "<group>"; };
+		104079EC20170DB100700777 /* DPHomePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPHomePageView.m; sourceTree = "<group>"; };
+		104079EE20170DC800700777 /* DPHomePageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPHomePageCell.h; sourceTree = "<group>"; };
+		104079EF20170DC800700777 /* DPHomePageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPHomePageCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +374,7 @@
 		1006BC9D20158D400041DC86 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				104079E720170D4E00700777 /* HomePage */,
 				1006BC9E20158D400041DC86 /* Others */,
 			);
 			path = Classes;
@@ -791,6 +801,19 @@
 			path = FLAnimatedImage;
 			sourceTree = "<group>";
 		};
+		104079E720170D4E00700777 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				104079E820170D9A00700777 /* DPHomePageController.h */,
+				104079E920170D9A00700777 /* DPHomePageController.m */,
+				104079EB20170DB100700777 /* DPHomePageView.h */,
+				104079EC20170DB100700777 /* DPHomePageView.m */,
+				104079EE20170DC800700777 /* DPHomePageCell.h */,
+				104079EF20170DC800700777 /* DPHomePageCell.m */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -817,6 +840,7 @@
 		1006BC7820158C930041DC86 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DP;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = h;
 				TargetAttributes = {
@@ -874,6 +898,7 @@
 				1006BDBA20158E770041DC86 /* UIImage+GIF.m in Sources */,
 				1006BD0F20158E6C0041DC86 /* NSString+TimeFormat.m in Sources */,
 				1006BDAC20158E770041DC86 /* MJRefreshAutoFooter.m in Sources */,
+				104079ED20170DB100700777 /* DPHomePageView.m in Sources */,
 				1006BDAE20158E770041DC86 /* AFURLResponseSerialization.m in Sources */,
 				1006BDC020158E770041DC86 /* NSData+ImageContentType.m in Sources */,
 				1006BD2E20158E6C0041DC86 /* BUBaseResponseData.m in Sources */,
@@ -906,6 +931,7 @@
 				1006BD2A20158E6C0041DC86 /* RMMapper.m in Sources */,
 				1006BDC320158E770041DC86 /* SDImageCacheConfig.m in Sources */,
 				1006BDAD20158E770041DC86 /* MJRefreshComponent.m in Sources */,
+				104079F020170DC800700777 /* DPHomePageCell.m in Sources */,
 				1006BDC120158E770041DC86 /* UIImageView+WebCache.m in Sources */,
 				1006BDBD20158E770041DC86 /* SDWebImagePrefetcher.m in Sources */,
 				1006BCA220158D400041DC86 /* AppDelegate.m in Sources */,
@@ -927,6 +953,7 @@
 				1006BD2120158E6C0041DC86 /* CheckoutManager.m in Sources */,
 				1006BDA920158E770041DC86 /* MJRefreshFooter.m in Sources */,
 				1006BD1820158E6C0041DC86 /* TRYearAndMonthSelectedView.m in Sources */,
+				104079EA20170D9A00700777 /* DPHomePageController.m in Sources */,
 				1006BD2420158E6C0041DC86 /* AFTabBarItem.m in Sources */,
 				1006BDA820158E770041DC86 /* MJRefreshGifHeader.m in Sources */,
 				1006BD2020158E6C0041DC86 /* AlertManager.m in Sources */,
