@@ -9,5 +9,8 @@
 #import "AFBaseCell.h"
 
 @interface DPHomePageCell : AFBaseCell
-
+{
+    UIImageView *m_pContentView;
+    UILabel *m_pTitle;
+}
 @end

@@ -9,7 +9,7 @@
 #import "DPHomePageController.h"
 #import "DPHomePageView.h"
 
-@interface DPHomePageController ()
+@interface DPHomePageController ()<AFBaseTableViewDelegate>
 {
     DPHomePageView *m_pHomePageView;
 }
@@ -22,6 +22,7 @@
     m_pBackButton.hidden = YES;
     m_pNameLabel.text = @"Daily Psychic";
     m_pHomePageView = [[DPHomePageView alloc]initWithFrame:CGRectMake(0, m_pTopBar.bottom, self.view.width, self.view.height - m_pTopBar.bottom)];
+    m_pHomePageView.proDelegate = self;
     [self.view addSubview:m_pHomePageView];
     
 }
@@ -31,14 +32,31 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - AFBaseTableViewDelegate
+- (void)PushToNextPage:(id)argData
+{
+    NSDictionary *dict = argData;
+    NSNumber *position = dict[@"id"];
+    switch ([position intValue]) {
+        case 0:
+        {
+            NSLog(@"手相分析");
+        }
+            break;
+        case 1:
+        {
+            NSLog(@"星座");
+        }
+            break;
+        case 2:
+        {
+            NSLog(@"测试");
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
-*/
 
 @end
