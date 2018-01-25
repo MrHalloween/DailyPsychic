@@ -95,9 +95,10 @@
 		1006BDC420158E770041DC86 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1006BD9220158E770041DC86 /* UIView+WebCacheOperation.m */; };
 		1006BDC520158E770041DC86 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1006BD9320158E770041DC86 /* UIView+WebCache.m */; };
 		1006BDC620158E770041DC86 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1006BD9720158E770041DC86 /* UIButton+WebCache.m */; };
+		1022E58D20197ECF007E421B /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = 1022E58920197ECF007E421B /* PGIndexBannerSubiew.m */; };
+		1022E58E20197ECF007E421B /* NewPagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1022E58A20197ECF007E421B /* NewPagedFlowView.m */; };
 		104079EA20170D9A00700777 /* DPHomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104079E920170D9A00700777 /* DPHomePageController.m */; };
 		104079ED20170DB100700777 /* DPHomePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 104079EC20170DB100700777 /* DPHomePageView.m */; };
-		104079F020170DC800700777 /* DPHomePageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 104079EF20170DC800700777 /* DPHomePageCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -286,12 +287,14 @@
 		1006BD9720158E770041DC86 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
 		1006BD9820158E770041DC86 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
 		1006BDC720158E860041DC86 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1022E58920197ECF007E421B /* PGIndexBannerSubiew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGIndexBannerSubiew.m; sourceTree = "<group>"; };
+		1022E58A20197ECF007E421B /* NewPagedFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPagedFlowView.m; sourceTree = "<group>"; };
+		1022E58B20197ECF007E421B /* PGIndexBannerSubiew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGIndexBannerSubiew.h; sourceTree = "<group>"; };
+		1022E58C20197ECF007E421B /* NewPagedFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPagedFlowView.h; sourceTree = "<group>"; };
 		104079E820170D9A00700777 /* DPHomePageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPHomePageController.h; sourceTree = "<group>"; };
 		104079E920170D9A00700777 /* DPHomePageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPHomePageController.m; sourceTree = "<group>"; };
 		104079EB20170DB100700777 /* DPHomePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPHomePageView.h; sourceTree = "<group>"; };
 		104079EC20170DB100700777 /* DPHomePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPHomePageView.m; sourceTree = "<group>"; };
-		104079EE20170DC800700777 /* DPHomePageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPHomePageCell.h; sourceTree = "<group>"; };
-		104079EF20170DC800700777 /* DPHomePageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPHomePageCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +311,7 @@
 		1006BC7720158C930041DC86 = {
 			isa = PBXGroup;
 			children = (
+				1022E58720197ECF007E421B /* Widgets */,
 				1006BCA320158E6C0041DC86 /* BULibrary */,
 				1006BC9D20158D400041DC86 /* Classes */,
 				1006BCA120158D400041DC86 /* Module */,
@@ -801,6 +805,25 @@
 			path = FLAnimatedImage;
 			sourceTree = "<group>";
 		};
+		1022E58720197ECF007E421B /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				1022E58820197ECF007E421B /* NewPagedFlowView */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		1022E58820197ECF007E421B /* NewPagedFlowView */ = {
+			isa = PBXGroup;
+			children = (
+				1022E58B20197ECF007E421B /* PGIndexBannerSubiew.h */,
+				1022E58920197ECF007E421B /* PGIndexBannerSubiew.m */,
+				1022E58C20197ECF007E421B /* NewPagedFlowView.h */,
+				1022E58A20197ECF007E421B /* NewPagedFlowView.m */,
+			);
+			path = NewPagedFlowView;
+			sourceTree = "<group>";
+		};
 		104079E720170D4E00700777 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -808,8 +831,6 @@
 				104079E920170D9A00700777 /* DPHomePageController.m */,
 				104079EB20170DB100700777 /* DPHomePageView.h */,
 				104079EC20170DB100700777 /* DPHomePageView.m */,
-				104079EE20170DC800700777 /* DPHomePageCell.h */,
-				104079EF20170DC800700777 /* DPHomePageCell.m */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -893,8 +914,10 @@
 				1006BD9A20158E770041DC86 /* MBProgressHUD+Add.m in Sources */,
 				1006BDB820158E770041DC86 /* UIImageView+HighlightedWebCache.m in Sources */,
 				1006BD1620158E6C0041DC86 /* BUUserDetailsController.m in Sources */,
+				1022E58E20197ECF007E421B /* NewPagedFlowView.m in Sources */,
 				1006BD9F20158E770041DC86 /* UIView+MJExtension.m in Sources */,
 				1006BDBC20158E770041DC86 /* SDWebImageCompat.m in Sources */,
+				1022E58D20197ECF007E421B /* PGIndexBannerSubiew.m in Sources */,
 				1006BDBA20158E770041DC86 /* UIImage+GIF.m in Sources */,
 				1006BD0F20158E6C0041DC86 /* NSString+TimeFormat.m in Sources */,
 				1006BDAC20158E770041DC86 /* MJRefreshAutoFooter.m in Sources */,
@@ -931,7 +954,6 @@
 				1006BD2A20158E6C0041DC86 /* RMMapper.m in Sources */,
 				1006BDC320158E770041DC86 /* SDImageCacheConfig.m in Sources */,
 				1006BDAD20158E770041DC86 /* MJRefreshComponent.m in Sources */,
-				104079F020170DC800700777 /* DPHomePageCell.m in Sources */,
 				1006BDC120158E770041DC86 /* UIImageView+WebCache.m in Sources */,
 				1006BDBD20158E770041DC86 /* SDWebImagePrefetcher.m in Sources */,
 				1006BCA220158D400041DC86 /* AppDelegate.m in Sources */,
