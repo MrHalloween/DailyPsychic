@@ -17,11 +17,15 @@
 
 @implementation DPHomePageController
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    m_pBackButton.hidden = YES;
-    m_pNameLabel.text = @"Daily Psychic";
-    m_pHomePageView = [[DPHomePageView alloc]initWithFrame:CGRectMake(0, m_pTopBar.bottom, self.view.width, self.view.height - m_pTopBar.bottom)];
+    m_pTopBar.hidden = YES;
+    m_pHomePageView = [[DPHomePageView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
     m_pHomePageView.proDelegate = self;
     [self.view addSubview:m_pHomePageView];
     
