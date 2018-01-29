@@ -41,4 +41,6 @@
 #define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
 #define IS_IPHONE_X (IS_IPHONE && SCREEN_MAX_LENGTH == 812.0)
 
+#define AdaptRate [AppConfigure GetLengthAdaptRate]
+
 #endif /* DimensMacros_h */
