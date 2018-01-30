@@ -115,6 +115,10 @@
 		29438F1D20205262006B7497 /* constellation_scorpio_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29438F1920205261006B7497 /* constellation_scorpio_select@2x.png */; };
 		29438F1E20205262006B7497 /* constellation_aries@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29438F1A20205261006B7497 /* constellation_aries@3x.png */; };
 		29438F1F20205262006B7497 /* constellation_scorpio_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29438F1B20205262006B7497 /* constellation_scorpio_select@3x.png */; };
+		29438F252020674D006B7497 /* SCHCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F222020674D006B7497 /* SCHCircleView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		29438F262020674D006B7497 /* SCHCircleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F242020674D006B7497 /* SCHCircleViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		29438F2920206771006B7497 /* SCHAnimationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F2720206771006B7497 /* SCHAnimationGroup.m */; };
+		29438F2C20206BC9006B7497 /* DPImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F2B20206BC9006B7497 /* DPImageViewCell.m */; };
 		29BABFA320203B8800CE4E51 /* constellation_ aries_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5520203B8800CE4E51 /* constellation_ aries_circle@2x.png */; };
 		29BABFA420203B8800CE4E51 /* constellation_ aries_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5620203B8800CE4E51 /* constellation_ aries_circle@3x.png */; };
 		29BABFA520203B8800CE4E51 /* constellation_ aries_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5720203B8800CE4E51 /* constellation_ aries_select@2x.png */; };
@@ -407,6 +411,14 @@
 		29438F1920205261006B7497 /* constellation_scorpio_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_scorpio_select@2x.png"; sourceTree = "<group>"; };
 		29438F1A20205261006B7497 /* constellation_aries@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aries@3x.png"; sourceTree = "<group>"; };
 		29438F1B20205262006B7497 /* constellation_scorpio_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_scorpio_select@3x.png"; sourceTree = "<group>"; };
+		29438F212020674D006B7497 /* SCHCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCHCircleView.h; sourceTree = "<group>"; };
+		29438F222020674D006B7497 /* SCHCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHCircleView.m; sourceTree = "<group>"; };
+		29438F232020674D006B7497 /* SCHCircleViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCHCircleViewCell.h; sourceTree = "<group>"; };
+		29438F242020674D006B7497 /* SCHCircleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHCircleViewCell.m; sourceTree = "<group>"; };
+		29438F2720206771006B7497 /* SCHAnimationGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHAnimationGroup.m; sourceTree = "<group>"; };
+		29438F2820206771006B7497 /* SCHAnimationGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCHAnimationGroup.h; sourceTree = "<group>"; };
+		29438F2A20206BC9006B7497 /* DPImageViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPImageViewCell.h; sourceTree = "<group>"; };
+		29438F2B20206BC9006B7497 /* DPImageViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPImageViewCell.m; sourceTree = "<group>"; };
 		29BABF5520203B8800CE4E51 /* constellation_ aries_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ aries_circle@2x.png"; sourceTree = "<group>"; };
 		29BABF5620203B8800CE4E51 /* constellation_ aries_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ aries_circle@3x.png"; sourceTree = "<group>"; };
 		29BABF5720203B8800CE4E51 /* constellation_ aries_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ aries_select@2x.png"; sourceTree = "<group>"; };
@@ -1021,6 +1033,7 @@
 		1022E58720197ECF007E421B /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				29438F202020674D006B7497 /* SCHCircleView */,
 				1022E58820197ECF007E421B /* NewPagedFlowView */,
 			);
 			path = Widgets;
@@ -1065,6 +1078,19 @@
 				1099F1E6201F245E00CE653E /* homepage_bg@3x.png */,
 			);
 			path = HomePage;
+			sourceTree = "<group>";
+		};
+		29438F202020674D006B7497 /* SCHCircleView */ = {
+			isa = PBXGroup;
+			children = (
+				29438F2820206771006B7497 /* SCHAnimationGroup.h */,
+				29438F2720206771006B7497 /* SCHAnimationGroup.m */,
+				29438F212020674D006B7497 /* SCHCircleView.h */,
+				29438F222020674D006B7497 /* SCHCircleView.m */,
+				29438F232020674D006B7497 /* SCHCircleViewCell.h */,
+				29438F242020674D006B7497 /* SCHCircleViewCell.m */,
+			);
+			path = SCHCircleView;
 			sourceTree = "<group>";
 		};
 		29BABF5420203B8800CE4E51 /* Constellation */ = {
@@ -1163,6 +1189,8 @@
 				D6D07665201F6914000B73DB /* DPSelectConstellationController.m */,
 				D6D07667201F692A000B73DB /* DPSelectConstellationView.h */,
 				D6D07668201F692A000B73DB /* DPSelectConstellationView.m */,
+				29438F2A20206BC9006B7497 /* DPImageViewCell.h */,
+				29438F2B20206BC9006B7497 /* DPImageViewCell.m */,
 			);
 			path = Constellation;
 			sourceTree = "<group>";
@@ -1398,17 +1426,21 @@
 				1006BDBF20158E770041DC86 /* SDWebImageDownloaderOperation.m in Sources */,
 				1006BDB020158E770041DC86 /* AFURLSessionManager.m in Sources */,
 				1006BD1720158E6C0041DC86 /* BUUserAvatar.m in Sources */,
+				29438F252020674D006B7497 /* SCHCircleView.m in Sources */,
 				1006BD2120158E6C0041DC86 /* CheckoutManager.m in Sources */,
 				1006BDA920158E770041DC86 /* MJRefreshFooter.m in Sources */,
 				D6D07666201F6914000B73DB /* DPSelectConstellationController.m in Sources */,
+				29438F2920206771006B7497 /* SCHAnimationGroup.m in Sources */,
 				1006BD1820158E6C0041DC86 /* TRYearAndMonthSelectedView.m in Sources */,
 				104079EA20170D9A00700777 /* DPHomePageController.m in Sources */,
+				29438F262020674D006B7497 /* SCHCircleViewCell.m in Sources */,
 				1006BD2420158E6C0041DC86 /* AFTabBarItem.m in Sources */,
 				1006BDA820158E770041DC86 /* MJRefreshGifHeader.m in Sources */,
 				1006BD2020158E6C0041DC86 /* AlertManager.m in Sources */,
 				1006BDC420158E770041DC86 /* UIView+WebCacheOperation.m in Sources */,
 				1006BDBE20158E770041DC86 /* SDImageCache.m in Sources */,
 				1006BD2220158E6C0041DC86 /* AppConfigure.m in Sources */,
+				29438F2C20206BC9006B7497 /* DPImageViewCell.m in Sources */,
 				1006BD9920158E770041DC86 /* MBProgressHUD.m in Sources */,
 				1006BDB120158E770041DC86 /* AFURLRequestSerialization.m in Sources */,
 				1006BDA520158E770041DC86 /* MJRefreshAutoNormalFooter.m in Sources */,

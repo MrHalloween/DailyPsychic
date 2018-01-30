@@ -8,6 +8,13 @@
 
 #import "DPSelectConstellationView.h"
 #import "UILable+TextEffect.h"
+#import "SCHCircleView.h"
+
+@interface DPSelectConstellationView()
+{
+    SCHCircleView *m_pCircle_view;
+}
+@end
 
 @implementation DPSelectConstellationView
 
@@ -57,6 +64,9 @@
     pstartBtn.center = CGPointMake(self.width/2, self.height - 42 * AdaptRate - 63 * 0.5 * AdaptRate);
     [pstartBtn setBackgroundImage:[UIImage imageNamed:@"constellation_start"] forState:UIControlStateNormal];
     [pbgImg addSubview:pstartBtn];
+    
+    //旋转的星座
+//    m_pCircle_view = [SCHCircleView alloc]initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
 }
 
 
