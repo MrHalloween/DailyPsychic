@@ -120,15 +120,15 @@
 		29438F2920206771006B7497 /* SCHAnimationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F2720206771006B7497 /* SCHAnimationGroup.m */; };
 		29438F2C20206BC9006B7497 /* DPImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F2B20206BC9006B7497 /* DPImageViewCell.m */; };
 		29BABFA320203B8800CE4E51 /* constellation_ aries_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5520203B8800CE4E51 /* constellation_ aries_circle@2x.png */; };
-		29BABFA420203B8800CE4E51 /* constellation_ aries_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5620203B8800CE4E51 /* constellation_ aries_circle@3x.png */; };
-		29BABFA520203B8800CE4E51 /* constellation_ aries_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5720203B8800CE4E51 /* constellation_ aries_select@2x.png */; };
-		29BABFA620203B8800CE4E51 /* constellation_ aries_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5820203B8800CE4E51 /* constellation_ aries_select@3x.png */; };
-		29BABFA720203B8800CE4E51 /* constellation_ virgo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5920203B8800CE4E51 /* constellation_ virgo@2x.png */; };
-		29BABFA820203B8800CE4E51 /* constellation_ virgo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5A20203B8800CE4E51 /* constellation_ virgo@3x.png */; };
-		29BABFA920203B8800CE4E51 /* constellation_ virgo_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5B20203B8800CE4E51 /* constellation_ virgo_circle@2x.png */; };
-		29BABFAA20203B8800CE4E51 /* constellation_ virgo_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5C20203B8800CE4E51 /* constellation_ virgo_circle@3x.png */; };
-		29BABFAB20203B8800CE4E51 /* constellation_ virgo_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5D20203B8800CE4E51 /* constellation_ virgo_select@2x.png */; };
-		29BABFAC20203B8800CE4E51 /* constellation_ virgo_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5E20203B8800CE4E51 /* constellation_ virgo_select@3x.png */; };
+		29BABFA420203B8800CE4E51 /* constellation_aries_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5620203B8800CE4E51 /* constellation_aries_circle@3x.png */; };
+		29BABFA520203B8800CE4E51 /* constellation_aries_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5720203B8800CE4E51 /* constellation_aries_select@2x.png */; };
+		29BABFA620203B8800CE4E51 /* constellation_aries_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5820203B8800CE4E51 /* constellation_aries_select@3x.png */; };
+		29BABFA720203B8800CE4E51 /* constellation_virgo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5920203B8800CE4E51 /* constellation_virgo@2x.png */; };
+		29BABFA820203B8800CE4E51 /* constellation_virgo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5A20203B8800CE4E51 /* constellation_virgo@3x.png */; };
+		29BABFA920203B8800CE4E51 /* constellation_virgo_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5B20203B8800CE4E51 /* constellation_virgo_circle@2x.png */; };
+		29BABFAA20203B8800CE4E51 /* constellation_virgo_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5C20203B8800CE4E51 /* constellation_virgo_circle@3x.png */; };
+		29BABFAB20203B8800CE4E51 /* constellation_virgo_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5D20203B8800CE4E51 /* constellation_virgo_select@2x.png */; };
+		29BABFAC20203B8800CE4E51 /* constellation_virgo_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5E20203B8800CE4E51 /* constellation_virgo_select@3x.png */; };
 		29BABFAD20203B8800CE4E51 /* constellation_aquarius@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5F20203B8800CE4E51 /* constellation_aquarius@2x.png */; };
 		29BABFAE20203B8800CE4E51 /* constellation_aquarius@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6020203B8800CE4E51 /* constellation_aquarius@3x.png */; };
 		29BABFAF20203B8800CE4E51 /* constellation_aquarius_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6120203B8800CE4E51 /* constellation_aquarius_circle@2x.png */; };
@@ -138,23 +138,23 @@
 		29BABFB320203B8800CE4E51 /* constellation_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6520203B8800CE4E51 /* constellation_back@2x.png */; };
 		29BABFB420203B8800CE4E51 /* constellation_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6620203B8800CE4E51 /* constellation_back@3x.png */; };
 		29BABFB520203B8800CE4E51 /* constellation_balance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6720203B8800CE4E51 /* constellation_balance@2x.png */; };
-		29BABFB620203B8800CE4E51 /* constellation_balance@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6820203B8800CE4E51 /* constellation_balance@3x.png */; };
-		29BABFB720203B8800CE4E51 /* constellation_balance_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6920203B8800CE4E51 /* constellation_balance_circle@2x.png */; };
-		29BABFB820203B8800CE4E51 /* constellation_balance_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6A20203B8800CE4E51 /* constellation_balance_circle@3x.png */; };
-		29BABFB920203B8800CE4E51 /* constellation_balance_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6B20203B8800CE4E51 /* constellation_balance_select@2x.png */; };
-		29BABFBA20203B8800CE4E51 /* constellation_balance_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6C20203B8800CE4E51 /* constellation_balance_select@3x.png */; };
+		29BABFB620203B8800CE4E51 /* constellation_libra@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6820203B8800CE4E51 /* constellation_libra@3x.png */; };
+		29BABFB720203B8800CE4E51 /* constellation_libra_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6920203B8800CE4E51 /* constellation_libra_circle@2x.png */; };
+		29BABFB820203B8800CE4E51 /* constellation_libra_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6A20203B8800CE4E51 /* constellation_libra_circle@3x.png */; };
+		29BABFB920203B8800CE4E51 /* constellation_libra_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6B20203B8800CE4E51 /* constellation_libra_select@2x.png */; };
+		29BABFBA20203B8800CE4E51 /* constellation_libra_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6C20203B8800CE4E51 /* constellation_libra_select@3x.png */; };
 		29BABFBB20203B8800CE4E51 /* constellation_cancer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6D20203B8800CE4E51 /* constellation_cancer@2x.png */; };
 		29BABFBC20203B8800CE4E51 /* constellation_cancer@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6E20203B8800CE4E51 /* constellation_cancer@3x.png */; };
 		29BABFBD20203B8800CE4E51 /* constellation_cancer_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF6F20203B8800CE4E51 /* constellation_cancer_circle@2x.png */; };
 		29BABFBE20203B8800CE4E51 /* constellation_cancer_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7020203B8800CE4E51 /* constellation_cancer_circle@3x.png */; };
 		29BABFBF20203B8800CE4E51 /* constellation_cancer_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7120203B8800CE4E51 /* constellation_cancer_select@2x.png */; };
 		29BABFC020203B8800CE4E51 /* constellation_cancer_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7220203B8800CE4E51 /* constellation_cancer_select@3x.png */; };
-		29BABFC120203B8800CE4E51 /* constellation_capricornus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7320203B8800CE4E51 /* constellation_capricornus@2x.png */; };
-		29BABFC220203B8800CE4E51 /* constellation_capricornus@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7420203B8800CE4E51 /* constellation_capricornus@3x.png */; };
-		29BABFC320203B8800CE4E51 /* constellation_capricornus_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7520203B8800CE4E51 /* constellation_capricornus_circle@2x.png */; };
-		29BABFC420203B8800CE4E51 /* constellation_capricornus_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7620203B8800CE4E51 /* constellation_capricornus_circle@3x.png */; };
-		29BABFC520203B8800CE4E51 /* constellation_capricornus_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7720203B8800CE4E51 /* constellation_capricornus_select@2x.png */; };
-		29BABFC620203B8800CE4E51 /* constellation_capricornus_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7820203B8800CE4E51 /* constellation_capricornus_select@3x.png */; };
+		29BABFC120203B8800CE4E51 /* constellation_capricorn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7320203B8800CE4E51 /* constellation_capricorn@2x.png */; };
+		29BABFC220203B8800CE4E51 /* constellation_capricorn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7420203B8800CE4E51 /* constellation_capricorn@3x.png */; };
+		29BABFC320203B8800CE4E51 /* constellation_capricorn_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7520203B8800CE4E51 /* constellation_capricorn_circle@2x.png */; };
+		29BABFC420203B8800CE4E51 /* constellation_capricorn_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7620203B8800CE4E51 /* constellation_capricorn_circle@3x.png */; };
+		29BABFC520203B8800CE4E51 /* constellation_capricorn_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7720203B8800CE4E51 /* constellation_capricorn_select@2x.png */; };
+		29BABFC620203B8800CE4E51 /* constellation_capricorn_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7820203B8800CE4E51 /* constellation_capricorn_select@3x.png */; };
 		29BABFC720203B8800CE4E51 /* constellation_gemini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7920203B8800CE4E51 /* constellation_gemini@2x.png */; };
 		29BABFC820203B8800CE4E51 /* constellation_gemini@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7A20203B8800CE4E51 /* constellation_gemini@3x.png */; };
 		29BABFC920203B8800CE4E51 /* constellation_gemini_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF7B20203B8800CE4E51 /* constellation_gemini_circle@2x.png */; };
@@ -420,15 +420,15 @@
 		29438F2A20206BC9006B7497 /* DPImageViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPImageViewCell.h; sourceTree = "<group>"; };
 		29438F2B20206BC9006B7497 /* DPImageViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPImageViewCell.m; sourceTree = "<group>"; };
 		29BABF5520203B8800CE4E51 /* constellation_ aries_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ aries_circle@2x.png"; sourceTree = "<group>"; };
-		29BABF5620203B8800CE4E51 /* constellation_ aries_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ aries_circle@3x.png"; sourceTree = "<group>"; };
-		29BABF5720203B8800CE4E51 /* constellation_ aries_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ aries_select@2x.png"; sourceTree = "<group>"; };
-		29BABF5820203B8800CE4E51 /* constellation_ aries_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ aries_select@3x.png"; sourceTree = "<group>"; };
-		29BABF5920203B8800CE4E51 /* constellation_ virgo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ virgo@2x.png"; sourceTree = "<group>"; };
-		29BABF5A20203B8800CE4E51 /* constellation_ virgo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ virgo@3x.png"; sourceTree = "<group>"; };
-		29BABF5B20203B8800CE4E51 /* constellation_ virgo_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ virgo_circle@2x.png"; sourceTree = "<group>"; };
-		29BABF5C20203B8800CE4E51 /* constellation_ virgo_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ virgo_circle@3x.png"; sourceTree = "<group>"; };
-		29BABF5D20203B8800CE4E51 /* constellation_ virgo_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ virgo_select@2x.png"; sourceTree = "<group>"; };
-		29BABF5E20203B8800CE4E51 /* constellation_ virgo_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ virgo_select@3x.png"; sourceTree = "<group>"; };
+		29BABF5620203B8800CE4E51 /* constellation_aries_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aries_circle@3x.png"; sourceTree = "<group>"; };
+		29BABF5720203B8800CE4E51 /* constellation_aries_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aries_select@2x.png"; sourceTree = "<group>"; };
+		29BABF5820203B8800CE4E51 /* constellation_aries_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aries_select@3x.png"; sourceTree = "<group>"; };
+		29BABF5920203B8800CE4E51 /* constellation_virgo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_virgo@2x.png"; sourceTree = "<group>"; };
+		29BABF5A20203B8800CE4E51 /* constellation_virgo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_virgo@3x.png"; sourceTree = "<group>"; };
+		29BABF5B20203B8800CE4E51 /* constellation_virgo_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_virgo_circle@2x.png"; sourceTree = "<group>"; };
+		29BABF5C20203B8800CE4E51 /* constellation_virgo_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_virgo_circle@3x.png"; sourceTree = "<group>"; };
+		29BABF5D20203B8800CE4E51 /* constellation_virgo_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_virgo_select@2x.png"; sourceTree = "<group>"; };
+		29BABF5E20203B8800CE4E51 /* constellation_virgo_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_virgo_select@3x.png"; sourceTree = "<group>"; };
 		29BABF5F20203B8800CE4E51 /* constellation_aquarius@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aquarius@2x.png"; sourceTree = "<group>"; };
 		29BABF6020203B8800CE4E51 /* constellation_aquarius@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aquarius@3x.png"; sourceTree = "<group>"; };
 		29BABF6120203B8800CE4E51 /* constellation_aquarius_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aquarius_circle@2x.png"; sourceTree = "<group>"; };
@@ -438,23 +438,23 @@
 		29BABF6520203B8800CE4E51 /* constellation_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_back@2x.png"; sourceTree = "<group>"; };
 		29BABF6620203B8800CE4E51 /* constellation_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_back@3x.png"; sourceTree = "<group>"; };
 		29BABF6720203B8800CE4E51 /* constellation_balance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_balance@2x.png"; sourceTree = "<group>"; };
-		29BABF6820203B8800CE4E51 /* constellation_balance@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_balance@3x.png"; sourceTree = "<group>"; };
-		29BABF6920203B8800CE4E51 /* constellation_balance_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_balance_circle@2x.png"; sourceTree = "<group>"; };
-		29BABF6A20203B8800CE4E51 /* constellation_balance_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_balance_circle@3x.png"; sourceTree = "<group>"; };
-		29BABF6B20203B8800CE4E51 /* constellation_balance_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_balance_select@2x.png"; sourceTree = "<group>"; };
-		29BABF6C20203B8800CE4E51 /* constellation_balance_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_balance_select@3x.png"; sourceTree = "<group>"; };
+		29BABF6820203B8800CE4E51 /* constellation_libra@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_libra@3x.png"; sourceTree = "<group>"; };
+		29BABF6920203B8800CE4E51 /* constellation_libra_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_libra_circle@2x.png"; sourceTree = "<group>"; };
+		29BABF6A20203B8800CE4E51 /* constellation_libra_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_libra_circle@3x.png"; sourceTree = "<group>"; };
+		29BABF6B20203B8800CE4E51 /* constellation_libra_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_libra_select@2x.png"; sourceTree = "<group>"; };
+		29BABF6C20203B8800CE4E51 /* constellation_libra_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_libra_select@3x.png"; sourceTree = "<group>"; };
 		29BABF6D20203B8800CE4E51 /* constellation_cancer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_cancer@2x.png"; sourceTree = "<group>"; };
 		29BABF6E20203B8800CE4E51 /* constellation_cancer@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_cancer@3x.png"; sourceTree = "<group>"; };
 		29BABF6F20203B8800CE4E51 /* constellation_cancer_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_cancer_circle@2x.png"; sourceTree = "<group>"; };
 		29BABF7020203B8800CE4E51 /* constellation_cancer_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_cancer_circle@3x.png"; sourceTree = "<group>"; };
 		29BABF7120203B8800CE4E51 /* constellation_cancer_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_cancer_select@2x.png"; sourceTree = "<group>"; };
 		29BABF7220203B8800CE4E51 /* constellation_cancer_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_cancer_select@3x.png"; sourceTree = "<group>"; };
-		29BABF7320203B8800CE4E51 /* constellation_capricornus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_capricornus@2x.png"; sourceTree = "<group>"; };
-		29BABF7420203B8800CE4E51 /* constellation_capricornus@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_capricornus@3x.png"; sourceTree = "<group>"; };
-		29BABF7520203B8800CE4E51 /* constellation_capricornus_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_capricornus_circle@2x.png"; sourceTree = "<group>"; };
-		29BABF7620203B8800CE4E51 /* constellation_capricornus_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_capricornus_circle@3x.png"; sourceTree = "<group>"; };
-		29BABF7720203B8800CE4E51 /* constellation_capricornus_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_capricornus_select@2x.png"; sourceTree = "<group>"; };
-		29BABF7820203B8800CE4E51 /* constellation_capricornus_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_capricornus_select@3x.png"; sourceTree = "<group>"; };
+		29BABF7320203B8800CE4E51 /* constellation_capricorn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_capricorn@2x.png"; sourceTree = "<group>"; };
+		29BABF7420203B8800CE4E51 /* constellation_capricorn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_capricorn@3x.png"; sourceTree = "<group>"; };
+		29BABF7520203B8800CE4E51 /* constellation_capricorn_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_capricorn_circle@2x.png"; sourceTree = "<group>"; };
+		29BABF7620203B8800CE4E51 /* constellation_capricorn_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_capricorn_circle@3x.png"; sourceTree = "<group>"; };
+		29BABF7720203B8800CE4E51 /* constellation_capricorn_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_capricorn_select@2x.png"; sourceTree = "<group>"; };
+		29BABF7820203B8800CE4E51 /* constellation_capricorn_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_capricorn_select@3x.png"; sourceTree = "<group>"; };
 		29BABF7920203B8800CE4E51 /* constellation_gemini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_gemini@2x.png"; sourceTree = "<group>"; };
 		29BABF7A20203B8800CE4E51 /* constellation_gemini@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_gemini@3x.png"; sourceTree = "<group>"; };
 		29BABF7B20203B8800CE4E51 /* constellation_gemini_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_gemini_circle@2x.png"; sourceTree = "<group>"; };
@@ -1101,15 +1101,15 @@
 				29438F1820205261006B7497 /* constellation_aries@2x.png */,
 				29438F1A20205261006B7497 /* constellation_aries@3x.png */,
 				29BABF5520203B8800CE4E51 /* constellation_ aries_circle@2x.png */,
-				29BABF5620203B8800CE4E51 /* constellation_ aries_circle@3x.png */,
-				29BABF5720203B8800CE4E51 /* constellation_ aries_select@2x.png */,
-				29BABF5820203B8800CE4E51 /* constellation_ aries_select@3x.png */,
-				29BABF5920203B8800CE4E51 /* constellation_ virgo@2x.png */,
-				29BABF5A20203B8800CE4E51 /* constellation_ virgo@3x.png */,
-				29BABF5B20203B8800CE4E51 /* constellation_ virgo_circle@2x.png */,
-				29BABF5C20203B8800CE4E51 /* constellation_ virgo_circle@3x.png */,
-				29BABF5D20203B8800CE4E51 /* constellation_ virgo_select@2x.png */,
-				29BABF5E20203B8800CE4E51 /* constellation_ virgo_select@3x.png */,
+				29BABF5620203B8800CE4E51 /* constellation_aries_circle@3x.png */,
+				29BABF5720203B8800CE4E51 /* constellation_aries_select@2x.png */,
+				29BABF5820203B8800CE4E51 /* constellation_aries_select@3x.png */,
+				29BABF5920203B8800CE4E51 /* constellation_virgo@2x.png */,
+				29BABF5A20203B8800CE4E51 /* constellation_virgo@3x.png */,
+				29BABF5B20203B8800CE4E51 /* constellation_virgo_circle@2x.png */,
+				29BABF5C20203B8800CE4E51 /* constellation_virgo_circle@3x.png */,
+				29BABF5D20203B8800CE4E51 /* constellation_virgo_select@2x.png */,
+				29BABF5E20203B8800CE4E51 /* constellation_virgo_select@3x.png */,
 				29BABF5F20203B8800CE4E51 /* constellation_aquarius@2x.png */,
 				29BABF6020203B8800CE4E51 /* constellation_aquarius@3x.png */,
 				29BABF6120203B8800CE4E51 /* constellation_aquarius_circle@2x.png */,
@@ -1119,23 +1119,23 @@
 				29BABF6520203B8800CE4E51 /* constellation_back@2x.png */,
 				29BABF6620203B8800CE4E51 /* constellation_back@3x.png */,
 				29BABF6720203B8800CE4E51 /* constellation_balance@2x.png */,
-				29BABF6820203B8800CE4E51 /* constellation_balance@3x.png */,
-				29BABF6920203B8800CE4E51 /* constellation_balance_circle@2x.png */,
-				29BABF6A20203B8800CE4E51 /* constellation_balance_circle@3x.png */,
-				29BABF6B20203B8800CE4E51 /* constellation_balance_select@2x.png */,
-				29BABF6C20203B8800CE4E51 /* constellation_balance_select@3x.png */,
+				29BABF6820203B8800CE4E51 /* constellation_libra@3x.png */,
+				29BABF6920203B8800CE4E51 /* constellation_libra_circle@2x.png */,
+				29BABF6A20203B8800CE4E51 /* constellation_libra_circle@3x.png */,
+				29BABF6B20203B8800CE4E51 /* constellation_libra_select@2x.png */,
+				29BABF6C20203B8800CE4E51 /* constellation_libra_select@3x.png */,
 				29BABF6D20203B8800CE4E51 /* constellation_cancer@2x.png */,
 				29BABF6E20203B8800CE4E51 /* constellation_cancer@3x.png */,
 				29BABF6F20203B8800CE4E51 /* constellation_cancer_circle@2x.png */,
 				29BABF7020203B8800CE4E51 /* constellation_cancer_circle@3x.png */,
 				29BABF7120203B8800CE4E51 /* constellation_cancer_select@2x.png */,
 				29BABF7220203B8800CE4E51 /* constellation_cancer_select@3x.png */,
-				29BABF7320203B8800CE4E51 /* constellation_capricornus@2x.png */,
-				29BABF7420203B8800CE4E51 /* constellation_capricornus@3x.png */,
-				29BABF7520203B8800CE4E51 /* constellation_capricornus_circle@2x.png */,
-				29BABF7620203B8800CE4E51 /* constellation_capricornus_circle@3x.png */,
-				29BABF7720203B8800CE4E51 /* constellation_capricornus_select@2x.png */,
-				29BABF7820203B8800CE4E51 /* constellation_capricornus_select@3x.png */,
+				29BABF7320203B8800CE4E51 /* constellation_capricorn@2x.png */,
+				29BABF7420203B8800CE4E51 /* constellation_capricorn@3x.png */,
+				29BABF7520203B8800CE4E51 /* constellation_capricorn_circle@2x.png */,
+				29BABF7620203B8800CE4E51 /* constellation_capricorn_circle@3x.png */,
+				29BABF7720203B8800CE4E51 /* constellation_capricorn_select@2x.png */,
+				29BABF7820203B8800CE4E51 /* constellation_capricorn_select@3x.png */,
 				29BABF7920203B8800CE4E51 /* constellation_gemini@2x.png */,
 				29BABF7A20203B8800CE4E51 /* constellation_gemini@3x.png */,
 				29BABF7B20203B8800CE4E51 /* constellation_gemini_circle@2x.png */,
@@ -1258,11 +1258,11 @@
 				29BABFD420203B8800CE4E51 /* constellation_leo_select@3x.png in Resources */,
 				29BABFDD20203B8800CE4E51 /* constellation_sagittarius@2x.png in Resources */,
 				1099F1F1201F245E00CE653E /* homepage_bg@2x.png in Resources */,
-				29BABFA820203B8800CE4E51 /* constellation_ virgo@3x.png in Resources */,
+				29BABFA820203B8800CE4E51 /* constellation_virgo@3x.png in Resources */,
 				29BABFAD20203B8800CE4E51 /* constellation_aquarius@2x.png in Resources */,
 				29BABFED20203B8800CE4E51 /* constellation_taurus_select@2x.png in Resources */,
-				29BABFC520203B8800CE4E51 /* constellation_capricornus_select@2x.png in Resources */,
-				29BABFAC20203B8800CE4E51 /* constellation_ virgo_select@3x.png in Resources */,
+				29BABFC520203B8800CE4E51 /* constellation_capricorn_select@2x.png in Resources */,
+				29BABFAC20203B8800CE4E51 /* constellation_virgo_select@3x.png in Resources */,
 				29BABFC020203B8800CE4E51 /* constellation_cancer_select@3x.png in Resources */,
 				29438F1E20205262006B7497 /* constellation_aries@3x.png in Resources */,
 				29BABFB320203B8800CE4E51 /* constellation_back@2x.png in Resources */,
@@ -1274,31 +1274,31 @@
 				1099F1E9201F245E00CE653E /* homepage_ok@2x.png in Resources */,
 				29BABFCA20203B8800CE4E51 /* constellation_gemini_circle@3x.png in Resources */,
 				29BABFE420203B8800CE4E51 /* constellation_scorpio@3x.png in Resources */,
-				29BABFAA20203B8800CE4E51 /* constellation_ virgo_circle@3x.png in Resources */,
+				29BABFAA20203B8800CE4E51 /* constellation_virgo_circle@3x.png in Resources */,
 				29BABFD120203B8800CE4E51 /* constellation_leo_circle@2x.png in Resources */,
 				29BABFB020203B8800CE4E51 /* constellation_aquarius_circle@3x.png in Resources */,
 				29BABFEA20203B8800CE4E51 /* constellation_taurus@3x.png in Resources */,
 				29BABFF020203B8800CE4E51 /* constellation_triangle@3x.png in Resources */,
-				29BABFA520203B8800CE4E51 /* constellation_ aries_select@2x.png in Resources */,
+				29BABFA520203B8800CE4E51 /* constellation_aries_select@2x.png in Resources */,
 				29BABFE020203B8800CE4E51 /* constellation_sagittarius_circle@3x.png in Resources */,
 				1099F1F2201F245E00CE653E /* homepage_bg@3x.png in Resources */,
 				29BABFB120203B8800CE4E51 /* constellation_aquarius_select@2x.png in Resources */,
 				29BABFD920203B8800CE4E51 /* constellation_pisces_circle@2x.png in Resources */,
 				29BABFC720203B8800CE4E51 /* constellation_gemini@2x.png in Resources */,
-				29BABFC120203B8800CE4E51 /* constellation_capricornus@2x.png in Resources */,
-				29BABFB720203B8800CE4E51 /* constellation_balance_circle@2x.png in Resources */,
+				29BABFC120203B8800CE4E51 /* constellation_capricorn@2x.png in Resources */,
+				29BABFB720203B8800CE4E51 /* constellation_libra_circle@2x.png in Resources */,
 				29BABFD620203B8800CE4E51 /* constellation_main@3x.png in Resources */,
 				1099F1E8201F245E00CE653E /* homepage_card_star@3x.png in Resources */,
 				29BABFD520203B8800CE4E51 /* constellation_main@2x.png in Resources */,
-				29BABFA420203B8800CE4E51 /* constellation_ aries_circle@3x.png in Resources */,
+				29BABFA420203B8800CE4E51 /* constellation_aries_circle@3x.png in Resources */,
 				1006BD1220158E6C0041DC86 /* README.md in Resources */,
-				29BABFB820203B8800CE4E51 /* constellation_balance_circle@3x.png in Resources */,
+				29BABFB820203B8800CE4E51 /* constellation_libra_circle@3x.png in Resources */,
 				29BABFE920203B8800CE4E51 /* constellation_taurus@2x.png in Resources */,
 				1099F1EE201F245E00CE653E /* homepage_card_test@3x.png in Resources */,
 				1099F1EB201F245E00CE653E /* homepage_card_test@2x.png in Resources */,
 				29BABFCB20203B8800CE4E51 /* constellation_gemini_select@2x.png in Resources */,
 				29BABFBF20203B8800CE4E51 /* constellation_cancer_select@2x.png in Resources */,
-				29BABFC220203B8800CE4E51 /* constellation_capricornus@3x.png in Resources */,
+				29BABFC220203B8800CE4E51 /* constellation_capricorn@3x.png in Resources */,
 				29BABFE620203B8800CE4E51 /* constellation_scorpio_circle@3x.png in Resources */,
 				29BABFE320203B8800CE4E51 /* constellation_scorpio@2x.png in Resources */,
 				29BABFAF20203B8800CE4E51 /* constellation_aquarius_circle@2x.png in Resources */,
@@ -1306,24 +1306,24 @@
 				29BABFB220203B8800CE4E51 /* constellation_aquarius_select@3x.png in Resources */,
 				29BABFC820203B8800CE4E51 /* constellation_gemini@3x.png in Resources */,
 				1006BC8D20158C930041DC86 /* Assets.xcassets in Resources */,
-				29BABFA620203B8800CE4E51 /* constellation_ aries_select@3x.png in Resources */,
+				29BABFA620203B8800CE4E51 /* constellation_aries_select@3x.png in Resources */,
 				29BABFD820203B8800CE4E51 /* constellation_pisces@3x.png in Resources */,
 				29438F1F20205262006B7497 /* constellation_scorpio_select@3x.png in Resources */,
-				29BABFC620203B8800CE4E51 /* constellation_capricornus_select@3x.png in Resources */,
+				29BABFC620203B8800CE4E51 /* constellation_capricorn_select@3x.png in Resources */,
 				29BABFCD20203B8800CE4E51 /* constellation_hexagona@3x.png in Resources */,
 				29BABFBE20203B8800CE4E51 /* constellation_cancer_circle@3x.png in Resources */,
-				29BABFAB20203B8800CE4E51 /* constellation_ virgo_select@2x.png in Resources */,
-				29BABFB620203B8800CE4E51 /* constellation_balance@3x.png in Resources */,
+				29BABFAB20203B8800CE4E51 /* constellation_virgo_select@2x.png in Resources */,
+				29BABFB620203B8800CE4E51 /* constellation_libra@3x.png in Resources */,
 				29BABFA320203B8800CE4E51 /* constellation_ aries_circle@2x.png in Resources */,
 				1099F1E7201F245E00CE653E /* homepage_card_star@2x.png in Resources */,
 				1099F1ED201F245E00CE653E /* homepage_card_hand@2x.png in Resources */,
 				1099F1EF201F245E00CE653E /* homepage_triangle@3x.png in Resources */,
 				29BABFAE20203B8800CE4E51 /* constellation_aquarius@3x.png in Resources */,
-				29BABFA720203B8800CE4E51 /* constellation_ virgo@2x.png in Resources */,
+				29BABFA720203B8800CE4E51 /* constellation_virgo@2x.png in Resources */,
 				29BABFD020203B8800CE4E51 /* constellation_leo@3x.png in Resources */,
 				29BABFB520203B8800CE4E51 /* constellation_balance@2x.png in Resources */,
 				29BABFDC20203B8800CE4E51 /* constellation_pisces_select@3x.png in Resources */,
-				29BABFA920203B8800CE4E51 /* constellation_ virgo_circle@2x.png in Resources */,
+				29BABFA920203B8800CE4E51 /* constellation_virgo_circle@2x.png in Resources */,
 				29BABFBC20203B8800CE4E51 /* constellation_cancer@3x.png in Resources */,
 				29BABFDA20203B8800CE4E51 /* constellation_pisces_circle@3x.png in Resources */,
 				29BABFBB20203B8800CE4E51 /* constellation_cancer@2x.png in Resources */,
@@ -1333,15 +1333,15 @@
 				29BABFE520203B8800CE4E51 /* constellation_scorpio_circle@2x.png in Resources */,
 				29BABFBD20203B8800CE4E51 /* constellation_cancer_circle@2x.png in Resources */,
 				29BABFCF20203B8800CE4E51 /* constellation_leo@2x.png in Resources */,
-				29BABFBA20203B8800CE4E51 /* constellation_balance_select@3x.png in Resources */,
+				29BABFBA20203B8800CE4E51 /* constellation_libra_select@3x.png in Resources */,
 				29BABFCC20203B8800CE4E51 /* constellation_gemini_select@3x.png in Resources */,
 				29BABFD220203B8800CE4E51 /* constellation_leo_circle@3x.png in Resources */,
 				29BABFDB20203B8800CE4E51 /* constellation_pisces_select@2x.png in Resources */,
 				29BABFD320203B8800CE4E51 /* constellation_leo_select@2x.png in Resources */,
 				29BABFD720203B8800CE4E51 /* constellation_pisces@2x.png in Resources */,
-				29BABFC420203B8800CE4E51 /* constellation_capricornus_circle@3x.png in Resources */,
+				29BABFC420203B8800CE4E51 /* constellation_capricorn_circle@3x.png in Resources */,
 				29BABFB420203B8800CE4E51 /* constellation_back@3x.png in Resources */,
-				29BABFC320203B8800CE4E51 /* constellation_capricornus_circle@2x.png in Resources */,
+				29BABFC320203B8800CE4E51 /* constellation_capricorn_circle@2x.png in Resources */,
 				29BABFE820203B8800CE4E51 /* constellation_start@3x.png in Resources */,
 				29BABFEB20203B8800CE4E51 /* constellation_taurus_circle@2x.png in Resources */,
 				29BABFE720203B8800CE4E51 /* constellation_start@2x.png in Resources */,
@@ -1349,7 +1349,7 @@
 				1006BD9D20158E770041DC86 /* MJRefresh.bundle in Resources */,
 				1099F1EC201F245E00CE653E /* homepage_card_hand@3x.png in Resources */,
 				29BABFEC20203B8800CE4E51 /* constellation_taurus_circle@3x.png in Resources */,
-				29BABFB920203B8800CE4E51 /* constellation_balance_select@2x.png in Resources */,
+				29BABFB920203B8800CE4E51 /* constellation_libra_select@2x.png in Resources */,
 				29BABFE220203B8800CE4E51 /* constellation_sagittarius_select@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1572,7 +1572,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6M534QFX64;
+				DEVELOPMENT_TEAM = PKL8KP26Y6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;
@@ -1590,7 +1590,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6M534QFX64;
+				DEVELOPMENT_TEAM = PKL8KP26Y6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;
