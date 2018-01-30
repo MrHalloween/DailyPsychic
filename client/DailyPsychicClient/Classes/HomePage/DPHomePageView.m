@@ -14,6 +14,7 @@
 @interface DPHomePageView ()<NewPagedFlowViewDelegate, NewPagedFlowViewDataSource>
 {
     NewPagedFlowView *m_pCircleView;
+    long m_ipageNumber;
 }
 @end
 
@@ -90,6 +91,7 @@
     pOk.bounds = CGRectMake(0, 0, 281.5 * AdaptRate, 63 * AdaptRate);
     pOk.center = CGPointMake(self.width * 0.5, pDesc3.bottom + 33 * AdaptRate + pOk.height * 0.5);
     [pOk setBackgroundImage:[UIImage imageNamed:@"homepage_ok.png"] forState:0];
+    [pOk addTarget:self action:@selector(okClick) forControlEvents:UIControlEventTouchUpInside];
     [pContentView addSubview:pOk];
     
 }
@@ -104,10 +106,7 @@
 }
 
 - (void)didScrollToPage:(NSInteger)pageNumber inFlowView:(NewPagedFlowView *)flowView {
-    if (self.homePageDel != nil && [self.homePageDel respondsToSelector:@selector(PushToDetailByPageNumber:)])
-    {
-        [self.homePageDel PushToDetailByPageNumber:pageNumber];
-    }
+    m_ipageNumber = pageNumber;
     NSLog(@"ViewController 滚动到了第%zd页",pageNumber);
 }
 
@@ -130,4 +129,10 @@
     return bannerView;
 }
 
+- (void)okClick{
+    if (self.homePageDel != nil && [self.homePageDel respondsToSelector:@selector(PushToDetailByPageNumber:)])
+    {
+        [self.homePageDel PushToDetailByPageNumber:m_ipageNumber];
+    }
+}
 @end
