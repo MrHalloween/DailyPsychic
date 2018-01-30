@@ -7,7 +7,7 @@
 //
 
 #import "SCHCircleViewCell.h"
-
+///lll
 @interface DPImageViewCell : SCHCircleViewCell
 
 @property (nonatomic,retain) UIImageView *imageView;

@@ -9,6 +9,7 @@
 #import "DPHomePageController.h"
 #import "DPHomePageView.h"
 #import "DPSelectConstellationController.h"
+#import "DPTestCardController.h"
 
 @interface DPHomePageController ()<DPHomePageViewDelegate>
 {
@@ -33,7 +34,7 @@
     switch (pageNumber) {
         case 0: NSLog(@"手相分析"); break;
         case 1: pVC = [[DPSelectConstellationController alloc]init]; break;
-        case 2: NSLog(@"测试"); break;
+        case 2: pVC = [[DPTestCardController alloc]init]; break;
         default:
             break;
     }
