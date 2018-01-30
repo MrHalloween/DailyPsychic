@@ -8,8 +8,9 @@
 
 #import "DPHomePageController.h"
 #import "DPHomePageView.h"
+#import "DPSelectConstellationController.h"
 
-@interface DPHomePageController ()
+@interface DPHomePageController ()<DPHomePageViewDelegate>
 {
     DPHomePageView *m_pHomePageView;
 }
@@ -30,6 +31,12 @@
     
 }
 
+- (void)PushToDetailByPageNumber:(long)pageNumber{
+    if (pageNumber == 2) {
+        DPSelectConstellationController *selectVc = [[DPSelectConstellationController alloc]init];
+        [self PushChildViewController:selectVc animated:YES];
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

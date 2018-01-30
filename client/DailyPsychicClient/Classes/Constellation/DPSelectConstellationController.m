@@ -7,16 +7,21 @@
 //
 
 #import "DPSelectConstellationController.h"
-
+#import "DPSelectConstellationView.h"
 @interface DPSelectConstellationController ()
-
+{
+    DPSelectConstellationView *m_pSelectView;
+}
 @end
 
 @implementation DPSelectConstellationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    m_pTopBar.hidden = YES;
+    m_pSelectView = [[DPSelectConstellationView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    [self.view addSubview:m_pSelectView];
+    
 }
 
 - (void)didReceiveMemoryWarning {
