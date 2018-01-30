@@ -18,11 +18,6 @@
 
 @implementation DPHomePageController
 
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     m_pTopBar.hidden = YES;
