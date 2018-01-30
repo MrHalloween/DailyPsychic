@@ -27,12 +27,13 @@
     [super viewDidLoad];
     m_pTopBar.hidden = YES;
     m_pHomePageView = [[DPHomePageView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    m_pHomePageView.homePageDel = self;
     [self.view addSubview:m_pHomePageView];
     
 }
 
-- (void)PushToDetailByPageNumber:(long)pageNumber{
-    if (pageNumber == 2) {
+- (void)PushToDetailByPageNumber:(NSInteger)pageNumber{
+    if (pageNumber == 1) {
         DPSelectConstellationController *selectVc = [[DPSelectConstellationController alloc]init];
         [self PushChildViewController:selectVc animated:YES];
     }

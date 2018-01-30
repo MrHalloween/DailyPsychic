@@ -10,7 +10,7 @@
 
 @protocol DPHomePageViewDelegate<NSObject>
 
-- (void)PushToDetailByPageNumber:(long)pageNumber;
+- (void)PushToDetailByPageNumber:(NSInteger)pageNumber;
 
 @end
 
