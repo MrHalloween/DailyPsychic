@@ -8,7 +8,9 @@
 
 #import "DPSelectConstellationController.h"
 #import "DPSelectConstellationView.h"
-@interface DPSelectConstellationController ()
+#import "UILable+TextEffect.h"
+
+@interface DPSelectConstellationController ()<SelectConstellationDelegate>
 {
     DPSelectConstellationView *m_pSelectView;
 }
@@ -18,13 +20,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    m_pNameLabel.text = @"Choose your constellation";
-    [m_pBackButton setBackgroundImage:[UIImage imageNamed:@"constellation_back"] forState:UIControlStateNormal];
+    //主view
     m_pSelectView = [[DPSelectConstellationView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    m_pSelectView.selectConstellationDel = self;
     [self.view addSubview:m_pSelectView];
-    
 }
 
+- (void)BackTo{
+    NSLog(@"back");
+    [self Back];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

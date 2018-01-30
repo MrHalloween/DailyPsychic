@@ -197,6 +197,7 @@
 		29BABFEE20203B8800CE4E51 /* constellation_taurus_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABFA020203B8800CE4E51 /* constellation_taurus_select@3x.png */; };
 		29BABFEF20203B8800CE4E51 /* constellation_triangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABFA120203B8800CE4E51 /* constellation_triangle@2x.png */; };
 		29BABFF020203B8800CE4E51 /* constellation_triangle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABFA220203B8800CE4E51 /* constellation_triangle@3x.png */; };
+		D6821A4F20209AA1001026BB /* constelletion.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6821A4E20209AA1001026BB /* constelletion.plist */; };
 		D6D07666201F6914000B73DB /* DPSelectConstellationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D07665201F6914000B73DB /* DPSelectConstellationController.m */; };
 		D6D07669201F692A000B73DB /* DPSelectConstellationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D07668201F692A000B73DB /* DPSelectConstellationView.m */; };
 /* End PBXBuildFile section */
@@ -497,6 +498,7 @@
 		29BABFA020203B8800CE4E51 /* constellation_taurus_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_taurus_select@3x.png"; sourceTree = "<group>"; };
 		29BABFA120203B8800CE4E51 /* constellation_triangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_triangle@2x.png"; sourceTree = "<group>"; };
 		29BABFA220203B8800CE4E51 /* constellation_triangle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_triangle@3x.png"; sourceTree = "<group>"; };
+		D6821A4E20209AA1001026BB /* constelletion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = constelletion.plist; sourceTree = "<group>"; };
 		D6D07664201F6914000B73DB /* DPSelectConstellationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSelectConstellationController.h; sourceTree = "<group>"; };
 		D6D07665201F6914000B73DB /* DPSelectConstellationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSelectConstellationController.m; sourceTree = "<group>"; };
 		D6D07667201F692A000B73DB /* DPSelectConstellationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSelectConstellationView.h; sourceTree = "<group>"; };
@@ -566,6 +568,7 @@
 			children = (
 				1006BC9A20158D400041DC86 /* plist */,
 				1006BC9B20158D400041DC86 /* images */,
+				D6821A4E20209AA1001026BB /* constelletion.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -1330,6 +1333,7 @@
 				29BABFC920203B8800CE4E51 /* constellation_gemini_circle@2x.png in Resources */,
 				29438F1D20205262006B7497 /* constellation_scorpio_select@2x.png in Resources */,
 				29BABFE120203B8800CE4E51 /* constellation_sagittarius_select@2x.png in Resources */,
+				D6821A4F20209AA1001026BB /* constelletion.plist in Resources */,
 				29BABFE520203B8800CE4E51 /* constellation_scorpio_circle@2x.png in Resources */,
 				29BABFBD20203B8800CE4E51 /* constellation_cancer_circle@2x.png in Resources */,
 				29BABFCF20203B8800CE4E51 /* constellation_leo@2x.png in Resources */,
