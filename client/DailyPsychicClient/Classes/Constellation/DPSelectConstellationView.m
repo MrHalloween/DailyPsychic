@@ -22,8 +22,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        m_arrData = [[NSMutableArray alloc]init];
-//        m_arrData addObject:<#(nonnull id)#>
 //        m_arrData = [NSMutableArray arrayWithObjects:@{@"id":@0,@"title":@"手相分析",@"image":@"homepage_card_hand.png"},
 //                     @{@"id":@1,@"title":@"星座",@"image":@"homepage_card_star.png"},
 //                     @{@"id":@2,@"title":@"测试",@"image":@"homepage_card_test.png"}, nil];
@@ -38,25 +36,6 @@
     pbgImg.image = [UIImage imageNamed:@"homepage_bg"];
     pbgImg.userInteractionEnabled = YES;
     [self addSubview:pbgImg];
-    
-    //title
-    UILabel *m_pTitleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 36 * AdaptRate, self.width, 36 * AdaptRate)];
-    [m_pTitleLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:18 Placehoder:@"Choose your constellation"];
-    m_pTitleLabel.textAlignment = NSTextAlignmentCenter;
-    [pbgImg addSubview:m_pTitleLabel];
-    
-    //返回按钮
-    UIButton *pBackaBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    pBackaBtn.frame = CGRectMake(0, 48 * AdaptRate, 30 * AdaptRate, 35 * AdaptRate);
-//    [pBackaBtn setBackgroundImage:[UIImage imageNamed:@"constellation_back"] forState:UIControlStateNormal];
-    [pBackaBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [pbgImg addSubview:pBackaBtn];
-    
-    //返回图片
-    UIImageView *pBackImg = [[UIImageView alloc]initWithFrame:CGRectMake(16 * AdaptRate, 0, 8 *AdaptRate, 14 * AdaptRate)];
-    pBackImg.userInteractionEnabled = YES;
-    pBackImg.image = [UIImage imageNamed:@"constellation_back"];
-    [pBackaBtn addSubview:pBackImg];
     
     //主图-底背景
     UIImageView *pmainImg = [[UIImageView alloc]initWithFrame:CGRectMake(17 * AdaptRate, 102 * AdaptRate, 342 * AdaptRate, 409 * AdaptRate)];
@@ -98,13 +77,8 @@
     [pstartBtn setBackgroundImage:[UIImage imageNamed:@"constellation_start"] forState:UIControlStateNormal];
     [pbgImg addSubview:pstartBtn];
     
+    
 }
 
-- (void)backBtnClick{
-    if (self.selectConstellationDel != nil && [self.selectConstellationDel respondsToSelector:@selector(BackTo)])
-    {
-        [self.selectConstellationDel BackTo];
-    }
-}
 
 @end

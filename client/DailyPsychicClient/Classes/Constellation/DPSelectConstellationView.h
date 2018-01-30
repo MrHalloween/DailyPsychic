@@ -8,14 +8,6 @@
 
 #import "AFBaseTableView.h"
 
-@protocol SelectConstellationDelegate<NSObject>
-
-- (void)BackTo;
-
-@end
-
 @interface DPSelectConstellationView : AFBaseTableView
-
-@property (nonatomic ,weak)id<SelectConstellationDelegate>selectConstellationDel;
 
 @end
