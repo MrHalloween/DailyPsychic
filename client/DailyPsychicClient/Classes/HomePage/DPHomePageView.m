@@ -24,6 +24,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        m_ipageNumber = 0;
         m_arrData = [NSMutableArray arrayWithObjects:@{@"id":@0,@"title":@"手相分析",@"image":@"homepage_card_hand.png"},
                                                      @{@"id":@1,@"title":@"星座",@"image":@"homepage_card_star.png"},
                                                      @{@"id":@2,@"title":@"测试",@"image":@"homepage_card_test.png"}, nil];
@@ -130,6 +131,7 @@
 }
 
 - (void)okClick{
+    
     if (self.homePageDel != nil && [self.homePageDel respondsToSelector:@selector(PushToDetailByPageNumber:)])
     {
         [self.homePageDel PushToDetailByPageNumber:m_ipageNumber];
