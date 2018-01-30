@@ -20,7 +20,9 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     DPHomePageController *pVC = [[DPHomePageController alloc]init];
-    self.window.rootViewController = pVC;
+    UINavigationController *pNav = [[UINavigationController alloc]initWithRootViewController:pVC];
+    pNav.navigationBar.hidden = YES;
+    self.window.rootViewController = pNav;
     [self.window makeKeyAndVisible];
     return YES;
 }
