@@ -111,6 +111,8 @@
 		1099F1F0201F245E00CE653E /* homepage_ok@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1E4201F245E00CE653E /* homepage_ok@3x.png */; };
 		1099F1F1201F245E00CE653E /* homepage_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1E5201F245E00CE653E /* homepage_bg@2x.png */; };
 		1099F1F2201F245E00CE653E /* homepage_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1E6201F245E00CE653E /* homepage_bg@3x.png */; };
+		D6D07666201F6914000B73DB /* DPSelectConstellationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D07665201F6914000B73DB /* DPSelectConstellationController.m */; };
+		D6D07669201F692A000B73DB /* DPSelectConstellationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D07668201F692A000B73DB /* DPSelectConstellationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -319,6 +321,10 @@
 		1099F1E4201F245E00CE653E /* homepage_ok@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_ok@3x.png"; sourceTree = "<group>"; };
 		1099F1E5201F245E00CE653E /* homepage_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_bg@2x.png"; sourceTree = "<group>"; };
 		1099F1E6201F245E00CE653E /* homepage_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_bg@3x.png"; sourceTree = "<group>"; };
+		D6D07664201F6914000B73DB /* DPSelectConstellationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSelectConstellationController.h; sourceTree = "<group>"; };
+		D6D07665201F6914000B73DB /* DPSelectConstellationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSelectConstellationController.m; sourceTree = "<group>"; };
+		D6D07667201F692A000B73DB /* DPSelectConstellationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSelectConstellationView.h; sourceTree = "<group>"; };
+		D6D07668201F692A000B73DB /* DPSelectConstellationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSelectConstellationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -403,6 +409,7 @@
 		1006BC9D20158D400041DC86 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D696ABCD201F67A8002235D5 /* Constellation */,
 				104079E720170D4E00700777 /* HomePage */,
 				1006BC9E20158D400041DC86 /* Others */,
 			);
@@ -444,20 +451,20 @@
 			children = (
 				1006BCA520158E6C0041DC86 /* UILable+TextEffect.m */,
 				1006BCA620158E6C0041DC86 /* UIDevice+Resolutions.m */,
+				1006BCAE20158E6C0041DC86 /* NSDictionary+Log.h */,
 				1006BCA720158E6C0041DC86 /* NSDictionary+Log.m */,
 				1006BCA820158E6C0041DC86 /* NSString+TimeFormat.h */,
 				1006BCA920158E6C0041DC86 /* UITextView+Placeholder.m */,
 				1006BCAA20158E6C0041DC86 /* NSString+MD5.h */,
 				1006BCAB20158E6C0041DC86 /* NSString+IntValue.m */,
 				1006BCAC20158E6C0041DC86 /* NSStringExt.h */,
-				1006BCAD20158E6C0041DC86 /* UIViewExt.m */,
-				1006BCAE20158E6C0041DC86 /* NSDictionary+Log.h */,
 				1006BCAF20158E6C0041DC86 /* UIDevice+Resolutions.h */,
 				1006BCB020158E6C0041DC86 /* UILable+TextEffect.h */,
 				1006BCB120158E6C0041DC86 /* UITextView+Placeholder.h */,
 				1006BCB220158E6C0041DC86 /* NSString+TimeFormat.m */,
 				1006BCB320158E6C0041DC86 /* NSString+MD5.m */,
 				1006BCB420158E6C0041DC86 /* UIViewExt.h */,
+				1006BCAD20158E6C0041DC86 /* UIViewExt.m */,
 				1006BCB520158E6C0041DC86 /* NSString+IntValue.h */,
 				1006BCB620158E6C0041DC86 /* NSStringExt.m */,
 			);
@@ -879,6 +886,17 @@
 			path = HomePage;
 			sourceTree = "<group>";
 		};
+		D696ABCD201F67A8002235D5 /* Constellation */ = {
+			isa = PBXGroup;
+			children = (
+				D6D07664201F6914000B73DB /* DPSelectConstellationController.h */,
+				D6D07665201F6914000B73DB /* DPSelectConstellationController.m */,
+				D6D07667201F692A000B73DB /* DPSelectConstellationView.h */,
+				D6D07668201F692A000B73DB /* DPSelectConstellationView.m */,
+			);
+			path = Constellation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1030,6 +1048,7 @@
 				1006BD1720158E6C0041DC86 /* BUUserAvatar.m in Sources */,
 				1006BD2120158E6C0041DC86 /* CheckoutManager.m in Sources */,
 				1006BDA920158E770041DC86 /* MJRefreshFooter.m in Sources */,
+				D6D07666201F6914000B73DB /* DPSelectConstellationController.m in Sources */,
 				1006BD1820158E6C0041DC86 /* TRYearAndMonthSelectedView.m in Sources */,
 				104079EA20170D9A00700777 /* DPHomePageController.m in Sources */,
 				1006BD2420158E6C0041DC86 /* AFTabBarItem.m in Sources */,
@@ -1051,6 +1070,7 @@
 				1006BDB520158E770041DC86 /* MKAnnotationView+WebCache.m in Sources */,
 				1006BDB320158E770041DC86 /* AFSecurityPolicy.m in Sources */,
 				1006BD2520158E6C0041DC86 /* AFBaseModuleData.m in Sources */,
+				D6D07669201F692A000B73DB /* DPSelectConstellationView.m in Sources */,
 				1006BDC220158E770041DC86 /* NSImage+WebCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1168,7 +1188,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LV8M663DCC;
+				DEVELOPMENT_TEAM = 6M534QFX64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;
@@ -1186,7 +1206,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LV8M663DCC;
+				DEVELOPMENT_TEAM = 6M534QFX64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;

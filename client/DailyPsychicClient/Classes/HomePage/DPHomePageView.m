@@ -104,6 +104,10 @@
 }
 
 - (void)didScrollToPage:(NSInteger)pageNumber inFlowView:(NewPagedFlowView *)flowView {
+    if (self.homePageDel != nil && [self.homePageDel respondsToSelector:@selector(PushToDetailByPageNumber:)])
+    {
+        [self.homePageDel PushToDetailByPageNumber:pageNumber];
+    }
     NSLog(@"ViewController 滚动到了第%zd页",pageNumber);
 }
 
