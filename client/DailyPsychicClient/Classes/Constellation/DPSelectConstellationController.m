@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    m_pTopBar.hidden = YES;
+//    m_pTopBar.hidden = YES;
     m_pSelectView = [[DPSelectConstellationView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
     [self.view addSubview:m_pSelectView];
     

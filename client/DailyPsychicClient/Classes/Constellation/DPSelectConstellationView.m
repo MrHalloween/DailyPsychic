@@ -9,7 +9,19 @@
 #import "DPSelectConstellationView.h"
 
 @implementation DPSelectConstellationView
-
-
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self addSubViews];
+    }
+    return self;
+}
+- (void)addSubViews{
+    // 背景
+    UIImageView *bgImg = [[UIImageView alloc]initWithFrame:self.frame];
+    bgImg.image = [UIImage imageNamed:@""];
+    [self addSubview:bgImg];
+}
 
 @end
