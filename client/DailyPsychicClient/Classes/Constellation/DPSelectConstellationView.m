@@ -10,7 +10,7 @@
 #import "UILable+TextEffect.h"
 #import "SCHCircleView.h"
 
-@interface DPSelectConstellationView()
+@interface DPSelectConstellationView()<SCHCircleViewDataSource,SCHCircleViewDelegate>
 {
     SCHCircleView *m_pCircle_view;
 }
@@ -22,6 +22,9 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+//        m_arrData = [NSMutableArray arrayWithObjects:@{@"id":@0,@"title":@"手相分析",@"image":@"homepage_card_hand.png"},
+//                     @{@"id":@1,@"title":@"星座",@"image":@"homepage_card_star.png"},
+//                     @{@"id":@2,@"title":@"测试",@"image":@"homepage_card_test.png"}, nil];
         [self addSubViews];
     }
     return self;
@@ -38,6 +41,15 @@
     UIImageView *pmainImg = [[UIImageView alloc]initWithFrame:CGRectMake(17 * AdaptRate, 102 * AdaptRate, 342 * AdaptRate, 409 * AdaptRate)];
     pmainImg.image = [UIImage imageNamed:@"constellation_main"];
     [pbgImg addSubview:pmainImg];
+    
+    //旋转的星座
+    m_pCircle_view = [[SCHCircleView alloc]initWithFrame:CGRectMake(0, 0, pmainImg.width, pmainImg.height)];
+    m_pCircle_view.circle_view_data_source = self;
+    m_pCircle_view.circle_view_delegate    = self;
+    m_pCircle_view.show_circle_style       = SCHShowCircleDefault;
+    m_pCircle_view.circle_layout_style     = SChCircleLayoutNormal;
+    [m_pCircle_view reloadData];
+    [pmainImg addSubview:m_pCircle_view];
     
     //六芒星
     UIImageView *phexaganalImg = [[UIImageView alloc]initWithFrame:CGRectMake(88 * AdaptRate, 123 * AdaptRate, 168 * AdaptRate, 168 * AdaptRate)];
@@ -65,8 +77,7 @@
     [pstartBtn setBackgroundImage:[UIImage imageNamed:@"constellation_start"] forState:UIControlStateNormal];
     [pbgImg addSubview:pstartBtn];
     
-    //旋转的星座
-//    m_pCircle_view = [SCHCircleView alloc]initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
+    
 }
 
 
