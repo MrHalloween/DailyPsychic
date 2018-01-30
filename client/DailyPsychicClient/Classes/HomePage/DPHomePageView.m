@@ -24,6 +24,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        m_ipageNumber = 0;
         m_arrData = [NSMutableArray arrayWithObjects:@{@"id":@0,@"title":@"手相分析",@"image":@"homepage_card_hand.png"},
                                                      @{@"id":@1,@"title":@"星座",@"image":@"homepage_card_star.png"},
                                                      @{@"id":@2,@"title":@"测试",@"image":@"homepage_card_test.png"}, nil];
@@ -52,15 +53,15 @@
     m_pCircleView.delegate = self;
     m_pCircleView.dataSource = self;
     m_pCircleView.minimumPageAlpha = 0.1;
-    m_pCircleView.topBottomMargin = 50 * AdaptRate;
-    m_pCircleView.leftRightMargin = 0 * AdaptRate;
+    m_pCircleView.topBottomMargin = 80 * AdaptRate;
+    m_pCircleView.leftRightMargin = -40 * AdaptRate;
     m_pCircleView.isOpenAutoScroll = NO;
     [m_pCircleView reloadData];
     [pContentView addSubview:m_pCircleView];
     
     //三角
     UIImageView *pTriangle = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 15 * AdaptRate, 7.5 * AdaptRate)];
-    pTriangle.center = CGPointMake(self.width * 0.5, m_pCircleView.bottom + pTriangle.height * 0.5);
+    pTriangle.center = CGPointMake(self.width * 0.5, m_pCircleView.bottom + 10 * AdaptRate + pTriangle.height * 0.5);
     pTriangle.image = [UIImage imageNamed:@"homepage_triangle.png"];
     [self addSubview:pTriangle];
     
@@ -130,6 +131,7 @@
 }
 
 - (void)okClick{
+    
     if (self.homePageDel != nil && [self.homePageDel respondsToSelector:@selector(PushToDetailByPageNumber:)])
     {
         [self.homePageDel PushToDetailByPageNumber:m_ipageNumber];

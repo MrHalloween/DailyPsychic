@@ -9,6 +9,7 @@
 #import "DPSelectConstellationView.h"
 
 @implementation DPSelectConstellationView
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -23,5 +24,6 @@
     bgImg.image = [UIImage imageNamed:@""];
     [self addSubview:bgImg];
 }
+
 
 @end

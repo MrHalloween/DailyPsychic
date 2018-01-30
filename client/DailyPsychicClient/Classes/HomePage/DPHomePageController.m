@@ -18,11 +18,6 @@
 
 @implementation DPHomePageController
 
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     m_pTopBar.hidden = YES;
@@ -33,10 +28,17 @@
 }
 
 - (void)PushToDetailByPageNumber:(NSInteger)pageNumber{
-    if (pageNumber == 1) {
-        DPSelectConstellationController *selectVc = [[DPSelectConstellationController alloc]init];
-        [self PushChildViewController:selectVc animated:YES];
+    
+    BUCustomViewController *pVC;
+    switch (pageNumber) {
+        case 0: NSLog(@"手相分析"); break;
+        case 1: pVC = [[DPSelectConstellationController alloc]init]; break;
+        case 2: NSLog(@"测试"); break;
+        default:
+            break;
     }
+    [self PushChildViewController:pVC animated:YES];
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
