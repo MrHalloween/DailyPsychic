@@ -8,6 +8,15 @@
 
 #import "AFBaseTableView.h"
 
+@protocol SelectConstellationDelegate<NSObject>
+//返回
+- (void)BackTo;
+//进入下一页
+- (void)StartToNextPage;
+@end
+
 @interface DPSelectConstellationView : AFBaseTableView
+
+@property (nonatomic ,weak)id<SelectConstellationDelegate>selectConstellationDel;
 
 @end

@@ -8,7 +8,9 @@
 
 #import "DPSelectConstellationController.h"
 #import "DPSelectConstellationView.h"
-@interface DPSelectConstellationController ()
+#import "DPConstellationDetailController.h"
+
+@interface DPSelectConstellationController ()<SelectConstellationDelegate>
 {
     DPSelectConstellationView *m_pSelectView;
 }
@@ -21,10 +23,20 @@
     m_pNameLabel.text = @"Choose your constellation";
     [m_pBackButton setBackgroundImage:[UIImage imageNamed:@"constellation_back"] forState:UIControlStateNormal];
     m_pSelectView = [[DPSelectConstellationView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    m_pSelectView.selectConstellationDel = self;
     [self.view addSubview:m_pSelectView];
     
 }
 
+- (void)BackTo
+{
+    [self Back];
+}
+- (void)StartToNextPage
+{
+    DPConstellationDetailController *detailVc = [[DPConstellationDetailController alloc]init];
+    [self PushChildViewController:detailVc animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
