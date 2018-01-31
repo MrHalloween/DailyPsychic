@@ -9,7 +9,7 @@
 #import "DPHomePageController.h"
 #import "DPHomePageView.h"
 #import "DPSelectConstellationController.h"
-#import "DPTestCardController.h"
+#import "DPTestListController.h"
 #import "DPPalmAnalysisController.h"
 
 @interface DPHomePageController ()<DPHomePageViewDelegate>
@@ -35,7 +35,7 @@
     switch (pageNumber) {
         case 0: pVC = [[DPPalmAnalysisController alloc]init]; break;
         case 1: pVC = [[DPSelectConstellationController alloc]init]; break;
-        case 2: pVC = [[DPTestCardController alloc]init]; break;
+        case 2: pVC = [[DPTestListController alloc]init]; break;
         default:
             break;
     }

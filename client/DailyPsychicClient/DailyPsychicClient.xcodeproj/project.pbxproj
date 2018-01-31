@@ -111,6 +111,9 @@
 		1099F1F0201F245E00CE653E /* homepage_ok@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1E4201F245E00CE653E /* homepage_ok@3x.png */; };
 		1099F1F1201F245E00CE653E /* homepage_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1E5201F245E00CE653E /* homepage_bg@2x.png */; };
 		1099F1F2201F245E00CE653E /* homepage_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1E6201F245E00CE653E /* homepage_bg@3x.png */; };
+		10B3F3C820220429003ACADE /* DPTestListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B3F3C720220429003ACADE /* DPTestListController.m */; };
+		10B3F3CB2022043D003ACADE /* DPTestListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B3F3CA2022043D003ACADE /* DPTestListView.m */; };
+		10B3F3CE2022044D003ACADE /* DPTestListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B3F3CD2022044D003ACADE /* DPTestListCell.m */; };
 		10D009262020B5DC00ADAADB /* DPTestCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D009252020B5DC00ADAADB /* DPTestCardController.m */; };
 		10D009292020B5EA00ADAADB /* DPTestCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D009282020B5EA00ADAADB /* DPTestCardView.m */; };
 		10D009312020B85100ADAADB /* test_answer_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D0092B2020B85100ADAADB /* test_answer_bg@3x.png */; };
@@ -436,6 +439,12 @@
 		1099F1E4201F245E00CE653E /* homepage_ok@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_ok@3x.png"; sourceTree = "<group>"; };
 		1099F1E5201F245E00CE653E /* homepage_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_bg@2x.png"; sourceTree = "<group>"; };
 		1099F1E6201F245E00CE653E /* homepage_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_bg@3x.png"; sourceTree = "<group>"; };
+		10B3F3C620220429003ACADE /* DPTestListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTestListController.h; sourceTree = "<group>"; };
+		10B3F3C720220429003ACADE /* DPTestListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTestListController.m; sourceTree = "<group>"; };
+		10B3F3C92022043D003ACADE /* DPTestListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTestListView.h; sourceTree = "<group>"; };
+		10B3F3CA2022043D003ACADE /* DPTestListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTestListView.m; sourceTree = "<group>"; };
+		10B3F3CC2022044D003ACADE /* DPTestListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTestListCell.h; sourceTree = "<group>"; };
+		10B3F3CD2022044D003ACADE /* DPTestListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTestListCell.m; sourceTree = "<group>"; };
 		10D009242020B5DC00ADAADB /* DPTestCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTestCardController.h; sourceTree = "<group>"; };
 		10D009252020B5DC00ADAADB /* DPTestCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTestCardController.m; sourceTree = "<group>"; };
 		10D009272020B5EA00ADAADB /* DPTestCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTestCardView.h; sourceTree = "<group>"; };
@@ -584,6 +593,7 @@
 		10015C9220204B4100C54C94 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				10B3F3C52022040E003ACADE /* TestList */,
 				10D009232020B5CD00ADAADB /* TestCard */,
 			);
 			path = Test;
@@ -1129,6 +1139,19 @@
 			path = HomePage;
 			sourceTree = "<group>";
 		};
+		10B3F3C52022040E003ACADE /* TestList */ = {
+			isa = PBXGroup;
+			children = (
+				10B3F3C620220429003ACADE /* DPTestListController.h */,
+				10B3F3C720220429003ACADE /* DPTestListController.m */,
+				10B3F3C92022043D003ACADE /* DPTestListView.h */,
+				10B3F3CA2022043D003ACADE /* DPTestListView.m */,
+				10B3F3CC2022044D003ACADE /* DPTestListCell.h */,
+				10B3F3CD2022044D003ACADE /* DPTestListCell.m */,
+			);
+			path = TestList;
+			sourceTree = "<group>";
+		};
 		10D009232020B5CD00ADAADB /* TestCard */ = {
 			isa = PBXGroup;
 			children = (
@@ -1524,8 +1547,10 @@
 				1006BD1F20158E6C0041DC86 /* TextManager.m in Sources */,
 				1006BDC520158E770041DC86 /* UIView+WebCache.m in Sources */,
 				1006BDA420158E770041DC86 /* MJRefreshAutoGifFooter.m in Sources */,
+				10B3F3C820220429003ACADE /* DPTestListController.m in Sources */,
 				1006BD9A20158E770041DC86 /* MBProgressHUD+Add.m in Sources */,
 				1006BDB820158E770041DC86 /* UIImageView+HighlightedWebCache.m in Sources */,
+				10B3F3CE2022044D003ACADE /* DPTestListCell.m in Sources */,
 				1006BD1620158E6C0041DC86 /* BUUserDetailsController.m in Sources */,
 				1022E58E20197ECF007E421B /* NewPagedFlowView.m in Sources */,
 				1006BD9F20158E770041DC86 /* UIView+MJExtension.m in Sources */,
@@ -1597,6 +1622,7 @@
 				1006BDA920158E770041DC86 /* MJRefreshFooter.m in Sources */,
 				29438F2920206771006B7497 /* SCHAnimationGroup.m in Sources */,
 				1006BD1820158E6C0041DC86 /* TRYearAndMonthSelectedView.m in Sources */,
+				10B3F3CB2022043D003ACADE /* DPTestListView.m in Sources */,
 				104079EA20170D9A00700777 /* DPHomePageController.m in Sources */,
 				29438F262020674D006B7497 /* SCHCircleViewCell.m in Sources */,
 				1006BD2420158E6C0041DC86 /* AFTabBarItem.m in Sources */,
@@ -1738,7 +1764,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PKL8KP26Y6;
+				DEVELOPMENT_TEAM = 35H68DZCUS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;
@@ -1756,7 +1782,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PKL8KP26Y6;
+				DEVELOPMENT_TEAM = 35H68DZCUS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;
