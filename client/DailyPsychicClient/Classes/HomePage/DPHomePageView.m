@@ -43,9 +43,9 @@
     
     //标题
     UILabel *pTitle = [[UILabel alloc]init];
-    [pTitle SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:17 Placehoder:@"Daily Psychic"];
+    [pTitle SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:18 Placehoder:@"Daily Psychic"];
     pTitle.textAlignment = NSTextAlignmentCenter;
-    pTitle.frame = CGRectMake(0, 36 * AdaptRate, self.width, SIZE_HEIGHT(17));
+    pTitle.frame = CGRectMake(0, 36 * AdaptRate, self.width, SIZE_HEIGHT(18));
     [pContentView addSubview:pTitle];
 
     m_pCircleView = [[NewPagedFlowView alloc] initWithFrame:CGRectMake(0, pTitle.bottom + 41 * AdaptRate, self.width, 300 * AdaptRate)];
