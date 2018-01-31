@@ -7,18 +7,25 @@
 //
 
 #import "DPConstellationDetailController.h"
-
+#import "DPConstellationDetailView.h"
 @interface DPConstellationDetailController ()
-
+{
+    DPConstellationDetailView *m_pConstellDetail;
+}
 @end
 
 @implementation DPConstellationDetailController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    m_pConstellDetail = [[DPConstellationDetailView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    m_pConstellDetail.conDetailDel = self;
+    [self.view addSubview:m_pConstellDetail];
 }
-
+- (void)BackTo
+{
+    [self Back];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

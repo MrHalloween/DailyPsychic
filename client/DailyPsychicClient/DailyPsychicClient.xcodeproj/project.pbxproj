@@ -125,7 +125,6 @@
 		29438F252020674D006B7497 /* SCHCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F222020674D006B7497 /* SCHCircleView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		29438F262020674D006B7497 /* SCHCircleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F242020674D006B7497 /* SCHCircleViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		29438F2920206771006B7497 /* SCHAnimationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F2720206771006B7497 /* SCHAnimationGroup.m */; };
-		29438F2C20206BC9006B7497 /* DPImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F2B20206BC9006B7497 /* DPImageViewCell.m */; };
 		29BABFA320203B8800CE4E51 /* constellation_ aries_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5520203B8800CE4E51 /* constellation_ aries_circle@2x.png */; };
 		29BABFA420203B8800CE4E51 /* constellation_aries_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5620203B8800CE4E51 /* constellation_aries_circle@3x.png */; };
 		29BABFA520203B8800CE4E51 /* constellation_aries_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5720203B8800CE4E51 /* constellation_aries_select@2x.png */; };
@@ -204,8 +203,12 @@
 		29BABFEE20203B8800CE4E51 /* constellation_taurus_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABFA020203B8800CE4E51 /* constellation_taurus_select@3x.png */; };
 		29BABFEF20203B8800CE4E51 /* constellation_triangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABFA120203B8800CE4E51 /* constellation_triangle@2x.png */; };
 		29BABFF020203B8800CE4E51 /* constellation_triangle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABFA220203B8800CE4E51 /* constellation_triangle@3x.png */; };
-		D6D07666201F6914000B73DB /* DPSelectConstellationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D07665201F6914000B73DB /* DPSelectConstellationController.m */; };
-		D6D07669201F692A000B73DB /* DPSelectConstellationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D07668201F692A000B73DB /* DPSelectConstellationView.m */; };
+		29BFF06B202193C900B70DBD /* DPConstellationDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BFF05F202193C900B70DBD /* DPConstellationDetailController.m */; };
+		29BFF06C202193C900B70DBD /* DPConstellationDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BFF061202193C900B70DBD /* DPConstellationDetailView.m */; };
+		29BFF06D202193C900B70DBD /* DPWeekCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BFF063202193C900B70DBD /* DPWeekCollectionViewCell.m */; };
+		29BFF06E202193C900B70DBD /* DPImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BFF066202193C900B70DBD /* DPImageViewCell.m */; };
+		29BFF06F202193C900B70DBD /* DPSelectConstellationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BFF068202193C900B70DBD /* DPSelectConstellationController.m */; };
+		29BFF070202193C900B70DBD /* DPSelectConstellationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BFF06A202193C900B70DBD /* DPSelectConstellationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -434,8 +437,6 @@
 		29438F242020674D006B7497 /* SCHCircleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHCircleViewCell.m; sourceTree = "<group>"; };
 		29438F2720206771006B7497 /* SCHAnimationGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHAnimationGroup.m; sourceTree = "<group>"; };
 		29438F2820206771006B7497 /* SCHAnimationGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCHAnimationGroup.h; sourceTree = "<group>"; };
-		29438F2A20206BC9006B7497 /* DPImageViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPImageViewCell.h; sourceTree = "<group>"; };
-		29438F2B20206BC9006B7497 /* DPImageViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPImageViewCell.m; sourceTree = "<group>"; };
 		29BABF5520203B8800CE4E51 /* constellation_ aries_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ aries_circle@2x.png"; sourceTree = "<group>"; };
 		29BABF5620203B8800CE4E51 /* constellation_aries_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aries_circle@3x.png"; sourceTree = "<group>"; };
 		29BABF5720203B8800CE4E51 /* constellation_aries_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aries_select@2x.png"; sourceTree = "<group>"; };
@@ -514,10 +515,18 @@
 		29BABFA020203B8800CE4E51 /* constellation_taurus_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_taurus_select@3x.png"; sourceTree = "<group>"; };
 		29BABFA120203B8800CE4E51 /* constellation_triangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_triangle@2x.png"; sourceTree = "<group>"; };
 		29BABFA220203B8800CE4E51 /* constellation_triangle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_triangle@3x.png"; sourceTree = "<group>"; };
-		D6D07664201F6914000B73DB /* DPSelectConstellationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSelectConstellationController.h; sourceTree = "<group>"; };
-		D6D07665201F6914000B73DB /* DPSelectConstellationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSelectConstellationController.m; sourceTree = "<group>"; };
-		D6D07667201F692A000B73DB /* DPSelectConstellationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSelectConstellationView.h; sourceTree = "<group>"; };
-		D6D07668201F692A000B73DB /* DPSelectConstellationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSelectConstellationView.m; sourceTree = "<group>"; };
+		29BFF05E202193C900B70DBD /* DPConstellationDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConstellationDetailController.h; sourceTree = "<group>"; };
+		29BFF05F202193C900B70DBD /* DPConstellationDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPConstellationDetailController.m; sourceTree = "<group>"; };
+		29BFF060202193C900B70DBD /* DPConstellationDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConstellationDetailView.h; sourceTree = "<group>"; };
+		29BFF061202193C900B70DBD /* DPConstellationDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPConstellationDetailView.m; sourceTree = "<group>"; };
+		29BFF062202193C900B70DBD /* DPWeekCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPWeekCollectionViewCell.h; sourceTree = "<group>"; };
+		29BFF063202193C900B70DBD /* DPWeekCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPWeekCollectionViewCell.m; sourceTree = "<group>"; };
+		29BFF065202193C900B70DBD /* DPImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPImageViewCell.h; sourceTree = "<group>"; };
+		29BFF066202193C900B70DBD /* DPImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPImageViewCell.m; sourceTree = "<group>"; };
+		29BFF067202193C900B70DBD /* DPSelectConstellationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSelectConstellationController.h; sourceTree = "<group>"; };
+		29BFF068202193C900B70DBD /* DPSelectConstellationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSelectConstellationController.m; sourceTree = "<group>"; };
+		29BFF069202193C900B70DBD /* DPSelectConstellationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSelectConstellationView.h; sourceTree = "<group>"; };
+		29BFF06A202193C900B70DBD /* DPSelectConstellationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSelectConstellationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1225,15 +1234,37 @@
 			path = Constellation;
 			sourceTree = "<group>";
 		};
+		29BFF05D202193C900B70DBD /* ConstellationDetail */ = {
+			isa = PBXGroup;
+			children = (
+				29BFF05E202193C900B70DBD /* DPConstellationDetailController.h */,
+				29BFF05F202193C900B70DBD /* DPConstellationDetailController.m */,
+				29BFF060202193C900B70DBD /* DPConstellationDetailView.h */,
+				29BFF061202193C900B70DBD /* DPConstellationDetailView.m */,
+				29BFF062202193C900B70DBD /* DPWeekCollectionViewCell.h */,
+				29BFF063202193C900B70DBD /* DPWeekCollectionViewCell.m */,
+			);
+			path = ConstellationDetail;
+			sourceTree = "<group>";
+		};
+		29BFF064202193C900B70DBD /* SelectConstellation */ = {
+			isa = PBXGroup;
+			children = (
+				29BFF065202193C900B70DBD /* DPImageViewCell.h */,
+				29BFF066202193C900B70DBD /* DPImageViewCell.m */,
+				29BFF067202193C900B70DBD /* DPSelectConstellationController.h */,
+				29BFF068202193C900B70DBD /* DPSelectConstellationController.m */,
+				29BFF069202193C900B70DBD /* DPSelectConstellationView.h */,
+				29BFF06A202193C900B70DBD /* DPSelectConstellationView.m */,
+			);
+			path = SelectConstellation;
+			sourceTree = "<group>";
+		};
 		D696ABCD201F67A8002235D5 /* Constellation */ = {
 			isa = PBXGroup;
 			children = (
-				D6D07664201F6914000B73DB /* DPSelectConstellationController.h */,
-				D6D07665201F6914000B73DB /* DPSelectConstellationController.m */,
-				D6D07667201F692A000B73DB /* DPSelectConstellationView.h */,
-				D6D07668201F692A000B73DB /* DPSelectConstellationView.m */,
-				29438F2A20206BC9006B7497 /* DPImageViewCell.h */,
-				29438F2B20206BC9006B7497 /* DPImageViewCell.m */,
+				29BFF064202193C900B70DBD /* SelectConstellation */,
+				29BFF05D202193C900B70DBD /* ConstellationDetail */,
 			);
 			path = Constellation;
 			sourceTree = "<group>";
@@ -1422,6 +1453,7 @@
 				1022E58D20197ECF007E421B /* PGIndexBannerSubiew.m in Sources */,
 				1006BDBA20158E770041DC86 /* UIImage+GIF.m in Sources */,
 				1006BD0F20158E6C0041DC86 /* NSString+TimeFormat.m in Sources */,
+				29BFF06F202193C900B70DBD /* DPSelectConstellationController.m in Sources */,
 				1006BDAC20158E770041DC86 /* MJRefreshAutoFooter.m in Sources */,
 				104079ED20170DB100700777 /* DPHomePageView.m in Sources */,
 				1006BDAE20158E770041DC86 /* AFURLResponseSerialization.m in Sources */,
@@ -1432,6 +1464,7 @@
 				1006BD1A20158E6C0041DC86 /* AFFutureTimeSelectedView.m in Sources */,
 				1006BDA220158E770041DC86 /* MJRefreshBackNormalFooter.m in Sources */,
 				1006BD1020158E6C0041DC86 /* NSString+MD5.m in Sources */,
+				29BFF06C202193C900B70DBD /* DPConstellationDetailView.m in Sources */,
 				1006BD9C20158E770041DC86 /* MJRefreshConst.m in Sources */,
 				1006BD9E20158E770041DC86 /* UIScrollView+MJExtension.m in Sources */,
 				1006BDA320158E770041DC86 /* MJRefreshAutoStateFooter.m in Sources */,
@@ -1447,6 +1480,7 @@
 				1006BD1520158E6C0041DC86 /* BUChannelNameCell.m in Sources */,
 				1006BD2C20158E6C0041DC86 /* NSObject+RMArchivable.m in Sources */,
 				1006BDB220158E770041DC86 /* AFNetworkReachabilityManager.m in Sources */,
+				29BFF070202193C900B70DBD /* DPSelectConstellationView.m in Sources */,
 				1006BD1B20158E6C0041DC86 /* AFDetailTimeSelectedView.m in Sources */,
 				1006BD1E20158E6C0041DC86 /* BUTopBannerView.m in Sources */,
 				1006BD2320158E6C0041DC86 /* AFTabBarViewController.m in Sources */,
@@ -1454,6 +1488,7 @@
 				1006BDAB20158E770041DC86 /* MJRefreshBackFooter.m in Sources */,
 				1006BD0D20158E6C0041DC86 /* NSString+IntValue.m in Sources */,
 				1006BD2A20158E6C0041DC86 /* RMMapper.m in Sources */,
+				29BFF06E202193C900B70DBD /* DPImageViewCell.m in Sources */,
 				1006BDC320158E770041DC86 /* SDImageCacheConfig.m in Sources */,
 				1006BDAD20158E770041DC86 /* MJRefreshComponent.m in Sources */,
 				1006BDC120158E770041DC86 /* UIImageView+WebCache.m in Sources */,
@@ -1479,23 +1514,23 @@
 				1006BD2120158E6C0041DC86 /* CheckoutManager.m in Sources */,
 				10D009262020B5DC00ADAADB /* DPTestCardController.m in Sources */,
 				1006BDA920158E770041DC86 /* MJRefreshFooter.m in Sources */,
-				D6D07666201F6914000B73DB /* DPSelectConstellationController.m in Sources */,
 				29438F2920206771006B7497 /* SCHAnimationGroup.m in Sources */,
 				1006BD1820158E6C0041DC86 /* TRYearAndMonthSelectedView.m in Sources */,
 				104079EA20170D9A00700777 /* DPHomePageController.m in Sources */,
 				29438F262020674D006B7497 /* SCHCircleViewCell.m in Sources */,
 				1006BD2420158E6C0041DC86 /* AFTabBarItem.m in Sources */,
+				29BFF06B202193C900B70DBD /* DPConstellationDetailController.m in Sources */,
 				1006BDA820158E770041DC86 /* MJRefreshGifHeader.m in Sources */,
 				1006BD2020158E6C0041DC86 /* AlertManager.m in Sources */,
 				1006BDC420158E770041DC86 /* UIView+WebCacheOperation.m in Sources */,
 				1006BDBE20158E770041DC86 /* SDImageCache.m in Sources */,
 				1006BD2220158E6C0041DC86 /* AppConfigure.m in Sources */,
-				29438F2C20206BC9006B7497 /* DPImageViewCell.m in Sources */,
 				1006BD9920158E770041DC86 /* MBProgressHUD.m in Sources */,
 				1006BDB120158E770041DC86 /* AFURLRequestSerialization.m in Sources */,
 				1006BDA520158E770041DC86 /* MJRefreshAutoNormalFooter.m in Sources */,
 				1006BD1C20158E6C0041DC86 /* AFTimeSelctedView.m in Sources */,
 				1006BC9320158C930041DC86 /* main.m in Sources */,
+				29BFF06D202193C900B70DBD /* DPWeekCollectionViewCell.m in Sources */,
 				1006BDB920158E770041DC86 /* SDWebImageDownloader.m in Sources */,
 				1006BDA720158E770041DC86 /* MJRefreshStateHeader.m in Sources */,
 				1006BDA120158E770041DC86 /* MJRefreshBackStateFooter.m in Sources */,
@@ -1504,7 +1539,6 @@
 				1006BDB520158E770041DC86 /* MKAnnotationView+WebCache.m in Sources */,
 				1006BDB320158E770041DC86 /* AFSecurityPolicy.m in Sources */,
 				1006BD2520158E6C0041DC86 /* AFBaseModuleData.m in Sources */,
-				D6D07669201F692A000B73DB /* DPSelectConstellationView.m in Sources */,
 				1006BDC220158E770041DC86 /* NSImage+WebCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1622,7 +1656,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PKL8KP26Y6;
+				DEVELOPMENT_TEAM = 6M534QFX64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;
@@ -1640,7 +1674,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PKL8KP26Y6;
+				DEVELOPMENT_TEAM = 6M534QFX64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;
