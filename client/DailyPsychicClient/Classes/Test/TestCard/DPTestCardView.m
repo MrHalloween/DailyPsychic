@@ -63,11 +63,11 @@
     }
     
     //page
-    UILabel *pPage = [[UILabel alloc]init];
-    [pPage SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:16 Placehoder:@"1 / 10"];
-    pPage.textAlignment = NSTextAlignmentCenter;
-    pPage.frame = CGRectMake((self.width - 300 * AdaptRate) * 0.5, pPictureBg.bottom, 300 * AdaptRate, 67 * AdaptRate);
-    [self addSubview:pPage];
+//    UILabel *pPage = [[UILabel alloc]init];
+//    [pPage SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:16 Placehoder:@"1 / 10"];
+//    pPage.textAlignment = NSTextAlignmentCenter;
+//    pPage.frame = CGRectMake((self.width - 300 * AdaptRate) * 0.5, pPictureBg.bottom, 300 * AdaptRate, 67 * AdaptRate);
+//    [self addSubview:pPage];
     
 }
 
