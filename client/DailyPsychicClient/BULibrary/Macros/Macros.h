@@ -14,5 +14,6 @@
 #import "PathMacros.h"              //定义目录文件的宏
 #import "UtilsMacros.h"             //工具类的宏
 #import "NotificationMacros.h"      //系统Notification宏
+#import "Identify.h"                //cell的唯一标识
 
 #endif /* Macros_h */

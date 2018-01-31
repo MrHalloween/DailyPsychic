@@ -8,7 +8,7 @@
 
 #import "DPConstellationDetailController.h"
 #import "DPConstellationDetailView.h"
-@interface DPConstellationDetailController ()
+@interface DPConstellationDetailController ()<ConstellationDetailDelegate>
 {
     DPConstellationDetailView *m_pConstellDetail;
 }

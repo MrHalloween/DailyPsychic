@@ -10,5 +10,10 @@
 
 @interface DPWeekCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, weak) UILabel *weekLabel; /// < 周几
+@property (nonatomic, weak) UIImageView *circleBgImg; /// < 背景小圆圈
+@property (nonatomic, weak) UIImageView *pointImg; /// < 圆点
+@property (nonatomic, weak) UILabel *dateLabel; /// < 日期
++ (instancetype)cellWithCollectionView:(UICollectionView *)collectionView identifier:(NSString *)identifier indexPath:(NSIndexPath *)indexPath;
 
 @end

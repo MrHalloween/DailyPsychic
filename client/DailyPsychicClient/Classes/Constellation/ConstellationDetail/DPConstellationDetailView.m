@@ -8,6 +8,13 @@
 
 #import "DPConstellationDetailView.h"
 #import "UILable+TextEffect.h"
+#import "DPWeekCollectionViewCell.h"
+
+@interface DPConstellationDetailView()<UICollectionViewDelegate,UICollectionViewDataSource>
+{
+    UICollectionView *m_pWeekCollectionView;
+}
+@end
 
 @implementation DPConstellationDetailView
 
@@ -49,8 +56,19 @@
 }
 
 //collection
-- (void)addCollectionView{
-    UICollectionView *
+- (void)addCollectionView
+{
+    CGRect rect = CGRectMake(0, 96 * AdaptRate, self.width, 74 * AdaptRate);
+    UICollectionViewFlowLayout *profileLayout = [[UICollectionViewFlowLayout alloc] init];
+    profileLayout.minimumLineSpacing = 0;
+    profileLayout.minimumInteritemSpacing = 0;
+    profileLayout.itemSize = CGSizeMake(self.width/7, 67 * AdaptRate);
+    m_pWeekCollectionView = [[UICollectionView alloc] initWithFrame:rect collectionViewLayout:profileLayout];
+    [m_pWeekCollectionView registerClass:[DPWeekCollectionViewCell class] forCellWithReuseIdentifier:WeekCollectionViewCell];
+    m_pWeekCollectionView.delegate = self;
+    m_pWeekCollectionView.dataSource = self;
+    m_pWeekCollectionView.backgroundColor = [UIColor clearColor];
+    [self addSubview:m_pWeekCollectionView];
 }
 
 - (void)addlistView{
@@ -64,4 +82,35 @@
         [self.conDetailDel BackTo];
     }
 }
+
+#pragma mark -
+#pragma mark - collectionView的delegate和datasource
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 7;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    DPWeekCollectionViewCell *cell = [DPWeekCollectionViewCell cellWithCollectionView:collectionView identifier:WeekCollectionViewCell indexPath:indexPath];
+    return cell;
+}
+
+
+
+
+
+
+
+
+
+
+
 @end
