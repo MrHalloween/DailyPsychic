@@ -29,7 +29,7 @@
     
     // 星期
     UILabel *weekLabel = [[UILabel alloc]init];
-    [weekLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:12 Placehoder:@"MON"];
+    [weekLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueLightFont] FontSize:12 Placehoder:@"MON"];
     weekLabel.frame = CGRectMake(0, 0, self.width, SIZE_HEIGHT(12));
     weekLabel.textAlignment = NSTextAlignmentCenter;
     [self.contentView addSubview:weekLabel];
@@ -49,7 +49,7 @@
     
     //日期
     UILabel *dateLabel = [[UILabel alloc]init];
-    [dateLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:12 Placehoder:@"14"];
+    [dateLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:12 Placehoder:@"14"];
     dateLabel.frame = CGRectMake(0, 13 * AdaptRate, self.circleBgImg.width, SIZE_HEIGHT(14));
     dateLabel.textAlignment = NSTextAlignmentCenter;
     [self.circleBgImg addSubview:dateLabel];

@@ -13,6 +13,7 @@
 @interface DPConstellationDetailView()<UICollectionViewDelegate,UICollectionViewDataSource>
 {
     UICollectionView *m_pWeekCollectionView;
+    UIButton *m_pDateBtn;
 }
 @end
 
@@ -22,11 +23,16 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        [self addScrollView];
         [self addTopView];
         [self addCollectionView];
+        [self addDetailView];
         [self addlistView];
     }
     return self;
+}
+- (void)addScrollView{
+    
 }
 - (void)addTopView{
     
@@ -44,12 +50,12 @@
     
     //返回按钮
     UIButton *pBackaBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    pBackaBtn.frame = CGRectMake(0, 48 * AdaptRate, 30 * AdaptRate, 35 * AdaptRate);
+    pBackaBtn.frame = CGRectMake(0, 35 * AdaptRate, 40 * AdaptRate, 35 * AdaptRate);
     [pBackaBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [pBgImg addSubview:pBackaBtn];
     
     //返回图片
-    UIImageView *pBackImg = [[UIImageView alloc]initWithFrame:CGRectMake(16 * AdaptRate, 0, 8 *AdaptRate, 14 * AdaptRate)];
+    UIImageView *pBackImg = [[UIImageView alloc]initWithFrame:CGRectMake(16 * AdaptRate, 13 * AdaptRate, 8 * AdaptRate, 14 * AdaptRate)];
     pBackImg.userInteractionEnabled = YES;
     pBackImg.image = [UIImage imageNamed:@"constellation_back"];
     [pBackaBtn addSubview:pBackImg];
@@ -70,8 +76,91 @@
     m_pWeekCollectionView.backgroundColor = [UIColor clearColor];
     [self addSubview:m_pWeekCollectionView];
 }
+//日期 星座
+- (void)addDetailView
+{
+    // 左 日期
+    m_pDateBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    m_pDateBtn.frame = CGRectMake(0, m_pWeekCollectionView.bottom + 35 * AdaptRate, self.width/2,45 * AdaptRate);
+    [self addSubview:m_pDateBtn];
+    
+    //today
+    UILabel *m_pTodayLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, m_pDateBtn.width, SIZE_HEIGHT(15))];
+    [m_pTodayLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueThinFont] FontSize:15 Placehoder:@"TODAY"];
+    m_pTodayLabel.textAlignment = NSTextAlignmentCenter;
+    [m_pDateBtn addSubview:m_pTodayLabel];
 
-- (void)addlistView{
+    //日期
+    UILabel *m_pDateLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, m_pTodayLabel.bottom + 5 * AdaptRate, m_pDateBtn.width, SIZE_HEIGHT(20))];
+    [m_pDateLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager RegularFont] FontSize:20 Placehoder:@"2018.02.10"];
+    m_pDateLabel.textAlignment = NSTextAlignmentCenter;
+    [m_pDateBtn addSubview:m_pDateLabel];
+    
+    // 中间 横杠
+    UIView *m_pLineView = [[UIView alloc]initWithFrame:CGRectMake(self.width/2 - 2 * AdaptRate, 11 * AdaptRate, 2 * AdaptRate, 22 * AdaptRate)];
+    m_pLineView.backgroundColor = [UIColor whiteColor];
+    m_pLineView.alpha = 0.6;
+    [m_pDateBtn addSubview:m_pLineView];
+    
+    // 右 星座
+    UIButton *m_pConstellBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    m_pConstellBtn.frame = CGRectMake(self.width/2, m_pWeekCollectionView.bottom + 35 * AdaptRate, self.width/2,45 * AdaptRate);
+    [self addSubview:m_pConstellBtn];
+    
+    //start
+    UILabel *m_pStartLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, m_pConstellBtn.width, SIZE_HEIGHT(15))];
+    [m_pStartLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueThinFont] FontSize:15 Placehoder:@"Start"];
+    m_pStartLabel.textAlignment = NSTextAlignmentCenter;
+    [m_pConstellBtn addSubview:m_pStartLabel];
+    
+    //星座
+    UILabel *m_pConstellLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, m_pStartLabel.bottom + 5 * AdaptRate, m_pConstellBtn.width, SIZE_HEIGHT(20))];
+    [m_pConstellLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager RegularFont] FontSize:20 Placehoder:@"Aquarius"];
+    m_pConstellLabel.textAlignment = NSTextAlignmentCenter;
+    [m_pConstellBtn addSubview:m_pConstellLabel];
+    
+    //向下箭头
+    UIImageView *m_pArrowImg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
+    m_pArrowImg.image = [UIImage imageNamed:@""];
+    [self addSubview:m_pArrowImg];
+    
+}
+//手相分析等
+- (void)addlistView
+{
+    NSArray *m_pBgImgArr = @[@"constellation_detail_counselor",@"constellation_detail_palma",@"constellation_detail_daytest"];
+    NSArray *m_ptitleArr = @[@"Consultation",@"Palm analysis",@"Daily test"];
+    
+    for (int i = 0; i < 3; i ++) {
+        //button背景
+        UIButton *m_pConsultation = [UIButton buttonWithType:UIButtonTypeCustom];
+        if (i == 2) {
+            m_pConsultation.frame = CGRectMake(6 * AdaptRate, m_pDateBtn.bottom + 15 * AdaptRate + 169 * AdaptRate * i, self.width - 12 * AdaptRate, 169 * AdaptRate);
+        }else{
+            m_pConsultation.frame = CGRectMake(6 * AdaptRate, m_pDateBtn.bottom + 28 * AdaptRate + 169 * AdaptRate * i, self.width - 12 * AdaptRate, 169 * AdaptRate);
+        }
+        [m_pConsultation setBackgroundImage:[UIImage imageNamed:m_pBgImgArr[i]] forState:UIControlStateNormal];
+        [self addSubview:m_pConsultation];
+        
+        //锁的外围圆圈
+        UIButton *m_pCircleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        m_pCircleBtn.bounds = CGRectMake(0,0,78 * AdaptRate, 77 * AdaptRate);
+        m_pCircleBtn.center = CGPointMake(m_pConsultation.width/2, 61 * AdaptRate);
+        [m_pCircleBtn setBackgroundImage:[UIImage imageNamed:@"constellation_detail_lockcircle"] forState:UIControlStateNormal];
+        [m_pConsultation addSubview:m_pCircleBtn];
+        
+        //锁
+        UIButton *m_pLockBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        m_pLockBtn.frame = CGRectMake(5 * AdaptRate,6 * AdaptRate,69 * AdaptRate, 69 * AdaptRate);
+        [m_pLockBtn setBackgroundImage:[UIImage imageNamed:@"constellation_detail_lock"] forState:UIControlStateNormal];
+        [m_pCircleBtn addSubview:m_pLockBtn];
+        
+        //标题
+        UILabel *m_pTitleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, m_pCircleBtn.bottom + 9 * AdaptRate, m_pConsultation.width, SIZE_HEIGHT(16))];
+        [m_pTitleLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:16 Placehoder: m_ptitleArr[i]];
+        m_pTitleLabel.textAlignment = NSTextAlignmentCenter;
+        [m_pConsultation addSubview:m_pTitleLabel];
+    }
     
 }
 //返回
@@ -102,15 +191,5 @@
     DPWeekCollectionViewCell *cell = [DPWeekCollectionViewCell cellWithCollectionView:collectionView identifier:WeekCollectionViewCell indexPath:indexPath];
     return cell;
 }
-
-
-
-
-
-
-
-
-
-
 
 @end

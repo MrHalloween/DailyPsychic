@@ -31,6 +31,18 @@
     return  @"Arial-BoldItalicMT";
 }
 
++ (NSString *)HelveticaNeueThinFont{
+    return @"HelveticaNeue-Thin";
+}
+
++ (NSString *)HelveticaNeueFont{
+    return @"HelveticaNeue";
+}
+
++ (NSString *)HelveticaNeueLightFont{
+    return @"HelveticaNeue-Light";
+}
+
 #pragma mark - 颜色
 + (UIColor *) Color333
 {

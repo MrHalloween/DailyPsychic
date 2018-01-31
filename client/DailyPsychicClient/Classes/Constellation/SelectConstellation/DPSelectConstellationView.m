@@ -45,12 +45,12 @@
     
     //返回按钮
     UIButton *pBackaBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    pBackaBtn.frame = CGRectMake(0, 48 * AdaptRate, 30 * AdaptRate, 35 * AdaptRate);
+    pBackaBtn.frame = CGRectMake(0, 35 * AdaptRate, 40 * AdaptRate, 35 * AdaptRate);
     [pBackaBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [pBgImg addSubview:pBackaBtn];
     
     //返回图片
-    UIImageView *pBackImg = [[UIImageView alloc]initWithFrame:CGRectMake(16 * AdaptRate, 0, 8 *AdaptRate, 14 * AdaptRate)];
+    UIImageView *pBackImg = [[UIImageView alloc]initWithFrame:CGRectMake(16 * AdaptRate, 13 * AdaptRate, 8 *AdaptRate, 14 * AdaptRate)];
     pBackImg.userInteractionEnabled = YES;
     pBackImg.image = [UIImage imageNamed:@"constellation_back"];
     [pBackaBtn addSubview:pBackImg];
@@ -76,14 +76,14 @@
     
     //星座名称
     UILabel *pNameLabel = [[UILabel alloc]init];
-    [pNameLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:20 Placehoder:@"Aries"];
+    [pNameLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:@"Aries"];
     pNameLabel.frame = CGRectMake(0, 50 * AdaptRate, pHexaganalImg.width, SIZE_HEIGHT(20));
     pNameLabel.textAlignment = NSTextAlignmentCenter;
     [pHexaganalImg addSubview:pNameLabel];
     
     //星座日期
     UILabel *pDateLable = [[UILabel alloc]init];
-    [pDateLable SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:11 Placehoder:@"03.21 - 04.20"];
+    [pDateLable SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:11 Placehoder:@"03.21 - 04.20"];
     pDateLable.frame = CGRectMake(0, pNameLabel.bottom + 10 * AdaptRate, pHexaganalImg.width, SIZE_HEIGHT(11));
     pDateLable.textAlignment = NSTextAlignmentCenter;
     [pHexaganalImg addSubview:pDateLable];
