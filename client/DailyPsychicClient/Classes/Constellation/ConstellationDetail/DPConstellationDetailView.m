@@ -77,6 +77,7 @@
 //Scrolllview
 - (void)addScrolllview{
     m_pScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, m_pWeekCollectionView.bottom, self.width, self.height - m_pWeekCollectionView.bottom)];
+    m_pScrollView.showsVerticalScrollIndicator = NO;
     [self addSubview:m_pScrollView];
 }
 //日期 星座
