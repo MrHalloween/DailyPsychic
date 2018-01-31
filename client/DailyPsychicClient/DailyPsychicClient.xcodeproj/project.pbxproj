@@ -227,6 +227,7 @@
 		D630AF6D2021DC1B0006B16C /* DPPalmAnalysisView.m in Sources */ = {isa = PBXBuildFile; fileRef = D630AF6C2021DC1B0006B16C /* DPPalmAnalysisView.m */; };
 		D630AF712021DDB40006B16C /* palm_main@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D630AF6F2021DDB40006B16C /* palm_main@3x.png */; };
 		D630AF722021DDB40006B16C /* palm_main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D630AF702021DDB40006B16C /* palm_main@2x.png */; };
+		D630AF752021EE270006B16C /* constellation.plist in Resources */ = {isa = PBXBuildFile; fileRef = D630AF742021EE270006B16C /* constellation.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -566,6 +567,7 @@
 		D630AF6C2021DC1B0006B16C /* DPPalmAnalysisView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPalmAnalysisView.m; sourceTree = "<group>"; };
 		D630AF6F2021DDB40006B16C /* palm_main@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_main@3x.png"; sourceTree = "<group>"; };
 		D630AF702021DDB40006B16C /* palm_main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_main@2x.png"; sourceTree = "<group>"; };
+		D630AF742021EE270006B16C /* constellation.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = constellation.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -622,17 +624,10 @@
 		1006BC9920158D400041DC86 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				1006BC9A20158D400041DC86 /* plist */,
+				D630AF732021EE190006B16C /* plist */,
 				1006BC9B20158D400041DC86 /* images */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		1006BC9A20158D400041DC86 /* plist */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = plist;
 			sourceTree = "<group>";
 		};
 		1006BC9B20158D400041DC86 /* images */ = {
@@ -1320,6 +1315,14 @@
 			path = PalmAnalysis;
 			sourceTree = "<group>";
 		};
+		D630AF732021EE190006B16C /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				D630AF742021EE270006B16C /* constellation.plist */,
+			);
+			path = plist;
+			sourceTree = "<group>";
+		};
 		D696ABCD201F67A8002235D5 /* Constellation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1445,6 +1448,7 @@
 				29BFF08820219E8A00B70DBD /* constellation_detail_selectdate@3x.png in Resources */,
 				1099F1EB201F245E00CE653E /* homepage_card_test@2x.png in Resources */,
 				29BABFCB20203B8800CE4E51 /* constellation_gemini_select@2x.png in Resources */,
+				D630AF752021EE270006B16C /* constellation.plist in Resources */,
 				29BABFBF20203B8800CE4E51 /* constellation_cancer_select@2x.png in Resources */,
 				29BABFC220203B8800CE4E51 /* constellation_capricorn@3x.png in Resources */,
 				29BABFE620203B8800CE4E51 /* constellation_scorpio_circle@3x.png in Resources */,
