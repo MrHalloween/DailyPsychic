@@ -569,13 +569,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10015C9120204B4000C54C94 /* PalmPsychic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PalmPsychic;
-			sourceTree = "<group>";
-		};
 		10015C9220204B4100C54C94 /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,7 +583,6 @@
 				1022E58720197ECF007E421B /* Widgets */,
 				1006BCA320158E6C0041DC86 /* BULibrary */,
 				1006BC9D20158D400041DC86 /* Classes */,
-				1006BCA120158D400041DC86 /* Module */,
 				1006BC9920158D400041DC86 /* Resource */,
 				1006BC9C20158D400041DC86 /* SupportLibrary */,
 				1006BC8220158C930041DC86 /* DailyPsychicClient */,
@@ -657,7 +649,6 @@
 		1006BC9D20158D400041DC86 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				10015C9120204B4000C54C94 /* PalmPsychic */,
 				10015C9220204B4100C54C94 /* Test */,
 				D696ABCD201F67A8002235D5 /* Constellation */,
 				104079E720170D4E00700777 /* HomePage */,
@@ -673,13 +664,6 @@
 				1006BCA020158D400041DC86 /* AppDelegate.m */,
 			);
 			path = Others;
-			sourceTree = "<group>";
-		};
-		1006BCA120158D400041DC86 /* Module */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Module;
 			sourceTree = "<group>";
 		};
 		1006BCA320158E6C0041DC86 /* BULibrary */ = {
