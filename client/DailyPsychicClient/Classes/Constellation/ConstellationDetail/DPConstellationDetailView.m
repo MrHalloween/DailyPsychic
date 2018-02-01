@@ -32,6 +32,7 @@
     }
     return self;
 }
+
 - (void)addTopView{
     
     // 背景
@@ -96,7 +97,7 @@
 
     //日期
     UILabel *m_pDateLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, m_pTodayLabel.bottom + 5 * AdaptRate, m_pDateBtn.width, SIZE_HEIGHT(20))];
-    [m_pDateLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager RegularFont] FontSize:20 Placehoder:@"2018.02.10"];
+    [m_pDateLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:@"2018.02.10"];
     m_pDateLabel.textAlignment = NSTextAlignmentCenter;
     [m_pDateBtn addSubview:m_pDateLabel];
     
@@ -118,15 +119,19 @@
     [m_pConstellBtn addSubview:m_pStartLabel];
     
     //星座
-    UILabel *m_pConstellLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, m_pStartLabel.bottom + 5 * AdaptRate, m_pConstellBtn.width, SIZE_HEIGHT(20))];
-    [m_pConstellLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager RegularFont] FontSize:20 Placehoder:@"Aquarius"];
+    UILabel *m_pConstellLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, m_pStartLabel.bottom + 5 * AdaptRate, 0, 0)];
+    [m_pConstellLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:@"Aquarius"];
+    [m_pConstellLabel sizeToFit];
+    CGPoint center = m_pConstellLabel.center;
+    center.x = m_pConstellBtn.width * 0.5;
+    m_pConstellLabel.center = center;
     m_pConstellLabel.textAlignment = NSTextAlignmentCenter;
     [m_pConstellBtn addSubview:m_pConstellLabel];
     
     //向下箭头
-    UIImageView *m_pArrowImg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
-    m_pArrowImg.image = [UIImage imageNamed:@""];
-    [self addSubview:m_pArrowImg];
+    UIImageView *m_pArrowImg = [[UIImageView alloc]initWithFrame:CGRectMake(m_pConstellLabel.right + 10 * AdaptRate, m_pConstellLabel.top + 12 * AdaptRate, 12 * AdaptRate, 8 * AdaptRate)];
+    m_pArrowImg.image = [UIImage imageNamed:@"constellation_detail_triangle"];
+    [m_pConstellBtn addSubview:m_pArrowImg];
     
 }
 //手相分析等

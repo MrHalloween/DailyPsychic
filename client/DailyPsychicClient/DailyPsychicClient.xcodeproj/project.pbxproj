@@ -128,6 +128,10 @@
 		29438F252020674D006B7497 /* SCHCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F222020674D006B7497 /* SCHCircleView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		29438F262020674D006B7497 /* SCHCircleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F242020674D006B7497 /* SCHCircleViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		29438F2920206771006B7497 /* SCHAnimationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F2720206771006B7497 /* SCHAnimationGroup.m */; };
+		2977F7F72022AB800016B617 /* constellation_detail_triangle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2977F7F52022AB7F0016B617 /* constellation_detail_triangle@3x.png */; };
+		2977F7F82022AB800016B617 /* constellation_detail_triangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2977F7F62022AB7F0016B617 /* constellation_detail_triangle@2x.png */; };
+		2977F7FB2022AEC10016B617 /* palm_getresult@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2977F7F92022AEC10016B617 /* palm_getresult@2x.png */; };
+		2977F7FC2022AEC10016B617 /* palm_getresult@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2977F7FA2022AEC10016B617 /* palm_getresult@3x.png */; };
 		29BABFA320203B8800CE4E51 /* constellation_ aries_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5520203B8800CE4E51 /* constellation_ aries_circle@2x.png */; };
 		29BABFA420203B8800CE4E51 /* constellation_aries_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5620203B8800CE4E51 /* constellation_aries_circle@3x.png */; };
 		29BABFA520203B8800CE4E51 /* constellation_aries_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5720203B8800CE4E51 /* constellation_aries_select@2x.png */; };
@@ -465,6 +469,10 @@
 		29438F242020674D006B7497 /* SCHCircleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHCircleViewCell.m; sourceTree = "<group>"; };
 		29438F2720206771006B7497 /* SCHAnimationGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHAnimationGroup.m; sourceTree = "<group>"; };
 		29438F2820206771006B7497 /* SCHAnimationGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCHAnimationGroup.h; sourceTree = "<group>"; };
+		2977F7F52022AB7F0016B617 /* constellation_detail_triangle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_detail_triangle@3x.png"; sourceTree = "<group>"; };
+		2977F7F62022AB7F0016B617 /* constellation_detail_triangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_detail_triangle@2x.png"; sourceTree = "<group>"; };
+		2977F7F92022AEC10016B617 /* palm_getresult@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_getresult@2x.png"; sourceTree = "<group>"; };
+		2977F7FA2022AEC10016B617 /* palm_getresult@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_getresult@3x.png"; sourceTree = "<group>"; };
 		29BABF5520203B8800CE4E51 /* constellation_ aries_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ aries_circle@2x.png"; sourceTree = "<group>"; };
 		29BABF5620203B8800CE4E51 /* constellation_aries_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aries_circle@3x.png"; sourceTree = "<group>"; };
 		29BABF5720203B8800CE4E51 /* constellation_aries_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aries_select@2x.png"; sourceTree = "<group>"; };
@@ -1192,6 +1200,8 @@
 		29BABF5420203B8800CE4E51 /* Constellation */ = {
 			isa = PBXGroup;
 			children = (
+				2977F7F62022AB7F0016B617 /* constellation_detail_triangle@2x.png */,
+				2977F7F52022AB7F0016B617 /* constellation_detail_triangle@3x.png */,
 				29BFF07C20219E8A00B70DBD /* constellation_detail_counselor@2x.png */,
 				29BFF07520219E8900B70DBD /* constellation_detail_counselor@3x.png */,
 				29BFF07620219E8900B70DBD /* constellation_detail_daytest@2x.png */,
@@ -1332,6 +1342,8 @@
 		D630AF6E2021DDB40006B16C /* PalmAnalysis */ = {
 			isa = PBXGroup;
 			children = (
+				2977F7F92022AEC10016B617 /* palm_getresult@2x.png */,
+				2977F7FA2022AEC10016B617 /* palm_getresult@3x.png */,
 				D630AF6F2021DDB40006B16C /* palm_main@3x.png */,
 				D630AF702021DDB40006B16C /* palm_main@2x.png */,
 			);
@@ -1423,6 +1435,7 @@
 				29BABFAD20203B8800CE4E51 /* constellation_aquarius@2x.png in Resources */,
 				29BABFED20203B8800CE4E51 /* constellation_taurus_select@2x.png in Resources */,
 				29BABFC520203B8800CE4E51 /* constellation_capricorn_select@2x.png in Resources */,
+				2977F7FC2022AEC10016B617 /* palm_getresult@3x.png in Resources */,
 				29BABFAC20203B8800CE4E51 /* constellation_virgo_select@3x.png in Resources */,
 				29BABFC020203B8800CE4E51 /* constellation_cancer_select@3x.png in Resources */,
 				29438F1E20205262006B7497 /* constellation_aries@3x.png in Resources */,
@@ -1458,9 +1471,11 @@
 				29BABFB720203B8800CE4E51 /* constellation_libra_circle@2x.png in Resources */,
 				29BABFD620203B8800CE4E51 /* constellation_main@3x.png in Resources */,
 				1099F1E8201F245E00CE653E /* homepage_card_star@3x.png in Resources */,
+				2977F7F82022AB800016B617 /* constellation_detail_triangle@2x.png in Resources */,
 				29BFF08520219E8A00B70DBD /* constellation_detail_lockcircle@3x.png in Resources */,
 				29BFF08720219E8A00B70DBD /* constellation_detail_selectpoint@2x.png in Resources */,
 				29BABFD520203B8800CE4E51 /* constellation_main@2x.png in Resources */,
+				2977F7FB2022AEC10016B617 /* palm_getresult@2x.png in Resources */,
 				29BFF08020219E8A00B70DBD /* constellation_detail_daytest@3x.png in Resources */,
 				29BABFA420203B8800CE4E51 /* constellation_aries_circle@3x.png in Resources */,
 				1006BD1220158E6C0041DC86 /* README.md in Resources */,
@@ -1487,6 +1502,7 @@
 				29BFF08B20219E8A00B70DBD /* constellation_detail_palma@3x.png in Resources */,
 				29BABFC620203B8800CE4E51 /* constellation_capricorn_select@3x.png in Resources */,
 				29BABFCD20203B8800CE4E51 /* constellation_hexagona@3x.png in Resources */,
+				2977F7F72022AB800016B617 /* constellation_detail_triangle@3x.png in Resources */,
 				29BABFBE20203B8800CE4E51 /* constellation_cancer_circle@3x.png in Resources */,
 				29BABFAB20203B8800CE4E51 /* constellation_virgo_select@2x.png in Resources */,
 				29BABFB620203B8800CE4E51 /* constellation_libra@3x.png in Resources */,
