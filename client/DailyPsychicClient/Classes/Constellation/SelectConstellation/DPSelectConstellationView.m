@@ -38,21 +38,22 @@
     //主图-底背景
     m_pMainImg = [[UIImageView alloc]initWithFrame:CGRectMake(17 * AdaptRate, 102 * AdaptRate, 342 * AdaptRate, 409 * AdaptRate)];
     m_pMainImg.image = [UIImage imageNamed:@"constellation_main"];
+    m_pMainImg.userInteractionEnabled = YES;
     [self addSubview:m_pMainImg];
+    
+    //六芒星
+    UIImageView *pHexaganalImg = [[UIImageView alloc]initWithFrame:CGRectMake(88 * AdaptRate, 123 * AdaptRate, 168 * AdaptRate, 168 * AdaptRate)];
+    pHexaganalImg.userInteractionEnabled = YES;
+    pHexaganalImg.image = [UIImage imageNamed:@"constellation_hexagonal"];
+    [m_pMainImg addSubview:pHexaganalImg];
     
     //旋转的星座
     m_pCircle_view = [[SCHCircleView alloc]initWithFrame:CGRectMake(23 * AdaptRate, 46 * AdaptRate, m_pMainImg.width - 46 * AdaptRate, m_pMainImg.width - 46 * AdaptRate)];
     m_pCircle_view.circle_view_data_source = self;
     m_pCircle_view.circle_view_delegate    = self;
-    m_pCircle_view.show_circle_style       = SCHShowCircleDefault;    m_pCircle_view.circle_layout_style     = SChCircleLayoutNormal;
-    m_pCircle_view.backgroundColor = [UIColor redColor];
+    m_pCircle_view.show_circle_style       = SCHShowCircleDefault;    m_pCircle_view.circle_layout_style = SChCircleLayoutNormal;
     [m_pCircle_view reloadData];
     [m_pMainImg addSubview:m_pCircle_view];
-    
-    //六芒星
-    UIImageView *pHexaganalImg = [[UIImageView alloc]initWithFrame:CGRectMake(88 * AdaptRate, 123 * AdaptRate, 168 * AdaptRate, 168 * AdaptRate)];
-    pHexaganalImg.image = [UIImage imageNamed:@"constellation_hexagonal"];
-    [m_pMainImg addSubview:pHexaganalImg];
     
     //星座名称
     UILabel *pNameLabel = [[UILabel alloc]init];
@@ -90,7 +91,9 @@
 
 - (CGPoint)centerOfCircleView:(SCHCircleView *)circle_view
 {
-    return CGPointMake(m_pMainImg.center.x, m_pMainImg.center.y);
+    NSLog(@"%f--%f",self.width/2,self.height/2);
+    
+    return CGPointMake((m_pMainImg.width - 96 * AdaptRate)/2,(m_pMainImg.width - 78 * AdaptRate)/2);
 }
 
 - (NSInteger)numberOfCellInCircleView:(SCHCircleView *)circle_view
@@ -104,6 +107,11 @@
     DPConstellationModel * model = [DPConstellationModel ModelWithDictionary:m_arrData[index_circle_cell]];
     cell.model = model;
     return cell;
+}
+
+- (CGFloat)radiusOfCircleView:(SCHCircleView *)circle_view
+{
+    return m_pCircle_view.width/2 - 20 * AdaptRate;
 }
 
 - (CGFloat)deviationRadianOfCircleView:(SCHCircleView *)circle_view
