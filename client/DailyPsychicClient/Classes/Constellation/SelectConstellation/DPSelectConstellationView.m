@@ -22,9 +22,9 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-//        m_arrData = [NSMutableArray arrayWithObjects:@{@"id":@0,@"title":@"手相分析",@"image":@"homepage_card_hand.png"},
-//                     @{@"id":@1,@"title":@"星座",@"image":@"homepage_card_star.png"},
-//                     @{@"id":@2,@"title":@"测试",@"image":@"homepage_card_test.png"}, nil];
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"constellation" ofType:@"plist"];
+        NSArray *m_arrConstel = [NSArray arrayWithContentsOfFile: plistPath];
+        m_arrData = [NSMutableArray arrayWithArray:m_arrConstel];
         [self addSubViews];
     }
     return self;

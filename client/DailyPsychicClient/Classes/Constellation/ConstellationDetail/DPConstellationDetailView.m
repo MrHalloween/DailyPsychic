@@ -14,6 +14,7 @@
 {
     UICollectionView *m_pWeekCollectionView;
     UIButton *m_pDateBtn;
+    UIScrollView *m_pScrollView;
 }
 @end
 
@@ -25,6 +26,7 @@
     if (self) {
         [self addTopView];
         [self addCollectionView];
+        [self addScrolllview];
         [self addDetailView];
         [self addlistView];
     }
@@ -73,13 +75,19 @@
     m_pWeekCollectionView.backgroundColor = [UIColor clearColor];
     [self addSubview:m_pWeekCollectionView];
 }
+//Scrolllview
+- (void)addScrolllview{
+    m_pScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, m_pWeekCollectionView.bottom, self.width, self.height - m_pWeekCollectionView.bottom)];
+    m_pScrollView.showsVerticalScrollIndicator = NO;
+    [self addSubview:m_pScrollView];
+}
 //日期 星座
 - (void)addDetailView
 {
     // 左 日期
     m_pDateBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    m_pDateBtn.frame = CGRectMake(0, m_pWeekCollectionView.bottom + 35 * AdaptRate, self.width/2,45 * AdaptRate);
-    [self addSubview:m_pDateBtn];
+    m_pDateBtn.frame = CGRectMake(0, 35 * AdaptRate, self.width/2,45 * AdaptRate);
+    [m_pScrollView addSubview:m_pDateBtn];
     
     //today
     UILabel *m_pTodayLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, m_pDateBtn.width, SIZE_HEIGHT(15))];
@@ -101,8 +109,8 @@
     
     // 右 星座
     UIButton *m_pConstellBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    m_pConstellBtn.frame = CGRectMake(self.width/2, m_pWeekCollectionView.bottom + 35 * AdaptRate, self.width/2,45 * AdaptRate);
-    [self addSubview:m_pConstellBtn];
+    m_pConstellBtn.frame = CGRectMake(self.width/2, 35 * AdaptRate, self.width/2,45 * AdaptRate);
+    [m_pScrollView addSubview:m_pConstellBtn];
     
     //start
     UILabel *m_pStartLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, m_pConstellBtn.width, SIZE_HEIGHT(15))];
@@ -137,7 +145,7 @@
             m_pConsultation.frame = CGRectMake(6 * AdaptRate, m_pDateBtn.bottom + 28 * AdaptRate + 169 * AdaptRate * i, self.width - 12 * AdaptRate, 169 * AdaptRate);
         }
         [m_pConsultation setBackgroundImage:[UIImage imageNamed:m_pBgImgArr[i]] forState:UIControlStateNormal];
-        [self addSubview:m_pConsultation];
+        [m_pScrollView addSubview:m_pConsultation];
         
         //锁的外围圆圈
         UIButton *m_pCircleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -157,6 +165,7 @@
         [m_pTitleLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:16 Placehoder: m_ptitleArr[i]];
         m_pTitleLabel.textAlignment = NSTextAlignmentCenter;
         [m_pConsultation addSubview:m_pTitleLabel];
+        m_pScrollView.contentSize = CGSizeMake(self.width, m_pConsultation.bottom );
     }
     
 }

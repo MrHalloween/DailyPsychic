@@ -111,6 +111,9 @@
 		1099F1F0201F245E00CE653E /* homepage_ok@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1E4201F245E00CE653E /* homepage_ok@3x.png */; };
 		1099F1F1201F245E00CE653E /* homepage_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1E5201F245E00CE653E /* homepage_bg@2x.png */; };
 		1099F1F2201F245E00CE653E /* homepage_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1E6201F245E00CE653E /* homepage_bg@3x.png */; };
+		10B3F3C820220429003ACADE /* DPTestListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B3F3C720220429003ACADE /* DPTestListController.m */; };
+		10B3F3CB2022043D003ACADE /* DPTestListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B3F3CA2022043D003ACADE /* DPTestListView.m */; };
+		10B3F3CE2022044D003ACADE /* DPTestListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B3F3CD2022044D003ACADE /* DPTestListCell.m */; };
 		10D009262020B5DC00ADAADB /* DPTestCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D009252020B5DC00ADAADB /* DPTestCardController.m */; };
 		10D009292020B5EA00ADAADB /* DPTestCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D009282020B5EA00ADAADB /* DPTestCardView.m */; };
 		10D009312020B85100ADAADB /* test_answer_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D0092B2020B85100ADAADB /* test_answer_bg@3x.png */; };
@@ -223,6 +226,11 @@
 		29BFF08A20219E8A00B70DBD /* constellation_detail_counselor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BFF07C20219E8A00B70DBD /* constellation_detail_counselor@2x.png */; };
 		29BFF08B20219E8A00B70DBD /* constellation_detail_palma@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BFF07D20219E8A00B70DBD /* constellation_detail_palma@3x.png */; };
 		29BFF08C20219E8A00B70DBD /* constellation_detail_lockcircle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BFF07E20219E8A00B70DBD /* constellation_detail_lockcircle@2x.png */; };
+		D630AF6A2021DBDF0006B16C /* DPPalmAnalysisController.m in Sources */ = {isa = PBXBuildFile; fileRef = D630AF692021DBDF0006B16C /* DPPalmAnalysisController.m */; };
+		D630AF6D2021DC1B0006B16C /* DPPalmAnalysisView.m in Sources */ = {isa = PBXBuildFile; fileRef = D630AF6C2021DC1B0006B16C /* DPPalmAnalysisView.m */; };
+		D630AF712021DDB40006B16C /* palm_main@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D630AF6F2021DDB40006B16C /* palm_main@3x.png */; };
+		D630AF722021DDB40006B16C /* palm_main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D630AF702021DDB40006B16C /* palm_main@2x.png */; };
+		D630AF752021EE270006B16C /* constellation.plist in Resources */ = {isa = PBXBuildFile; fileRef = D630AF742021EE270006B16C /* constellation.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -431,6 +439,12 @@
 		1099F1E4201F245E00CE653E /* homepage_ok@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_ok@3x.png"; sourceTree = "<group>"; };
 		1099F1E5201F245E00CE653E /* homepage_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_bg@2x.png"; sourceTree = "<group>"; };
 		1099F1E6201F245E00CE653E /* homepage_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_bg@3x.png"; sourceTree = "<group>"; };
+		10B3F3C620220429003ACADE /* DPTestListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTestListController.h; sourceTree = "<group>"; };
+		10B3F3C720220429003ACADE /* DPTestListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTestListController.m; sourceTree = "<group>"; };
+		10B3F3C92022043D003ACADE /* DPTestListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTestListView.h; sourceTree = "<group>"; };
+		10B3F3CA2022043D003ACADE /* DPTestListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTestListView.m; sourceTree = "<group>"; };
+		10B3F3CC2022044D003ACADE /* DPTestListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTestListCell.h; sourceTree = "<group>"; };
+		10B3F3CD2022044D003ACADE /* DPTestListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTestListCell.m; sourceTree = "<group>"; };
 		10D009242020B5DC00ADAADB /* DPTestCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTestCardController.h; sourceTree = "<group>"; };
 		10D009252020B5DC00ADAADB /* DPTestCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTestCardController.m; sourceTree = "<group>"; };
 		10D009272020B5EA00ADAADB /* DPTestCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTestCardView.h; sourceTree = "<group>"; };
@@ -556,6 +570,13 @@
 		29BFF07D20219E8A00B70DBD /* constellation_detail_palma@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_detail_palma@3x.png"; sourceTree = "<group>"; };
 		29BFF07E20219E8A00B70DBD /* constellation_detail_lockcircle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_detail_lockcircle@2x.png"; sourceTree = "<group>"; };
 		29BFF08D2021AC6300B70DBD /* Identify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Identify.h; sourceTree = "<group>"; };
+		D630AF682021DBDF0006B16C /* DPPalmAnalysisController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPalmAnalysisController.h; sourceTree = "<group>"; };
+		D630AF692021DBDF0006B16C /* DPPalmAnalysisController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPalmAnalysisController.m; sourceTree = "<group>"; };
+		D630AF6B2021DC1B0006B16C /* DPPalmAnalysisView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPalmAnalysisView.h; sourceTree = "<group>"; };
+		D630AF6C2021DC1B0006B16C /* DPPalmAnalysisView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPalmAnalysisView.m; sourceTree = "<group>"; };
+		D630AF6F2021DDB40006B16C /* palm_main@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_main@3x.png"; sourceTree = "<group>"; };
+		D630AF702021DDB40006B16C /* palm_main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_main@2x.png"; sourceTree = "<group>"; };
+		D630AF742021EE270006B16C /* constellation.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = constellation.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -569,16 +590,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10015C9120204B4000C54C94 /* PalmPsychic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PalmPsychic;
-			sourceTree = "<group>";
-		};
 		10015C9220204B4100C54C94 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				10B3F3C52022040E003ACADE /* TestList */,
 				10D009232020B5CD00ADAADB /* TestCard */,
 			);
 			path = Test;
@@ -590,7 +605,6 @@
 				1022E58720197ECF007E421B /* Widgets */,
 				1006BCA320158E6C0041DC86 /* BULibrary */,
 				1006BC9D20158D400041DC86 /* Classes */,
-				1006BCA120158D400041DC86 /* Module */,
 				1006BC9920158D400041DC86 /* Resource */,
 				1006BC9C20158D400041DC86 /* SupportLibrary */,
 				1006BC8220158C930041DC86 /* DailyPsychicClient */,
@@ -620,22 +634,16 @@
 		1006BC9920158D400041DC86 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				1006BC9A20158D400041DC86 /* plist */,
+				D630AF732021EE190006B16C /* plist */,
 				1006BC9B20158D400041DC86 /* images */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		1006BC9A20158D400041DC86 /* plist */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = plist;
-			sourceTree = "<group>";
-		};
 		1006BC9B20158D400041DC86 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D630AF6E2021DDB40006B16C /* PalmAnalysis */,
 				10D0092A2020B85100ADAADB /* Test */,
 				29BABF5420203B8800CE4E51 /* Constellation */,
 				1099F1DA201F245E00CE653E /* HomePage */,
@@ -657,7 +665,7 @@
 		1006BC9D20158D400041DC86 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				10015C9120204B4000C54C94 /* PalmPsychic */,
+				D630AF672021DBAE0006B16C /* PalmPsychic */,
 				10015C9220204B4100C54C94 /* Test */,
 				D696ABCD201F67A8002235D5 /* Constellation */,
 				104079E720170D4E00700777 /* HomePage */,
@@ -673,13 +681,6 @@
 				1006BCA020158D400041DC86 /* AppDelegate.m */,
 			);
 			path = Others;
-			sourceTree = "<group>";
-		};
-		1006BCA120158D400041DC86 /* Module */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Module;
 			sourceTree = "<group>";
 		};
 		1006BCA320158E6C0041DC86 /* BULibrary */ = {
@@ -1138,6 +1139,19 @@
 			path = HomePage;
 			sourceTree = "<group>";
 		};
+		10B3F3C52022040E003ACADE /* TestList */ = {
+			isa = PBXGroup;
+			children = (
+				10B3F3C620220429003ACADE /* DPTestListController.h */,
+				10B3F3C720220429003ACADE /* DPTestListController.m */,
+				10B3F3C92022043D003ACADE /* DPTestListView.h */,
+				10B3F3CA2022043D003ACADE /* DPTestListView.m */,
+				10B3F3CC2022044D003ACADE /* DPTestListCell.h */,
+				10B3F3CD2022044D003ACADE /* DPTestListCell.m */,
+			);
+			path = TestList;
+			sourceTree = "<group>";
+		};
 		10D009232020B5CD00ADAADB /* TestCard */ = {
 			isa = PBXGroup;
 			children = (
@@ -1304,6 +1318,34 @@
 			path = SelectConstellation;
 			sourceTree = "<group>";
 		};
+		D630AF672021DBAE0006B16C /* PalmPsychic */ = {
+			isa = PBXGroup;
+			children = (
+				D630AF682021DBDF0006B16C /* DPPalmAnalysisController.h */,
+				D630AF692021DBDF0006B16C /* DPPalmAnalysisController.m */,
+				D630AF6B2021DC1B0006B16C /* DPPalmAnalysisView.h */,
+				D630AF6C2021DC1B0006B16C /* DPPalmAnalysisView.m */,
+			);
+			path = PalmPsychic;
+			sourceTree = "<group>";
+		};
+		D630AF6E2021DDB40006B16C /* PalmAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				D630AF6F2021DDB40006B16C /* palm_main@3x.png */,
+				D630AF702021DDB40006B16C /* palm_main@2x.png */,
+			);
+			path = PalmAnalysis;
+			sourceTree = "<group>";
+		};
+		D630AF732021EE190006B16C /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				D630AF742021EE270006B16C /* constellation.plist */,
+			);
+			path = plist;
+			sourceTree = "<group>";
+		};
 		D696ABCD201F67A8002235D5 /* Constellation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1395,6 +1437,7 @@
 				29BABFCA20203B8800CE4E51 /* constellation_gemini_circle@3x.png in Resources */,
 				29BABFE420203B8800CE4E51 /* constellation_scorpio@3x.png in Resources */,
 				29BABFAA20203B8800CE4E51 /* constellation_virgo_circle@3x.png in Resources */,
+				D630AF712021DDB40006B16C /* palm_main@3x.png in Resources */,
 				29BABFD120203B8800CE4E51 /* constellation_leo_circle@2x.png in Resources */,
 				29BFF08A20219E8A00B70DBD /* constellation_detail_counselor@2x.png in Resources */,
 				29BABFB020203B8800CE4E51 /* constellation_aquarius_circle@3x.png in Resources */,
@@ -1428,6 +1471,7 @@
 				29BFF08820219E8A00B70DBD /* constellation_detail_selectdate@3x.png in Resources */,
 				1099F1EB201F245E00CE653E /* homepage_card_test@2x.png in Resources */,
 				29BABFCB20203B8800CE4E51 /* constellation_gemini_select@2x.png in Resources */,
+				D630AF752021EE270006B16C /* constellation.plist in Resources */,
 				29BABFBF20203B8800CE4E51 /* constellation_cancer_select@2x.png in Resources */,
 				29BABFC220203B8800CE4E51 /* constellation_capricorn@3x.png in Resources */,
 				29BABFE620203B8800CE4E51 /* constellation_scorpio_circle@3x.png in Resources */,
@@ -1484,6 +1528,7 @@
 				29BABFE720203B8800CE4E51 /* constellation_start@2x.png in Resources */,
 				29BABFEF20203B8800CE4E51 /* constellation_triangle@2x.png in Resources */,
 				1006BD9D20158E770041DC86 /* MJRefresh.bundle in Resources */,
+				D630AF722021DDB40006B16C /* palm_main@2x.png in Resources */,
 				1099F1EC201F245E00CE653E /* homepage_card_hand@3x.png in Resources */,
 				29BABFEC20203B8800CE4E51 /* constellation_taurus_circle@3x.png in Resources */,
 				29BABFB920203B8800CE4E51 /* constellation_libra_select@2x.png in Resources */,
@@ -1502,13 +1547,16 @@
 				1006BD1F20158E6C0041DC86 /* TextManager.m in Sources */,
 				1006BDC520158E770041DC86 /* UIView+WebCache.m in Sources */,
 				1006BDA420158E770041DC86 /* MJRefreshAutoGifFooter.m in Sources */,
+				10B3F3C820220429003ACADE /* DPTestListController.m in Sources */,
 				1006BD9A20158E770041DC86 /* MBProgressHUD+Add.m in Sources */,
 				1006BDB820158E770041DC86 /* UIImageView+HighlightedWebCache.m in Sources */,
+				10B3F3CE2022044D003ACADE /* DPTestListCell.m in Sources */,
 				1006BD1620158E6C0041DC86 /* BUUserDetailsController.m in Sources */,
 				1022E58E20197ECF007E421B /* NewPagedFlowView.m in Sources */,
 				1006BD9F20158E770041DC86 /* UIView+MJExtension.m in Sources */,
 				1006BDBC20158E770041DC86 /* SDWebImageCompat.m in Sources */,
 				1022E58D20197ECF007E421B /* PGIndexBannerSubiew.m in Sources */,
+				D630AF6A2021DBDF0006B16C /* DPPalmAnalysisController.m in Sources */,
 				1006BDBA20158E770041DC86 /* UIImage+GIF.m in Sources */,
 				1006BD0F20158E6C0041DC86 /* NSString+TimeFormat.m in Sources */,
 				29BFF06F202193C900B70DBD /* DPSelectConstellationController.m in Sources */,
@@ -1574,11 +1622,13 @@
 				1006BDA920158E770041DC86 /* MJRefreshFooter.m in Sources */,
 				29438F2920206771006B7497 /* SCHAnimationGroup.m in Sources */,
 				1006BD1820158E6C0041DC86 /* TRYearAndMonthSelectedView.m in Sources */,
+				10B3F3CB2022043D003ACADE /* DPTestListView.m in Sources */,
 				104079EA20170D9A00700777 /* DPHomePageController.m in Sources */,
 				29438F262020674D006B7497 /* SCHCircleViewCell.m in Sources */,
 				1006BD2420158E6C0041DC86 /* AFTabBarItem.m in Sources */,
 				29BFF06B202193C900B70DBD /* DPConstellationDetailController.m in Sources */,
 				1006BDA820158E770041DC86 /* MJRefreshGifHeader.m in Sources */,
+				D630AF6D2021DC1B0006B16C /* DPPalmAnalysisView.m in Sources */,
 				1006BD2020158E6C0041DC86 /* AlertManager.m in Sources */,
 				1006BDC420158E770041DC86 /* UIView+WebCacheOperation.m in Sources */,
 				1006BDBE20158E770041DC86 /* SDImageCache.m in Sources */,
@@ -1714,7 +1764,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6M534QFX64;
+				DEVELOPMENT_TEAM = 35H68DZCUS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;
@@ -1732,7 +1782,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6M534QFX64;
+				DEVELOPMENT_TEAM = 35H68DZCUS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;
