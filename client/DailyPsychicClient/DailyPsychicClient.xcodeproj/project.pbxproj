@@ -132,6 +132,7 @@
 		2977F7F82022AB800016B617 /* constellation_detail_triangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2977F7F62022AB7F0016B617 /* constellation_detail_triangle@2x.png */; };
 		2977F7FB2022AEC10016B617 /* palm_getresult@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2977F7F92022AEC10016B617 /* palm_getresult@2x.png */; };
 		2977F7FC2022AEC10016B617 /* palm_getresult@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2977F7FA2022AEC10016B617 /* palm_getresult@3x.png */; };
+		2977F7FF2022B7280016B617 /* DPConstellationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2977F7FE2022B7280016B617 /* DPConstellationModel.m */; };
 		29BABFA320203B8800CE4E51 /* constellation_ aries_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5520203B8800CE4E51 /* constellation_ aries_circle@2x.png */; };
 		29BABFA420203B8800CE4E51 /* constellation_aries_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5620203B8800CE4E51 /* constellation_aries_circle@3x.png */; };
 		29BABFA520203B8800CE4E51 /* constellation_aries_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5720203B8800CE4E51 /* constellation_aries_select@2x.png */; };
@@ -473,6 +474,8 @@
 		2977F7F62022AB7F0016B617 /* constellation_detail_triangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_detail_triangle@2x.png"; sourceTree = "<group>"; };
 		2977F7F92022AEC10016B617 /* palm_getresult@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_getresult@2x.png"; sourceTree = "<group>"; };
 		2977F7FA2022AEC10016B617 /* palm_getresult@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_getresult@3x.png"; sourceTree = "<group>"; };
+		2977F7FD2022B7280016B617 /* DPConstellationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPConstellationModel.h; sourceTree = "<group>"; };
+		2977F7FE2022B7280016B617 /* DPConstellationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPConstellationModel.m; sourceTree = "<group>"; };
 		29BABF5520203B8800CE4E51 /* constellation_ aries_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ aries_circle@2x.png"; sourceTree = "<group>"; };
 		29BABF5620203B8800CE4E51 /* constellation_aries_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aries_circle@3x.png"; sourceTree = "<group>"; };
 		29BABF5720203B8800CE4E51 /* constellation_aries_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aries_select@2x.png"; sourceTree = "<group>"; };
@@ -1324,6 +1327,8 @@
 				29BFF068202193C900B70DBD /* DPSelectConstellationController.m */,
 				29BFF069202193C900B70DBD /* DPSelectConstellationView.h */,
 				29BFF06A202193C900B70DBD /* DPSelectConstellationView.m */,
+				2977F7FD2022B7280016B617 /* DPConstellationModel.h */,
+				2977F7FE2022B7280016B617 /* DPConstellationModel.m */,
 			);
 			path = SelectConstellation;
 			sourceTree = "<group>";
@@ -1580,6 +1585,7 @@
 				104079ED20170DB100700777 /* DPHomePageView.m in Sources */,
 				1006BDAE20158E770041DC86 /* AFURLResponseSerialization.m in Sources */,
 				1006BDC020158E770041DC86 /* NSData+ImageContentType.m in Sources */,
+				2977F7FF2022B7280016B617 /* DPConstellationModel.m in Sources */,
 				1006BD2E20158E6C0041DC86 /* BUBaseResponseData.m in Sources */,
 				1006BDAF20158E770041DC86 /* AFHTTPSessionManager.m in Sources */,
 				1006BD0E20158E6C0041DC86 /* UIViewExt.m in Sources */,

@@ -19,4 +19,7 @@
     }
     return self;
 }
+- (void)setModel:(DPConstellationModel *)model{
+    self.imageView.image = [UIImage imageNamed:model.image];
+}
 @end

@@ -9,5 +9,5 @@
 #ifndef Identify_h
 #define Identify_h
 #define WeekCollectionViewCell @"WeekCollectionViewCell"
-
+#define macro
 #endif /* Identify_h */
