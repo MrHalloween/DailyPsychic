@@ -20,6 +20,7 @@
     return self;
 }
 - (void)setModel:(DPConstellationModel *)model{
-    self.imageView.image = [UIImage imageNamed:model.image];
+    NSString *imgStr = [NSString stringWithFormat:@"constellation_%@",model.image];
+    self.imageView.image = [UIImage imageNamed:imgStr];
 }
 @end
