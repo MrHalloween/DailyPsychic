@@ -25,11 +25,12 @@
 {
     ///背景
     m_pBgImg = [[UIImageView alloc]init];
-    [m_pBgImg setImage:[UIImage imageNamed:@"test_list_bg.png"]];
+    [m_pBgImg setImage:[UIImage imageNamed:@"palm_resultbg.png"]];
     [self.contentView addSubview:m_pBgImg];
     
     //标题
     m_pTitle = [[UILabel alloc]init];
+    m_pTitle.textAlignment = NSTextAlignmentCenter;
     [m_pTitle SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:@"Hand"];
     [m_pBgImg addSubview:m_pTitle];
     
@@ -51,8 +52,9 @@
 {
     [super layoutSubviews];
     m_pBgImg.frame = CGRectMake(18 * AdaptRate, 0, 339 * AdaptRate, 234 * AdaptRate);
-    m_PlineView.frame = CGRectMake(20 * AdaptRate, 58 *AdaptRate, 281 * AdaptRate, 1 * AdaptRate);
-    m_pContent.frame = CGRectMake(19 * AdaptRate,m_PlineView.bottom + 33 * AdaptRate, 273 * AdaptRate, 102 * AdaptRate);
+    m_pTitle.frame = CGRectMake(0, 22 * AdaptRate, m_pBgImg.width, SIZE_HEIGHT(20));
+    m_PlineView.frame = CGRectMake(40 * AdaptRate, m_pTitle.bottom + 18 *AdaptRate, 259 * AdaptRate, 1 * AdaptRate);
+    m_pContent.frame = CGRectMake(40 * AdaptRate,m_PlineView.bottom + 25 * AdaptRate, 259 * AdaptRate, 102 * AdaptRate);
     
 }
 
