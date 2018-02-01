@@ -33,7 +33,7 @@
     self = [super initWithFrame:frame];
     if (self)
     {
-        [self addEvent];
+//        [self addEvent];
         
     }
     return self;
