@@ -10,7 +10,7 @@
 #import "DPHomePageView.h"
 #import "DPSelectConstellationController.h"
 #import "DPTestListController.h"
-#import "DPPalmAnalysisController.h"
+#import "DPTakePhotoController.h"
 
 @interface DPHomePageController ()<DPHomePageViewDelegate>
 {
@@ -33,7 +33,7 @@
     
     BUCustomViewController *pVC;
     switch (pageNumber) {
-        case 0: pVC = [[DPPalmAnalysisController alloc]init]; break;
+        case 0: pVC = [[DPTakePhotoController alloc]init]; break;
         case 1: pVC = [[DPSelectConstellationController alloc]init]; break;
         case 2: pVC = [[DPTestListController alloc]init]; break;
         default:
