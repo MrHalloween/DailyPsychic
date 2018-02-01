@@ -19,5 +19,6 @@
 
 @property (nonatomic,weak) id<DPTakePhotoViewDelegate>takePhotoDelegate;
 
+@property (nonatomic,assign) int righthand;
 
 @end

@@ -18,7 +18,7 @@
 		<key>headImage</key>
 		<string>constellation_detail_palma</string>
 		<key>title</key>
-		<string>Who is your soul mate Who is your soul mate?</string>
+		<string>What kind of guy can you attract ?</string>
 		<key>watchNum</key>
 		<string>200</string>
 	</dict>
@@ -28,9 +28,9 @@
 		<key>headImage</key>
 		<string>constellation_detail_palma</string>
 		<key>title</key>
-		<string>Who is your soul mate?</string>
+		<string>Which wedding dress suits your personality?</string>
 		<key>watchNum</key>
-		<string>1200</string>
+		<string>490</string>
 	</dict>
 	<dict>
 		<key>testId</key>
@@ -38,9 +38,9 @@
 		<key>headImage</key>
 		<string>constellation_detail_palma</string>
 		<key>title</key>
-		<string>Who is your soul mate?</string>
+		<string>Which symbol is your perfect match?</string>
 		<key>watchNum</key>
-		<string>1200</string>
+		<string>798</string>
 	</dict>
 	<dict>
 		<key>testId</key>
@@ -48,79 +48,9 @@
 		<key>headImage</key>
 		<string>constellation_detail_palma</string>
 		<key>title</key>
-		<string>Who is your soul mate?</string>
+		<string>What should your name be? （Only for girls）</string>
 		<key>watchNum</key>
-		<string>1200</string>
-	</dict>
-	<dict>
-		<key>testId</key>
-		<string>1</string>
-		<key>headImage</key>
-		<string>constellation_detail_palma</string>
-		<key>title</key>
-		<string>Who is your soul mate?</string>
-		<key>watchNum</key>
-		<string>1200</string>
-	</dict>
-	<dict>
-		<key>testId</key>
-		<string>1</string>
-		<key>headImage</key>
-		<string>constellation_detail_palma</string>
-		<key>title</key>
-		<string>Who is your soul mate?</string>
-		<key>watchNum</key>
-		<string>1200</string>
-	</dict>
-	<dict>
-		<key>testId</key>
-		<string>1</string>
-		<key>headImage</key>
-		<string>constellation_detail_palma</string>
-		<key>title</key>
-		<string>Who is your soul mate?</string>
-		<key>watchNum</key>
-		<string>1200</string>
-	</dict>
-	<dict>
-		<key>testId</key>
-		<string>1</string>
-		<key>headImage</key>
-		<string>constellation_detail_palma</string>
-		<key>title</key>
-		<string>Who is your soul mate?</string>
-		<key>watchNum</key>
-		<string>1200</string>
-	</dict>
-	<dict>
-		<key>testId</key>
-		<string>1</string>
-		<key>headImage</key>
-		<string>constellation_detail_palma</string>
-		<key>title</key>
-		<string>Who is your soul mate?</string>
-		<key>watchNum</key>
-		<string>1200</string>
-	</dict>
-	<dict>
-		<key>testId</key>
-		<string>1</string>
-		<key>headImage</key>
-		<string>constellation_detail_palma</string>
-		<key>title</key>
-		<string>Who is your soul mate?</string>
-		<key>watchNum</key>
-		<string>1200</string>
-	</dict>
-	<dict>
-		<key>testId</key>
-		<string>1</string>
-		<key>headImage</key>
-		<string>constellation_detail_palma</string>
-		<key>title</key>
-		<string>Who is your soul mate?</string>
-		<key>watchNum</key>
-		<string>1200</string>
+		<string>3400</string>
 	</dict>
 </array>
 </plist>

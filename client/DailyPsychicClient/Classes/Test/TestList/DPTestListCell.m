@@ -32,7 +32,7 @@
     
     ///缩略图
     m_pThumbnail = [[UIImageView alloc]init];
-    [m_pThumbnail setImage:[UIImage imageNamed:@"constellation_detail_palma"]];
+    [m_pThumbnail setImage:[UIImage imageNamed:@"test_pic.png"]];
     m_pThumbnail.bounds = CGRectMake(0, 0, 95 * [AppConfigure GetLengthAdaptRate], 67 * [AppConfigure GetLengthAdaptRate]);
     [m_pContentImg addSubview:m_pThumbnail];
     
@@ -44,11 +44,11 @@
     
     m_pTitle = [[UILabel alloc]init];
     m_pTitle.numberOfLines = 2;
-    [m_pTitle SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:13 Placehoder:@"Who is your soul mate?"];
+    [m_pTitle SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:14 Placehoder:@"Who is your soul mate?"];
     [m_pContentImg addSubview:m_pTitle];
     
     m_pCount = [[UILabel alloc]init];
-    [m_pCount SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:13 Placehoder:@"1300"];
+    [m_pCount SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:14 Placehoder:@"1300"];
     [m_pContentImg addSubview:m_pCount];
     
 }
@@ -57,8 +57,8 @@
 {
     [super layoutSubviews];
     m_pContentImg.center = CGPointMake(self.contentView.width * 0.5, self.contentView.height * 0.5);
-    m_pThumbnail.center = CGPointMake(18 * AdaptRate + m_pThumbnail.width * 0.5, m_pContentImg.height * 0.5);
-    m_pTitle.frame = CGRectMake(m_pThumbnail.right + 10 * AdaptRate, m_pThumbnail.top, m_pContentImg.width - m_pThumbnail.width - 30 * AdaptRate, 47 * AdaptRate);
+    m_pThumbnail.center = CGPointMake(18 * AdaptRate + m_pThumbnail.width * 0.5, m_pContentImg.height * 0.5 - 3 *AdaptRate);
+    m_pTitle.frame = CGRectMake(m_pThumbnail.right + 10 * AdaptRate, m_pThumbnail.top, m_pContentImg.width - m_pThumbnail.width - 35 * AdaptRate, 47 * AdaptRate);
     m_pEye.center = CGPointMake(m_pThumbnail.right + 10 * AdaptRate + m_pEye.width * 0.5, m_pTitle.bottom + m_pEye.height * 0.5);
     [m_pCount sizeToFit];
     m_pCount.center = CGPointMake(m_pEye.right + 10 * AdaptRate + m_pCount.width * 0.5, m_pEye.center.y);
@@ -73,10 +73,16 @@
 - (void)SetCellData:(id)argData
 {
     NSDictionary *dict = argData;
-    [m_pThumbnail setImage:[UIImage imageNamed:dict[@"headImage"]]];
+//    [m_pThumbnail setImage:[UIImage imageNamed:dict[@"headImage"]]];
     m_pTitle.text = dict[@"title"];
     m_pCount.text = dict[@"watchNum"];
     [m_pCount sizeToFit];
+}
+
+- (void)setFrame:(CGRect)frame
+{
+    frame.origin.y += 15 * AdaptRate;
+    [super setFrame:frame];
 }
 
 @end
