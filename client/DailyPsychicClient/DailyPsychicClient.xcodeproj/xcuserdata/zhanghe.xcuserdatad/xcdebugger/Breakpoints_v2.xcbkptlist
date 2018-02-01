@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Widgets/SCHCircleView/SCHCircleViewCell.m"
-            timestampString = "539175159.853157"
+            timestampString = "539175555.726051"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "-initWithFrame:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Widgets/SCHCircleView/SCHCircleView.m"
-            timestampString = "539175159.853371"
+            timestampString = "539175555.727043"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "735"
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Widgets/SCHCircleView/SCHCircleViewCell.m"
-            timestampString = "539175159.853538"
+            timestampString = "539175555.728083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "-addEvent"
             landmarkType = "7">
          </BreakpointContent>

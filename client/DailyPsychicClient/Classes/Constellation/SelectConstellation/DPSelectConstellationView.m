@@ -52,15 +52,6 @@
     pHexaganalImg.image = [UIImage imageNamed:@"constellation_hexagonal"];
     [m_pMainImg addSubview:pHexaganalImg];
 
-    //旋转的星座
-    m_pCircle_view = [[SCHCircleView alloc]initWithFrame:CGRectMake(23 * AdaptRate, 46 * AdaptRate, m_pMainImg.width - 46 * AdaptRate, m_pMainImg.width - 46 * AdaptRate)];
-    m_pCircle_view.circle_view_data_source = self;
-    m_pCircle_view.circle_view_delegate    = self;
-    m_pCircle_view.show_circle_style       = SCHShowCircleDefault;    m_pCircle_view.circle_layout_style = SChCircleLayoutNormal;
-    m_pCircle_view.userInteractionEnabled = YES;
-    [m_pCircle_view reloadData];
-    [m_pMainImg addSubview:m_pCircle_view];
-
     //星座名称
     UILabel *pNameLabel = [[UILabel alloc]init];
     [pNameLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:@"Aries"];
