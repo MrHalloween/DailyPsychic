@@ -9,7 +9,7 @@
 #import "DPTestCardController.h"
 #import "DPTestCardView.h"
 
-@interface DPTestCardController ()<AFBaseTableViewDelegate>
+@interface DPTestCardController ()<AFBaseTableViewDelegate,DPTestCardViewDelegate>
 {
     DPTestCardView *m_pTestCardView;
 }
@@ -22,6 +22,7 @@
     m_pTopBar.hidden = YES;
     m_pTestCardView = [[DPTestCardView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
     m_pTestCardView.proDelegate = self;
+    m_pTestCardView.testCardDelegate = self;
     [self.view addSubview:m_pTestCardView];
     // Do any additional setup after loading the view.
 }
@@ -35,6 +36,13 @@
 - (void)PopPreviousPage
 {
     [self Back];
+}
+
+- (void)SelectedAnswer
+{
+    NSLog(@"选择了一个答案");
+    DPTestCardController *pVC = [[DPTestCardController alloc]init];
+    [self PushChildViewController:pVC animated:YES];
 }
 
 @end
