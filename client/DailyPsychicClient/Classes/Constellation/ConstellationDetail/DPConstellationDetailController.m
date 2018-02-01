@@ -8,7 +8,9 @@
 
 #import "DPConstellationDetailController.h"
 #import "DPConstellationDetailView.h"
+#pragma mark-- 临时使用
 #import "DPPalmResultController.h"
+#import "DPPalmAnalyingViewController.h"
 
 @interface DPConstellationDetailController ()<ConstellationDetailDelegate,AFBaseTableViewDelegate>
 {
@@ -34,6 +36,7 @@
     BUCustomViewController *pVC;
     switch (btnTag) {
         case 100:
+            pVC = [[DPPalmAnalyingViewController alloc]init];
             break;
         case 101:
             pVC = [[DPPalmResultController alloc]init];
