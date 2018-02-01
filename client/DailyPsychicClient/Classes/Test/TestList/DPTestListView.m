@@ -17,6 +17,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         m_pTitleLabel.text = @"Test";
+        NSArray *plistData = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"testList1" ofType:@"plist"]];
+        m_arrData = [NSMutableArray arrayWithArray:plistData];
         self.backgroundColor = [UIColor clearColor];
     }
     return self;
@@ -24,21 +26,20 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return m_arrData.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DPTestListCell *pCell = [DPTestListCell CellWithTableView:tableView];
     pCell.backgroundColor = [UIColor clearColor];
-
-//    [pCell ClearData];
-//    [pCell SetCellData:m_arrData[indexPath.row]];
+    [pCell ClearData];
+    [pCell SetCellData:m_arrData[indexPath.row]];
     return pCell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 102 * AdaptRate;
+    return 105 * AdaptRate;
 }
 @end

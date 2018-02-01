@@ -26,8 +26,8 @@
 {
     ///背景
     m_pContentImg = [[UIImageView alloc]init];
-    [m_pContentImg setImage:[UIImage imageNamed:@"constellation_detail_counselor"]];
-    m_pContentImg.bounds = CGRectMake(0, 0, 346 * [AppConfigure GetLengthAdaptRate], 92 * [AppConfigure GetLengthAdaptRate]);
+    [m_pContentImg setImage:[UIImage imageNamed:@"test_list_bg.png"]];
+    m_pContentImg.bounds = CGRectMake(0, 0, 359 * [AppConfigure GetLengthAdaptRate], 105 * [AppConfigure GetLengthAdaptRate]);
     [self.contentView addSubview:m_pContentImg];
     
     ///缩略图
@@ -38,8 +38,8 @@
     
     ///眼睛
     m_pEye = [[UIImageView alloc]init];
-    [m_pEye setImage:[UIImage imageNamed:@"constellation_detail_palma"]];
-    m_pEye.bounds = CGRectMake(0, 0, 14 * [AppConfigure GetLengthAdaptRate], 9 * [AppConfigure GetLengthAdaptRate]);
+    [m_pEye setImage:[UIImage imageNamed:@"test_list_eye.png"]];
+    m_pEye.bounds = CGRectMake(0, 0, 17 * [AppConfigure GetLengthAdaptRate], 17 * [AppConfigure GetLengthAdaptRate]);
     [m_pContentImg addSubview:m_pEye];
     
     m_pTitle = [[UILabel alloc]init];
@@ -72,7 +72,11 @@
 
 - (void)SetCellData:(id)argData
 {
-    
+    NSDictionary *dict = argData;
+    [m_pThumbnail setImage:[UIImage imageNamed:dict[@"headImage"]]];
+    m_pTitle.text = dict[@"title"];
+    m_pCount.text = dict[@"watchNum"];
+    [m_pCount sizeToFit];
 }
 
 @end

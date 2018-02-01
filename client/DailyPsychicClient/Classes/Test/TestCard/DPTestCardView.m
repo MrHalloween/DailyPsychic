@@ -25,14 +25,14 @@
 {
     //answer background
     UIImageView *pAnswerBg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 361 * AdaptRate, 455 * AdaptRate)];
-    pAnswerBg.center = CGPointMake(self.width * 0.5, 178 * AdaptRate + pAnswerBg.height * 0.5);
+    pAnswerBg.center = CGPointMake(self.width * 0.5, m_pTitleLabel.bottom + 130 * AdaptRate + pAnswerBg.height * 0.5);
     pAnswerBg.userInteractionEnabled = YES;
     pAnswerBg.image = [UIImage imageNamed:@"test_answer_bg.png"];
     [self addSubview:pAnswerBg];
     
     //picture background
     UIImageView *pPictureBg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 195 * AdaptRate, 230 * AdaptRate)];
-    pPictureBg.center = CGPointMake(self.width * 0.5, 84 * AdaptRate + pPictureBg.height * 0.5);
+    pPictureBg.center = CGPointMake(self.width * 0.5, m_pTitleLabel.bottom + 34 * AdaptRate + pPictureBg.height * 0.5);
     pPictureBg.userInteractionEnabled = YES;
     pPictureBg.image = [UIImage imageNamed:@"test_pic.png"];
     [self addSubview:pPictureBg];
@@ -49,6 +49,7 @@
     NSArray *arrAnswers = @[@"Lovely",@"Hot",@"Pretty",@"Beautiful"];
     for (int i = 0; i < arrAnswers.count; i ++) {
         UIButton *pAnswerCell = [UIButton buttonWithType:UIButtonTypeCustom];
+        [pAnswerCell addTarget:self action:@selector(SelectedAnswer) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:pAnswerCell];
         [pAnswerCell setBackgroundImage:[UIImage imageNamed:@"test_cell.png"] forState:0];
         pAnswerCell.bounds = CGRectMake(0, 0, 283 * AdaptRate, 40 * AdaptRate);
@@ -64,6 +65,15 @@
 //    pPage.frame = CGRectMake((self.width - 300 * AdaptRate) * 0.5, pPictureBg.bottom, 300 * AdaptRate, 67 * AdaptRate);
 //    [self addSubview:pPage];
     
+}
+
+#pragma mark - 选择答案
+- (void)SelectedAnswer
+{
+    if(self.testCardDelegate && [self.testCardDelegate respondsToSelector:@selector(SelectedAnswer)])
+    {
+        [self.testCardDelegate SelectedAnswer];
+    }
 }
 
 @end
