@@ -42,4 +42,6 @@
 {
     return 105 * AdaptRate;
 }
+
+
 @end

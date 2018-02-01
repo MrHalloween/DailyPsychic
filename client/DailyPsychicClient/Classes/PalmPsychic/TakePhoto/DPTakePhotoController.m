@@ -51,19 +51,16 @@
 #pragma mark - UIImagePickerControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
-    NSLog(@"aaaaaaaa");
-    DPTakePhotoController *pVC = [[DPTakePhotoController alloc]init];
-    [self PushChildViewController:pVC animated:YES];
+    [self dismissViewControllerAnimated:YES completion:^{
+        m_pTakePhotoView.righthand = 1;
+    }];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-    NSLog(@"bbbbbbbb");
-}
-
-- (void)setUserHandType:(UserHand)userHandType
-{
-    _userHandType = userHandType;
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 @end

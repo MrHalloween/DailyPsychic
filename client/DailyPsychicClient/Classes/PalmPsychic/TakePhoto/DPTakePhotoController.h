@@ -8,13 +8,7 @@
 
 #import "BUCustomViewController.h"
 
-typedef NS_ENUM(NSInteger, UserHand) {
-    UserHandTypeLeft = 0,
-    UserHandTypeRight = 1,
-};
-
 @interface DPTakePhotoController : BUCustomViewController
 
-@property(nonatomic) UserHand userHandType;
 
 @end
