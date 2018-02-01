@@ -54,7 +54,7 @@
     UIButton *pGetResultBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     pGetResultBtn.bounds = CGRectMake(0, 0, 282 * AdaptRate, 63 * AdaptRate);
     pGetResultBtn.center = CGPointMake(self.width/2, self.height - 42 * AdaptRate - 63 * 0.5 * AdaptRate);
-    [pGetResultBtn setBackgroundImage:[UIImage imageNamed:@"constellation_start"] forState:UIControlStateNormal];
+    [pGetResultBtn setBackgroundImage:[UIImage imageNamed:@"palm_getresult"] forState:UIControlStateNormal];
     [pBgImg addSubview:pGetResultBtn];
 }
 
