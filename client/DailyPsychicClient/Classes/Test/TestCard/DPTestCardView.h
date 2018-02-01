@@ -8,6 +8,16 @@
 
 #import "AFBaseTableView.h"
 
+@protocol DPTestCardViewDelegate <NSObject>
+
+@optional
+- (void)SelectedAnswer;
+
+@end
+
 @interface DPTestCardView : AFBaseTableView
+
+@property (nonatomic,weak) id<DPTestCardViewDelegate>testCardDelegate;
+
 
 @end

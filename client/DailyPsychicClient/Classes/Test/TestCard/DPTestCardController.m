@@ -9,7 +9,7 @@
 #import "DPTestCardController.h"
 #import "DPTestCardView.h"
 
-@interface DPTestCardController ()
+@interface DPTestCardController ()<AFBaseTableViewDelegate,DPTestCardViewDelegate>
 {
     DPTestCardView *m_pTestCardView;
 }
@@ -21,6 +21,8 @@
     [super viewDidLoad];
     m_pTopBar.hidden = YES;
     m_pTestCardView = [[DPTestCardView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    m_pTestCardView.proDelegate = self;
+    m_pTestCardView.testCardDelegate = self;
     [self.view addSubview:m_pTestCardView];
     // Do any additional setup after loading the view.
 }
@@ -30,14 +32,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - AFBaseTableViewDelegate
+- (void)PopPreviousPage
+{
+    [self Back];
 }
-*/
+
+- (void)SelectedAnswer
+{
+    NSLog(@"选择了一个答案");
+    DPTestCardController *pVC = [[DPTestCardController alloc]init];
+    [self PushChildViewController:pVC animated:YES];
+}
 
 @end

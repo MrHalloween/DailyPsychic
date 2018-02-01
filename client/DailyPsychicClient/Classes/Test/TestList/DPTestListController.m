@@ -39,4 +39,9 @@
     [self PushChildViewController:pVC animated:YES];
 }
 
+- (void)PopPreviousPage
+{
+    [self Back];
+}
+
 @end

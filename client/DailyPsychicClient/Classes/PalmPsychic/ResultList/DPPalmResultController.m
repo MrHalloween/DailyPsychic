@@ -1,35 +1,32 @@
-
 //
-//  DPPalmAnalysisController.m
+//  DPPalmResultController.m
 //  DailyPsychicClient
 //
-//  Created by 李少艳 on 2018/1/31.
+//  Created by lsy on 2018/2/1.
 //  Copyright © 2018年 h. All rights reserved.
 //
 
-#import "DPPalmAnalysisController.h"
-#import "DPPalmAnalysisView.h"
+#import "DPPalmResultController.h"
+#import "DPPalmResultView.h"
 
-@interface DPPalmAnalysisController ()<PalmAnalysisDelegate>
+@interface DPPalmResultController ()<AFBaseTableViewDelegate>
 {
-    DPPalmAnalysisView *m_pPalmAnalysisView;
+    DPPalmResultView *m_pPalmResultView;
 }
 @end
 
-@implementation DPPalmAnalysisController
+@implementation DPPalmResultController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    m_pPalmAnalysisView = [[DPPalmAnalysisView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
-    m_pPalmAnalysisView.palmAnalysisDel = self;
-    [self.view addSubview:m_pPalmAnalysisView];
+    m_pPalmResultView = [[DPPalmResultView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    m_pPalmResultView.proDelegate = self;
+    [self.view addSubview:m_pPalmResultView];
 }
-
-- (void)BackTo
+- (void)PopPreviousPage
 {
     [self Back];
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

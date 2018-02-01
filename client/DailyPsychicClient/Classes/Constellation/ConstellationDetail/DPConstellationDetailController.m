@@ -8,7 +8,9 @@
 
 #import "DPConstellationDetailController.h"
 #import "DPConstellationDetailView.h"
-@interface DPConstellationDetailController ()<ConstellationDetailDelegate>
+#import "DPPalmResultController.h"
+
+@interface DPConstellationDetailController ()<ConstellationDetailDelegate,AFBaseTableViewDelegate>
 {
     DPConstellationDetailView *m_pConstellDetail;
 }
@@ -19,12 +21,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     m_pConstellDetail = [[DPConstellationDetailView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    m_pConstellDetail.proDelegate = self;
     m_pConstellDetail.conDetailDel = self;
     [self.view addSubview:m_pConstellDetail];
 }
-- (void)BackTo
-{
+
+- (void)PopPreviousPage{
     [self Back];
+}
+- (void)pushToResultPage:(NSInteger)btnTag{
+    
+    BUCustomViewController *pVC;
+    switch (btnTag) {
+        case 100:
+            break;
+        case 101:
+            pVC = [[DPPalmResultController alloc]init];
+            break;
+        case 102:
+            break;
+        default:
+            break;
+    }
+    [self PushChildViewController:pVC animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -9,8 +9,6 @@
 #import "AFBaseTableView.h"
 
 @protocol PalmAnalysisDelegate<NSObject>
-//返回
-- (void)BackTo;
 
 @end
 

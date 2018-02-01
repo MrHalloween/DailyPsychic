@@ -14,7 +14,6 @@
 @end
 
 @implementation SCHCircleViewCell
-@synthesize delete_button            = _delete_button;
 
 @synthesize view_rect                = _view_rect;
 @synthesize scale                    = _scale;
@@ -34,26 +33,20 @@
     self = [super initWithFrame:frame];
     if (self)
     {
-        // Initialization code
-        
+        self.backgroundColor = [UIColor orangeColor];
+        [self addEvent];
     }
     return self;
 }
 
 
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
-    
-    if(nil !=  _delete_button)
-    {
-        
-    }
-    
+- (void)addEvent
+{    
     /*增加长点击事件*/
     UILongPressGestureRecognizer *long_press = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(pressedLong:)];
     [self addGestureRecognizer:long_press];
-    [long_press release],long_press = nil;
+    [long_press release];
+    long_press = nil;
     
     /*增加单击事件*/
     UITapGestureRecognizer *single_tap = [[UITapGestureRecognizer alloc] initWithTarget: self action: @selector(handleSingleTap:)] ;
@@ -62,14 +55,16 @@
     single_tap.numberOfTouchesRequired = 1;
     single_tap.delegate                = self;
     [self addGestureRecognizer: single_tap];
-    [single_tap release], single_tap = nil;
+//    [single_tap release];
+//    single_tap = nil;
     
     /*增加拖动事件*/
     UIPanGestureRecognizer *single_pan = [[UIPanGestureRecognizer alloc] initWithTarget: self action: @selector(handleSinglePan:)] ;
     single_pan.cancelsTouchesInView    = NO;
     single_pan.delegate                = self;
     [self addGestureRecognizer: single_pan];
-    [single_pan release], single_pan = nil;
+//    [single_pan release];
+//    single_pan = nil;
     
 }
 
@@ -123,7 +118,7 @@
 #pragma mark - 单击
 - (void)handleSingleTap:(UITapGestureRecognizer *)gestureRecognizer
 {
-    
+    NSLog(@"单击");
     switch (gestureRecognizer.state)
     {
         case UIGestureRecognizerStateBegan:

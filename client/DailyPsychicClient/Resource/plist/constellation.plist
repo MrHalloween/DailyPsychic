@@ -4,23 +4,13 @@
 <array>
 	<dict>
 		<key>nameCn</key>
-		<string>魔羯座</string>
+		<string>白羊座</string>
 		<key>nameEn</key>
-		<string>Capricorn </string>
+		<string>Aries</string>
 		<key>image</key>
-		<string>capricorn </string>
+		<string>aries</string>
 		<key>date</key>
-		<string>12.22 - 01.19</string>
-	</dict>
-	<dict>
-		<key>nameCn</key>
-		<string>水瓶座</string>
-		<key>nameEn</key>
-		<string>Aquarius</string>
-		<key>image</key>
-		<string>aquarius</string>
-		<key>date</key>
-		<string>01.20 - 02.18</string>
+		<string>03.21 - 04.20</string>
 	</dict>
 	<dict>
 		<key>nameCn</key>
@@ -34,73 +24,33 @@
 	</dict>
 	<dict>
 		<key>nameCn</key>
-		<string>白羊座</string>
+		<string>水瓶座</string>
 		<key>nameEn</key>
-		<string>Aries</string>
+		<string>Aquarius</string>
 		<key>image</key>
-		<string>aries</string>
+		<string>aquarius</string>
 		<key>date</key>
-		<string>03.21 - 04.20</string>
+		<string>01.20 - 02.18</string>
 	</dict>
 	<dict>
 		<key>nameCn</key>
-		<string>金牛座</string>
+		<string>魔羯座</string>
 		<key>nameEn</key>
-		<string>Taurus</string>
+		<string>Capricorn</string>
 		<key>image</key>
-		<string>taurus</string>
+		<string>capricorn</string>
 		<key>date</key>
-		<string>04.21 - 05.20</string>
+		<string>12.22 - 01.19</string>
 	</dict>
 	<dict>
 		<key>nameCn</key>
-		<string>双子座</string>
+		<string>射手座</string>
 		<key>nameEn</key>
-		<string>Gemini</string>
+		<string>Sagittarius</string>
 		<key>image</key>
-		<string>gemini</string>
+		<string>sagittarius</string>
 		<key>date</key>
-		<string>05.21 - 06.21</string>
-	</dict>
-	<dict>
-		<key>nameCn</key>
-		<string>巨蟹座</string>
-		<key>nameEn</key>
-		<string>Cancer</string>
-		<key>image</key>
-		<string>cancer</string>
-		<key>date</key>
-		<string>06.22- 07.22</string>
-	</dict>
-	<dict>
-		<key>nameCn</key>
-		<string>狮子座</string>
-		<key>nameEn</key>
-		<string>Leo</string>
-		<key>image</key>
-		<string>Leo</string>
-		<key>date</key>
-		<string>07.23 - 08.22</string>
-	</dict>
-	<dict>
-		<key>nameCn</key>
-		<string>处女座</string>
-		<key>nameEn</key>
-		<string>Virgo</string>
-		<key>image</key>
-		<string>virgo</string>
-		<key>date</key>
-		<string>08.23 - 09.22</string>
-	</dict>
-	<dict>
-		<key>nameCn</key>
-		<string>天秤座</string>
-		<key>nameEn</key>
-		<string>Libra</string>
-		<key>image</key>
-		<string>libra</string>
-		<key>date</key>
-		<string>09.23 - 10.23</string>
+		<string>11.22 - 12.21</string>
 	</dict>
 	<dict>
 		<key>nameCn</key>
@@ -114,13 +64,63 @@
 	</dict>
 	<dict>
 		<key>nameCn</key>
-		<string>射手座</string>
+		<string>天秤座</string>
 		<key>nameEn</key>
-		<string>Sagittarius</string>
+		<string>Libra</string>
 		<key>image</key>
-		<string>sagittarius</string>
+		<string>libra</string>
 		<key>date</key>
-		<string>11.22 - 12.21</string>
+		<string>09.23 - 10.23</string>
+	</dict>
+	<dict>
+		<key>nameCn</key>
+		<string>处女座</string>
+		<key>nameEn</key>
+		<string>Virgo</string>
+		<key>image</key>
+		<string>virgo</string>
+		<key>date</key>
+		<string>08.23 - 09.22</string>
+	</dict>
+	<dict>
+		<key>nameCn</key>
+		<string>狮子座</string>
+		<key>nameEn</key>
+		<string>Leo</string>
+		<key>image</key>
+		<string>leo</string>
+		<key>date</key>
+		<string>07.23 - 08.22</string>
+	</dict>
+	<dict>
+		<key>nameCn</key>
+		<string>巨蟹座</string>
+		<key>nameEn</key>
+		<string>Cancer</string>
+		<key>image</key>
+		<string>cancer</string>
+		<key>date</key>
+		<string>06.22- 07.22</string>
+	</dict>
+	<dict>
+		<key>nameCn</key>
+		<string>双子座</string>
+		<key>nameEn</key>
+		<string>Gemini</string>
+		<key>image</key>
+		<string>gemini</string>
+		<key>date</key>
+		<string>05.21 - 06.21</string>
+	</dict>
+	<dict>
+		<key>nameCn</key>
+		<string>金牛座</string>
+		<key>nameEn</key>
+		<string>Taurus</string>
+		<key>image</key>
+		<string>taurus</string>
+		<key>date</key>
+		<string>04.21 - 05.20</string>
 	</dict>
 </array>
 </plist>

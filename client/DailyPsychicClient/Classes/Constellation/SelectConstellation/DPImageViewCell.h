@@ -7,9 +7,11 @@
 //
 
 #import "SCHCircleViewCell.h"
-///lll
+#import "DPConstellationModel.h"
+
 @interface DPImageViewCell : SCHCircleViewCell
 
 @property (nonatomic,retain) UIImageView *imageView;
+@property (nonatomic,strong) DPConstellationModel *model;
 
 @end

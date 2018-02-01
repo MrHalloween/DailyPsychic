@@ -24,39 +24,13 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self addTopView];
+        m_pTitleLabel.text = @"Start";
         [self addCollectionView];
         [self addScrolllview];
         [self addDetailView];
         [self addlistView];
     }
     return self;
-}
-- (void)addTopView{
-    
-    // 背景
-    UIImageView *pBgImg = [[UIImageView alloc]initWithFrame:self.frame];
-    pBgImg.image = [UIImage imageNamed:@"homepage_bg"];
-    pBgImg.userInteractionEnabled = YES;
-    [self addSubview:pBgImg];
-    
-    //title
-    UILabel *m_pTitleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 36 * AdaptRate, self.width, 36 * AdaptRate)];
-    [m_pTitleLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:18 Placehoder:@"Start"];
-    m_pTitleLabel.textAlignment = NSTextAlignmentCenter;
-    [pBgImg addSubview:m_pTitleLabel];
-    
-    //返回按钮
-    UIButton *pBackaBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    pBackaBtn.frame = CGRectMake(0, 35 * AdaptRate, 40 * AdaptRate, 35 * AdaptRate);
-    [pBackaBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [pBgImg addSubview:pBackaBtn];
-    
-    //返回图片
-    UIImageView *pBackImg = [[UIImageView alloc]initWithFrame:CGRectMake(16 * AdaptRate, 13 * AdaptRate, 8 * AdaptRate, 14 * AdaptRate)];
-    pBackImg.userInteractionEnabled = YES;
-    pBackImg.image = [UIImage imageNamed:@"constellation_back"];
-    [pBackaBtn addSubview:pBackImg];
 }
 
 //collection
@@ -96,7 +70,7 @@
 
     //日期
     UILabel *m_pDateLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, m_pTodayLabel.bottom + 5 * AdaptRate, m_pDateBtn.width, SIZE_HEIGHT(20))];
-    [m_pDateLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager RegularFont] FontSize:20 Placehoder:@"2018.02.10"];
+    [m_pDateLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:@"2018.02.10"];
     m_pDateLabel.textAlignment = NSTextAlignmentCenter;
     [m_pDateBtn addSubview:m_pDateLabel];
     
@@ -118,15 +92,19 @@
     [m_pConstellBtn addSubview:m_pStartLabel];
     
     //星座
-    UILabel *m_pConstellLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, m_pStartLabel.bottom + 5 * AdaptRate, m_pConstellBtn.width, SIZE_HEIGHT(20))];
-    [m_pConstellLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager RegularFont] FontSize:20 Placehoder:@"Aquarius"];
+    UILabel *m_pConstellLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, m_pStartLabel.bottom + 5 * AdaptRate, 0, 0)];
+    [m_pConstellLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:@"Aquarius"];
+    [m_pConstellLabel sizeToFit];
+    CGPoint center = m_pConstellLabel.center;
+    center.x = m_pConstellBtn.width * 0.5;
+    m_pConstellLabel.center = center;
     m_pConstellLabel.textAlignment = NSTextAlignmentCenter;
     [m_pConstellBtn addSubview:m_pConstellLabel];
     
     //向下箭头
-    UIImageView *m_pArrowImg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
-    m_pArrowImg.image = [UIImage imageNamed:@""];
-    [self addSubview:m_pArrowImg];
+    UIImageView *m_pArrowImg = [[UIImageView alloc]initWithFrame:CGRectMake(m_pConstellLabel.right + 10 * AdaptRate, m_pConstellLabel.top + 12 * AdaptRate, 12 * AdaptRate, 8 * AdaptRate)];
+    m_pArrowImg.image = [UIImage imageNamed:@"constellation_detail_triangle"];
+    [m_pConstellBtn addSubview:m_pArrowImg];
     
 }
 //手相分析等
@@ -138,11 +116,9 @@
     for (int i = 0; i < 3; i ++) {
         //button背景
         UIButton *m_pConsultation = [UIButton buttonWithType:UIButtonTypeCustom];
-        if (i == 2) {
-            m_pConsultation.frame = CGRectMake(6 * AdaptRate, m_pDateBtn.bottom + 15 * AdaptRate + 169 * AdaptRate * i, self.width - 12 * AdaptRate, 169 * AdaptRate);
-        }else{
-            m_pConsultation.frame = CGRectMake(6 * AdaptRate, m_pDateBtn.bottom + 28 * AdaptRate + 169 * AdaptRate * i, self.width - 12 * AdaptRate, 169 * AdaptRate);
-        }
+        m_pConsultation.frame = CGRectMake(6 * AdaptRate, m_pDateBtn.bottom + 28 * AdaptRate + 169 * AdaptRate * i, self.width - 12 * AdaptRate, 169 * AdaptRate);
+        m_pConsultation.tag = 100 + i;
+        [m_pConsultation addTarget:self action:@selector(getRsult:) forControlEvents:UIControlEventTouchUpInside];
         [m_pConsultation setBackgroundImage:[UIImage imageNamed:m_pBgImgArr[i]] forState:UIControlStateNormal];
         [m_pScrollView addSubview:m_pConsultation];
         
@@ -168,14 +144,6 @@
     }
     
 }
-//返回
-- (void)backBtnClick
-{
-    if (self.conDetailDel != nil && [self.conDetailDel respondsToSelector:@selector(BackTo)])
-    {
-        [self.conDetailDel BackTo];
-    }
-}
 
 #pragma mark -
 #pragma mark - collectionView的delegate和datasource
@@ -196,5 +164,10 @@
     DPWeekCollectionViewCell *cell = [DPWeekCollectionViewCell cellWithCollectionView:collectionView identifier:WeekCollectionViewCell indexPath:indexPath];
     return cell;
 }
-
+- (void)getRsult:(UIButton *)btn
+{
+    if (self.conDetailDel != nil && [self.conDetailDel respondsToSelector:@selector(pushToResultPage:)]) {
+        [self.conDetailDel pushToResultPage:btn.tag];
+    }
+}
 @end

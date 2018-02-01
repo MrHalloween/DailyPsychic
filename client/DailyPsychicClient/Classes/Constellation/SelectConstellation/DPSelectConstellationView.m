@@ -9,10 +9,13 @@
 #import "DPSelectConstellationView.h"
 #import "UILable+TextEffect.h"
 #import "SCHCircleView.h"
+#import "DPImageViewCell.h"
+#import "DPConstellationModel.h"
 
 @interface DPSelectConstellationView()<SCHCircleViewDataSource,SCHCircleViewDelegate>
 {
     SCHCircleView *m_pCircle_view;
+    UIImageView *m_pMainImg;
 }
 @end
 
@@ -26,54 +29,29 @@
         NSArray *m_arrConstel = [NSArray arrayWithContentsOfFile: plistPath];
         m_arrData = [NSMutableArray arrayWithArray:m_arrConstel];
         [self addSubViews];
+        [m_pCircle_view reloadData];
     }
     return self;
 }
 - (void)addSubViews
 {
-    // 背景
-    UIImageView *pBgImg = [[UIImageView alloc]initWithFrame:self.frame];
-    pBgImg.image = [UIImage imageNamed:@"homepage_bg"];
-    pBgImg.userInteractionEnabled = YES;
-    [self addSubview:pBgImg];
+    self.userInteractionEnabled = YES;
     
-    //title
-    UILabel *m_pTitleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 36 * AdaptRate, self.width, 36 * AdaptRate)];
-    [m_pTitleLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:18 Placehoder:@"Choose your constellation"];
-    m_pTitleLabel.textAlignment = NSTextAlignmentCenter;
-    [pBgImg addSubview:m_pTitleLabel];
+    m_pTitleLabel.text = @"Choose your constellation";
+    //主图-底背景684817
+    m_pMainImg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 342 * AdaptRate, 408.5 * AdaptRate)];
+    m_pMainImg.center = CGPointMake(self.width * 0.5, m_pTitleLabel.bottom + 38 * AdaptRate + m_pMainImg.height * 0.5);
+    m_pMainImg.image = [UIImage imageNamed:@"constellation_main"];
+    m_pMainImg.userInteractionEnabled = YES;
+    [self addSubview:m_pMainImg];
     
-    //返回按钮
-    UIButton *pBackaBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    pBackaBtn.frame = CGRectMake(0, 35 * AdaptRate, 40 * AdaptRate, 35 * AdaptRate);
-    [pBackaBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [pBgImg addSubview:pBackaBtn];
-    
-    //返回图片
-    UIImageView *pBackImg = [[UIImageView alloc]initWithFrame:CGRectMake(16 * AdaptRate, 13 * AdaptRate, 8 *AdaptRate, 14 * AdaptRate)];
-    pBackImg.userInteractionEnabled = YES;
-    pBackImg.image = [UIImage imageNamed:@"constellation_back"];
-    [pBackaBtn addSubview:pBackImg];
-    
-    //主图-底背景
-    UIImageView *pMainImg = [[UIImageView alloc]initWithFrame:CGRectMake(17 * AdaptRate, 102 * AdaptRate, 342 * AdaptRate, 409 * AdaptRate)];
-    pMainImg.image = [UIImage imageNamed:@"constellation_main"];
-    [pBgImg addSubview:pMainImg];
-    
-    //旋转的星座
-    m_pCircle_view = [[SCHCircleView alloc]initWithFrame:CGRectMake(0, 0, pMainImg.width, pMainImg.height)];
-    m_pCircle_view.circle_view_data_source = self;
-    m_pCircle_view.circle_view_delegate    = self;
-    m_pCircle_view.show_circle_style       = SCHShowCircleDefault;
-    m_pCircle_view.circle_layout_style     = SChCircleLayoutNormal;
-    [m_pCircle_view reloadData];
-    [pMainImg addSubview:m_pCircle_view];
-    
-    //六芒星
-    UIImageView *pHexaganalImg = [[UIImageView alloc]initWithFrame:CGRectMake(88 * AdaptRate, 123 * AdaptRate, 168 * AdaptRate, 168 * AdaptRate)];
+    //六芒星336336
+    UIImageView *pHexaganalImg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 168 * AdaptRate, 168 * AdaptRate)];
+    pHexaganalImg.center = CGPointMake(m_pMainImg.width * 0.5, m_pMainImg.height * 0.5);
+    pHexaganalImg.userInteractionEnabled = YES;
     pHexaganalImg.image = [UIImage imageNamed:@"constellation_hexagonal"];
-    [pMainImg addSubview:pHexaganalImg];
-    
+    [m_pMainImg addSubview:pHexaganalImg];
+
     //星座名称
     UILabel *pNameLabel = [[UILabel alloc]init];
     [pNameLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:@"Aries"];
@@ -88,22 +66,25 @@
     pDateLable.textAlignment = NSTextAlignmentCenter;
     [pHexaganalImg addSubview:pDateLable];
     
+    //旋转的星座
+    m_pCircle_view = [[SCHCircleView alloc]initWithFrame:CGRectMake(0, 0, 344 * AdaptRate, 344 * AdaptRate)];
+    m_pCircle_view.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.2];
+    m_pCircle_view.center = m_pMainImg.center;
+    m_pCircle_view.circle_view_data_source = self;
+    m_pCircle_view.circle_view_delegate    = self;
+    m_pCircle_view.show_circle_style       = SChShowCircleWinding;
+    m_pCircle_view.circle_layout_style = SChCircleLayoutNormal;
+    [self addSubview:m_pCircle_view];
+    
     //start按钮
     UIButton *pStartBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     pStartBtn.bounds = CGRectMake(0, 0, 282 * AdaptRate, 63 * AdaptRate);
     pStartBtn.center = CGPointMake(self.width/2, self.height - 42 * AdaptRate - 63 * 0.5 * AdaptRate);
     [pStartBtn setBackgroundImage:[UIImage imageNamed:@"constellation_start"] forState:UIControlStateNormal];
     [pStartBtn addTarget:self action:@selector(startBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [pBgImg addSubview:pStartBtn];
+    [self addSubview:pStartBtn];
 }
-//返回
-- (void)backBtnClick
-{
-    if (self.selectConstellationDel != nil && [self.selectConstellationDel respondsToSelector:@selector(BackTo)])
-    {
-        [self.selectConstellationDel BackTo];
-    }
-}
+
 //开始进入下一页
 - (void)startBtnClick
 {
@@ -112,5 +93,37 @@
         [self.selectConstellationDel StartToNextPage];
     }
 }
+
+#pragma mark - SCHCircleViewDataSource
+- (NSInteger)numberOfCellInCircleView:(SCHCircleView *)circle_view
+{
+    return m_arrData.count;
+}
+
+- (SCHCircleViewCell *)circleView:(SCHCircleView *)circle_view cellAtIndex:(NSInteger)index_circle_cell
+{
+    DPImageViewCell *cell = [[DPImageViewCell alloc]init];
+    DPConstellationModel * model = [DPConstellationModel ModelWithDictionary:m_arrData[index_circle_cell]];
+    cell.model = model;
+    return cell;
+}
+
+/*返回 圆的半径*/
+- (CGFloat)radiusOfCircleView:(SCHCircleView *)circle_view
+{
+    return 252 * AdaptRate * 0.5;
+}
+
+/*返回中心点*/
+- (CGPoint)centerOfCircleView:(SCHCircleView *)circle_view
+{
+    return CGPointMake(m_pCircle_view.width * 0.5 - 23 * AdaptRate, m_pCircle_view.height * 0.5 - 23 * AdaptRate);
+}
+
+//#pragma mark - SCHCircleViewDelegate
+//- (void)touchEndCircleViewCell:(SCHCircleViewCell *)cell indexOfCircleViewCell:(NSInteger)index
+//{
+//
+//}
 
 @end
