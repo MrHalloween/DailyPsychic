@@ -9,8 +9,7 @@
 #import "AFBaseTableView.h"
 
 @protocol ConstellationDetailDelegate<NSObject>
-//返回
-- (void)BackTo;
+
 
 @end
 

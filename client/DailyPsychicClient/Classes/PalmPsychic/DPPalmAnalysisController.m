@@ -10,7 +10,7 @@
 #import "DPPalmAnalysisController.h"
 #import "DPPalmAnalysisView.h"
 
-@interface DPPalmAnalysisController ()<PalmAnalysisDelegate>
+@interface DPPalmAnalysisController ()<PalmAnalysisDelegate,AFBaseTableViewDelegate>
 {
     DPPalmAnalysisView *m_pPalmAnalysisView;
 }
@@ -21,11 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     m_pPalmAnalysisView = [[DPPalmAnalysisView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
-    m_pPalmAnalysisView.palmAnalysisDel = self;
+    m_pPalmAnalysisView.proDelegate = self;
     [self.view addSubview:m_pPalmAnalysisView];
 }
 
-- (void)BackTo
+- (void)PopPreviousPage
 {
     [self Back];
 }

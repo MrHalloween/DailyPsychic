@@ -8,7 +8,7 @@
 
 #import "DPConstellationDetailController.h"
 #import "DPConstellationDetailView.h"
-@interface DPConstellationDetailController ()<ConstellationDetailDelegate>
+@interface DPConstellationDetailController ()<ConstellationDetailDelegate,AFBaseTableViewDelegate>
 {
     DPConstellationDetailView *m_pConstellDetail;
 }
@@ -19,11 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     m_pConstellDetail = [[DPConstellationDetailView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
-    m_pConstellDetail.conDetailDel = self;
+    m_pConstellDetail.proDelegate = self;
     [self.view addSubview:m_pConstellDetail];
 }
-- (void)BackTo
-{
+
+- (void)PopPreviousPage{
     [self Back];
 }
 - (void)didReceiveMemoryWarning {

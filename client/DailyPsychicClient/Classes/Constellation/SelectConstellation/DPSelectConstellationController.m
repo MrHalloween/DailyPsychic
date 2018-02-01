@@ -10,7 +10,7 @@
 #import "DPSelectConstellationView.h"
 #import "DPConstellationDetailController.h"
 
-@interface DPSelectConstellationController ()<SelectConstellationDelegate>
+@interface DPSelectConstellationController ()<SelectConstellationDelegate,AFBaseTableViewDelegate>
 {
     DPSelectConstellationView *m_pSelectView;
 }
@@ -21,12 +21,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     m_pSelectView = [[DPSelectConstellationView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    m_pSelectView.proDelegate = self;
     m_pSelectView.selectConstellationDel = self;
     [self.view addSubview:m_pSelectView];
     
 }
 
-- (void)BackTo
+- (void)PopPreviousPage
 {
     [self Back];
 }
