@@ -117,6 +117,8 @@
         //button背景
         UIButton *m_pConsultation = [UIButton buttonWithType:UIButtonTypeCustom];
         m_pConsultation.frame = CGRectMake(6 * AdaptRate, m_pDateBtn.bottom + 28 * AdaptRate + 169 * AdaptRate * i, self.width - 12 * AdaptRate, 169 * AdaptRate);
+        m_pConsultation.tag = 100 + i;
+        [m_pConsultation addTarget:self action:@selector(getRsult:) forControlEvents:UIControlEventTouchUpInside];
         [m_pConsultation setBackgroundImage:[UIImage imageNamed:m_pBgImgArr[i]] forState:UIControlStateNormal];
         [m_pScrollView addSubview:m_pConsultation];
         
@@ -162,5 +164,10 @@
     DPWeekCollectionViewCell *cell = [DPWeekCollectionViewCell cellWithCollectionView:collectionView identifier:WeekCollectionViewCell indexPath:indexPath];
     return cell;
 }
-
+- (void)getRsult:(UIButton *)btn
+{
+    if (self.conDetailDel != nil && [self.conDetailDel respondsToSelector:@selector(pushToResultPage:)]) {
+        [self.conDetailDel pushToResultPage:btn.tag];
+    }
+}
 @end

@@ -126,8 +126,6 @@
 		10DB6D202022D5090084FC35 /* test_list_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D1C2022D5080084FC35 /* test_list_bg@3x.png */; };
 		10DB6D212022D5090084FC35 /* test_list_eye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D1D2022D5080084FC35 /* test_list_eye@2x.png */; };
 		10DB6D222022D5090084FC35 /* test_list_eye@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D1E2022D5080084FC35 /* test_list_eye@3x.png */; };
-		10DB6D292022EE170084FC35 /* DPPalmAnalysisController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DB6D242022EE170084FC35 /* DPPalmAnalysisController.m */; };
-		10DB6D2A2022EE170084FC35 /* DPPalmAnalysisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DB6D272022EE170084FC35 /* DPPalmAnalysisView.m */; };
 		10DB6D2D2022EE380084FC35 /* DPTakePhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DB6D2C2022EE380084FC35 /* DPTakePhotoController.m */; };
 		10DB6D302022EE690084FC35 /* DPTakePhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DB6D2F2022EE690084FC35 /* DPTakePhotoView.m */; };
 		10DB6D372022EFC70084FC35 /* palm_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D312022EFC60084FC35 /* palm_right@2x.png */; };
@@ -150,6 +148,11 @@
 		2977F7FF2022B7280016B617 /* DPConstellationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2977F7FE2022B7280016B617 /* DPConstellationModel.m */; };
 		2977F8032022E0CD0016B617 /* constellation_detail_daytest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2977F8012022E0CD0016B617 /* constellation_detail_daytest@3x.png */; };
 		2977F8042022E0CD0016B617 /* constellation_detail_daytest@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2977F8022022E0CD0016B617 /* constellation_detail_daytest@2x.png */; };
+		2977F80D202303190016B617 /* DPPalmAnalysisController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2977F809202303190016B617 /* DPPalmAnalysisController.m */; };
+		2977F80E202303190016B617 /* DPPalmAnalysisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2977F80B202303190016B617 /* DPPalmAnalysisView.m */; };
+		2977F811202303430016B617 /* DPPalmResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2977F810202303430016B617 /* DPPalmResultController.m */; };
+		2977F814202303690016B617 /* DPPalmResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2977F813202303690016B617 /* DPPalmResultView.m */; };
+		2977F817202303900016B617 /* DPPalmResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2977F816202303900016B617 /* DPPalmResultCell.m */; };
 		29BABFA320203B8800CE4E51 /* constellation_ aries_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5520203B8800CE4E51 /* constellation_ aries_circle@2x.png */; };
 		29BABFA420203B8800CE4E51 /* constellation_aries_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5620203B8800CE4E51 /* constellation_aries_circle@3x.png */; };
 		29BABFA520203B8800CE4E51 /* constellation_aries_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BABF5720203B8800CE4E51 /* constellation_aries_select@2x.png */; };
@@ -478,10 +481,6 @@
 		10DB6D1C2022D5080084FC35 /* test_list_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_list_bg@3x.png"; sourceTree = "<group>"; };
 		10DB6D1D2022D5080084FC35 /* test_list_eye@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_list_eye@2x.png"; sourceTree = "<group>"; };
 		10DB6D1E2022D5080084FC35 /* test_list_eye@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_list_eye@3x.png"; sourceTree = "<group>"; };
-		10DB6D242022EE170084FC35 /* DPPalmAnalysisController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPalmAnalysisController.m; sourceTree = "<group>"; };
-		10DB6D252022EE170084FC35 /* DPPalmAnalysisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPalmAnalysisView.h; sourceTree = "<group>"; };
-		10DB6D262022EE170084FC35 /* DPPalmAnalysisController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPalmAnalysisController.h; sourceTree = "<group>"; };
-		10DB6D272022EE170084FC35 /* DPPalmAnalysisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPalmAnalysisView.m; sourceTree = "<group>"; };
 		10DB6D2B2022EE380084FC35 /* DPTakePhotoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTakePhotoController.h; sourceTree = "<group>"; };
 		10DB6D2C2022EE380084FC35 /* DPTakePhotoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTakePhotoController.m; sourceTree = "<group>"; };
 		10DB6D2E2022EE690084FC35 /* DPTakePhotoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTakePhotoView.h; sourceTree = "<group>"; };
@@ -510,6 +509,16 @@
 		2977F7FE2022B7280016B617 /* DPConstellationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPConstellationModel.m; sourceTree = "<group>"; };
 		2977F8012022E0CD0016B617 /* constellation_detail_daytest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_detail_daytest@3x.png"; sourceTree = "<group>"; };
 		2977F8022022E0CD0016B617 /* constellation_detail_daytest@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_detail_daytest@2x.png"; sourceTree = "<group>"; };
+		2977F808202303190016B617 /* DPPalmAnalysisController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPalmAnalysisController.h; sourceTree = "<group>"; };
+		2977F809202303190016B617 /* DPPalmAnalysisController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPalmAnalysisController.m; sourceTree = "<group>"; };
+		2977F80A202303190016B617 /* DPPalmAnalysisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPalmAnalysisView.h; sourceTree = "<group>"; };
+		2977F80B202303190016B617 /* DPPalmAnalysisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPalmAnalysisView.m; sourceTree = "<group>"; };
+		2977F80F202303430016B617 /* DPPalmResultController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPalmResultController.h; sourceTree = "<group>"; };
+		2977F810202303430016B617 /* DPPalmResultController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPalmResultController.m; sourceTree = "<group>"; };
+		2977F812202303690016B617 /* DPPalmResultView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPalmResultView.h; sourceTree = "<group>"; };
+		2977F813202303690016B617 /* DPPalmResultView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPalmResultView.m; sourceTree = "<group>"; };
+		2977F815202303900016B617 /* DPPalmResultCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPalmResultCell.h; sourceTree = "<group>"; };
+		2977F816202303900016B617 /* DPPalmResultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPalmResultCell.m; sourceTree = "<group>"; };
 		29BABF5520203B8800CE4E51 /* constellation_ aries_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_ aries_circle@2x.png"; sourceTree = "<group>"; };
 		29BABF5620203B8800CE4E51 /* constellation_aries_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aries_circle@3x.png"; sourceTree = "<group>"; };
 		29BABF5720203B8800CE4E51 /* constellation_aries_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aries_select@2x.png"; sourceTree = "<group>"; };
@@ -1219,17 +1228,6 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
-		10DB6D232022EE170084FC35 /* ResultPage */ = {
-			isa = PBXGroup;
-			children = (
-				10DB6D262022EE170084FC35 /* DPPalmAnalysisController.h */,
-				10DB6D242022EE170084FC35 /* DPPalmAnalysisController.m */,
-				10DB6D252022EE170084FC35 /* DPPalmAnalysisView.h */,
-				10DB6D272022EE170084FC35 /* DPPalmAnalysisView.m */,
-			);
-			path = ResultPage;
-			sourceTree = "<group>";
-		};
 		10DB6D282022EE170084FC35 /* TakePhoto */ = {
 			isa = PBXGroup;
 			children = (
@@ -1252,6 +1250,30 @@
 				29438F242020674D006B7497 /* SCHCircleViewCell.m */,
 			);
 			path = SCHCircleView;
+			sourceTree = "<group>";
+		};
+		2977F807202303190016B617 /* WaitResultPage */ = {
+			isa = PBXGroup;
+			children = (
+				2977F808202303190016B617 /* DPPalmAnalysisController.h */,
+				2977F809202303190016B617 /* DPPalmAnalysisController.m */,
+				2977F80A202303190016B617 /* DPPalmAnalysisView.h */,
+				2977F80B202303190016B617 /* DPPalmAnalysisView.m */,
+			);
+			path = WaitResultPage;
+			sourceTree = "<group>";
+		};
+		2977F80C202303190016B617 /* ResultList */ = {
+			isa = PBXGroup;
+			children = (
+				2977F80F202303430016B617 /* DPPalmResultController.h */,
+				2977F810202303430016B617 /* DPPalmResultController.m */,
+				2977F812202303690016B617 /* DPPalmResultView.h */,
+				2977F813202303690016B617 /* DPPalmResultView.m */,
+				2977F815202303900016B617 /* DPPalmResultCell.h */,
+				2977F816202303900016B617 /* DPPalmResultCell.m */,
+			);
+			path = ResultList;
 			sourceTree = "<group>";
 		};
 		29BABF5420203B8800CE4E51 /* Constellation */ = {
@@ -1390,7 +1412,8 @@
 		D630AF672021DBAE0006B16C /* PalmPsychic */ = {
 			isa = PBXGroup;
 			children = (
-				10DB6D232022EE170084FC35 /* ResultPage */,
+				2977F80C202303190016B617 /* ResultList */,
+				2977F807202303190016B617 /* WaitResultPage */,
 				10DB6D282022EE170084FC35 /* TakePhoto */,
 			);
 			path = PalmPsychic;
@@ -1636,7 +1659,6 @@
 			files = (
 				1006BDB620158E770041DC86 /* SDWebImageManager.m in Sources */,
 				1006BD1F20158E6C0041DC86 /* TextManager.m in Sources */,
-				10DB6D292022EE170084FC35 /* DPPalmAnalysisController.m in Sources */,
 				1006BDC520158E770041DC86 /* UIView+WebCache.m in Sources */,
 				1006BDA420158E770041DC86 /* MJRefreshAutoGifFooter.m in Sources */,
 				10B3F3C820220429003ACADE /* DPTestListController.m in Sources */,
@@ -1661,8 +1683,10 @@
 				1006BD0E20158E6C0041DC86 /* UIViewExt.m in Sources */,
 				1006BD1A20158E6C0041DC86 /* AFFutureTimeSelectedView.m in Sources */,
 				1006BDA220158E770041DC86 /* MJRefreshBackNormalFooter.m in Sources */,
+				2977F817202303900016B617 /* DPPalmResultCell.m in Sources */,
 				1006BD1020158E6C0041DC86 /* NSString+MD5.m in Sources */,
 				29BFF06C202193C900B70DBD /* DPConstellationDetailView.m in Sources */,
+				2977F80E202303190016B617 /* DPPalmAnalysisView.m in Sources */,
 				1006BD9C20158E770041DC86 /* MJRefreshConst.m in Sources */,
 				1006BD9E20158E770041DC86 /* UIScrollView+MJExtension.m in Sources */,
 				1006BDA320158E770041DC86 /* MJRefreshAutoStateFooter.m in Sources */,
@@ -1674,6 +1698,7 @@
 				1006BDA620158E770041DC86 /* MJRefreshNormalHeader.m in Sources */,
 				1006BD2B20158E6C0041DC86 /* NSUserDefaults+RMSaveCustomObject.m in Sources */,
 				1006BD2720158E6C0041DC86 /* AFBaseCell.m in Sources */,
+				2977F811202303430016B617 /* DPPalmResultController.m in Sources */,
 				1006BD1320158E6C0041DC86 /* RSAEncryptor.m in Sources */,
 				1006BDA020158E770041DC86 /* MJRefreshBackGifFooter.m in Sources */,
 				1006BD1520158E6C0041DC86 /* BUChannelNameCell.m in Sources */,
@@ -1697,7 +1722,6 @@
 				1006BD2D20158E6C0041DC86 /* NSObject+RMCopyable.m in Sources */,
 				1006BD2920158E6C0041DC86 /* BUCustomViewController.m in Sources */,
 				1006BD2820158E6C0041DC86 /* BUWebViewController.m in Sources */,
-				10DB6D2A2022EE170084FC35 /* DPPalmAnalysisView.m in Sources */,
 				1006BDAA20158E770041DC86 /* MJRefreshHeader.m in Sources */,
 				1006BDB720158E770041DC86 /* SDWebImageDecoder.m in Sources */,
 				1006BDC620158E770041DC86 /* UIButton+WebCache.m in Sources */,
@@ -1711,6 +1735,7 @@
 				1006BDB020158E770041DC86 /* AFURLSessionManager.m in Sources */,
 				1006BD1720158E6C0041DC86 /* BUUserAvatar.m in Sources */,
 				29438F252020674D006B7497 /* SCHCircleView.m in Sources */,
+				2977F80D202303190016B617 /* DPPalmAnalysisController.m in Sources */,
 				1006BD2120158E6C0041DC86 /* CheckoutManager.m in Sources */,
 				10D009262020B5DC00ADAADB /* DPTestCardController.m in Sources */,
 				1006BDA920158E770041DC86 /* MJRefreshFooter.m in Sources */,
@@ -1732,6 +1757,7 @@
 				1006BD1C20158E6C0041DC86 /* AFTimeSelctedView.m in Sources */,
 				1006BC9320158C930041DC86 /* main.m in Sources */,
 				29BFF06D202193C900B70DBD /* DPWeekCollectionViewCell.m in Sources */,
+				2977F814202303690016B617 /* DPPalmResultView.m in Sources */,
 				1006BDB920158E770041DC86 /* SDWebImageDownloader.m in Sources */,
 				1006BDA720158E770041DC86 /* MJRefreshStateHeader.m in Sources */,
 				1006BDA120158E770041DC86 /* MJRefreshBackStateFooter.m in Sources */,
@@ -1858,7 +1884,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PKL8KP26Y6;
+				DEVELOPMENT_TEAM = 6M534QFX64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;
@@ -1876,7 +1902,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PKL8KP26Y6;
+				DEVELOPMENT_TEAM = 6M534QFX64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;

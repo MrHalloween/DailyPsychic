@@ -10,6 +10,7 @@
 
 @protocol ConstellationDetailDelegate<NSObject>
 
+- (void)pushToResultPage:(NSInteger)btnTag;
 
 @end
 

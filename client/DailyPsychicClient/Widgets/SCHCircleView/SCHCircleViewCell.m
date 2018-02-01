@@ -35,7 +35,6 @@
     {
         self.backgroundColor = [UIColor orangeColor];
         [self addEvent];
-        
     }
     return self;
 }
