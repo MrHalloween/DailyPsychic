@@ -7,6 +7,7 @@
 //
 
 #import "AFBaseTableView.h"
+#import "UILable+TextEffect.h"
 
 @interface AFBaseTableView ()
 {
@@ -50,7 +51,35 @@
 
 - (void)SetupBaseTableView
 {
-    m_pBaseTable = [[UITableView alloc]initWithFrame:self.bounds style:m_iTableViewStyle];
+    //背景
+    UIImageView *pContentView = [[UIImageView alloc]initWithFrame:self.bounds];
+    pContentView.userInteractionEnabled = YES;
+    pContentView.image = [UIImage imageNamed:@"homepage_bg.png"];
+    [self addSubview:pContentView];
+    
+    //title
+    m_pTitleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, NAVIGATION_BAR_Y, self.width, 44)];
+    m_pTitleLabel.userInteractionEnabled = YES;
+    [m_pTitleLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:18 Placehoder:@"Test"];
+    m_pTitleLabel.textAlignment = NSTextAlignmentCenter;
+    [self addSubview:m_pTitleLabel];
+    
+    //返回图片
+    pBackImg = [[UIImageView alloc]init];
+    pBackImg.userInteractionEnabled = YES;
+    pBackImg.image = [UIImage imageNamed:@"constellation_back"];
+    pBackImg.bounds = CGRectMake(0, 0, 7.5 * AdaptRate, 14 * AdaptRate);
+    pBackImg.center = CGPointMake(16 * AdaptRate + pBackImg.width * 0.5, m_pTitleLabel.center.y);
+    [self addSubview:pBackImg];
+    
+    //返回按钮
+    UIButton *pBackaBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    pBackaBtn.bounds = CGRectMake(0, 0, 50, 50);
+    pBackaBtn.center = CGPointMake(pBackaBtn.width * 0.5, pBackImg.center.y);
+    [pBackaBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:pBackaBtn];
+    
+    m_pBaseTable = [[UITableView alloc]initWithFrame:CGRectMake(0, m_pTitleLabel.bottom, self.width, self.height - m_pTitleLabel.bottom) style:m_iTableViewStyle];
     m_pBaseTable.delegate = self;
     m_pBaseTable.dataSource = self;
     m_pBaseTable.backgroundColor = [UIColor clearColor];
@@ -265,6 +294,13 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     return nil;
+}
+
+- (void)backBtnClick
+{
+    if (self.proDelegate && [self.proDelegate respondsToSelector:@selector(PopPreviousPage)]) {
+        [self.proDelegate PopPreviousPage];
+    }
 }
 
 

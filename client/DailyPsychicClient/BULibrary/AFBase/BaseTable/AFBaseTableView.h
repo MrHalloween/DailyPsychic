@@ -26,6 +26,12 @@
  */
 - (void)PushToNextPage:(id)argData;
 
+/**
+ *  返回上一页
+ *
+ */
+- (void)PopPreviousPage;
+
 @end
 
 
@@ -34,6 +40,8 @@
  */
 @interface AFBaseTableView : UIView<UITableViewDataSource,UITableViewDelegate,UITextViewDelegate>
 {
+    UILabel *m_pTitleLabel;         ///标题
+    UIImageView *pBackImg;          ///返回图片
     UITableView *m_pBaseTable;      ///列表
     NSMutableArray *m_arrData;      ///评论数据
     UIView *m_pNoDataView;          ///没有匹配内容
