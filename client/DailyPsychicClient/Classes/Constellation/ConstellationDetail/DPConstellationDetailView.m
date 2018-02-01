@@ -23,7 +23,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self addScrollView];
         [self addTopView];
         [self addCollectionView];
         [self addDetailView];
@@ -31,9 +30,7 @@
     }
     return self;
 }
-- (void)addScrollView{
-    
-}
+
 - (void)addTopView{
     
     // 背景
