@@ -116,11 +116,7 @@
     for (int i = 0; i < 3; i ++) {
         //button背景
         UIButton *m_pConsultation = [UIButton buttonWithType:UIButtonTypeCustom];
-        if (i == 2) {
-            m_pConsultation.frame = CGRectMake(6 * AdaptRate, m_pDateBtn.bottom + 15 * AdaptRate + 169 * AdaptRate * i, self.width - 12 * AdaptRate, 169 * AdaptRate);
-        }else{
-            m_pConsultation.frame = CGRectMake(6 * AdaptRate, m_pDateBtn.bottom + 28 * AdaptRate + 169 * AdaptRate * i, self.width - 12 * AdaptRate, 169 * AdaptRate);
-        }
+        m_pConsultation.frame = CGRectMake(6 * AdaptRate, m_pDateBtn.bottom + 28 * AdaptRate + 169 * AdaptRate * i, self.width - 12 * AdaptRate, 169 * AdaptRate);
         [m_pConsultation setBackgroundImage:[UIImage imageNamed:m_pBgImgArr[i]] forState:UIControlStateNormal];
         [m_pScrollView addSubview:m_pConsultation];
         

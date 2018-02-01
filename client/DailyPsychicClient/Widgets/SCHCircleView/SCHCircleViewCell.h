@@ -67,7 +67,6 @@
     /*当前的比例*/
     CGFloat                         _current_scale;
 }
-@property (nonatomic,retain) IBOutlet UIButton                      *delete_button;
 
 @property (nonatomic,assign)          CGRect                         view_rect;
 @property (nonatomic,assign)          CGFloat                        scale;

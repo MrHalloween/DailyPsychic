@@ -9,11 +9,13 @@
 #import "DPImageViewCell.h"
 
 @implementation DPImageViewCell
+
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
         //星座图片
         UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 46 * AdaptRate, 46 * AdaptRate)];
+        imageView.userInteractionEnabled = YES;
         [self addSubview:imageView];
         self.imageView = imageView;
     }
