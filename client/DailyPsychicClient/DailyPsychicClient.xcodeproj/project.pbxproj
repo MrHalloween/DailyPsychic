@@ -134,6 +134,14 @@
 		10DB6D3A2022EFC70084FC35 /* palm_camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D342022EFC60084FC35 /* palm_camera@3x.png */; };
 		10DB6D3B2022EFC70084FC35 /* palm_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D352022EFC60084FC35 /* palm_left@3x.png */; };
 		10DB6D3C2022EFC70084FC35 /* palm_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D362022EFC60084FC35 /* palm_camera@2x.png */; };
+		29101A222023F41000788AD9 /* DPBasicInforController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29101A212023F41000788AD9 /* DPBasicInforController.m */; };
+		29101A252023F45200788AD9 /* DPBasicInforView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29101A242023F45100788AD9 /* DPBasicInforView.m */; };
+		29101A2D2023F5B000788AD9 /* basic_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29101A272023F5B000788AD9 /* basic_bg@2x.png */; };
+		29101A2E2023F5B000788AD9 /* basic_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29101A282023F5B000788AD9 /* basic_bg@3x.png */; };
+		29101A2F2023F5B000788AD9 /* basic_inputbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29101A292023F5B000788AD9 /* basic_inputbg@2x.png */; };
+		29101A302023F5B000788AD9 /* basic_inputbg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29101A2A2023F5B000788AD9 /* basic_inputbg@3x.png */; };
+		29101A312023F5B000788AD9 /* basic_ok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29101A2B2023F5B000788AD9 /* basic_ok@2x.png */; };
+		29101A322023F5B000788AD9 /* basic_ok@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29101A2C2023F5B000788AD9 /* basic_ok@3x.png */; };
 		29438F1C20205262006B7497 /* constellation_aries@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29438F1820205261006B7497 /* constellation_aries@2x.png */; };
 		29438F1D20205262006B7497 /* constellation_scorpio_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29438F1920205261006B7497 /* constellation_scorpio_select@2x.png */; };
 		29438F1E20205262006B7497 /* constellation_aries@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29438F1A20205261006B7497 /* constellation_aries@3x.png */; };
@@ -499,6 +507,16 @@
 		10DB6D342022EFC60084FC35 /* palm_camera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_camera@3x.png"; sourceTree = "<group>"; };
 		10DB6D352022EFC60084FC35 /* palm_left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_left@3x.png"; sourceTree = "<group>"; };
 		10DB6D362022EFC60084FC35 /* palm_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_camera@2x.png"; sourceTree = "<group>"; };
+		29101A202023F41000788AD9 /* DPBasicInforController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPBasicInforController.h; sourceTree = "<group>"; };
+		29101A212023F41000788AD9 /* DPBasicInforController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPBasicInforController.m; sourceTree = "<group>"; };
+		29101A232023F45100788AD9 /* DPBasicInforView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPBasicInforView.h; sourceTree = "<group>"; };
+		29101A242023F45100788AD9 /* DPBasicInforView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPBasicInforView.m; sourceTree = "<group>"; };
+		29101A272023F5B000788AD9 /* basic_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basic_bg@2x.png"; sourceTree = "<group>"; };
+		29101A282023F5B000788AD9 /* basic_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basic_bg@3x.png"; sourceTree = "<group>"; };
+		29101A292023F5B000788AD9 /* basic_inputbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basic_inputbg@2x.png"; sourceTree = "<group>"; };
+		29101A2A2023F5B000788AD9 /* basic_inputbg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basic_inputbg@3x.png"; sourceTree = "<group>"; };
+		29101A2B2023F5B000788AD9 /* basic_ok@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basic_ok@2x.png"; sourceTree = "<group>"; };
+		29101A2C2023F5B000788AD9 /* basic_ok@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "basic_ok@3x.png"; sourceTree = "<group>"; };
 		29438F1820205261006B7497 /* constellation_aries@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aries@2x.png"; sourceTree = "<group>"; };
 		29438F1920205261006B7497 /* constellation_scorpio_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_scorpio_select@2x.png"; sourceTree = "<group>"; };
 		29438F1A20205261006B7497 /* constellation_aries@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_aries@3x.png"; sourceTree = "<group>"; };
@@ -709,6 +727,7 @@
 		1006BC9B20158D400041DC86 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				29101A262023F5B000788AD9 /* BasicInformstion */,
 				D630AF6E2021DDB40006B16C /* PalmAnalysis */,
 				10D0092A2020B85100ADAADB /* Test */,
 				29BABF5420203B8800CE4E51 /* Constellation */,
@@ -731,6 +750,7 @@
 		1006BC9D20158D400041DC86 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				29101A1F2023F3ED00788AD9 /* BasicInformation */,
 				D630AF672021DBAE0006B16C /* PalmPsychic */,
 				10015C9220204B4100C54C94 /* Test */,
 				D696ABCD201F67A8002235D5 /* Constellation */,
@@ -1257,6 +1277,30 @@
 			path = TakePhoto;
 			sourceTree = "<group>";
 		};
+		29101A1F2023F3ED00788AD9 /* BasicInformation */ = {
+			isa = PBXGroup;
+			children = (
+				29101A202023F41000788AD9 /* DPBasicInforController.h */,
+				29101A212023F41000788AD9 /* DPBasicInforController.m */,
+				29101A232023F45100788AD9 /* DPBasicInforView.h */,
+				29101A242023F45100788AD9 /* DPBasicInforView.m */,
+			);
+			path = BasicInformation;
+			sourceTree = "<group>";
+		};
+		29101A262023F5B000788AD9 /* BasicInformstion */ = {
+			isa = PBXGroup;
+			children = (
+				29101A272023F5B000788AD9 /* basic_bg@2x.png */,
+				29101A282023F5B000788AD9 /* basic_bg@3x.png */,
+				29101A292023F5B000788AD9 /* basic_inputbg@2x.png */,
+				29101A2A2023F5B000788AD9 /* basic_inputbg@3x.png */,
+				29101A2B2023F5B000788AD9 /* basic_ok@2x.png */,
+				29101A2C2023F5B000788AD9 /* basic_ok@3x.png */,
+			);
+			path = BasicInformstion;
+			sourceTree = "<group>";
+		};
 		29438F202020674D006B7497 /* SCHCircleView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1543,6 +1587,7 @@
 			files = (
 				1099F1F0201F245E00CE653E /* homepage_ok@3x.png in Resources */,
 				29BABFD420203B8800CE4E51 /* constellation_leo_select@3x.png in Resources */,
+				29101A2D2023F5B000788AD9 /* basic_bg@2x.png in Resources */,
 				29BABFDD20203B8800CE4E51 /* constellation_sagittarius@2x.png in Resources */,
 				10D009342020B85100ADAADB /* test_cell@2x.png in Resources */,
 				1099F1F1201F245E00CE653E /* homepage_bg@2x.png in Resources */,
@@ -1570,6 +1615,7 @@
 				29BABFAA20203B8800CE4E51 /* constellation_virgo_circle@3x.png in Resources */,
 				D630AF712021DDB40006B16C /* palm_main@3x.png in Resources */,
 				29BABFD120203B8800CE4E51 /* constellation_leo_circle@2x.png in Resources */,
+				29101A2F2023F5B000788AD9 /* basic_inputbg@2x.png in Resources */,
 				29BFF08A20219E8A00B70DBD /* constellation_detail_counselor@2x.png in Resources */,
 				29BABFB020203B8800CE4E51 /* constellation_aquarius_circle@3x.png in Resources */,
 				29BABFEA20203B8800CE4E51 /* constellation_taurus@3x.png in Resources */,
@@ -1589,6 +1635,7 @@
 				29BABFC120203B8800CE4E51 /* constellation_capricorn@2x.png in Resources */,
 				29BABFB720203B8800CE4E51 /* constellation_libra_circle@2x.png in Resources */,
 				10DB6D372022EFC70084FC35 /* palm_right@2x.png in Resources */,
+				29101A312023F5B000788AD9 /* basic_ok@2x.png in Resources */,
 				10DB6D212022D5090084FC35 /* test_list_eye@2x.png in Resources */,
 				29BABFD620203B8800CE4E51 /* constellation_main@3x.png in Resources */,
 				10DB6D1F2022D5090084FC35 /* test_list_bg@2x.png in Resources */,
@@ -1615,6 +1662,7 @@
 				29BABFAF20203B8800CE4E51 /* constellation_aquarius_circle@2x.png in Resources */,
 				29438F1C20205262006B7497 /* constellation_aries@2x.png in Resources */,
 				D6EB8900202334AC005045B4 /* palm_resultbg@3x.png in Resources */,
+				29101A302023F5B000788AD9 /* basic_inputbg@3x.png in Resources */,
 				29BABFB220203B8800CE4E51 /* constellation_aquarius_select@3x.png in Resources */,
 				29BABFC820203B8800CE4E51 /* constellation_gemini@3x.png in Resources */,
 				1006BC8D20158C930041DC86 /* Assets.xcassets in Resources */,
@@ -1639,6 +1687,7 @@
 				1099F1EF201F245E00CE653E /* homepage_triangle@3x.png in Resources */,
 				29BABFAE20203B8800CE4E51 /* constellation_aquarius@3x.png in Resources */,
 				29BABFA720203B8800CE4E51 /* constellation_virgo@2x.png in Resources */,
+				29101A2E2023F5B000788AD9 /* basic_bg@3x.png in Resources */,
 				29BABFD020203B8800CE4E51 /* constellation_leo@3x.png in Resources */,
 				10DB6D3C2022EFC70084FC35 /* palm_camera@2x.png in Resources */,
 				29BABFB520203B8800CE4E51 /* constellation_balance@2x.png in Resources */,
@@ -1668,6 +1717,7 @@
 				29BABFD320203B8800CE4E51 /* constellation_leo_select@2x.png in Resources */,
 				29BABFD720203B8800CE4E51 /* constellation_pisces@2x.png in Resources */,
 				29BABFC420203B8800CE4E51 /* constellation_capricorn_circle@3x.png in Resources */,
+				29101A322023F5B000788AD9 /* basic_ok@3x.png in Resources */,
 				29BABFB420203B8800CE4E51 /* constellation_back@3x.png in Resources */,
 				29BABFC320203B8800CE4E51 /* constellation_capricorn_circle@2x.png in Resources */,
 				29BABFE820203B8800CE4E51 /* constellation_start@3x.png in Resources */,
@@ -1712,6 +1762,7 @@
 				1006BDAE20158E770041DC86 /* AFURLResponseSerialization.m in Sources */,
 				1006BDC020158E770041DC86 /* NSData+ImageContentType.m in Sources */,
 				2977F7FF2022B7280016B617 /* DPConstellationModel.m in Sources */,
+				29101A252023F45200788AD9 /* DPBasicInforView.m in Sources */,
 				1006BD2E20158E6C0041DC86 /* BUBaseResponseData.m in Sources */,
 				1006BDAF20158E770041DC86 /* AFHTTPSessionManager.m in Sources */,
 				1006BD0E20158E6C0041DC86 /* UIViewExt.m in Sources */,
@@ -1732,6 +1783,7 @@
 				1006BDBB20158E770041DC86 /* UIImage+MultiFormat.m in Sources */,
 				1006BD0C20158E6C0041DC86 /* UITextView+Placeholder.m in Sources */,
 				1006BDA620158E770041DC86 /* MJRefreshNormalHeader.m in Sources */,
+				29101A222023F41000788AD9 /* DPBasicInforController.m in Sources */,
 				1006BD2B20158E6C0041DC86 /* NSUserDefaults+RMSaveCustomObject.m in Sources */,
 				1006BD2720158E6C0041DC86 /* AFBaseCell.m in Sources */,
 				2977F811202303430016B617 /* DPPalmResultController.m in Sources */,
@@ -1920,7 +1972,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B5NSHSQ997;
+				DEVELOPMENT_TEAM = 6M534QFX64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;
@@ -1938,7 +1990,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B5NSHSQ997;
+				DEVELOPMENT_TEAM = 6M534QFX64;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;
