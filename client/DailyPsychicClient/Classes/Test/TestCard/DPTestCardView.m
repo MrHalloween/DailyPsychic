@@ -8,6 +8,11 @@
 
 #import "DPTestCardView.h"
 #import "UILable+TextEffect.h"
+@interface DPTestCardView()
+{
+//    NSInteger m_nPageNum;
+}
+@end
 
 @implementation DPTestCardView
 

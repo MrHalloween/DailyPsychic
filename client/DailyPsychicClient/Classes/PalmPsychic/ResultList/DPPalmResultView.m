@@ -49,10 +49,6 @@
 {
     return 243 * AdaptRate;
 }
-- (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    UIView *pHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.width, 30 * AdaptRate)];
-    pHeaderView.backgroundColor = [UIColor redColor];
-    return pHeaderView;
-}
+
 
 @end

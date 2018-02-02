@@ -88,9 +88,9 @@
 //开始进入下一页
 - (void)startBtnClick
 {
-    if (self.selectConstellationDel != nil && [self.selectConstellationDel respondsToSelector:@selector(StartToNextPage)])
+    if (self.proDelegate != nil && [self.proDelegate respondsToSelector:@selector(PushToNextPage:)])
     {
-        [self.selectConstellationDel StartToNextPage];
+        [self.proDelegate PushToNextPage:nil];
     }
 }
 
@@ -120,10 +120,6 @@
     return CGPointMake(m_pCircle_view.width * 0.5 - 23 * AdaptRate, m_pCircle_view.height * 0.5 - 23 * AdaptRate);
 }
 
-//#pragma mark - SCHCircleViewDelegate
-//- (void)touchEndCircleViewCell:(SCHCircleViewCell *)cell indexOfCircleViewCell:(NSInteger)index
-//{
-//
-//}
+
 
 @end

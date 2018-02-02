@@ -8,10 +8,8 @@
 
 #import "AFBaseTableView.h"
 
-@protocol PalmAnalysisDelegate<NSObject>
-
-@end
 
 @interface DPPalmAnalysisView : AFBaseTableView
-@property (nonatomic ,weak)id<PalmAnalysisDelegate>palmAnalysisDel;
+
+
 @end

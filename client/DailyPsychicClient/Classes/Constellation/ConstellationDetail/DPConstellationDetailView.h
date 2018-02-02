@@ -8,14 +8,6 @@
 
 #import "AFBaseTableView.h"
 
-@protocol ConstellationDetailDelegate<NSObject>
-
-- (void)pushToResultPage:(NSInteger)btnTag;
-
-@end
-
 @interface DPConstellationDetailView : AFBaseTableView
-
-@property (nonatomic ,weak)id<ConstellationDetailDelegate>conDetailDel;
 
 @end

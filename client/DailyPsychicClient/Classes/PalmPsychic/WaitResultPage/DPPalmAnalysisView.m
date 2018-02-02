@@ -32,7 +32,15 @@
     pGetResultBtn.bounds = CGRectMake(0, 0, 282 * AdaptRate, 63 * AdaptRate);
     pGetResultBtn.center = CGPointMake(self.width/2, self.height - 42 * AdaptRate - 63 * 0.5 * AdaptRate);
     [pGetResultBtn setBackgroundImage:[UIImage imageNamed:@"palm_getresult"] forState:UIControlStateNormal];
+    [pGetResultBtn addTarget:self action:@selector(getResult) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:pGetResultBtn];
+}
+
+- (void)getResult
+{
+    if (self.proDelegate != nil && [self.proDelegate respondsToSelector:@selector(PushToNextPage:)]) {
+        [self.proDelegate PushToNextPage:nil];
+    }
 }
 
 @end

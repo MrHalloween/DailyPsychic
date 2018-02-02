@@ -12,7 +12,7 @@
 #import "DPPalmResultController.h"
 #import "DPPalmAnalyingViewController.h"
 
-@interface DPConstellationDetailController ()<ConstellationDetailDelegate,AFBaseTableViewDelegate>
+@interface DPConstellationDetailController ()<AFBaseTableViewDelegate>
 {
     DPConstellationDetailView *m_pConstellDetail;
 }
@@ -24,15 +24,15 @@
     [super viewDidLoad];
     m_pConstellDetail = [[DPConstellationDetailView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
     m_pConstellDetail.proDelegate = self;
-    m_pConstellDetail.conDetailDel = self;
     [self.view addSubview:m_pConstellDetail];
 }
 
 - (void)PopPreviousPage{
     [self Back];
 }
-- (void)pushToResultPage:(NSInteger)btnTag{
+- (void)PushToNextPage:(id)argData{
     
+    NSUInteger btnTag = (long)argData;
     BUCustomViewController *pVC;
     switch (btnTag) {
         case 100:

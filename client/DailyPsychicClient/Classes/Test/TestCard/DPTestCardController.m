@@ -12,6 +12,7 @@
 @interface DPTestCardController ()<AFBaseTableViewDelegate,DPTestCardViewDelegate>
 {
     DPTestCardView *m_pTestCardView;
+    NSInteger m_nPageNum;
 }
 @end
 

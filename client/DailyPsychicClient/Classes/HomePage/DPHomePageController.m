@@ -8,9 +8,9 @@
 
 #import "DPHomePageController.h"
 #import "DPHomePageView.h"
-#import "DPSelectConstellationController.h"
 #import "DPTestListController.h"
 #import "DPTakePhotoController.h"
+#import "DPBasicInforController.h"
 
 @interface DPHomePageController ()<DPHomePageViewDelegate>
 {
@@ -34,7 +34,14 @@
     BUCustomViewController *pVC;
     switch (pageNumber) {
         case 0: pVC = [[DPTakePhotoController alloc]init]; break;
-        case 1: pVC = [[DPSelectConstellationController alloc]init]; break;
+        case 1:
+        {
+            DPBasicInforController * baseVc = [[DPBasicInforController alloc]init];
+            baseVc.previousName = @"DPHomePageController";
+            pVC = baseVc;
+            
+        }
+            break;
         case 2: pVC = [[DPTestListController alloc]init]; break;
         default:
             break;
