@@ -33,6 +33,7 @@
     if ([self.previousName isEqualToString:@"DPTestListController"] ) {//测试
         
         DPTestCardController * testVc = [[DPTestCardController alloc]init];
+        testVc.testId = self.testId;
         [self PushChildViewController:testVc animated:YES];
         
     }else if ([self.previousName isEqualToString:@"DPHomePageController"]){//选择星座

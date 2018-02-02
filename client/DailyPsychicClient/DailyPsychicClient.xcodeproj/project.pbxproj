@@ -111,6 +111,7 @@
 		1099F1F0201F245E00CE653E /* homepage_ok@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1E4201F245E00CE653E /* homepage_ok@3x.png */; };
 		1099F1F1201F245E00CE653E /* homepage_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1E5201F245E00CE653E /* homepage_bg@2x.png */; };
 		1099F1F2201F245E00CE653E /* homepage_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1E6201F245E00CE653E /* homepage_bg@3x.png */; };
+		10A6B45F20243E93006520CE /* testCard.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10A6B45E20243E93006520CE /* testCard.plist */; };
 		10B3F3C820220429003ACADE /* DPTestListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B3F3C720220429003ACADE /* DPTestListController.m */; };
 		10B3F3CB2022043D003ACADE /* DPTestListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B3F3CA2022043D003ACADE /* DPTestListView.m */; };
 		10B3F3CE2022044D003ACADE /* DPTestListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B3F3CD2022044D003ACADE /* DPTestListCell.m */; };
@@ -476,6 +477,7 @@
 		1099F1E4201F245E00CE653E /* homepage_ok@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_ok@3x.png"; sourceTree = "<group>"; };
 		1099F1E5201F245E00CE653E /* homepage_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_bg@2x.png"; sourceTree = "<group>"; };
 		1099F1E6201F245E00CE653E /* homepage_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_bg@3x.png"; sourceTree = "<group>"; };
+		10A6B45E20243E93006520CE /* testCard.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = testCard.plist; sourceTree = "<group>"; };
 		10B3F3C620220429003ACADE /* DPTestListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTestListController.h; sourceTree = "<group>"; };
 		10B3F3C720220429003ACADE /* DPTestListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTestListController.m; sourceTree = "<group>"; };
 		10B3F3C92022043D003ACADE /* DPTestListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTestListView.h; sourceTree = "<group>"; };
@@ -1513,6 +1515,7 @@
 			children = (
 				D630AF742021EE270006B16C /* constellation.plist */,
 				10DB6D192022D2350084FC35 /* testList1.plist */,
+				10A6B45E20243E93006520CE /* testCard.plist */,
 			);
 			path = plist;
 			sourceTree = "<group>";
@@ -1718,6 +1721,7 @@
 				29BABFD720203B8800CE4E51 /* constellation_pisces@2x.png in Resources */,
 				29BABFC420203B8800CE4E51 /* constellation_capricorn_circle@3x.png in Resources */,
 				29101A322023F5B000788AD9 /* basic_ok@3x.png in Resources */,
+				10A6B45F20243E93006520CE /* testCard.plist in Resources */,
 				29BABFB420203B8800CE4E51 /* constellation_back@3x.png in Resources */,
 				29BABFC320203B8800CE4E51 /* constellation_capricorn_circle@2x.png in Resources */,
 				29BABFE820203B8800CE4E51 /* constellation_start@3x.png in Resources */,

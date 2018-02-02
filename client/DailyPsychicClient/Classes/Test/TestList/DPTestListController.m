@@ -35,8 +35,10 @@
 #pragma mark - AFBaseTableViewDelegate
 -(void)PushToNextPage:(id)argData
 {
+    NSDictionary *data = argData;
     DPBasicInforController *baseVC = [[DPBasicInforController alloc]init];
     baseVC.previousName = @"DPTestListController";
+    baseVC.testId = data[@"testId"];
     [self PushChildViewController:baseVC animated:YES];
 }
 

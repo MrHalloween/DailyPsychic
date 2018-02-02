@@ -14,7 +14,7 @@
 	</dict>
 	<dict>
 		<key>testId</key>
-		<string>1</string>
+		<string>2</string>
 		<key>headImage</key>
 		<string>constellation_detail_palma</string>
 		<key>title</key>
@@ -24,7 +24,7 @@
 	</dict>
 	<dict>
 		<key>testId</key>
-		<string>1</string>
+		<string>3</string>
 		<key>headImage</key>
 		<string>constellation_detail_palma</string>
 		<key>title</key>
@@ -34,7 +34,7 @@
 	</dict>
 	<dict>
 		<key>testId</key>
-		<string>1</string>
+		<string>4</string>
 		<key>headImage</key>
 		<string>constellation_detail_palma</string>
 		<key>title</key>
@@ -44,7 +44,7 @@
 	</dict>
 	<dict>
 		<key>testId</key>
-		<string>1</string>
+		<string>5</string>
 		<key>headImage</key>
 		<string>constellation_detail_palma</string>
 		<key>title</key>

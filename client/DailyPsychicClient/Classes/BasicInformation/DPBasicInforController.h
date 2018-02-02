@@ -12,4 +12,6 @@
 
 @property (nonatomic, copy) NSString *previousName; /// < 是从哪个页面过来
 
+@property (nonatomic,copy) NSString *testId;        /// < 测试题目id
+
 @end

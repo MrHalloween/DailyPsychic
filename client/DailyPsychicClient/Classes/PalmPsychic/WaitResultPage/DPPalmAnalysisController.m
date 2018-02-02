@@ -29,7 +29,8 @@
 
 - (void)PopPreviousPage
 {
-    [self Back];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+//    [self Back];
 }
 - (void)PushToNextPage:(id)argData{
     
