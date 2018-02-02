@@ -32,14 +32,12 @@
 }
 - (void)PushToNextPage:(id)argData{
     
-    NSUInteger btnTag = (long)argData;
+    NSInteger btnTag = [argData integerValue];
     BUCustomViewController *pVC;
     switch (btnTag) {
-        case 100:
-            pVC = [[DPPalmAnalyingViewController alloc]init];
+        case 100:pVC = [[DPPalmResultController alloc]init];
             break;
-        case 101:
-            pVC = [[DPPalmResultController alloc]init];
+        case 101:pVC = [[DPPalmResultController alloc]init];
             break;
         case 102:
             break;
