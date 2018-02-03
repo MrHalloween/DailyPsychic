@@ -14,6 +14,7 @@
 {
     AFTimeSelctedView *m_pTimeSelect;
     UITextField *m_pBirthText;
+    UITextField *m_pNameText;
 }
 @end
 
@@ -32,7 +33,7 @@
      m_pTitleLabel.text = @"Basic Information";
     
     //背景图
-    UIImageView *pMainImg = [[UIImageView alloc]initWithFrame:CGRectMake(15 * AdaptRate, 64 * AdaptRate, self.width - 30 * AdaptRate, 322 * AdaptRate)];
+    UIImageView *pMainImg = [[UIImageView alloc]initWithFrame:CGRectMake(15 * AdaptRate, 82 * AdaptRate, self.width - 30 * AdaptRate, 322 * AdaptRate)];
     pMainImg.userInteractionEnabled = YES;
     pMainImg.image = [UIImage imageNamed:@"basic_bg"];
     [self addSubview:pMainImg];
@@ -47,21 +48,21 @@
     [pMainImg addSubview:pfullName];
     
     //name TextField
-    UITextField *pNameText = [[UITextField alloc]init];
-    pNameText.frame = CGRectMake(40 * AdaptRate, pfullName.bottom + 10 * AdaptRate, pMainImg.width - 80 * AdaptRate, 42 * AdaptRate);
-    pNameText.textColor = [UIColor whiteColor];
+    m_pNameText = [[UITextField alloc]init];
+    m_pNameText.frame = CGRectMake(40 * AdaptRate, pfullName.bottom + 10 * AdaptRate, pMainImg.width - 80 * AdaptRate, 42 * AdaptRate);
+    m_pNameText.textColor = [UIColor whiteColor];
     UIView *paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)];
-    pNameText.leftView = paddingView;
-    pNameText.leftViewMode = UITextFieldViewModeAlways;
-    pNameText.font = [UIFont systemFontOfSize:16];
-    pNameText.background = [UIImage imageNamed:@"basic_inputbg"];
-    [pMainImg addSubview:pNameText];
+    m_pNameText.leftView = paddingView;
+    m_pNameText.leftViewMode = UITextFieldViewModeAlways;
+    m_pNameText.font = [UIFont systemFontOfSize:16];
+    m_pNameText.background = [UIImage imageNamed:@"basic_inputbg"];
+    [pMainImg addSubview:m_pNameText];
     
     //Your birthday
     UILabel *pBirthdayLabel = [[UILabel alloc]init];
     pBirthdayLabel.alpha = 0.6;
     [pBirthdayLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:16 Placehoder:@"Your birthday"];
-    pBirthdayLabel.frame = CGRectMake(40 * AdaptRate,pNameText.bottom + 18 * AdaptRate, 100 * AdaptRate, SIZE_HEIGHT(16));
+    pBirthdayLabel.frame = CGRectMake(40 * AdaptRate,m_pNameText.bottom + 18 * AdaptRate, 100 * AdaptRate, SIZE_HEIGHT(16));
     [pBirthdayLabel sizeToFit];
     pBirthdayLabel.textAlignment = NSTextAlignmentLeft;
     [pMainImg addSubview:pBirthdayLabel];
@@ -111,8 +112,14 @@
 }
 //进入下一页
 - (void)pushToNext{
-    if (self.proDelegate != nil && [self.proDelegate respondsToSelector:@selector(PushToNextPage:)]) {
-        [self.proDelegate PushToNextPage:nil];
+    if (m_pNameText.text.length == 0 && m_pBirthText.text.length == 0) {
+        [AlertManager ShowRelutWithMessage:@"请将信息填写完整！" Dismiss:^{
+            
+        }];
+    }else{
+        if (self.proDelegate != nil && [self.proDelegate respondsToSelector:@selector(PushToNextPage:)]) {
+            [self.proDelegate PushToNextPage:nil];
+        }
     }
 }
 
