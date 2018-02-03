@@ -34,13 +34,12 @@
     if (self)
     {
         self.backgroundColor = [UIColor orangeColor];
-        [self addEvent];
     }
     return self;
 }
 
 
-- (void)addEvent
+- (void)awakeFromNib
 {    
     /*增加长点击事件*/
     UILongPressGestureRecognizer *long_press = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(pressedLong:)];
@@ -55,16 +54,16 @@
     single_tap.numberOfTouchesRequired = 1;
     single_tap.delegate                = self;
     [self addGestureRecognizer: single_tap];
-//    [single_tap release];
-//    single_tap = nil;
+    [single_tap release];
+    single_tap = nil;
     
     /*增加拖动事件*/
     UIPanGestureRecognizer *single_pan = [[UIPanGestureRecognizer alloc] initWithTarget: self action: @selector(handleSinglePan:)] ;
     single_pan.cancelsTouchesInView    = NO;
     single_pan.delegate                = self;
     [self addGestureRecognizer: single_pan];
-//    [single_pan release];
-//    single_pan = nil;
+    [single_pan release];
+    single_pan = nil;
     
 }
 

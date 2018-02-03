@@ -67,8 +67,7 @@
     [pHexaganalImg addSubview:pDateLable];
     
     //旋转的星座
-    m_pCircle_view = [[SCHCircleView alloc]initWithFrame:CGRectMake(0, 0, 344 * AdaptRate, 344 * AdaptRate)];
-    m_pCircle_view.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.2];
+    m_pCircle_view = [[SCHCircleView alloc]initWithFrame:CGRectMake(0, 0, 296 * AdaptRate, 296 * AdaptRate)];
     m_pCircle_view.center = m_pMainImg.center;
     m_pCircle_view.circle_view_data_source = self;
     m_pCircle_view.circle_view_delegate    = self;
@@ -102,7 +101,7 @@
 
 - (SCHCircleViewCell *)circleView:(SCHCircleView *)circle_view cellAtIndex:(NSInteger)index_circle_cell
 {
-    DPImageViewCell *cell = [[DPImageViewCell alloc]init];
+    DPImageViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"DPImageViewCell" owner:nil options:nil] lastObject];
     DPConstellationModel * model = [DPConstellationModel ModelWithDictionary:m_arrData[index_circle_cell]];
     cell.model = model;
     return cell;
@@ -111,13 +110,13 @@
 /*返回 圆的半径*/
 - (CGFloat)radiusOfCircleView:(SCHCircleView *)circle_view
 {
-    return 252 * AdaptRate * 0.5;
+    return 251 * AdaptRate * 0.5;
 }
 
 /*返回中心点*/
 - (CGPoint)centerOfCircleView:(SCHCircleView *)circle_view
 {
-    return CGPointMake(m_pCircle_view.width * 0.5 - 23 * AdaptRate, m_pCircle_view.height * 0.5 - 23 * AdaptRate);
+    return CGPointMake(m_pCircle_view.width * 0.5, m_pCircle_view.height * 0.5);
 }
 
 

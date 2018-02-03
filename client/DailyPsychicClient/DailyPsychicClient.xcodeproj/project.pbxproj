@@ -261,6 +261,7 @@
 		D630AF712021DDB40006B16C /* palm_main@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D630AF6F2021DDB40006B16C /* palm_main@3x.png */; };
 		D630AF722021DDB40006B16C /* palm_main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D630AF702021DDB40006B16C /* palm_main@2x.png */; };
 		D630AF752021EE270006B16C /* constellation.plist in Resources */ = {isa = PBXBuildFile; fileRef = D630AF742021EE270006B16C /* constellation.plist */; };
+		D6D8795F2025744C00F543EE /* DPImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6D8795E2025744C00F543EE /* DPImageViewCell.xib */; };
 		D6EB8900202334AC005045B4 /* palm_resultbg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EB88FE202334AC005045B4 /* palm_resultbg@3x.png */; };
 		D6EB8901202334AC005045B4 /* palm_resultbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EB88FF202334AC005045B4 /* palm_resultbg@2x.png */; };
 		D6EB890420235176005045B4 /* DPPalmAnalyingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EB890320235176005045B4 /* DPPalmAnalyingViewController.m */; };
@@ -653,6 +654,7 @@
 		D630AF6F2021DDB40006B16C /* palm_main@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_main@3x.png"; sourceTree = "<group>"; };
 		D630AF702021DDB40006B16C /* palm_main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_main@2x.png"; sourceTree = "<group>"; };
 		D630AF742021EE270006B16C /* constellation.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = constellation.plist; sourceTree = "<group>"; };
+		D6D8795E2025744C00F543EE /* DPImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPImageViewCell.xib; sourceTree = "<group>"; };
 		D6EB88FE202334AC005045B4 /* palm_resultbg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_resultbg@3x.png"; sourceTree = "<group>"; };
 		D6EB88FF202334AC005045B4 /* palm_resultbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_resultbg@2x.png"; sourceTree = "<group>"; };
 		D6EB890220235176005045B4 /* DPPalmAnalyingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPalmAnalyingViewController.h; sourceTree = "<group>"; };
@@ -1465,6 +1467,7 @@
 		29BFF064202193C900B70DBD /* SelectConstellation */ = {
 			isa = PBXGroup;
 			children = (
+				D6D8795E2025744C00F543EE /* DPImageViewCell.xib */,
 				29BFF065202193C900B70DBD /* DPImageViewCell.h */,
 				29BFF066202193C900B70DBD /* DPImageViewCell.m */,
 				29BFF067202193C900B70DBD /* DPSelectConstellationController.h */,
@@ -1606,6 +1609,7 @@
 				29BABFB320203B8800CE4E51 /* constellation_back@2x.png in Resources */,
 				D6EB890C20235306005045B4 /* palm_analying_one@2x.png in Resources */,
 				10DB6D392022EFC70084FC35 /* palm_right@3x.png in Resources */,
+				D6D8795F2025744C00F543EE /* DPImageViewCell.xib in Resources */,
 				29BABFCE20203B8800CE4E51 /* constellation_hexagonal@2x.png in Resources */,
 				29BABFEE20203B8800CE4E51 /* constellation_taurus_select@3x.png in Resources */,
 				29BFF08920219E8A00B70DBD /* constellation_detail_lock@2x.png in Resources */,

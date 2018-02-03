@@ -11,7 +11,7 @@
 
 @interface DPImageViewCell : SCHCircleViewCell
 
-@property (nonatomic,retain) UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *constellImage;
 @property (nonatomic,strong) DPConstellationModel *model;
 
 @end
