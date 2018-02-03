@@ -9,6 +9,8 @@
 #import "DPConstellationDetailView.h"
 #import "UILable+TextEffect.h"
 #import "DPWeekCollectionViewCell.h"
+#import "NSString+TimeFormat.h"
+#import "DPConstellationModel.h"
 
 @interface DPConstellationDetailView()<UICollectionViewDelegate,UICollectionViewDataSource>
 {
@@ -25,6 +27,9 @@
     self = [super initWithFrame:frame];
     if (self) {
         m_pTitleLabel.text = @"Start";
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"constellation" ofType:@"plist"];
+        NSArray *m_arrConstel = [NSArray arrayWithContentsOfFile: plistPath];
+        m_arrData = [NSMutableArray arrayWithArray:m_arrConstel];
         [self addCollectionView];
         [self addScrolllview];
         [self addDetailView];
@@ -70,7 +75,8 @@
 
     //日期
     UILabel *m_pDateLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, m_pTodayLabel.bottom + 5 * AdaptRate, m_pDateBtn.width, SIZE_HEIGHT(20))];
-    [m_pDateLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:@"2018.02.10"];
+    NSString *currentDate = [NSString GetCurrentTimesWithFormat:@"yyyy.MM.dd"];
+    [m_pDateLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:currentDate];
     m_pDateLabel.textAlignment = NSTextAlignmentCenter;
     [m_pDateBtn addSubview:m_pDateLabel];
     
@@ -92,8 +98,10 @@
     [m_pConstellBtn addSubview:m_pStartLabel];
     
     //星座
+    NSInteger m_lindex = [[[NSUserDefaults standardUserDefaults]objectForKey:@"selectConstalletion"] integerValue];
     UILabel *m_pConstellLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, m_pStartLabel.bottom + 5 * AdaptRate, 0, 0)];
-    [m_pConstellLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:@"Aquarius"];
+    DPConstellationModel * model = [DPConstellationModel ModelWithDictionary:m_arrData[m_lindex]];
+    [m_pConstellLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:model.nameEn];
     [m_pConstellLabel sizeToFit];
     CGPoint center = m_pConstellLabel.center;
     center.x = m_pConstellBtn.width * 0.5;
@@ -102,7 +110,7 @@
     [m_pConstellBtn addSubview:m_pConstellLabel];
     
     //向下箭头
-    UIImageView *m_pArrowImg = [[UIImageView alloc]initWithFrame:CGRectMake(m_pConstellLabel.right + 10 * AdaptRate, m_pConstellLabel.top + 12 * AdaptRate, 12 * AdaptRate, 8 * AdaptRate)];
+    UIImageView *m_pArrowImg = [[UIImageView alloc]initWithFrame:CGRectMake(m_pConstellLabel.right + 10 * AdaptRate, m_pConstellLabel.top + 8 * AdaptRate, 12 * AdaptRate, 8 * AdaptRate)];
     m_pArrowImg.image = [UIImage imageNamed:@"constellation_detail_triangle"];
     [m_pConstellBtn addSubview:m_pArrowImg];
     

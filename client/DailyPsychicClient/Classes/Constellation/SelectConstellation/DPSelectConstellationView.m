@@ -73,7 +73,7 @@
     m_pCircle_view.center = m_pMainImg.center;
     m_pCircle_view.circle_view_data_source = self;
     m_pCircle_view.circle_view_delegate    = self;
-    m_pCircle_view.show_circle_style       = SChShowCircleWinding;
+    m_pCircle_view.show_circle_style       = SCHShowCircleDefault;
     m_pCircle_view.circle_layout_style = SChCircleLayoutNormal;
     [self addSubview:m_pCircle_view];
     
@@ -126,6 +126,8 @@
     DPConstellationModel * model = [DPConstellationModel ModelWithDictionary:m_arrData[index]];
     m_pNameLabel.text = model.nameEn;
     m_pDateLable.text = model.date;
+    [[NSUserDefaults standardUserDefaults]setObject:@(index) forKey:@"selectConstalletion"];
+    [[NSUserDefaults standardUserDefaults]synchronize];
 }
 
 /*拖动结束*/
@@ -133,6 +135,8 @@
     DPConstellationModel * model = [DPConstellationModel ModelWithDictionary:m_arrData[currentIndex]];
     m_pNameLabel.text = model.nameEn;
     m_pDateLable.text = model.date;
+    [[NSUserDefaults standardUserDefaults]setObject:@(currentIndex) forKey:@"selectConstalletion"];
+    [[NSUserDefaults standardUserDefaults]synchronize];
 }
 
 
