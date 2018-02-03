@@ -54,9 +54,9 @@
     [super viewDidLoad];
     //添加一个全屏的滑动返回手势（系统导航控制器默认的滑动返回是边缘滑动返回）
     //handleNavigationTransition:是ios的私有方法
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self.navigationController.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
-    pan.delegate = self;
-    [self.view addGestureRecognizer:pan];
+//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self.navigationController.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
+//    pan.delegate = self;
+//    [self.view addGestureRecognizer:pan];
     //禁用系统的手势
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
     
