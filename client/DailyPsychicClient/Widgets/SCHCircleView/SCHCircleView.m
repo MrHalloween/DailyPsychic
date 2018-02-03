@@ -276,13 +276,9 @@ static int drag_animation_count        = 0;
     /*点击的 最前展示的*/
     if(touch_index == _current_index)
     {
-        if([_circle_view_delegate respondsToSelector:@selector(touchEndCircleViewCell:indexOfCircleViewCell:)])
-        {
-            [_circle_view_delegate touchEndCircleViewCell:cell indexOfCircleViewCell:_current_index];
-        }
         return;
     }
-    
+
     /*开始单击动画*/
     _is_single_tap_animation    = YES;
     
@@ -320,7 +316,10 @@ static int drag_animation_count        = 0;
         }
 
     }
-    
+    if([_circle_view_delegate respondsToSelector:@selector(touchEndCircleViewCell:indexOfCircleViewCell:)])
+    {
+        [_circle_view_delegate touchEndCircleViewCell:cell indexOfCircleViewCell:_current_index];
+    }
     
 }
 
@@ -880,11 +879,11 @@ static int drag_animation_count        = 0;
     /*修正圆*/
     [self reviseCirclePoint];
     
-    if([_circle_view_delegate respondsToSelector:@selector(dragEndCircleViewCell:indexOfCircleViewCell:)])
+    if([_circle_view_delegate respondsToSelector:@selector(dragEndCircleViewCell:indexOfCircleViewCell:andCurrentIndex:)])
     {
         NSInteger index = [_circle_cell_array indexOfObject:cell];
         
-        [_circle_view_delegate dragEndCircleViewCell:cell indexOfCircleViewCell:index];
+        [_circle_view_delegate dragEndCircleViewCell:cell indexOfCircleViewCell:index andCurrentIndex:_current_index];
     }
 }
 

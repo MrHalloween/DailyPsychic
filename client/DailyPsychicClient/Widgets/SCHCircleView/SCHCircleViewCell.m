@@ -117,7 +117,6 @@
 #pragma mark - 单击
 - (void)handleSingleTap:(UITapGestureRecognizer *)gestureRecognizer
 {
-    NSLog(@"单击");
     switch (gestureRecognizer.state)
     {
         case UIGestureRecognizerStateBegan:

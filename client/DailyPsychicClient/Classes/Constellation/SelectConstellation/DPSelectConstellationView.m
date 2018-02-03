@@ -16,6 +16,8 @@
 {
     SCHCircleView *m_pCircle_view;
     UIImageView *m_pMainImg;
+    UILabel *m_pNameLabel;//星座名称
+    UILabel *m_pDateLable;//星座日期
 }
 @end
 
@@ -53,18 +55,18 @@
     [m_pMainImg addSubview:pHexaganalImg];
 
     //星座名称
-    UILabel *pNameLabel = [[UILabel alloc]init];
-    [pNameLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:@"Aries"];
-    pNameLabel.frame = CGRectMake(0, 50 * AdaptRate, pHexaganalImg.width, SIZE_HEIGHT(20));
-    pNameLabel.textAlignment = NSTextAlignmentCenter;
-    [pHexaganalImg addSubview:pNameLabel];
+    m_pNameLabel = [[UILabel alloc]init];
+    [m_pNameLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:@"Aries"];
+    m_pNameLabel.frame = CGRectMake(0, 60 * AdaptRate, pHexaganalImg.width, SIZE_HEIGHT(20));
+    m_pNameLabel.textAlignment = NSTextAlignmentCenter;
+    [pHexaganalImg addSubview:m_pNameLabel];
     
     //星座日期
-    UILabel *pDateLable = [[UILabel alloc]init];
-    [pDateLable SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:11 Placehoder:@"03.21 - 04.20"];
-    pDateLable.frame = CGRectMake(0, pNameLabel.bottom + 10 * AdaptRate, pHexaganalImg.width, SIZE_HEIGHT(11));
-    pDateLable.textAlignment = NSTextAlignmentCenter;
-    [pHexaganalImg addSubview:pDateLable];
+    m_pDateLable = [[UILabel alloc]init];
+    [m_pDateLable SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:11 Placehoder:@"03.21 - 04.20"];
+    m_pDateLable.frame = CGRectMake(0, m_pNameLabel.bottom + 10 * AdaptRate, pHexaganalImg.width, SIZE_HEIGHT(11));
+    m_pDateLable.textAlignment = NSTextAlignmentCenter;
+    [pHexaganalImg addSubview:m_pDateLable];
     
     //旋转的星座
     m_pCircle_view = [[SCHCircleView alloc]initWithFrame:CGRectMake(0, 0, 296 * AdaptRate, 296 * AdaptRate)];
@@ -119,6 +121,19 @@
     return CGPointMake(m_pCircle_view.width * 0.5, m_pCircle_view.height * 0.5);
 }
 
+/*点击结束*/
+- (void)touchEndCircleViewCell:(SCHCircleViewCell *)cell indexOfCircleViewCell:(NSInteger)index{
+    DPConstellationModel * model = [DPConstellationModel ModelWithDictionary:m_arrData[index]];
+    m_pNameLabel.text = model.nameEn;
+    m_pDateLable.text = model.date;
+}
+
+/*拖动结束*/
+//- (void)dragEndCircleViewCell:(SCHCircleViewCell *)cell indexOfCircleViewCell:(NSInteger)index andCurrentIndex:(NSInteger)currentIndex{
+//    DPConstellationModel * model = [DPConstellationModel ModelWithDictionary:m_arrData[currentIndex]];
+//    m_pNameLabel.text = model.nameEn;
+//    m_pDateLable.text = model.date;
+//}
 
 
 @end

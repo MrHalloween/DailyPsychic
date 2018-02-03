@@ -133,7 +133,7 @@ typedef enum
 /*拖动中*/
 - (void)dragingCircleViewCell:(SCHCircleViewCell *)cell indexOfCircleViewCell:(NSInteger)index;
 /*结束拖动*/
-- (void)dragEndCircleViewCell:(SCHCircleViewCell *)cell indexOfCircleViewCell:(NSInteger)index;
+- (void)dragEndCircleViewCell:(SCHCircleViewCell *)cell indexOfCircleViewCell:(NSInteger)index andCurrentIndex:(NSInteger)currentIndex;
 /*拖动失败*/
 - (void)dragFailCircleViewCell:(SCHCircleViewCell *)cell indexOfCircleViewCell:(NSInteger)index;
 /*拖动取消*/
