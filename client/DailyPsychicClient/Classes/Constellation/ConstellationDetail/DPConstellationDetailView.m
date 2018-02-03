@@ -89,7 +89,7 @@
     // 右 星座
     UIButton *m_pConstellBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     m_pConstellBtn.frame = CGRectMake(self.width/2, 35 * AdaptRate, self.width/2,45 * AdaptRate);
-//    [m_pConstellBtn addTarget:self action:@selector() forControlEvents:UIControlEventTouchUpInside];
+    [m_pConstellBtn addTarget:self action:@selector(presentToNext) forControlEvents:UIControlEventTouchUpInside];
     [m_pScrollView addSubview:m_pConstellBtn];
     
     //start
@@ -178,6 +178,12 @@
     id btnTag = @(btn.tag);
     if (self.proDelegate != nil && [self.proDelegate respondsToSelector:@selector(PushToNextPage:)]) {
         [self.proDelegate PushToNextPage:btnTag];
+    }
+}
+
+- (void)presentToNext{
+    if (self.conDetailDel != nil && [self.conDetailDel respondsToSelector:@selector(PresentToselect)]) {
+        [self.conDetailDel PresentToselect];
     }
 }
 @end

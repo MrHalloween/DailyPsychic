@@ -8,14 +8,6 @@
 
 #import "AFBaseTableView.h"
 
-@protocol DPHomePageViewDelegate<NSObject>
-
-- (void)PushToDetailByPageNumber:(NSInteger)pageNumber;
-
-@end
-
 @interface DPHomePageView : AFBaseTableView
-
-@property (nonatomic ,weak)id<DPHomePageViewDelegate>homePageDel;
 
 @end

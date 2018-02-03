@@ -8,6 +8,14 @@
 
 #import "AFBaseTableView.h"
 
+@protocol DPConstellationDetailDelegate<NSObject>
+
+- (void)PresentToselect;
+
+@end
+
 @interface DPConstellationDetailView : AFBaseTableView
+
+@property (nonatomic ,weak)id<DPConstellationDetailDelegate>conDetailDel;
 
 @end

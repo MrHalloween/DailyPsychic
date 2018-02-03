@@ -8,11 +8,11 @@
 
 #import "DPConstellationDetailController.h"
 #import "DPConstellationDetailView.h"
-#pragma mark-- 临时使用
 #import "DPPalmResultController.h"
-#import "DPPalmAnalyingViewController.h"
 
-@interface DPConstellationDetailController ()<AFBaseTableViewDelegate>
+@class DPSelectConstellationController;
+
+@interface DPConstellationDetailController ()<AFBaseTableViewDelegate,DPConstellationDetailDelegate>
 {
     DPConstellationDetailView *m_pConstellDetail;
 }
@@ -24,6 +24,7 @@
     [super viewDidLoad];
     m_pConstellDetail = [[DPConstellationDetailView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
     m_pConstellDetail.proDelegate = self;
+    m_pConstellDetail.conDetailDel = self;
     [self.view addSubview:m_pConstellDetail];
 }
 
@@ -46,6 +47,13 @@
             break;
     }
     [self PushChildViewController:pVC animated:YES];
+}
+- (void)PresentToselect{
+    
+//    DPSelectConstellationController * selectVc = [[DPSelectConstellationController alloc]init];
+//    [self presentViewController:selectVc animated:YES completion:^{
+//        
+//    }];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -121,9 +121,9 @@
 
 - (void)okClick{
     
-    if (self.homePageDel != nil && [self.homePageDel respondsToSelector:@selector(PushToDetailByPageNumber:)])
+    if (self.proDelegate != nil && [self.proDelegate respondsToSelector:@selector(PushToNextPage:)])
     {
-        [self.homePageDel PushToDetailByPageNumber:m_ipageNumber];
+        [self.proDelegate PushToNextPage:@(m_ipageNumber)];
     }
 }
 @end

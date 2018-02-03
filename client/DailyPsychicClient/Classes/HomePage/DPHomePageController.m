@@ -12,7 +12,7 @@
 #import "DPTakePhotoController.h"
 #import "DPBasicInforController.h"
 
-@interface DPHomePageController ()<DPHomePageViewDelegate>
+@interface DPHomePageController ()<AFBaseTableViewDelegate>
 {
     DPHomePageView *m_pHomePageView;
 }
@@ -24,13 +24,14 @@
     [super viewDidLoad];
     m_pTopBar.hidden = YES;
     m_pHomePageView = [[DPHomePageView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
-    m_pHomePageView.homePageDel = self;
+    m_pHomePageView.proDelegate = self;
     [self.view addSubview:m_pHomePageView];
     
 }
 
-- (void)PushToDetailByPageNumber:(NSInteger)pageNumber{
+- (void)PushToNextPage:(id)argData{
     
+    NSInteger pageNumber = [argData integerValue];
     BUCustomViewController *pVC;
     switch (pageNumber) {
         case 0: pVC = [[DPTakePhotoController alloc]init]; break;
