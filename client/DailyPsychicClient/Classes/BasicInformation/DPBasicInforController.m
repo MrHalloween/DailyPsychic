@@ -40,7 +40,6 @@
         
         DPSelectConstellationController * selectVc = [[DPSelectConstellationController alloc]init];
         [self PushChildViewController:selectVc animated:YES];
-        
     }
     
 }

@@ -57,7 +57,7 @@
     
     //Analysis of the fate line
     m_pFatelineLabel = [[UILabel alloc]init];
-    [m_pFatelineLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:12 Placehoder:@"Analysis of the fate line"];
+    [m_pFatelineLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:12 Placehoder:@"Analysis of life line"];
     m_pFatelineLabel.frame = CGRectMake(0, pResultProcess.bottom + 10 * AdaptRate, self.width, SIZE_HEIGHT(12));
     m_pFatelineLabel.textAlignment = NSTextAlignmentCenter;
     [self addSubview:m_pFatelineLabel];
@@ -72,11 +72,19 @@
 - (void)updateProcess{
     processNum ++ ;
     m_pProcessLabel.text = [NSString stringWithFormat:@"%ld%%",processNum];
-    if (processNum == 20) {
-        m_pFatelineLabel.text = @"Analysis of the fate line 20";
-    }else if (processNum == 50){
-        m_pFatelineLabel.text = @"Analysis of the fate line 50";
+    NSString * strFiteLine;
+    if (processNum < 30) {//生命线
+        strFiteLine = @"Analysis of life line";
+    }else if (processNum < 50){//智慧线
+        strFiteLine = @"Analysis of head line";
+    }else if (processNum < 70){//心脏线
+        strFiteLine = @"Analysis of heart line";
+    }else if (processNum < 90){//结婚线
+        strFiteLine = @"Analysis of marrige line";
+    }else{//命运线
+        strFiteLine = @"Analysis of fate line";
     }
+    m_pFatelineLabel.text = strFiteLine;
     if (processNum == 100) {
         [m_pTimer invalidate];
         m_pTimer = nil;
