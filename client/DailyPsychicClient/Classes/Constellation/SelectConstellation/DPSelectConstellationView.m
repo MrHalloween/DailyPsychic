@@ -144,4 +144,11 @@
 }
 
 
+- (void)setIsPresent:(BOOL)isPresent
+{
+    _isPresent = isPresent;
+    m_pTitleLabel.hidden = isPresent;
+    pBackImg.hidden = isPresent;
+}
+
 @end

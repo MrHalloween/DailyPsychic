@@ -9,6 +9,7 @@
 #import "DPConstellationDetailController.h"
 #import "DPConstellationDetailView.h"
 #import "DPPalmResultController.h"
+#import "DPSelectConstellationController.h"
 
 @class DPSelectConstellationController;
 
@@ -50,10 +51,11 @@
 }
 - (void)PresentToselect{
     
-//    DPSelectConstellationController * selectVc = [[DPSelectConstellationController alloc]init];
-//    [self presentViewController:selectVc animated:YES completion:^{
-//        
-//    }];
+    DPSelectConstellationController * selectVc = [[DPSelectConstellationController alloc]init];
+    selectVc.isPresent = YES;
+    [self presentViewController:selectVc animated:YES completion:^{
+        
+    }];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

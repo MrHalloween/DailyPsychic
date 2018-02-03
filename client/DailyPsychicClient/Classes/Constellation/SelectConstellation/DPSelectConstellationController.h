@@ -10,4 +10,6 @@
 
 @interface DPSelectConstellationController : BUCustomViewController
 
+@property (nonatomic) BOOL isPresent;
+
 @end

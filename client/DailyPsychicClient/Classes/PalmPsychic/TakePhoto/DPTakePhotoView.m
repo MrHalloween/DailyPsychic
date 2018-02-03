@@ -34,7 +34,7 @@
     //主图形
     m_pMainImg = [[UIImageView alloc]init];
     m_pMainImg.bounds = CGRectMake(0, 0, 339 * AdaptRate, 417.5 * AdaptRate);
-    m_pMainImg.center = CGPointMake(self.width * 0.5, 81 * AdaptRate + m_pMainImg.height * 0.5);
+    m_pMainImg.center = CGPointMake(self.width * 0.5, m_pTitleLabel.bottom + 20 * AdaptRate + m_pMainImg.height * 0.5);
     m_pMainImg.image = [UIImage imageNamed:@"palm_left"];
     [self addSubview:m_pMainImg];
     

@@ -10,4 +10,6 @@
 
 @interface DPSelectConstellationView : AFBaseTableView
 
+@property (nonatomic) BOOL isPresent;
+
 @end

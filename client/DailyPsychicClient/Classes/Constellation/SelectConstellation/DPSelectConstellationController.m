@@ -20,7 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     m_pSelectView = [[DPSelectConstellationView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    m_pSelectView.isPresent = self.isPresent;
     m_pSelectView.proDelegate = self;
     [self.view addSubview:m_pSelectView];
     
@@ -30,10 +32,15 @@
 {
     [self Back];
 }
+
 - (void)PushToNextPage:(id)argData
 {
-    DPConstellationDetailController *detailVc = [[DPConstellationDetailController alloc]init];
-    [self PushChildViewController:detailVc animated:YES];
+    if (self.isPresent) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }else{
+        DPConstellationDetailController *detailVc = [[DPConstellationDetailController alloc]init];
+        [self PushChildViewController:detailVc animated:YES];
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
