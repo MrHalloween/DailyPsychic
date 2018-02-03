@@ -38,24 +38,24 @@
     
     //背景圆
     UIImageView *circleBgImg = [[UIImageView alloc]initWithFrame:CGRectMake((self.width - 46 * AdaptRate) * 0.5, weekLabel.bottom + 12 * AdaptRate, 46 *AdaptRate, 46 * AdaptRate)];
-    circleBgImg.image = [UIImage imageNamed:@"constellation_detail_selectdate"];
+//    circleBgImg.image = [UIImage imageNamed:@"constellation_detail_selectdate"];
     [self.contentView addSubview:circleBgImg];
     self.circleBgImg = circleBgImg;
     
     //选中的圆点
     UIImageView *pointImg = [[UIImageView alloc]initWithFrame:CGRectMake(21 * AdaptRate, 33 * AdaptRate, 5 *AdaptRate, 5 * AdaptRate)];
     pointImg.image = [UIImage imageNamed:@"constellation_detail_selectpoint"];
+    pointImg.hidden = YES;
     [self.circleBgImg addSubview:pointImg];
     self.pointImg = pointImg;
     
     //日期
     UILabel *dateLabel = [[UILabel alloc]init];
-    [dateLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:12 Placehoder:@"14"];
+    [dateLabel SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:14 Placehoder:@"14"];
     dateLabel.frame = CGRectMake(0, 13 * AdaptRate, self.circleBgImg.width, SIZE_HEIGHT(14));
     dateLabel.textAlignment = NSTextAlignmentCenter;
     [self.circleBgImg addSubview:dateLabel];
     self.dateLabel = dateLabel;
-    
 }
 
 @end

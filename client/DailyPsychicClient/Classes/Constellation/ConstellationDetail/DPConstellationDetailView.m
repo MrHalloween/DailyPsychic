@@ -20,6 +20,8 @@
     NSArray * m_arrWeek;
     UILabel *m_pConstellLabel;//星座名称
     UIImageView *m_pArrowImg;//向下箭头
+    NSArray * m_arrDate;//一周日期的数组
+    NSInteger m_ltodayDate;
 }
 @end
 
@@ -32,6 +34,7 @@
         m_pTitleLabel.text = @"Start";
         NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"constellation" ofType:@"plist"];
         NSArray *m_arrConstel = [NSArray arrayWithContentsOfFile: plistPath];
+        m_arrDate = [self getcurrentWeekDate];
         m_arrWeek = @[@"SUN",@"MON",@"TUE",@"WED",@"THU",@"FRI",@"SAT"];
         m_arrData = [NSMutableArray arrayWithArray:m_arrConstel];
         [mNotificationCenter addObserver:self selector:@selector(updateConName) name:constellationChangedNotification object:nil];
@@ -178,11 +181,24 @@
 {
     return 7;
 }
-
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     DPWeekCollectionViewCell *cell = [DPWeekCollectionViewCell cellWithCollectionView:collectionView identifier:WeekCollectionViewCell indexPath:indexPath];
     cell.weekLabel.text = m_arrWeek[indexPath.item];
+    cell.dateLabel.text = m_arrDate[indexPath.item];
+    if (m_ltodayDate == [m_arrDate[indexPath.item] integerValue]) {//今天
+        cell.circleBgImg.image = [UIImage imageNamed:@"constellation_detail_selectdate"];
+        cell.pointImg.hidden = NO;
+    }else{
+        cell.circleBgImg.image = nil;
+        cell.pointImg.hidden = YES;
+    }
     return cell;
 }
 - (void)getRsult:(UIButton *)btn
@@ -198,4 +214,63 @@
         [self.conDetailDel PresentToselect];
     }
 }
+- (NSArray *)getcurrentWeekDate{
+    
+    NSDate *nowDate = [NSDate date];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *comp = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday fromDate:nowDate];
+    // 获取今天是周几
+    NSInteger weekDay = [comp weekday];
+    // 获取几天是几号
+    NSInteger day = [comp day];
+    m_ltodayDate = day;
+    // 计算当前日期和本周的星期一和星期天相差天数
+    long firstDiff,lastDiff;
+    //    weekDay = 1;
+    if (weekDay == 1)
+    {
+        firstDiff = -6;
+        
+        lastDiff = 0;
+    }
+    else
+    {
+        firstDiff = [calendar firstWeekday] - weekDay + 1;
+        lastDiff = 8 - weekDay;
+    }
+    //  NSLog(@"firstDiff: %ld   lastDiff: %ld",firstDiff,lastDiff);
+    // 在当前日期(去掉时分秒)基础上加上差的天数
+    NSDateComponents *firstDayComp = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay  fromDate:nowDate];
+    [firstDayComp setDay:day + firstDiff];
+    NSDate *firstDayOfWeek = [calendar dateFromComponents:firstDayComp];
+    NSDateComponents *lastDayComp = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay   fromDate:nowDate];
+    [lastDayComp setDay:day + lastDiff];
+    NSDate *lastDayOfWeek = [calendar dateFromComponents:lastDayComp];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd"];
+    NSString *firstDay = [formatter stringFromDate:firstDayOfWeek];
+    NSString *lastDay = [formatter stringFromDate:lastDayOfWeek];
+    int firstValue = firstDay.intValue;
+    int lastValue = lastDay.intValue;
+    NSMutableArray *dateArr = [[NSMutableArray alloc]init];
+    if (firstValue < lastValue) {
+        for (int j = 0; j<7; j++) {
+            NSString *obj = [NSString stringWithFormat:@"%d",firstValue+j];
+            [dateArr addObject:obj];
+        }
+    }
+    else if (firstValue > lastValue)
+    {
+        for (int j = 0; j < 7-lastValue; j++) {
+            NSString *obj = [NSString stringWithFormat:@"%d",firstValue+j];
+            [dateArr addObject:obj];
+        }
+        for (int z = 0; z<lastValue; z++) {
+            NSString *obj = [NSString stringWithFormat:@"%d",z+1];
+            [dateArr addObject:obj];
+        }
+    }
+    return dateArr;
+}
+
 @end
