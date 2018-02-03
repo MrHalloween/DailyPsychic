@@ -18,6 +18,7 @@
 + (NSString *) HelveticaNeueThinFont;
 + (NSString *) HelveticaNeueFont;
 + (NSString *) HelveticaNeueLightFont;
++ (NSString *) HelveticaFont;
 
 #pragma mark - 颜色
 + (UIColor *) Color333;

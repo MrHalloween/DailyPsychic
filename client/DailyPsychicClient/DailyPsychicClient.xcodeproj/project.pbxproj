@@ -262,6 +262,7 @@
 		D630AF722021DDB40006B16C /* palm_main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D630AF702021DDB40006B16C /* palm_main@2x.png */; };
 		D630AF752021EE270006B16C /* constellation.plist in Resources */ = {isa = PBXBuildFile; fileRef = D630AF742021EE270006B16C /* constellation.plist */; };
 		D6D8795F2025744C00F543EE /* DPImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6D8795E2025744C00F543EE /* DPImageViewCell.xib */; };
+		D6D8796120257F4100F543EE /* resultAnalysis.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6D8796020257F4100F543EE /* resultAnalysis.plist */; };
 		D6EB8900202334AC005045B4 /* palm_resultbg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EB88FE202334AC005045B4 /* palm_resultbg@3x.png */; };
 		D6EB8901202334AC005045B4 /* palm_resultbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EB88FF202334AC005045B4 /* palm_resultbg@2x.png */; };
 		D6EB890420235176005045B4 /* DPPalmAnalyingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EB890320235176005045B4 /* DPPalmAnalyingViewController.m */; };
@@ -655,6 +656,7 @@
 		D630AF702021DDB40006B16C /* palm_main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_main@2x.png"; sourceTree = "<group>"; };
 		D630AF742021EE270006B16C /* constellation.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = constellation.plist; sourceTree = "<group>"; };
 		D6D8795E2025744C00F543EE /* DPImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPImageViewCell.xib; sourceTree = "<group>"; };
+		D6D8796020257F4100F543EE /* resultAnalysis.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = resultAnalysis.plist; sourceTree = "<group>"; };
 		D6EB88FE202334AC005045B4 /* palm_resultbg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_resultbg@3x.png"; sourceTree = "<group>"; };
 		D6EB88FF202334AC005045B4 /* palm_resultbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_resultbg@2x.png"; sourceTree = "<group>"; };
 		D6EB890220235176005045B4 /* DPPalmAnalyingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPalmAnalyingViewController.h; sourceTree = "<group>"; };
@@ -790,24 +792,24 @@
 		1006BCA420158E6C0041DC86 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				1006BCB020158E6C0041DC86 /* UILable+TextEffect.h */,
 				1006BCA520158E6C0041DC86 /* UILable+TextEffect.m */,
+				1006BCAF20158E6C0041DC86 /* UIDevice+Resolutions.h */,
 				1006BCA620158E6C0041DC86 /* UIDevice+Resolutions.m */,
 				1006BCAE20158E6C0041DC86 /* NSDictionary+Log.h */,
 				1006BCA720158E6C0041DC86 /* NSDictionary+Log.m */,
 				1006BCA820158E6C0041DC86 /* NSString+TimeFormat.h */,
+				1006BCB220158E6C0041DC86 /* NSString+TimeFormat.m */,
+				1006BCB120158E6C0041DC86 /* UITextView+Placeholder.h */,
 				1006BCA920158E6C0041DC86 /* UITextView+Placeholder.m */,
 				1006BCAA20158E6C0041DC86 /* NSString+MD5.h */,
-				1006BCAB20158E6C0041DC86 /* NSString+IntValue.m */,
-				1006BCAC20158E6C0041DC86 /* NSStringExt.h */,
-				1006BCAF20158E6C0041DC86 /* UIDevice+Resolutions.h */,
-				1006BCB020158E6C0041DC86 /* UILable+TextEffect.h */,
-				1006BCB120158E6C0041DC86 /* UITextView+Placeholder.h */,
-				1006BCB220158E6C0041DC86 /* NSString+TimeFormat.m */,
 				1006BCB320158E6C0041DC86 /* NSString+MD5.m */,
+				1006BCAC20158E6C0041DC86 /* NSStringExt.h */,
+				1006BCB620158E6C0041DC86 /* NSStringExt.m */,
 				1006BCB420158E6C0041DC86 /* UIViewExt.h */,
 				1006BCAD20158E6C0041DC86 /* UIViewExt.m */,
 				1006BCB520158E6C0041DC86 /* NSString+IntValue.h */,
-				1006BCB620158E6C0041DC86 /* NSStringExt.m */,
+				1006BCAB20158E6C0041DC86 /* NSString+IntValue.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -836,10 +838,10 @@
 		1006BCBC20158E6C0041DC86 /* Channel */ = {
 			isa = PBXGroup;
 			children = (
+				1006BCC020158E6C0041DC86 /* BUChannelsView.h */,
 				1006BCBD20158E6C0041DC86 /* BUChannelsView.m */,
 				1006BCBE20158E6C0041DC86 /* BUChannelNameCell.h */,
 				1006BCBF20158E6C0041DC86 /* BUChannelNameCell.m */,
-				1006BCC020158E6C0041DC86 /* BUChannelsView.h */,
 			);
 			path = Channel;
 			sourceTree = "<group>";
@@ -848,9 +850,9 @@
 			isa = PBXGroup;
 			children = (
 				1006BCC220158E6C0041DC86 /* BUUserAvatar.h */,
-				1006BCC320158E6C0041DC86 /* BUUserDetailsController.m */,
 				1006BCC420158E6C0041DC86 /* BUUserAvatar.m */,
 				1006BCC520158E6C0041DC86 /* BUUserDetailsController.h */,
+				1006BCC320158E6C0041DC86 /* BUUserDetailsController.m */,
 			);
 			path = Avatar;
 			sourceTree = "<group>";
@@ -859,17 +861,17 @@
 			isa = PBXGroup;
 			children = (
 				1006BCC720158E6C0041DC86 /* AFDetailTimeSelectedView.h */,
-				1006BCC820158E6C0041DC86 /* AFTimeSelctedView.h */,
-				1006BCC920158E6C0041DC86 /* TRYearAndMonthSelectedView.m */,
-				1006BCCA20158E6C0041DC86 /* AFYearSelectedView.h */,
-				1006BCCB20158E6C0041DC86 /* TRHourAndMinuteSelectView.m */,
-				1006BCCC20158E6C0041DC86 /* AFFutureTimeSelectedView.m */,
 				1006BCCD20158E6C0041DC86 /* AFDetailTimeSelectedView.m */,
-				1006BCCE20158E6C0041DC86 /* AFTimeSelctedView.m */,
-				1006BCCF20158E6C0041DC86 /* AFFutureTimeSelectedView.h */,
-				1006BCD020158E6C0041DC86 /* TRHourAndMinuteSelectView.h */,
+				1006BCCA20158E6C0041DC86 /* AFYearSelectedView.h */,
 				1006BCD120158E6C0041DC86 /* AFYearSelectedView.m */,
+				1006BCCF20158E6C0041DC86 /* AFFutureTimeSelectedView.h */,
+				1006BCCC20158E6C0041DC86 /* AFFutureTimeSelectedView.m */,
+				1006BCC820158E6C0041DC86 /* AFTimeSelctedView.h */,
+				1006BCCE20158E6C0041DC86 /* AFTimeSelctedView.m */,
+				1006BCD020158E6C0041DC86 /* TRHourAndMinuteSelectView.h */,
+				1006BCCB20158E6C0041DC86 /* TRHourAndMinuteSelectView.m */,
 				1006BCD220158E6C0041DC86 /* TRYearAndMonthSelectedView.h */,
+				1006BCC920158E6C0041DC86 /* TRYearAndMonthSelectedView.m */,
 			);
 			path = TimeSelect;
 			sourceTree = "<group>";
@@ -886,13 +888,13 @@
 		1006BCD620158E6C0041DC86 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				1006BCD720158E6C0041DC86 /* CheckoutManager.h */,
-				1006BCD820158E6C0041DC86 /* TextManager.m */,
 				1006BCD920158E6C0041DC86 /* Manager.h */,
-				1006BCDA20158E6C0041DC86 /* AlertManager.m */,
 				1006BCDB20158E6C0041DC86 /* TextManager.h */,
-				1006BCDC20158E6C0041DC86 /* CheckoutManager.m */,
+				1006BCD820158E6C0041DC86 /* TextManager.m */,
 				1006BCDD20158E6C0041DC86 /* AlertManager.h */,
+				1006BCDA20158E6C0041DC86 /* AlertManager.m */,
+				1006BCD720158E6C0041DC86 /* CheckoutManager.h */,
+				1006BCDC20158E6C0041DC86 /* CheckoutManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -913,8 +915,8 @@
 		1006BCE420158E6C0041DC86 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				1006BCE520158E6C0041DC86 /* AppConfigure.h */,
 				1006BCE620158E6C0041DC86 /* Singleton.h */,
+				1006BCE520158E6C0041DC86 /* AppConfigure.h */,
 				1006BCE720158E6C0041DC86 /* AppConfigure.m */,
 			);
 			path = Common;
@@ -935,9 +937,9 @@
 		1006BCE920158E6C0041DC86 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				1006BCEC20158E6C0041DC86 /* AFTabBarViewController.h */,
 				1006BCEA20158E6C0041DC86 /* AFTabBarViewController.m */,
 				1006BCEB20158E6C0041DC86 /* AFTabBarItem.h */,
-				1006BCEC20158E6C0041DC86 /* AFTabBarViewController.h */,
 				1006BCED20158E6C0041DC86 /* AFTabBarItem.m */,
 			);
 			path = TabBar;
@@ -955,9 +957,9 @@
 		1006BCF120158E6C0041DC86 /* BaseTable */ = {
 			isa = PBXGroup;
 			children = (
+				1006BCF420158E6C0041DC86 /* AFBaseTableView.h */,
 				1006BCF220158E6C0041DC86 /* AFBaseTableView.m */,
 				1006BCF320158E6C0041DC86 /* AFBaseCell.h */,
-				1006BCF420158E6C0041DC86 /* AFBaseTableView.h */,
 				1006BCF520158E6C0041DC86 /* AFBaseCell.m */,
 			);
 			path = BaseTable;
@@ -967,8 +969,8 @@
 			isa = PBXGroup;
 			children = (
 				1006BCF720158E6C0041DC86 /* BUWebViewController.h */,
-				1006BCF820158E6C0041DC86 /* BUCustomViewController.h */,
 				1006BCF920158E6C0041DC86 /* BUWebViewController.m */,
+				1006BCF820158E6C0041DC86 /* BUCustomViewController.h */,
 				1006BCFA20158E6C0041DC86 /* BUCustomViewController.m */,
 			);
 			path = BasicController;
@@ -979,8 +981,8 @@
 			children = (
 				1006BCFC20158E6C0041DC86 /* RMMapper */,
 				1006BD0520158E6C0041DC86 /* BUBaseResponseData.h */,
-				1006BD0620158E6C0041DC86 /* BUAFHttpRequest.h */,
 				1006BD0720158E6C0041DC86 /* BUBaseResponseData.m */,
+				1006BD0620158E6C0041DC86 /* BUAFHttpRequest.h */,
 				1006BD0820158E6C0041DC86 /* BUAFHttpRequest.m */,
 			);
 			path = BUNetConnection;
@@ -989,13 +991,13 @@
 		1006BCFC20158E6C0041DC86 /* RMMapper */ = {
 			isa = PBXGroup;
 			children = (
-				1006BCFD20158E6C0041DC86 /* RMMapper.m */,
-				1006BCFE20158E6C0041DC86 /* NSUserDefaults+RMSaveCustomObject.h */,
 				1006BCFF20158E6C0041DC86 /* NSObject+RMArchivable.h */,
-				1006BD0020158E6C0041DC86 /* NSObject+RMCopyable.h */,
+				1006BD0320158E6C0041DC86 /* NSObject+RMArchivable.m */,
+				1006BCFE20158E6C0041DC86 /* NSUserDefaults+RMSaveCustomObject.h */,
 				1006BD0120158E6C0041DC86 /* NSUserDefaults+RMSaveCustomObject.m */,
 				1006BD0220158E6C0041DC86 /* RMMapper.h */,
-				1006BD0320158E6C0041DC86 /* NSObject+RMArchivable.m */,
+				1006BCFD20158E6C0041DC86 /* RMMapper.m */,
+				1006BD0020158E6C0041DC86 /* NSObject+RMCopyable.h */,
 				1006BD0420158E6C0041DC86 /* NSObject+RMCopyable.m */,
 			);
 			path = RMMapper;
@@ -1519,6 +1521,7 @@
 				D630AF742021EE270006B16C /* constellation.plist */,
 				10DB6D192022D2350084FC35 /* testList1.plist */,
 				10A6B45E20243E93006520CE /* testCard.plist */,
+				D6D8796020257F4100F543EE /* resultAnalysis.plist */,
 			);
 			path = plist;
 			sourceTree = "<group>";
@@ -1619,6 +1622,7 @@
 				1099F1E9201F245E00CE653E /* homepage_ok@2x.png in Resources */,
 				29BABFCA20203B8800CE4E51 /* constellation_gemini_circle@3x.png in Resources */,
 				29BABFE420203B8800CE4E51 /* constellation_scorpio@3x.png in Resources */,
+				D6D8796120257F4100F543EE /* resultAnalysis.plist in Resources */,
 				29BABFAA20203B8800CE4E51 /* constellation_virgo_circle@3x.png in Resources */,
 				D630AF712021DDB40006B16C /* palm_main@3x.png in Resources */,
 				29BABFD120203B8800CE4E51 /* constellation_leo_circle@2x.png in Resources */,

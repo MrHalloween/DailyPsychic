@@ -15,4 +15,5 @@
     UIView *m_PlineView;      ///横线
     UILabel *m_pContent;      ///内容
 }
+- (CGFloat)GetCellHeight;
 @end

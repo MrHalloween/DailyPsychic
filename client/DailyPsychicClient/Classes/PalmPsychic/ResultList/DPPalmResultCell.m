@@ -42,7 +42,7 @@
     
     //内容
     m_pContent = [[UILabel alloc]init];
-    [m_pContent SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:12 Placehoder:@"Your test data will be deleted automatically after the detection process Your test data will be deleted automatically after the detection process Your test data will be deleted automatically after the detection process"];
+    [m_pContent SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaFont] FontSize:12 Placehoder:@"Your test data will be deleted automatically after the detection process Your test data will be deleted automatically after the detection process Your test data will be deleted automatically after the detection process"];
     m_pContent.numberOfLines = 0;
     [m_pBgImg addSubview:m_pContent];
     
@@ -54,18 +54,22 @@
     m_pBgImg.frame = CGRectMake(18 * AdaptRate, 0, 339 * AdaptRate, 234 * AdaptRate);
     m_pTitle.frame = CGRectMake(0, 22 * AdaptRate, m_pBgImg.width, SIZE_HEIGHT(20));
     m_PlineView.frame = CGRectMake(40 * AdaptRate, m_pTitle.bottom + 18 *AdaptRate, 259 * AdaptRate, 1 * AdaptRate);
-    m_pContent.frame = CGRectMake(40 * AdaptRate,m_PlineView.bottom + 25 * AdaptRate, 259 * AdaptRate, 102 * AdaptRate);
+    CGSize contentSize = [m_pContent.text boundingRectWithSize:CGSizeMake(259 * AdaptRate, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont fontWithName:@"Helvetica" size:12]} context:nil].size;
+    m_pContent.frame = CGRectMake(40 * AdaptRate,m_PlineView.bottom + 20 * AdaptRate, 259 * AdaptRate, contentSize.height);
+    m_pBgImg.height = m_pContent.bottom + 35 * AdaptRate;
     
 }
+- (CGFloat)GetCellHeight{
+    [self layoutSubviews];
+    return m_pBgImg.bottom;
+}
 
-- (void)ClearData
+
+- (void)SetCellData:(id)argData
 {
-    
+    NSDictionary *dict = argData;
+    m_pTitle.text = dict[@"title"];
+    m_pContent.text = dict[@"content"];
 }
-
-//- (void)SetCellData:(id)argData
-//{
-//
-//}
 
 @end

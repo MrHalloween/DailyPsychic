@@ -43,6 +43,10 @@
     return @"HelveticaNeue-Light";
 }
 
++ (NSString *)HelveticaFont{
+    return @"Helvetica";
+}
+
 #pragma mark - 颜色
 + (UIColor *) Color333
 {
