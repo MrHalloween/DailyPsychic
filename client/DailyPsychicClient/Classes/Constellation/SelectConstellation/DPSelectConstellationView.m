@@ -129,11 +129,11 @@
 }
 
 /*拖动结束*/
-//- (void)dragEndCircleViewCell:(SCHCircleViewCell *)cell indexOfCircleViewCell:(NSInteger)index andCurrentIndex:(NSInteger)currentIndex{
-//    DPConstellationModel * model = [DPConstellationModel ModelWithDictionary:m_arrData[currentIndex]];
-//    m_pNameLabel.text = model.nameEn;
-//    m_pDateLable.text = model.date;
-//}
+- (void)dragEndCircleViewCell:(SCHCircleViewCell *)cell indexOfCircleViewCell:(NSInteger)index andCurrentIndex:(NSInteger)currentIndex{
+    DPConstellationModel * model = [DPConstellationModel ModelWithDictionary:m_arrData[currentIndex]];
+    m_pNameLabel.text = model.nameEn;
+    m_pDateLable.text = model.date;
+}
 
 
 @end
