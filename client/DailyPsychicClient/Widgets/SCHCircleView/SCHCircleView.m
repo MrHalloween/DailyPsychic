@@ -238,7 +238,7 @@ static int drag_animation_count        = 0;
     animation.fillMode            = kCAFillModeForwards;
 	animation.repeatCount         = 1;
     animation.removedOnCompletion = NO;
- 	animation.calculationMode     = @"paced";
+    animation.calculationMode     = @"paced";
 
     
    /*缩放*/
@@ -305,14 +305,14 @@ static int drag_animation_count        = 0;
         {
             NSInteger to_index = (repeat_animation_count + i) % array.count;
             
-            [self animateWithDuration:0.25f  animateDelay:0.0f changeIndex:(_current_index + i)%array.count toIndex:to_index circleArray:array clockwise:_is_clockwise];
+            [self animateWithDuration:0.01f  animateDelay:0.0f changeIndex:(_current_index + i)%array.count toIndex:to_index circleArray:array clockwise:_is_clockwise];
         }
         /*逆时针*/
         else
         {
             NSInteger to_index = (array.count - repeat_animation_count + i) % array.count;
             
-            [self animateWithDuration:0.25f  animateDelay:0.0f changeIndex:(_current_index + i)%array.count toIndex:to_index circleArray:array clockwise:_is_clockwise];
+            [self animateWithDuration:0.01f  animateDelay:0.0f changeIndex:(_current_index + i)%array.count toIndex:to_index circleArray:array clockwise:_is_clockwise];
         }
 
     }

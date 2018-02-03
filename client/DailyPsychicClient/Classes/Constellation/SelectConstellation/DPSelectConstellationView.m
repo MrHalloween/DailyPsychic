@@ -73,6 +73,7 @@
     m_pCircle_view.center = m_pMainImg.center;
     m_pCircle_view.circle_view_data_source = self;
     m_pCircle_view.circle_view_delegate    = self;
+    m_pCircle_view.touch_circle_style = SCHTouchCircleDefault;
     m_pCircle_view.show_circle_style       = SCHShowCircleDefault;
     m_pCircle_view.circle_layout_style = SChCircleLayoutNormal;
     [self addSubview:m_pCircle_view];

@@ -117,8 +117,8 @@
 }
 //进入下一页
 - (void)pushToNext{
-    if (m_pNameText.text.length == 0 && m_pBirthText.text.length == 0) {
-        [AlertManager ShowRelutWithMessage:@"请将信息填写完整！" Dismiss:^{
+    if (m_pNameText.text.length == 0) {
+        [AlertManager ShowRelutWithMessage:@"Please enter the name" Dismiss:^{
             
         }];
     }else{
