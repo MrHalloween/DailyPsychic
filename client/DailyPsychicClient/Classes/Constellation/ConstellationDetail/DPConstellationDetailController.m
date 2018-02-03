@@ -28,7 +28,8 @@
 }
 
 - (void)PopPreviousPage{
-    [self Back];
+
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 - (void)PushToNextPage:(id)argData{
     
