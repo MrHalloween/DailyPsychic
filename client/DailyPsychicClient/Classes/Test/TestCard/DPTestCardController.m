@@ -8,10 +8,12 @@
 
 #import "DPTestCardController.h"
 #import "DPTestCardView.h"
+#import "DPPalmAnalysisController.h"
 
 @interface DPTestCardController ()<AFBaseTableViewDelegate,DPTestCardViewDelegate>
 {
     DPTestCardView *m_pTestCardView;
+    NSInteger m_nPageNum;
 }
 @end
 
@@ -21,6 +23,13 @@
     [super viewDidLoad];
     m_pTopBar.hidden = YES;
     m_pTestCardView = [[DPTestCardView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    ///从测试列表进入
+    if (self.testId.length) {
+        m_pTestCardView.testId = self.testId;
+    }
+    if (self.dictTest) {
+        m_pTestCardView.dictTest = self.dictTest;
+    }
     m_pTestCardView.proDelegate = self;
     m_pTestCardView.testCardDelegate = self;
     [self.view addSubview:m_pTestCardView];
@@ -40,9 +49,21 @@
 
 - (void)SelectedAnswer
 {
-    NSLog(@"选择了一个答案");
-    DPTestCardController *pVC = [[DPTestCardController alloc]init];
-    [self PushChildViewController:pVC animated:YES];
+    NSMutableArray *arr = [NSMutableArray arrayWithArray:[[NSUserDefaults standardUserDefaults]objectForKey:@"questions"]];
+    if (arr.count == 0) {
+        DPPalmAnalysisController *pVC = [[DPPalmAnalysisController alloc]init];
+        [self PushChildViewController:pVC animated:YES];
+
+    }else{
+        NSLog(@"选择了一个答案");
+        DPTestCardController *pVC = [[DPTestCardController alloc]init];
+        pVC.dictTest = arr[0];
+        [arr removeObjectAtIndex:0];
+        [[NSUserDefaults standardUserDefaults]setObject:arr forKey:@"questions"];
+        [[NSUserDefaults standardUserDefaults]synchronize];
+        [self PushChildViewController:pVC animated:YES];
+    }
+
 }
 
 @end

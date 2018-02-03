@@ -17,6 +17,12 @@
     if (self) {
         m_pTitleLabel.text = @"Palm analysis";
         m_pBaseTable.showsVerticalScrollIndicator = NO;
+        
+        //给tableView添加header
+        UIView *pHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.width, 20 * AdaptRate)];
+        pHeaderView.backgroundColor = [UIColor clearColor];
+        m_pBaseTable.tableHeaderView = pHeaderView;
+        
 //        NSArray *plistData = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"testList1" ofType:@"plist"]];
 //        m_arrData = [NSMutableArray arrayWithArray:plistData];
         self.backgroundColor = [UIColor clearColor];
@@ -43,5 +49,6 @@
 {
     return 243 * AdaptRate;
 }
+
 
 @end

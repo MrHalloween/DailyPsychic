@@ -166,8 +166,9 @@
 }
 - (void)getRsult:(UIButton *)btn
 {
-    if (self.conDetailDel != nil && [self.conDetailDel respondsToSelector:@selector(pushToResultPage:)]) {
-        [self.conDetailDel pushToResultPage:btn.tag];
+    id btnTag = @(btn.tag);
+    if (self.proDelegate != nil && [self.proDelegate respondsToSelector:@selector(PushToNextPage:)]) {
+        [self.proDelegate PushToNextPage:btnTag];
     }
 }
 @end

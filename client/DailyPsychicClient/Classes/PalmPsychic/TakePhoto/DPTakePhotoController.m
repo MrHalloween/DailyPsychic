@@ -8,6 +8,7 @@
 
 #import "DPTakePhotoController.h"
 #import "DPTakePhotoView.h"
+#import "DPPalmAnalyingViewController.h"
 
 @interface DPTakePhotoController ()<AFBaseTableViewDelegate,DPTakePhotoViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 {
@@ -54,6 +55,10 @@
     [self dismissViewControllerAnimated:YES completion:^{
         m_pTakePhotoView.righthand = 1;
     }];
+    if (m_pTakePhotoView.righthand == 1) {
+        DPPalmAnalyingViewController * Analying = [[DPPalmAnalyingViewController alloc]init];
+        [self PushChildViewController:Analying animated:YES];
+    }
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker

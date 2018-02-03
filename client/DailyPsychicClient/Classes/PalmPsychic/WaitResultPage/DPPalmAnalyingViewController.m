@@ -8,8 +8,9 @@
 
 #import "DPPalmAnalyingViewController.h"
 #import "DPPalmAnaylyingView.h"
+#import "DPPalmAnalysisController.h"
 
-@interface DPPalmAnalyingViewController ()
+@interface DPPalmAnalyingViewController ()<AFBaseTableViewDelegate>
 {
     DPPalmAnaylyingView * m_pPalmAnaylyingView;
 }
@@ -20,9 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     m_pPalmAnaylyingView = [[DPPalmAnaylyingView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    m_pPalmAnaylyingView.proDelegate = self;
     [self.view addSubview:m_pPalmAnaylyingView];
 }
 
+- (void)PushToNextPage:(id)argData{
+    
+    DPPalmAnalysisController * palmAnalysisVc = [[DPPalmAnalysisController alloc]init];
+    [self PushChildViewController:palmAnalysisVc animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

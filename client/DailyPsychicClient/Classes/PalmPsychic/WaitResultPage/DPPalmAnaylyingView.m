@@ -80,6 +80,14 @@
     if (processNum == 100) {
         [m_pTimer invalidate];
         m_pTimer = nil;
+        [self performSelector:@selector(delayPush) withObject:nil afterDelay:0.5f];
+    }
+}
+
+- (void)delayPush{
+    
+    if (self.proDelegate != nil && [self.proDelegate respondsToSelector:@selector(PushToNextPage:)]) {
+        [self.proDelegate PushToNextPage:nil];
     }
 }
 

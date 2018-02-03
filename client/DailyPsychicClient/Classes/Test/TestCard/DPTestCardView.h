@@ -19,5 +19,10 @@
 
 @property (nonatomic,weak) id<DPTestCardViewDelegate>testCardDelegate;
 
+///测试题目id
+@property (nonatomic,copy) NSString *testId;
+
+@property (nonatomic,copy) NSDictionary *dictTest;
+
 
 @end

@@ -8,7 +8,7 @@
 
 #import "DPTestListController.h"
 #import "DPTestListView.h"
-#import "DPTestCardController.h"
+#import "DPBasicInforController.h"
 
 @interface DPTestListController ()<AFBaseTableViewDelegate>
 {
@@ -35,8 +35,11 @@
 #pragma mark - AFBaseTableViewDelegate
 -(void)PushToNextPage:(id)argData
 {
-    DPTestCardController *pVC = [[DPTestCardController alloc]init];
-    [self PushChildViewController:pVC animated:YES];
+    NSDictionary *data = argData;
+    DPBasicInforController *baseVC = [[DPBasicInforController alloc]init];
+    baseVC.previousName = @"DPTestListController";
+    baseVC.testId = data[@"testId"];
+    [self PushChildViewController:baseVC animated:YES];
 }
 
 - (void)PopPreviousPage

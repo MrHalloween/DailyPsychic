@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>testId</key>
+		<string>1</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What kind of temperament are you？</string>
+				<key>answers</key>
+				<string>Lovely#Hot#Pretty#Beatiful</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What color do you like？</string>
+				<key>answers</key>
+				<string>Red#Green#Blue#Pink</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What kind of tea do you like？
+
+</string>
+				<key>answers</key>
+				<string>dark tea#green tea#black tea#oolong tea</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>2</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What kind of temperament are you2？</string>
+				<key>answers</key>
+				<string>Lovely2#Hot2#Pretty2#Beatiful2</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What color do you like2？</string>
+				<key>answers</key>
+				<string>Red2#Green2#Blue2#Pink2</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What kind of tea do you like2？
+
+</string>
+				<key>answers</key>
+				<string>dark tea2#green tea2#black tea2#oolong tea2</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What kind of tea do you like2？
+
+</string>
+				<key>answers</key>
+				<string>dark tea2#green tea2#black tea2#oolong tea2</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>3</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What kind of temperament are you？</string>
+				<key>answers</key>
+				<string>Lovely#Hot#Pretty#Beatiful</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What color do you like？</string>
+				<key>answers</key>
+				<string>Red#Green#Blue#Pink</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What kind of tea do you like？
+
+</string>
+				<key>answers</key>
+				<string>dark tea#green tea#black tea#oolong tea</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>4</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What kind of temperament are you？</string>
+				<key>answers</key>
+				<string>Lovely#Hot#Pretty#Beatiful</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What color do you like？</string>
+				<key>answers</key>
+				<string>Red#Green#Blue#Pink</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What kind of tea do you like？
+
+</string>
+				<key>answers</key>
+				<string>dark tea#green tea#black tea#oolong tea</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>5</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What kind of temperament are you？</string>
+				<key>answers</key>
+				<string>Lovely#Hot#Pretty#Beatiful</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What color do you like？</string>
+				<key>answers</key>
+				<string>Red#Green#Blue#Pink</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>test_pic.png</string>
+				<key>title</key>
+				<string>What kind of tea do you like？
+
+</string>
+				<key>answers</key>
+				<string>dark tea#green tea#black tea#oolong tea</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

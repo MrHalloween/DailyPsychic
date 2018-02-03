@@ -8,6 +8,12 @@
 
 #import "DPTestCardView.h"
 #import "UILable+TextEffect.h"
+@interface DPTestCardView()
+{
+//    NSInteger m_nPageNum;
+    NSDictionary *m_dicData;
+}
+@end
 
 @implementation DPTestCardView
 
@@ -16,7 +22,6 @@
     self = [super initWithFrame:frame];
     if (self) {
         m_pTitleLabel.text = @"Test";
-        [self AddSubViews];
     }
     return self;
 }
@@ -34,19 +39,21 @@
     UIImageView *pPictureBg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 195 * AdaptRate, 230 * AdaptRate)];
     pPictureBg.center = CGPointMake(self.width * 0.5, m_pTitleLabel.bottom + 34 * AdaptRate + pPictureBg.height * 0.5);
     pPictureBg.userInteractionEnabled = YES;
-    pPictureBg.image = [UIImage imageNamed:@"test_pic.png"];
+    pPictureBg.image = [UIImage imageNamed:m_dicData[@"headImage"]];
     [self addSubview:pPictureBg];
     
     //question
     UILabel *pQuestion = [[UILabel alloc]init];
     pQuestion.numberOfLines = 0;
-    [pQuestion SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:14 Placehoder:@"What kind of temperament are you？"];
+    [pQuestion SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager RegularFont] FontSize:14 Placehoder:m_dicData[@"title"]];
     pQuestion.textAlignment = NSTextAlignmentCenter;
     pQuestion.frame = CGRectMake((self.width - 300 * AdaptRate) * 0.5, pPictureBg.bottom, 300 * AdaptRate, 67 * AdaptRate);
     [self addSubview:pQuestion];
     
     //answer
-    NSArray *arrAnswers = @[@"Lovely",@"Hot",@"Pretty",@"Beautiful"];
+    NSString *strAnswers = m_dicData[@"answers"];
+    NSArray *arrAnswers = [strAnswers componentsSeparatedByString:@"#"];
+//    NSArray *arrAnswers = @[@"Lovely",@"Hot",@"Pretty",@"Beautiful"];
     for (int i = 0; i < arrAnswers.count; i ++) {
         UIButton *pAnswerCell = [UIButton buttonWithType:UIButtonTypeCustom];
         [pAnswerCell addTarget:self action:@selector(SelectedAnswer) forControlEvents:UIControlEventTouchUpInside];
@@ -74,6 +81,33 @@
     {
         [self.testCardDelegate SelectedAnswer];
     }
+}
+
+- (void)setTestId:(NSString *)testId
+{
+    _testId = testId;
+    NSArray *plistData = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"testCard" ofType:@"plist"]];
+    for (int i = 0; i < plistData.count; i++) {
+        NSDictionary *dict = plistData[i];
+        NSString *testId = dict[@"testId"];
+        if ([testId isEqualToString:self.testId]) {
+            m_arrData = [NSMutableArray arrayWithArray:dict[@"test"]];
+            m_dicData = m_arrData[0];
+            [m_arrData removeObjectAtIndex:0];
+            ///把该测试的所有测试题目存进沙盒
+            [[NSUserDefaults standardUserDefaults]setObject:m_arrData forKey:@"questions"];
+            [[NSUserDefaults standardUserDefaults]synchronize];
+            break;
+        }
+    }
+    [self AddSubViews];
+}
+
+- (void)setDictTest:(NSDictionary *)dictTest
+{
+    _dictTest = dictTest;
+    m_dicData = dictTest;
+    [self AddSubViews];
 }
 
 @end

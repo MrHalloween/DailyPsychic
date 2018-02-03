@@ -9,8 +9,10 @@
 
 #import "DPPalmAnalysisController.h"
 #import "DPPalmAnalysisView.h"
+#import "DPPalmResultController.h"
 
-@interface DPPalmAnalysisController ()<PalmAnalysisDelegate,AFBaseTableViewDelegate>
+
+@interface DPPalmAnalysisController ()<AFBaseTableViewDelegate>
 {
     DPPalmAnalysisView *m_pPalmAnalysisView;
 }
@@ -27,7 +29,13 @@
 
 - (void)PopPreviousPage
 {
-    [self Back];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+//    [self Back];
+}
+- (void)PushToNextPage:(id)argData{
+    
+    DPPalmResultController *resultVc = [[DPPalmResultController alloc]init];
+    [self PushChildViewController:resultVc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

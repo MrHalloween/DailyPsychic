@@ -10,4 +10,8 @@
 
 @interface DPTestCardController : BUCustomViewController
 
+@property (nonatomic,copy) NSString *testId;    ///测试题目id
+
+@property (nonatomic,copy) NSDictionary *dictTest;
+
 @end
