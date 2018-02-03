@@ -14,9 +14,12 @@
 
 @interface DPConstellationDetailView()<UICollectionViewDelegate,UICollectionViewDataSource>
 {
-    UICollectionView *m_pWeekCollectionView;
-    UIButton *m_pDateBtn;
-    UIScrollView *m_pScrollView;
+    UICollectionView * m_pWeekCollectionView;
+    UIButton * m_pDateBtn;
+    UIScrollView * m_pScrollView;
+    NSArray * m_arrWeek;
+    UILabel *m_pConstellLabel;//星座名称
+    UIImageView *m_pArrowImg;//向下箭头
 }
 @end
 
@@ -29,7 +32,9 @@
         m_pTitleLabel.text = @"Start";
         NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"constellation" ofType:@"plist"];
         NSArray *m_arrConstel = [NSArray arrayWithContentsOfFile: plistPath];
+        m_arrWeek = @[@"SUN",@"MON",@"TUE",@"WED",@"THU",@"FRI",@"SAT"];
         m_arrData = [NSMutableArray arrayWithArray:m_arrConstel];
+        [mNotificationCenter addObserver:self selector:@selector(updateConName) name:constellationChangedNotification object:nil];
         [self addCollectionView];
         [self addScrolllview];
         [self addDetailView];
@@ -68,52 +73,52 @@
     [m_pScrollView addSubview:m_pDateBtn];
     
     //today
-    UILabel *m_pTodayLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, m_pDateBtn.width, SIZE_HEIGHT(15))];
-    [m_pTodayLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueThinFont] FontSize:15 Placehoder:@"TODAY"];
-    m_pTodayLabel.textAlignment = NSTextAlignmentCenter;
-    [m_pDateBtn addSubview:m_pTodayLabel];
+    UILabel *pTodayLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, m_pDateBtn.width, SIZE_HEIGHT(15))];
+    [pTodayLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueThinFont] FontSize:15 Placehoder:@"TODAY"];
+    pTodayLabel.textAlignment = NSTextAlignmentCenter;
+    [m_pDateBtn addSubview:pTodayLabel];
 
     //日期
-    UILabel *m_pDateLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, m_pTodayLabel.bottom + 5 * AdaptRate, m_pDateBtn.width, SIZE_HEIGHT(20))];
+    UILabel *pDateLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, pTodayLabel.bottom + 5 * AdaptRate, m_pDateBtn.width, SIZE_HEIGHT(20))];
     NSString *currentDate = [NSString GetCurrentTimesWithFormat:@"yyyy.MM.dd"];
-    [m_pDateLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:currentDate];
-    m_pDateLabel.textAlignment = NSTextAlignmentCenter;
-    [m_pDateBtn addSubview:m_pDateLabel];
+    [pDateLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:currentDate];
+    pDateLabel.textAlignment = NSTextAlignmentCenter;
+    [m_pDateBtn addSubview:pDateLabel];
     
     // 中间 横杠
-    UIView *m_pLineView = [[UIView alloc]initWithFrame:CGRectMake(self.width/2 - 2 * AdaptRate, 11 * AdaptRate, 2 * AdaptRate, 22 * AdaptRate)];
-    m_pLineView.backgroundColor = [UIColor whiteColor];
-    m_pLineView.alpha = 0.6;
-    [m_pDateBtn addSubview:m_pLineView];
+    UIView *pLineView = [[UIView alloc]initWithFrame:CGRectMake(self.width/2 - 2 * AdaptRate, 11 * AdaptRate, 2 * AdaptRate, 22 * AdaptRate)];
+    pLineView.backgroundColor = [UIColor whiteColor];
+    pLineView.alpha = 0.6;
+    [m_pDateBtn addSubview:pLineView];
     
     // 右 星座
-    UIButton *m_pConstellBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    m_pConstellBtn.frame = CGRectMake(self.width/2, 35 * AdaptRate, self.width/2,45 * AdaptRate);
-    [m_pConstellBtn addTarget:self action:@selector(presentToNext) forControlEvents:UIControlEventTouchUpInside];
-    [m_pScrollView addSubview:m_pConstellBtn];
+    UIButton *pConstellBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    pConstellBtn.frame = CGRectMake(self.width/2, 35 * AdaptRate, self.width/2,45 * AdaptRate);
+    [pConstellBtn addTarget:self action:@selector(presentToNext) forControlEvents:UIControlEventTouchUpInside];
+    [m_pScrollView addSubview:pConstellBtn];
     
     //start
-    UILabel *m_pStartLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, m_pConstellBtn.width, SIZE_HEIGHT(15))];
-    [m_pStartLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueThinFont] FontSize:15 Placehoder:@"Start"];
-    m_pStartLabel.textAlignment = NSTextAlignmentCenter;
-    [m_pConstellBtn addSubview:m_pStartLabel];
+    UILabel *pStartLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, pConstellBtn.width, SIZE_HEIGHT(15))];
+    [pStartLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueThinFont] FontSize:15 Placehoder:@"Start"];
+    pStartLabel.textAlignment = NSTextAlignmentCenter;
+    [pConstellBtn addSubview:pStartLabel];
     
     //星座
     NSInteger m_lindex = [[[NSUserDefaults standardUserDefaults]objectForKey:@"selectConstalletion"] integerValue];
-    UILabel *m_pConstellLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, m_pStartLabel.bottom + 5 * AdaptRate, 0, 0)];
+    m_pConstellLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, pStartLabel.bottom + 5 * AdaptRate, 0, 0)];
     DPConstellationModel * model = [DPConstellationModel ModelWithDictionary:m_arrData[m_lindex]];
     [m_pConstellLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:model.nameEn];
     [m_pConstellLabel sizeToFit];
     CGPoint center = m_pConstellLabel.center;
-    center.x = m_pConstellBtn.width * 0.5;
+    center.x = pConstellBtn.width * 0.5;
     m_pConstellLabel.center = center;
     m_pConstellLabel.textAlignment = NSTextAlignmentCenter;
-    [m_pConstellBtn addSubview:m_pConstellLabel];
+    [pConstellBtn addSubview:m_pConstellLabel];
     
     //向下箭头
-    UIImageView *m_pArrowImg = [[UIImageView alloc]initWithFrame:CGRectMake(m_pConstellLabel.right + 10 * AdaptRate, m_pConstellLabel.top + 8 * AdaptRate, 12 * AdaptRate, 8 * AdaptRate)];
+    m_pArrowImg = [[UIImageView alloc]initWithFrame:CGRectMake(m_pConstellLabel.right + 10 * AdaptRate, m_pConstellLabel.top + 8 * AdaptRate, 12 * AdaptRate, 8 * AdaptRate)];
     m_pArrowImg.image = [UIImage imageNamed:@"constellation_detail_triangle"];
-    [m_pConstellBtn addSubview:m_pArrowImg];
+    [pConstellBtn addSubview:m_pArrowImg];
     
 }
 //手相分析等
@@ -153,7 +158,13 @@
     }
     
 }
-
+- (void)updateConName{
+    NSInteger m_lindex = [[[NSUserDefaults standardUserDefaults]objectForKey:@"selectConstalletion"] integerValue];
+    DPConstellationModel * model = [DPConstellationModel ModelWithDictionary:m_arrData[m_lindex]];
+    m_pConstellLabel.text = model.nameEn;
+    [m_pConstellLabel sizeToFit];
+    m_pArrowImg.frame = CGRectMake(m_pConstellLabel.right + 10 * AdaptRate, m_pConstellLabel.top + 8 * AdaptRate, 12 * AdaptRate, 8 * AdaptRate);
+}
 #pragma mark -
 #pragma mark - collectionView的delegate和datasource
 
@@ -171,6 +182,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     DPWeekCollectionViewCell *cell = [DPWeekCollectionViewCell cellWithCollectionView:collectionView identifier:WeekCollectionViewCell indexPath:indexPath];
+    cell.weekLabel.text = m_arrWeek[indexPath.item];
     return cell;
 }
 - (void)getRsult:(UIButton *)btn

@@ -37,6 +37,7 @@
 {
     if (self.isPresent) {
         [self dismissViewControllerAnimated:YES completion:nil];
+        [mNotificationCenter postNotificationName:constellationChangedNotification object:nil];
     }else{
         DPConstellationDetailController *detailVc = [[DPConstellationDetailController alloc]init];
         [self PushChildViewController:detailVc animated:YES];

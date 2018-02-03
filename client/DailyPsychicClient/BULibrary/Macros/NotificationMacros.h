@@ -18,5 +18,6 @@
 #define kLoginOutNotification @"kLoginOutNotification"
 #define kLoginNotification @"kLoginNotification"
 #define kztReachabilityChangedNotification @"kztReachabilityChangedNotification"
+#define constellationChangedNotification @"constellationChangedNotification"
 
 #endif /* NotificationMacros_h */
