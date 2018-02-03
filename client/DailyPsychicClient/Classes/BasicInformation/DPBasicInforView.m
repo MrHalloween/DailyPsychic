@@ -31,7 +31,7 @@
 - (void)addSubViews{
     
      m_pTitleLabel.text = @"Basic Information";
-    
+    NSDictionary *dicInfor = [[NSUserDefaults standardUserDefaults]objectForKey:@"basicInfor"];
     //背景图
     UIImageView *pMainImg = [[UIImageView alloc]initWithFrame:CGRectMake(15 * AdaptRate, 82 * AdaptRate, self.width - 30 * AdaptRate, 322 * AdaptRate)];
     pMainImg.userInteractionEnabled = YES;
@@ -56,6 +56,7 @@
     m_pNameText.leftViewMode = UITextFieldViewModeAlways;
     m_pNameText.font = [UIFont systemFontOfSize:16];
     m_pNameText.background = [UIImage imageNamed:@"basic_inputbg"];
+    m_pNameText.text = dicInfor[@"name"];
     [pMainImg addSubview:m_pNameText];
     
     //Your birthday
@@ -77,6 +78,7 @@
     m_pBirthText.font = [UIFont systemFontOfSize:16];
     m_pBirthText.background = [UIImage imageNamed:@"basic_inputbg"];
     m_pBirthText.delegate = self;
+    m_pBirthText.text = dicInfor[@"birth"];
     [pMainImg addSubview:m_pBirthText];
 
     
@@ -102,6 +104,9 @@
     if (m_pTimeSelect == nil)
     {
         m_pTimeSelect = [[AFTimeSelctedView        alloc]initWithFrame:SCREEN_BOUNDS];
+        if (m_pBirthText.text.length != 0) {
+             [m_pTimeSelect SetDefaultTime:m_pBirthText.text];
+        }
         __weak typeof(m_pBirthText) weakBirthTest = m_pBirthText;
         m_pTimeSelect.SureSelectedDate = ^(NSString *strDate){
             weakBirthTest.text = strDate;
@@ -117,6 +122,11 @@
             
         }];
     }else{
+        NSMutableDictionary * dicInfo = [NSMutableDictionary dictionary];
+        [dicInfo setValue:m_pNameText.text forKey:@"name"];
+        [dicInfo setValue:m_pBirthText.text forKey:@"birth"];
+        [[NSUserDefaults standardUserDefaults]setObject:dicInfo forKey:@"basicInfor"];
+        [[NSUserDefaults standardUserDefaults]synchronize];
         if (self.proDelegate != nil && [self.proDelegate respondsToSelector:@selector(PushToNextPage:)]) {
             [self.proDelegate PushToNextPage:nil];
         }
