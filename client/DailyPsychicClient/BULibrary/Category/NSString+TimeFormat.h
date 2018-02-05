@@ -47,4 +47,9 @@
  */
 + (NSString *)getTimeWithTimeFormatSting:(NSString *)timeStampString;
 
+/**
+ *  根据时间戳返回年月日
+ */
++ (NSString *)timeWithTimeIntervalString:(NSString *)timeString;
+
 @end

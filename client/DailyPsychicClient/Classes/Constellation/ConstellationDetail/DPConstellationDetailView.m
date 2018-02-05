@@ -18,6 +18,7 @@
     UIButton * m_pDateBtn;
     UIScrollView * m_pScrollView;
     NSArray * m_arrWeek;
+    UILabel *m_pDateLabel;
     UILabel *m_pConstellLabel;//星座名称
     UIImageView *m_pArrowImg;//向下箭头
     NSArray * m_arrDate;//一周日期（几号）的数组
@@ -39,7 +40,7 @@
         m_arrData = [NSMutableArray arrayWithArray:m_arrConstel];
         m_arrTotalDate = [NSMutableArray array];
         m_arrDate = [self getcurrentWeekDate];
-        m_arrWeek = @[@"SUN",@"MON",@"TUE",@"WED",@"THU",@"FRI",@"SAT"];
+        m_arrWeek = @[@"MON",@"TUE",@"WED",@"THU",@"FRI",@"SAT",@"SUN"];
         [mNotificationCenter addObserver:self selector:@selector(updateConName) name:constellationChangedNotification object:nil];
         [self addCollectionView];
         [self addScrolllview];
@@ -85,11 +86,11 @@
     [m_pDateBtn addSubview:pTodayLabel];
 
     //日期
-    UILabel *pDateLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, pTodayLabel.bottom + 5 * AdaptRate, m_pDateBtn.width, SIZE_HEIGHT(20))];
+    m_pDateLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, pTodayLabel.bottom + 5 * AdaptRate, m_pDateBtn.width, SIZE_HEIGHT(20))];
     NSString *currentDate = [NSString GetCurrentTimesWithFormat:@"yyyy.MM.dd"];
-    [pDateLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:currentDate];
-    pDateLabel.textAlignment = NSTextAlignmentCenter;
-    [m_pDateBtn addSubview:pDateLabel];
+    [m_pDateLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:currentDate];
+    m_pDateLabel.textAlignment = NSTextAlignmentCenter;
+    [m_pDateBtn addSubview:m_pDateLabel];
     
     // 中间 横杠
     UIView *pLineView = [[UIView alloc]initWithFrame:CGRectMake(self.width/2 - 2 * AdaptRate, 11 * AdaptRate, 2 * AdaptRate, 22 * AdaptRate)];
@@ -192,10 +193,18 @@
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-}
-- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
+    DPWeekCollectionViewCell * cell = (DPWeekCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    cell.circleBgImg.image = [UIImage imageNamed:@"constellation_detail_selectdate"];
+    cell.pointImg.hidden = NO;
+    m_pDateLabel.text = m_arrTotalDate[indexPath.item];
     
 }
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
+    DPWeekCollectionViewCell * cell = (DPWeekCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    cell.circleBgImg.image = nil;
+    cell.pointImg.hidden = YES;
+}
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     DPWeekCollectionViewCell *cell = [DPWeekCollectionViewCell cellWithCollectionView:collectionView identifier:WeekCollectionViewCell indexPath:indexPath];
@@ -272,7 +281,7 @@
             [dateArr addObject:obj];
             //将完整日期添加到数组
             NSString * timeStapString = [NSString stringWithFormat:@"%ld",nowTimeSp + (j * 86400)];
-            NSString * objDate = [self timeWithTimeIntervalString:timeStapString];
+            NSString * objDate = [NSString timeWithTimeIntervalString:timeStapString];
             [m_arrTotalDate addObject:objDate];
         }
     }
@@ -282,32 +291,18 @@
             NSString *obj = [NSString stringWithFormat:@"%d",firstValue+j];
             [dateArr addObject:obj];
             NSString * timeStapString = [NSString stringWithFormat:@"%ld",nowTimeSp + (j * 86400)];
-            NSString * objDate = [self timeWithTimeIntervalString:timeStapString];
+            NSString * objDate = [NSString timeWithTimeIntervalString:timeStapString];
             [m_arrTotalDate addObject:objDate];
         }
         for (int z = 0; z<lastValue; z++) {
             NSString *obj = [NSString stringWithFormat:@"%d",z+1];
             [dateArr addObject:obj];
             NSString * timeStapString = [NSString stringWithFormat:@"%ld",nowTimeSp + (z * 86400)];
-            NSString * objDate = [self timeWithTimeIntervalString:timeStapString];
+            NSString * objDate = [NSString timeWithTimeIntervalString:timeStapString];
             [m_arrTotalDate addObject:objDate];
         }
     }
-    NSLog(@"%@",m_arrTotalDate);
     return dateArr;
-}
-- (NSString *)timeWithTimeIntervalString:(NSString *)timeString
-{
-    // 格式化时间
-    NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
-    formatter.timeZone = [NSTimeZone timeZoneWithName:@"beijing"];
-    [formatter setDateStyle:NSDateFormatterMediumStyle];
-    [formatter setTimeStyle:NSDateFormatterShortStyle];
-    [formatter setDateFormat:@"yyyy.MM.dd"];
-    // 毫秒值转化为秒
-    NSDate* date = [NSDate dateWithTimeIntervalSince1970:[timeString doubleValue]];
-    NSString *dateString = [formatter stringFromDate:date];
-    return dateString;
 }
 
 @end

@@ -197,18 +197,5 @@
     NSString *dateString = [formatter stringFromDate:date];
     return dateString;
 }
-- (NSString *)timeWithTimeIntervalString:(NSString *)timeString
-{
-    // 格式化时间
-    NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
-    formatter.timeZone = [NSTimeZone timeZoneWithName:@"beijing"];
-    [formatter setDateStyle:NSDateFormatterMediumStyle];
-    [formatter setTimeStyle:NSDateFormatterShortStyle];
-    [formatter setDateFormat:@"yyyy.MM.dd"];
-    // 毫秒值转化为秒
-    NSDate* date = [NSDate dateWithTimeIntervalSince1970:[timeString doubleValue]];
-    NSString *dateString = [formatter stringFromDate:date];
-    return dateString;
-}
 
 @end
