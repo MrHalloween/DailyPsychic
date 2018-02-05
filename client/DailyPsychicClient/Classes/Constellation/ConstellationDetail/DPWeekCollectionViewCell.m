@@ -58,4 +58,16 @@
     self.dateLabel = dateLabel;
 }
 
+- (void)setSelected:(BOOL)selected
+{
+    [super setSelected:selected];
+    self.pointImg.hidden = !selected;
+    if (selected) {
+        self.circleBgImg.image = [UIImage imageNamed:@"constellation_detail_selectdate"];
+    }else{
+        self.circleBgImg.image = nil;
+    }
+}
+
+
 @end
