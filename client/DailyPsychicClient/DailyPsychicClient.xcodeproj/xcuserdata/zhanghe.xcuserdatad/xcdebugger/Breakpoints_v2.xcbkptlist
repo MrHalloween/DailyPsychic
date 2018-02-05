@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Widgets/SCHCircleView/SCHCircleViewCell.m"
-            timestampString = "539348416.96306"
+            timestampString = "539175617.517377"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Widgets/SCHCircleView/SCHCircleViewCell.m"
-            timestampString = "539348416.963197"
+            timestampString = "539175617.517794"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "-awakeFromNib"
+            landmarkName = "-addEvent"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
