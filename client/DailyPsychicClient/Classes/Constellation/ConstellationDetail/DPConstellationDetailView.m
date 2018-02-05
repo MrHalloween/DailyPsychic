@@ -194,7 +194,6 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     DPWeekCollectionViewCell * cell = (DPWeekCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    cell.pointImg.hidden = NO;
     cell.selected = YES;
     m_pDateLabel.text = m_arrTotalDate[indexPath.item];
     
