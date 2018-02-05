@@ -194,15 +194,14 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     DPWeekCollectionViewCell * cell = (DPWeekCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    cell.circleBgImg.image = [UIImage imageNamed:@"constellation_detail_selectdate"];
     cell.pointImg.hidden = NO;
+    cell.selected = YES;
     m_pDateLabel.text = m_arrTotalDate[indexPath.item];
     
 }
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
     DPWeekCollectionViewCell * cell = (DPWeekCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    cell.circleBgImg.image = nil;
-    cell.pointImg.hidden = YES;
+    cell.selected = NO;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -211,11 +210,10 @@
     cell.weekLabel.text = m_arrWeek[indexPath.item];
     cell.dateLabel.text = m_arrDate[indexPath.item];
     if (m_ltodayDate == [m_arrDate[indexPath.item] integerValue]) {//今天
-        cell.circleBgImg.image = [UIImage imageNamed:@"constellation_detail_selectdate"];
-        cell.pointImg.hidden = NO;
+        [collectionView selectItemAtIndexPath:indexPath animated:NO scrollPosition:UICollectionViewScrollPositionNone];
+        cell.selected = YES;
     }else{
-        cell.circleBgImg.image = nil;
-        cell.pointImg.hidden = YES;
+        cell.selected = NO;
     }
     return cell;
 }
