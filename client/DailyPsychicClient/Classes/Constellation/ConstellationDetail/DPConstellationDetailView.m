@@ -20,8 +20,10 @@
     NSArray * m_arrWeek;
     UILabel *m_pConstellLabel;//星座名称
     UIImageView *m_pArrowImg;//向下箭头
-    NSArray * m_arrDate;//一周日期的数组
-    NSInteger m_ltodayDate;
+    NSArray * m_arrDate;//一周日期（几号）的数组
+    NSMutableArray *m_arrTotalDate;//一周日期（年月日）的数组
+    NSInteger m_ltodayDate;//今天
+    
 }
 @end
 
@@ -34,9 +36,10 @@
         m_pTitleLabel.text = @"Start";
         NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"constellation" ofType:@"plist"];
         NSArray *m_arrConstel = [NSArray arrayWithContentsOfFile: plistPath];
+        m_arrData = [NSMutableArray arrayWithArray:m_arrConstel];
+        m_arrTotalDate = [NSMutableArray array];
         m_arrDate = [self getcurrentWeekDate];
         m_arrWeek = @[@"SUN",@"MON",@"TUE",@"WED",@"THU",@"FRI",@"SAT"];
-        m_arrData = [NSMutableArray arrayWithArray:m_arrConstel];
         [mNotificationCenter addObserver:self selector:@selector(updateConName) name:constellationChangedNotification object:nil];
         [self addCollectionView];
         [self addScrolllview];
@@ -214,8 +217,13 @@
         [self.conDetailDel PresentToselect];
     }
 }
+
+#pragma mark - 获取一周的日期
 - (NSArray *)getcurrentWeekDate{
     
+    NSDate * nowDateTotal = [NSDate dateWithTimeIntervalSinceNow:0];
+    //当前时间的时间戳 *1000 是精确到毫秒，不乘就是精确到秒
+    long int nowTimeSp = (long)[nowDateTotal timeIntervalSince1970];
     NSDate *nowDate = [NSDate date];
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *comp = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday fromDate:nowDate];
@@ -238,7 +246,6 @@
         firstDiff = [calendar firstWeekday] - weekDay + 1;
         lastDiff = 8 - weekDay;
     }
-    //  NSLog(@"firstDiff: %ld   lastDiff: %ld",firstDiff,lastDiff);
     // 在当前日期(去掉时分秒)基础上加上差的天数
     NSDateComponents *firstDayComp = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay  fromDate:nowDate];
     [firstDayComp setDay:day + firstDiff];
@@ -257,6 +264,10 @@
         for (int j = 0; j<7; j++) {
             NSString *obj = [NSString stringWithFormat:@"%d",firstValue+j];
             [dateArr addObject:obj];
+            //将完整日期添加到数组
+            NSString * timeStapString = [NSString stringWithFormat:@"%ld",nowTimeSp + (j * 86400)];
+            NSString * objDate = [self timeWithTimeIntervalString:timeStapString];
+            [m_arrTotalDate addObject:objDate];
         }
     }
     else if (firstValue > lastValue)
@@ -264,13 +275,33 @@
         for (int j = 0; j < 7-lastValue; j++) {
             NSString *obj = [NSString stringWithFormat:@"%d",firstValue+j];
             [dateArr addObject:obj];
+            NSString * timeStapString = [NSString stringWithFormat:@"%ld",nowTimeSp + (j * 86400)];
+            NSString * objDate = [self timeWithTimeIntervalString:timeStapString];
+            [m_arrTotalDate addObject:objDate];
         }
         for (int z = 0; z<lastValue; z++) {
             NSString *obj = [NSString stringWithFormat:@"%d",z+1];
             [dateArr addObject:obj];
+            NSString * timeStapString = [NSString stringWithFormat:@"%ld",nowTimeSp + (z * 86400)];
+            NSString * objDate = [self timeWithTimeIntervalString:timeStapString];
+            [m_arrTotalDate addObject:objDate];
         }
     }
+    NSLog(@"%@",m_arrTotalDate);
     return dateArr;
+}
+- (NSString *)timeWithTimeIntervalString:(NSString *)timeString
+{
+    // 格式化时间
+    NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+    formatter.timeZone = [NSTimeZone timeZoneWithName:@"beijing"];
+    [formatter setDateStyle:NSDateFormatterMediumStyle];
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    [formatter setDateFormat:@"yyyy.MM.dd"];
+    // 毫秒值转化为秒
+    NSDate* date = [NSDate dateWithTimeIntervalSince1970:[timeString doubleValue]];
+    NSString *dateString = [formatter stringFromDate:date];
+    return dateString;
 }
 
 @end

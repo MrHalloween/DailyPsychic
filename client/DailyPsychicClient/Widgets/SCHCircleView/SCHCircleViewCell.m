@@ -48,14 +48,14 @@
     long_press = nil;
     
     /*增加单击事件*/
-    UITapGestureRecognizer *single_tap = [[UITapGestureRecognizer alloc] initWithTarget: self action: @selector(handleSingleTap:)] ;
-    single_tap.numberOfTapsRequired    = 1;
-    single_tap.cancelsTouchesInView    = NO;
-    single_tap.numberOfTouchesRequired = 1;
-    single_tap.delegate                = self;
-    [self addGestureRecognizer: single_tap];
-    [single_tap release];
-    single_tap = nil;
+//    UITapGestureRecognizer *single_tap = [[UITapGestureRecognizer alloc] initWithTarget: self action: @selector(handleSingleTap:)] ;
+//    single_tap.numberOfTapsRequired    = 1;
+//    single_tap.cancelsTouchesInView    = NO;
+//    single_tap.numberOfTouchesRequired = 1;
+//    single_tap.delegate                = self;
+//    [self addGestureRecognizer: single_tap];
+//    [single_tap release];
+//    single_tap = nil;
     
     /*增加拖动事件*/
     UIPanGestureRecognizer *single_pan = [[UIPanGestureRecognizer alloc] initWithTarget: self action: @selector(handleSinglePan:)] ;
@@ -115,32 +115,32 @@
 
 #pragma mark -
 #pragma mark - 单击
-- (void)handleSingleTap:(UITapGestureRecognizer *)gestureRecognizer
-{
-    switch (gestureRecognizer.state)
-    {
-        case UIGestureRecognizerStateBegan:
-            
-            [_delegate cellTouchBegin:self];
-            break;
-        case UIGestureRecognizerStateEnded:
-            [_delegate cellTouchEnd:self];
-            break;
-        case UIGestureRecognizerStateFailed:
-            [_delegate cellTouchFailed:self];
-            break;
-        case UIGestureRecognizerStateCancelled:
-            [_delegate cellTouchCancelled:self];
-            break;
-        case UIGestureRecognizerStateChanged:
-
-            break;
-        default:
-
-            break;
-    }
-    
-}
+//- (void)handleSingleTap:(UITapGestureRecognizer *)gestureRecognizer
+//{
+//    switch (gestureRecognizer.state)
+//    {
+//        case UIGestureRecognizerStateBegan:
+//            
+//            [_delegate cellTouchBegin:self];
+//            break;
+//        case UIGestureRecognizerStateEnded:
+//            [_delegate cellTouchEnd:self];
+//            break;
+//        case UIGestureRecognizerStateFailed:
+//            [_delegate cellTouchFailed:self];
+//            break;
+//        case UIGestureRecognizerStateCancelled:
+//            [_delegate cellTouchCancelled:self];
+//            break;
+//        case UIGestureRecognizerStateChanged:
+//
+//            break;
+//        default:
+//
+//            break;
+//    }
+//    
+//}
 
 #pragma mark - 
 #pragma mark - 拖动
