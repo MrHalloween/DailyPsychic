@@ -9,8 +9,9 @@
 #import "DPTakePhotoController.h"
 #import "DPTakePhotoView.h"
 #import "DPPalmAnalyingViewController.h"
+#import "DPCustomCameraController.h"
 
-@interface DPTakePhotoController ()<AFBaseTableViewDelegate,DPTakePhotoViewDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@interface DPTakePhotoController ()<AFBaseTableViewDelegate,DPTakePhotoViewDelegate>
 {
     DPTakePhotoView *m_pTakePhotoView;
 }
@@ -42,30 +43,18 @@
 #pragma mark - DPTakePhotoViewDelegate
 - (void)TakePhoto
 {
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-    picker.delegate = self;
-    picker.allowsEditing = YES;
-    [self presentViewController:picker animated:YES completion:nil];
-}
-
-#pragma mark - UIImagePickerControllerDelegate
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
-{
-    [self dismissViewControllerAnimated:YES completion:^{
-        m_pTakePhotoView.righthand = 1;
-    }];
+    DPCustomCameraController *pVC = [[DPCustomCameraController alloc]init];
     if (m_pTakePhotoView.righthand == 1) {
-        DPPalmAnalyingViewController * Analying = [[DPPalmAnalyingViewController alloc]init];
-        [self PushChildViewController:Analying animated:YES];
+        pVC.isRight = YES;
     }
-}
-
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
-{
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-    }];
+    pVC.propBackAction = ^(id object) {
+        if (m_pTakePhotoView.righthand == 1) {
+            DPPalmAnalyingViewController * Analying = [[DPPalmAnalyingViewController alloc]init];
+            [self PushChildViewController:Analying animated:YES];
+        }
+        m_pTakePhotoView.righthand = 1;
+    };
+    [self presentViewController:pVC animated:YES completion:nil];
 }
 
 @end

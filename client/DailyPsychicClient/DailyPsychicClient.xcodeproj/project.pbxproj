@@ -99,6 +99,11 @@
 		1022E58E20197ECF007E421B /* NewPagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1022E58A20197ECF007E421B /* NewPagedFlowView.m */; };
 		104079EA20170D9A00700777 /* DPHomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104079E920170D9A00700777 /* DPHomePageController.m */; };
 		104079ED20170DB100700777 /* DPHomePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 104079EC20170DB100700777 /* DPHomePageView.m */; };
+		1058E61E202860DA007F2D66 /* DPCustomCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1058E61D202860DA007F2D66 /* DPCustomCameraController.m */; };
+		1058E62120286386007F2D66 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 1058E61F20286386007F2D66 /* camera.png */; };
+		1058E62220286386007F2D66 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 1058E62020286386007F2D66 /* close.png */; };
+		1058E62520286651007F2D66 /* righthand.png in Resources */ = {isa = PBXBuildFile; fileRef = 1058E62320286651007F2D66 /* righthand.png */; };
+		1058E62620286651007F2D66 /* lefthand.png in Resources */ = {isa = PBXBuildFile; fileRef = 1058E62420286651007F2D66 /* lefthand.png */; };
 		1099F1E7201F245E00CE653E /* homepage_card_star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1DB201F245E00CE653E /* homepage_card_star@2x.png */; };
 		1099F1E8201F245E00CE653E /* homepage_card_star@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1DC201F245E00CE653E /* homepage_card_star@3x.png */; };
 		1099F1E9201F245E00CE653E /* homepage_ok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1DD201F245E00CE653E /* homepage_ok@2x.png */; };
@@ -467,6 +472,12 @@
 		104079E920170D9A00700777 /* DPHomePageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPHomePageController.m; sourceTree = "<group>"; };
 		104079EB20170DB100700777 /* DPHomePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPHomePageView.h; sourceTree = "<group>"; };
 		104079EC20170DB100700777 /* DPHomePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPHomePageView.m; sourceTree = "<group>"; };
+		1058E61C202860DA007F2D66 /* DPCustomCameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPCustomCameraController.h; sourceTree = "<group>"; };
+		1058E61D202860DA007F2D66 /* DPCustomCameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPCustomCameraController.m; sourceTree = "<group>"; };
+		1058E61F20286386007F2D66 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		1058E62020286386007F2D66 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		1058E62320286651007F2D66 /* righthand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = righthand.png; sourceTree = "<group>"; };
+		1058E62420286651007F2D66 /* lefthand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lefthand.png; sourceTree = "<group>"; };
 		1099F1DB201F245E00CE653E /* homepage_card_star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_card_star@2x.png"; sourceTree = "<group>"; };
 		1099F1DC201F245E00CE653E /* homepage_card_star@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_card_star@3x.png"; sourceTree = "<group>"; };
 		1099F1DD201F245E00CE653E /* homepage_ok@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_ok@2x.png"; sourceTree = "<group>"; };
@@ -1212,6 +1223,15 @@
 			path = HomePage;
 			sourceTree = "<group>";
 		};
+		1058E61B202860BE007F2D66 /* CustomCamera */ = {
+			isa = PBXGroup;
+			children = (
+				1058E61C202860DA007F2D66 /* DPCustomCameraController.h */,
+				1058E61D202860DA007F2D66 /* DPCustomCameraController.m */,
+			);
+			path = CustomCamera;
+			sourceTree = "<group>";
+		};
 		1099F1DA201F245E00CE653E /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1485,6 +1505,7 @@
 		D630AF672021DBAE0006B16C /* PalmPsychic */ = {
 			isa = PBXGroup;
 			children = (
+				1058E61B202860BE007F2D66 /* CustomCamera */,
 				2977F80C202303190016B617 /* ResultList */,
 				2977F807202303190016B617 /* WaitResultPage */,
 				10DB6D282022EE170084FC35 /* TakePhoto */,
@@ -1495,6 +1516,10 @@
 		D630AF6E2021DDB40006B16C /* PalmAnalysis */ = {
 			isa = PBXGroup;
 			children = (
+				1058E62420286651007F2D66 /* lefthand.png */,
+				1058E62320286651007F2D66 /* righthand.png */,
+				1058E61F20286386007F2D66 /* camera.png */,
+				1058E62020286386007F2D66 /* close.png */,
 				D6EB890820235306005045B4 /* palm_analying_one@2x.png */,
 				D6EB890920235306005045B4 /* palm_analying_one@3x.png */,
 				D6EB890A20235306005045B4 /* palm_analying_two@2x.png */,
@@ -1621,6 +1646,7 @@
 				1099F1EA201F245E00CE653E /* homepage_triangle@2x.png in Resources */,
 				1099F1E9201F245E00CE653E /* homepage_ok@2x.png in Resources */,
 				29BABFCA20203B8800CE4E51 /* constellation_gemini_circle@3x.png in Resources */,
+				1058E62620286651007F2D66 /* lefthand.png in Resources */,
 				29BABFE420203B8800CE4E51 /* constellation_scorpio@3x.png in Resources */,
 				D6D8796120257F4100F543EE /* resultAnalysis.plist in Resources */,
 				29BABFAA20203B8800CE4E51 /* constellation_virgo_circle@3x.png in Resources */,
@@ -1658,6 +1684,7 @@
 				2977F7FB2022AEC10016B617 /* palm_getresult@2x.png in Resources */,
 				29BABFA420203B8800CE4E51 /* constellation_aries_circle@3x.png in Resources */,
 				1006BD1220158E6C0041DC86 /* README.md in Resources */,
+				1058E62120286386007F2D66 /* camera.png in Resources */,
 				29BABFB820203B8800CE4E51 /* constellation_libra_circle@3x.png in Resources */,
 				29BABFE920203B8800CE4E51 /* constellation_taurus@2x.png in Resources */,
 				1099F1EE201F245E00CE653E /* homepage_card_test@3x.png in Resources */,
@@ -1674,6 +1701,7 @@
 				29438F1C20205262006B7497 /* constellation_aries@2x.png in Resources */,
 				D6EB8900202334AC005045B4 /* palm_resultbg@3x.png in Resources */,
 				29101A302023F5B000788AD9 /* basic_inputbg@3x.png in Resources */,
+				1058E62520286651007F2D66 /* righthand.png in Resources */,
 				29BABFB220203B8800CE4E51 /* constellation_aquarius_select@3x.png in Resources */,
 				29BABFC820203B8800CE4E51 /* constellation_gemini@3x.png in Resources */,
 				1006BC8D20158C930041DC86 /* Assets.xcassets in Resources */,
@@ -1689,6 +1717,7 @@
 				10DB6D382022EFC70084FC35 /* palm_left@2x.png in Resources */,
 				29BABFBE20203B8800CE4E51 /* constellation_cancer_circle@3x.png in Resources */,
 				29BABFAB20203B8800CE4E51 /* constellation_virgo_select@2x.png in Resources */,
+				1058E62220286386007F2D66 /* close.png in Resources */,
 				29BABFB620203B8800CE4E51 /* constellation_libra@3x.png in Resources */,
 				D6EB890E20235306005045B4 /* palm_analying_two@2x.png in Resources */,
 				29BABFA320203B8800CE4E51 /* constellation_ aries_circle@2x.png in Resources */,
@@ -1822,6 +1851,7 @@
 				1006BD2D20158E6C0041DC86 /* NSObject+RMCopyable.m in Sources */,
 				1006BD2920158E6C0041DC86 /* BUCustomViewController.m in Sources */,
 				1006BD2820158E6C0041DC86 /* BUWebViewController.m in Sources */,
+				1058E61E202860DA007F2D66 /* DPCustomCameraController.m in Sources */,
 				1006BDAA20158E770041DC86 /* MJRefreshHeader.m in Sources */,
 				1006BDB720158E770041DC86 /* SDWebImageDecoder.m in Sources */,
 				1006BDC620158E770041DC86 /* UIButton+WebCache.m in Sources */,
