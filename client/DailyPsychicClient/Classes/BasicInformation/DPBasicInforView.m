@@ -137,6 +137,7 @@
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
     if (textField == m_pBirthText) {
+        [self endEditing:YES];
         [self selcteTime];
         return NO;
     }else{
