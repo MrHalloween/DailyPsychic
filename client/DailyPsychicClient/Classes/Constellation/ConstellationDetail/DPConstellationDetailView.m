@@ -130,37 +130,43 @@
 //手相分析等
 - (void)addlistView
 {
-    NSArray *m_pBgImgArr = @[@"constellation_detail_counselor",@"constellation_detail_palma",@"constellation_detail_daytest"];
-    NSArray *m_ptitleArr = @[@"Consultation",@"Palm analysis",@"Daily test"];
+    NSArray *pBgImgArr = @[@"constellation_detail_counselor",@"constellation_detail_daytest",@"constellation_detail_palma"];
+    NSArray *ptitleArr = @[@"Consultation",@"Daily test",@"Palm analysis"];
     
     for (int i = 0; i < 3; i ++) {
         //button背景
-        UIButton *m_pConsultation = [UIButton buttonWithType:UIButtonTypeCustom];
-        m_pConsultation.frame = CGRectMake(6 * AdaptRate, m_pDateBtn.bottom + 28 * AdaptRate + 169 * AdaptRate * i, self.width - 12 * AdaptRate, 169 * AdaptRate);
-        m_pConsultation.tag = 100 + i;
-        [m_pConsultation addTarget:self action:@selector(getRsult:) forControlEvents:UIControlEventTouchUpInside];
-        [m_pConsultation setBackgroundImage:[UIImage imageNamed:m_pBgImgArr[i]] forState:UIControlStateNormal];
-        [m_pScrollView addSubview:m_pConsultation];
+        UIButton *pConsultation = [UIButton buttonWithType:UIButtonTypeCustom];
+        pConsultation.frame = CGRectMake(6 * AdaptRate, m_pDateBtn.bottom + 28 * AdaptRate + 169 * AdaptRate * i, self.width - 12 * AdaptRate, 169 * AdaptRate);
+        pConsultation.tag = 100 + i;
+        [pConsultation addTarget:self action:@selector(getRsult:) forControlEvents:UIControlEventTouchUpInside];
+        [pConsultation setBackgroundImage:[UIImage imageNamed:pBgImgArr[i]] forState:UIControlStateNormal];
+        [m_pScrollView addSubview:pConsultation];
         
         //锁的外围圆圈
-        UIButton *m_pCircleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        m_pCircleBtn.bounds = CGRectMake(0,0,78 * AdaptRate, 77 * AdaptRate);
-        m_pCircleBtn.center = CGPointMake(m_pConsultation.width/2, 61 * AdaptRate);
-        [m_pCircleBtn setBackgroundImage:[UIImage imageNamed:@"constellation_detail_lockcircle"] forState:UIControlStateNormal];
-        [m_pConsultation addSubview:m_pCircleBtn];
+        UIButton * pCircleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        pCircleBtn.bounds = CGRectMake(0,0,78 * AdaptRate, 77 * AdaptRate);
+        pCircleBtn.center = CGPointMake(pConsultation.width/2, 61 * AdaptRate);
+        [pCircleBtn setBackgroundImage:[UIImage imageNamed:@"constellation_detail_lockcircle"] forState:UIControlStateNormal];
+        [pConsultation addSubview:pCircleBtn];
         
         //锁
-        UIButton *m_pLockBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        m_pLockBtn.frame = CGRectMake(5 * AdaptRate,6 * AdaptRate,69 * AdaptRate, 69 * AdaptRate);
-        [m_pLockBtn setBackgroundImage:[UIImage imageNamed:@"constellation_detail_lock"] forState:UIControlStateNormal];
-        [m_pCircleBtn addSubview:m_pLockBtn];
+        UIButton *pLockBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        pLockBtn.frame = CGRectMake(5 * AdaptRate,6 * AdaptRate,69 * AdaptRate, 69 * AdaptRate);
+        [pLockBtn setBackgroundImage:[UIImage imageNamed:@"constellation_detail_lock"] forState:UIControlStateNormal];
+        [pCircleBtn addSubview:pLockBtn];
+        
+        if (i != 2) {
+            [pLockBtn setBackgroundImage:[UIImage imageNamed:@"constellation_detail_lock"] forState:UIControlStateNormal];
+        }else{
+            [pLockBtn setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+        }
         
         //标题
-        UILabel *m_pTitleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, m_pCircleBtn.bottom + 9 * AdaptRate, m_pConsultation.width, SIZE_HEIGHT(16))];
-        [m_pTitleLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:16 Placehoder: m_ptitleArr[i]];
-        m_pTitleLabel.textAlignment = NSTextAlignmentCenter;
-        [m_pConsultation addSubview:m_pTitleLabel];
-        m_pScrollView.contentSize = CGSizeMake(self.width, m_pConsultation.bottom );
+        UILabel *pTitleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, pCircleBtn.bottom + 9 * AdaptRate, pConsultation.width, SIZE_HEIGHT(16))];
+        [pTitleLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueFont] FontSize:16 Placehoder: ptitleArr[i]];
+        pTitleLabel.textAlignment = NSTextAlignmentCenter;
+        [pConsultation addSubview:pTitleLabel];
+        m_pScrollView.contentSize = CGSizeMake(self.width, pConsultation.bottom );
     }
     
 }
