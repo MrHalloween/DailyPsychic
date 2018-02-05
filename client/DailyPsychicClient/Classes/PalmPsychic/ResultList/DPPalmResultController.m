@@ -15,18 +15,20 @@
 }
 @end
 
+
+
 @implementation DPPalmResultController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     m_pPalmResultView = [[DPPalmResultView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    m_pPalmResultView.resultType = self.dpResultType;
     m_pPalmResultView.proDelegate = self;
     [self.view addSubview:m_pPalmResultView];
 }
 - (void)PopPreviousPage
 {
     [self.navigationController popToRootViewControllerAnimated:YES];
-//    [self Back];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

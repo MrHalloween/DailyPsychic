@@ -52,6 +52,7 @@
     NSMutableArray *arr = [NSMutableArray arrayWithArray:[[NSUserDefaults standardUserDefaults]objectForKey:@"questions"]];
     if (arr.count == 0) {
         DPPalmAnalysisController *pVC = [[DPPalmAnalysisController alloc]init];
+        pVC.analysisType = @"test";
         [self PushChildViewController:pVC animated:YES];
 
     }else{

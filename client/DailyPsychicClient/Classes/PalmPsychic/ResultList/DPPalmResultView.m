@@ -15,7 +15,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        m_pTitleLabel.text = @"Palm analysis";
+        
         m_pBaseTable.showsVerticalScrollIndicator = NO;
         
         //给tableView添加header
@@ -30,7 +30,15 @@
     }
     return self;
 }
-
+- (void)setResultType:(int)resultType{
+    if (resultType== 1) {
+        m_pTitleLabel.text = @"Palm analysis";
+    }else if (resultType == 2){
+        m_pTitleLabel.text = @"Constellation analysis";
+    }else if (resultType == 3){
+        m_pTitleLabel.text = @"Test analysis";
+    }
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return m_arrData.count;

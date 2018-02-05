@@ -120,7 +120,7 @@
 //    switch (gestureRecognizer.state)
 //    {
 //        case UIGestureRecognizerStateBegan:
-//            
+//
 //            [_delegate cellTouchBegin:self];
 //            break;
 //        case UIGestureRecognizerStateEnded:
@@ -139,7 +139,7 @@
 //
 //            break;
 //    }
-//    
+//
 //}
 
 #pragma mark - 

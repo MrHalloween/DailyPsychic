@@ -11,6 +11,7 @@
 #import "DPPalmResultController.h"
 #import "DPSelectConstellationController.h"
 #import "DPConstellationModel.h"
+#import "DPTakePhotoController.h"
 
 @class DPSelectConstellationController;
 
@@ -38,18 +39,31 @@
 - (void)PushToNextPage:(id)argData{
     
     NSInteger btnTag = [argData integerValue];
-    BUCustomViewController *pVC;
     switch (btnTag) {
-        case 100:pVC = [[DPPalmResultController alloc]init];
+        case 100:
+        {
+            DPPalmResultController *pVC = [[DPPalmResultController alloc]init];
+            pVC.dpResultType = DPResultConstellation;
+            [self PushChildViewController:pVC animated:YES];
+        }
             break;
-        case 101:pVC = [[DPPalmResultController alloc]init];
+        case 101:
+        {
+            DPPalmResultController *pVC = [[DPPalmResultController alloc]init];
+            pVC.dpResultType = DPResultTest;
+            [self PushChildViewController:pVC animated:YES];
+        }
             break;
         case 102:
+        {
+            DPTakePhotoController *pVC = [[DPTakePhotoController alloc]init];
+            [self PushChildViewController:pVC animated:YES];
+        }
             break;
         default:
             break;
     }
-    [self PushChildViewController:pVC animated:YES];
+   
 }
 - (void)PresentToselect{
     

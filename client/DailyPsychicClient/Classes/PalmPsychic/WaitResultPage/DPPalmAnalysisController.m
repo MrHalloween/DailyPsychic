@@ -35,6 +35,11 @@
 - (void)PushToNextPage:(id)argData{
     
     DPPalmResultController *resultVc = [[DPPalmResultController alloc]init];
+    if ([self.analysisType isEqualToString:@"test"]) {
+        resultVc.dpResultType = DPResultTest;
+    }else if ([self.analysisType isEqualToString:@"palm"]) {
+        resultVc.dpResultType = DPResultPalm;
+    }
     [self PushChildViewController:resultVc animated:YES];
 }
 

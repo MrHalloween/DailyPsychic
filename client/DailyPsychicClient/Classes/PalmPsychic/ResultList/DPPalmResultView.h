@@ -10,4 +10,6 @@
 
 @interface DPPalmResultView : AFBaseTableView
 
+@property (nonatomic, assign) int resultType; /// < 结果页类型
+
 @end

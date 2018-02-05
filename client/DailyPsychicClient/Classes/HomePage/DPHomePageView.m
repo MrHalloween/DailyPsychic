@@ -10,7 +10,6 @@
 #import "NewPagedFlowView.h"
 #import "UIImageView+WebCache.h"
 #import "UILable+TextEffect.h"
-#import "DPPalmResultController.h"
 
 @interface DPHomePageView ()<NewPagedFlowViewDelegate, NewPagedFlowViewDataSource>
 {

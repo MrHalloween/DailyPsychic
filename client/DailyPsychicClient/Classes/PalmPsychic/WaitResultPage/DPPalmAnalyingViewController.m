@@ -28,6 +28,7 @@
 - (void)PushToNextPage:(id)argData{
     
     DPPalmAnalysisController * palmAnalysisVc = [[DPPalmAnalysisController alloc]init];
+    palmAnalysisVc.analysisType = @"palm";
     [self PushChildViewController:palmAnalysisVc animated:YES];
 }
 - (void)didReceiveMemoryWarning {
