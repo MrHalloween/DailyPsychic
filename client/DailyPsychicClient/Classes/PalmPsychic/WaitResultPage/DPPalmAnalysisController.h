@@ -12,5 +12,8 @@
 @interface DPPalmAnalysisController : BUCustomViewController
 
 @property (nonatomic, copy) NSString *analysisType; /// < 手相分析还是test分析
+@property (nonatomic,strong) NSArray *profuctIdArr;
+
+@property (nonatomic,copy) NSString *currentProId;
 
 @end
