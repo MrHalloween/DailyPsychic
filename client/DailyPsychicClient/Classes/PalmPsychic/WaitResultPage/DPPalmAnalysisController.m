@@ -35,7 +35,7 @@
 {
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     
-    self.profuctIdArr = @[@"123"];
+    self.profuctIdArr = @[@"com.dailypsychic.horoscope01"];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     
