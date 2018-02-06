@@ -9,29 +9,43 @@
 		<array>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>questionImage_1.jpg</string>
 				<key>title</key>
-				<string>What kind of temperament are you？</string>
+				<string>Xatu or Oricorio?</string>
 				<key>answers</key>
-				<string>Lovely#Hot#Pretty#Beatiful</string>
+				<string>Xatu!#Oricorio!</string>
 			</dict>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>questionImage_2.jpg</string>
 				<key>title</key>
-				<string>What color do you like？</string>
+				<string>Mimikyu or Spirtomb?</string>
 				<key>answers</key>
-				<string>Red#Green#Blue#Pink</string>
+				<string>Spiritomb!#Mimikyu！</string>
 			</dict>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>questionImage_3.jpg</string>
 				<key>title</key>
-				<string>What kind of tea do you like？
-
-</string>
+				<string>Lycanroc or Stoutland?</string>
 				<key>answers</key>
-				<string>dark tea#green tea#black tea#oolong tea</string>
+				<string>Stoutland!#Lycanroc!</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>questionImage_4.jpg</string>
+				<key>title</key>
+				<string>Primarina or Empoleon?</string>
+				<key>answers</key>
+				<string>Primarina!#Empoleon!</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>questionImage_5.jpg</string>
+				<key>title</key>
+				<string>BONUS! Pick a starter Pokemon!</string>
+				<key>answers</key>
+				<string>Squirtle!#Bulbasaur!</string>
 			</dict>
 		</array>
 	</dict>
