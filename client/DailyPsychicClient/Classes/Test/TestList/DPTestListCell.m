@@ -33,6 +33,9 @@
     ///缩略图
     m_pThumbnail = [[UIImageView alloc]init];
     [m_pThumbnail setImage:[UIImage imageNamed:@"test_pic.png"]];
+    m_pThumbnail.layer.masksToBounds = YES;
+    m_pThumbnail.layer.cornerRadius = 5;
+    m_pThumbnail.contentMode = UIViewContentModeScaleAspectFill;
     m_pThumbnail.bounds = CGRectMake(0, 0, 95 * [AppConfigure GetLengthAdaptRate], 67 * [AppConfigure GetLengthAdaptRate]);
     [m_pContentImg addSubview:m_pThumbnail];
     
@@ -73,7 +76,7 @@
 - (void)SetCellData:(id)argData
 {
     NSDictionary *dict = argData;
-//    [m_pThumbnail setImage:[UIImage imageNamed:dict[@"headImage"]]];
+    [m_pThumbnail setImage:[UIImage imageNamed:dict[@"headImage"]]];
     m_pTitle.text = dict[@"title"];
     m_pCount.text = dict[@"watchNum"];
     [m_pCount sizeToFit];

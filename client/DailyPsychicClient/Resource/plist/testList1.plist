@@ -6,9 +6,9 @@
 		<key>testId</key>
 		<string>1</string>
 		<key>headImage</key>
-		<string>constellation_detail_palma</string>
+		<string>10001</string>
 		<key>title</key>
-		<string>Who is your soul mate?</string>
+		<string>Choose Some Pokemon, And We&apos;ll Tell You What October Meme Is Literally Your Life</string>
 		<key>watchNum</key>
 		<string>1200</string>
 	</dict>
@@ -16,9 +16,9 @@
 		<key>testId</key>
 		<string>2</string>
 		<key>headImage</key>
-		<string>constellation_detail_palma</string>
+		<string>10002</string>
 		<key>title</key>
-		<string>What kind of guy can you attract ?</string>
+		<string>How Normal Are You?</string>
 		<key>watchNum</key>
 		<string>200</string>
 	</dict>
@@ -26,9 +26,9 @@
 		<key>testId</key>
 		<string>3</string>
 		<key>headImage</key>
-		<string>constellation_detail_palma</string>
+		<string>10003</string>
 		<key>title</key>
-		<string>Which wedding dress suits your personality?</string>
+		<string>Do You Have A Higher IQ Than Your Lover?</string>
 		<key>watchNum</key>
 		<string>490</string>
 	</dict>
@@ -36,9 +36,9 @@
 		<key>testId</key>
 		<string>4</string>
 		<key>headImage</key>
-		<string>constellation_detail_palma</string>
+		<string>10004</string>
 		<key>title</key>
-		<string>Which symbol is your perfect match?</string>
+		<string>Answer Some Questions About Your Life And We&apos;ll Tell You Where To Go On Vacation</string>
 		<key>watchNum</key>
 		<string>798</string>
 	</dict>
@@ -46,9 +46,9 @@
 		<key>testId</key>
 		<string>5</string>
 		<key>headImage</key>
-		<string>constellation_detail_palma</string>
+		<string>10005</string>
 		<key>title</key>
-		<string>What should your name be? （Only for girls）</string>
+		<string>How Weird Are You?</string>
 		<key>watchNum</key>
 		<string>3400</string>
 	</dict>

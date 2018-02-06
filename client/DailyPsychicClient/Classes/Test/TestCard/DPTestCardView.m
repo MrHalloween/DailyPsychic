@@ -39,6 +39,9 @@
     UIImageView *pPictureBg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 195 * AdaptRate, 230 * AdaptRate)];
     pPictureBg.center = CGPointMake(self.width * 0.5, m_pTitleLabel.bottom + 34 * AdaptRate + pPictureBg.height * 0.5);
     pPictureBg.userInteractionEnabled = YES;
+    pPictureBg.layer.masksToBounds = YES;
+    pPictureBg.layer.cornerRadius = 5;
+    pPictureBg.contentMode = UIViewContentModeScaleAspectFill;
     pPictureBg.image = [UIImage imageNamed:m_dicData[@"headImage"]];
     [self addSubview:pPictureBg];
     
