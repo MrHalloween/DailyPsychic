@@ -28,14 +28,21 @@
     m_pPalmAnalysisView.proDelegate = self;
     [self.view addSubview:m_pPalmAnalysisView];
 }
+
 - (void)PushToNextPage:(id)argData
 {
-    NSString *product = @"com.dailypsychic.horoscope01";
-    _currentProId = product;
-    if([SKPaymentQueue canMakePayments]){
-        [self requestProductData:product];
+    BOOL isbuy = [[NSUserDefaults standardUserDefaults]boolForKey:@"com.dailypsychic.horoscope01"];
+    if (isbuy) {
+        [self GetResult];
     }else{
-        NSLog(@"不允许程序内付费");
+        NSString *product = @"com.dailypsychic.horoscope01";
+        _currentProId = product;
+        if([SKPaymentQueue canMakePayments]){
+            [AlertManager ShowProgressHUDWithMessage:@""];
+            [self requestProductData:product];
+        }else{
+            NSLog(@"不允许程序内付费");
+        }
     }
 }
 #pragma mark - Apple Pay
@@ -85,6 +92,7 @@
 }
 //请求失败
 - (void)request:(SKRequest *)request didFailWithError:(NSError *)error{
+    [AlertManager HideProgressHUD];
     NSLog(@"------------------错误支付失败-----------------:%@", error);
 }
 
@@ -97,13 +105,9 @@
 #define AppStore @"https://buy.itunes.apple.com/verifyReceipt"
 
 /**
- 
  *  验证购买，避免越狱软件模拟苹果请求达到非法购买问题
- 
  *
- 
  */
-
 -(void)verifyPurchaseWithPaymentTransaction
 {
     //从沙盒中获取交易凭证并且拼接成请求体数据
@@ -113,7 +117,7 @@
     NSString *bodyString = [NSString stringWithFormat:@"{\"receipt-data\" : \"%@\"}", receiptString];//拼接请求数据
     NSData *bodyData = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
     //创建请求到苹果官方进行购买验证
-    NSURL *url=[NSURL URLWithString:SANDBOX];
+    NSURL *url=[NSURL URLWithString:AppStore];
     NSMutableURLRequest *requestM=[NSMutableURLRequest requestWithURL:url];
     requestM.HTTPBody=bodyData;
     requestM.HTTPMethod=@"POST";
@@ -128,19 +132,24 @@
     NSLog(@"%@",dic);
     if([dic[@"status"] intValue]==0){
         NSLog(@"购买成功！");
-        NSDictionary *dicReceipt= dic[@"receipt"];
-        NSDictionary *dicInApp=[dicReceipt[@"in_app"] firstObject];
-        NSString *productIdentifier= dicInApp[@"product_id"];//读取产品标识
+        [AlertManager HideProgressHUD];
+        NSDictionary *dicReceipt = dic[@"receipt"];
+        NSDictionary *dicInApp = [dicReceipt[@"in_app"] firstObject];
+        NSString *productIdentifier = dicInApp[@"product_id"];//读取产品标识
         //如果是消耗品则记录购买数量，非消耗品则记录是否购买过
-        NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         if ([productIdentifier isEqualToString:@"com.dailypsychic.horoscope01"]) {
-            long purchasedCount=[defaults integerForKey:productIdentifier];//已购买数量
+            long purchasedCount = [defaults integerForKey:productIdentifier];//已购买数量
             [[NSUserDefaults standardUserDefaults] setInteger:(purchasedCount+1) forKey:productIdentifier];
         }else{
             [defaults setBool:YES forKey:productIdentifier];
+            [defaults setBool:YES forKey:@"com.dailypsychic.horoscope01"];
         }
+        [self GetResult];
         //在此处对购买记录进行存储，可以存储到开发商的服务器端
     }else{
+        [AlertManager HideProgressHUD];
+        [AlertManager ShowRelutWithMessage:@"交易失败" Dismiss:nil];
         NSLog(@"购买失败，未通过验证！");
     }
 }
@@ -161,12 +170,16 @@
                 break;
             case SKPaymentTransactionStateRestored:
             {
+                [AlertManager HideProgressHUD];
                 NSLog(@"已经购买过商品");
                 [[SKPaymentQueue defaultQueue] finishTransaction:tran];
+                [self GetResult];
             }
                 break;
             case SKPaymentTransactionStateFailed:
             {
+                [AlertManager HideProgressHUD];
+                [AlertManager ShowRelutWithMessage:@"交易失败" Dismiss:nil];
                 NSLog(@"交易失败");
                 [[SKPaymentQueue defaultQueue] finishTransaction:tran];
             }
@@ -191,15 +204,17 @@
 {
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
-//- (void)PushToNextPage:(id)argData{
-//    
-//    DPPalmResultController *resultVc = [[DPPalmResultController alloc]init];
-//    if ([self.analysisType isEqualToString:@"test"]) {
-//        resultVc.dpResultType = DPResultTest;
-//    }else if ([self.analysisType isEqualToString:@"palm"]) {
-//        resultVc.dpResultType = DPResultPalm;
-//    }
-//    [self PushChildViewController:resultVc animated:YES];
-//}
+
+- (void)GetResult
+{
+    DPPalmResultController *resultVc = [[DPPalmResultController alloc]init];
+    if ([self.analysisType isEqualToString:@"test"]) {
+        resultVc.dpResultType = DPResultTest;
+    }else if ([self.analysisType isEqualToString:@"palm"]) {
+        resultVc.dpResultType = DPResultPalm;
+    }
+    [self PushChildViewController:resultVc animated:YES];
+}
+
 
 @end
