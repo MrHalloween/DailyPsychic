@@ -151,6 +151,7 @@
 		10DB6D3A2022EFC70084FC35 /* palm_camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D342022EFC60084FC35 /* palm_camera@3x.png */; };
 		10DB6D3B2022EFC70084FC35 /* palm_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D352022EFC60084FC35 /* palm_left@3x.png */; };
 		10DB6D3C2022EFC70084FC35 /* palm_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D362022EFC60084FC35 /* palm_camera@2x.png */; };
+		10F4DF342029A9A9004CA8FA /* constellation_detail_in.png in Resources */ = {isa = PBXBuildFile; fileRef = 10F4DF332029A9A8004CA8FA /* constellation_detail_in.png */; };
 		29101A222023F41000788AD9 /* DPBasicInforController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29101A212023F41000788AD9 /* DPBasicInforController.m */; };
 		29101A252023F45200788AD9 /* DPBasicInforView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29101A242023F45100788AD9 /* DPBasicInforView.m */; };
 		29101A2D2023F5B000788AD9 /* basic_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29101A272023F5B000788AD9 /* basic_bg@2x.png */; };
@@ -544,6 +545,7 @@
 		10DB6D342022EFC60084FC35 /* palm_camera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_camera@3x.png"; sourceTree = "<group>"; };
 		10DB6D352022EFC60084FC35 /* palm_left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_left@3x.png"; sourceTree = "<group>"; };
 		10DB6D362022EFC60084FC35 /* palm_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_camera@2x.png"; sourceTree = "<group>"; };
+		10F4DF332029A9A8004CA8FA /* constellation_detail_in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = constellation_detail_in.png; sourceTree = "<group>"; };
 		29101A202023F41000788AD9 /* DPBasicInforController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPBasicInforController.h; sourceTree = "<group>"; };
 		29101A212023F41000788AD9 /* DPBasicInforController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPBasicInforController.m; sourceTree = "<group>"; };
 		29101A232023F45100788AD9 /* DPBasicInforView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPBasicInforView.h; sourceTree = "<group>"; };
@@ -1439,6 +1441,7 @@
 		29BABF5420203B8800CE4E51 /* Constellation */ = {
 			isa = PBXGroup;
 			children = (
+				10F4DF332029A9A8004CA8FA /* constellation_detail_in.png */,
 				2977F8022022E0CD0016B617 /* constellation_detail_daytest@2x.png */,
 				2977F8012022E0CD0016B617 /* constellation_detail_daytest@3x.png */,
 				2977F7F62022AB7F0016B617 /* constellation_detail_triangle@2x.png */,
@@ -1700,6 +1703,7 @@
 				29101A2D2023F5B000788AD9 /* basic_bg@2x.png in Resources */,
 				29BABFDD20203B8800CE4E51 /* constellation_sagittarius@2x.png in Resources */,
 				10D009342020B85100ADAADB /* test_cell@2x.png in Resources */,
+				10F4DF342029A9A9004CA8FA /* constellation_detail_in.png in Resources */,
 				1099F1F1201F245E00CE653E /* homepage_bg@2x.png in Resources */,
 				109B82B320295C2300EA2917 /* 10001.png in Resources */,
 				29BABFA820203B8800CE4E51 /* constellation_virgo@3x.png in Resources */,

@@ -152,15 +152,18 @@
         
         //锁
         UIButton *pLockBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        pLockBtn.frame = CGRectMake(5 * AdaptRate,6 * AdaptRate,69 * AdaptRate, 69 * AdaptRate);
+        pLockBtn.bounds = CGRectMake(0, 0, 69 * AdaptRate, 69 * AdaptRate);
         [pLockBtn setBackgroundImage:[UIImage imageNamed:@"constellation_detail_lock"] forState:UIControlStateNormal];
         [pCircleBtn addSubview:pLockBtn];
         
         if (i != 2) {
             [pLockBtn setBackgroundImage:[UIImage imageNamed:@"constellation_detail_lock"] forState:UIControlStateNormal];
         }else{
-            [pLockBtn setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+            pLockBtn.bounds = CGRectMake(0, 0, 54 * AdaptRate, 54 * AdaptRate);
+            [pLockBtn setBackgroundImage:[UIImage imageNamed:@"constellation_detail_in"] forState:UIControlStateNormal];
         }
+        pLockBtn.center = CGPointMake(pCircleBtn.width * 0.5, pCircleBtn.height * 0.5);
+
         
         //标题
         UILabel *pTitleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, pCircleBtn.bottom + 9 * AdaptRate, pConsultation.width, SIZE_HEIGHT(16))];
