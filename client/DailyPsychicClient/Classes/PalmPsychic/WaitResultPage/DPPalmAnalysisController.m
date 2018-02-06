@@ -117,7 +117,7 @@
     NSString *bodyString = [NSString stringWithFormat:@"{\"receipt-data\" : \"%@\"}", receiptString];//拼接请求数据
     NSData *bodyData = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
     //创建请求到苹果官方进行购买验证
-    NSURL *url=[NSURL URLWithString:AppStore];
+    NSURL *url=[NSURL URLWithString:SANDBOX];
     NSMutableURLRequest *requestM=[NSMutableURLRequest requestWithURL:url];
     requestM.HTTPBody=bodyData;
     requestM.HTTPMethod=@"POST";
@@ -145,6 +145,7 @@
             [defaults setBool:YES forKey:productIdentifier];
             [defaults setBool:YES forKey:@"com.dailypsychic.horoscope01"];
         }
+        [defaults synchronize];
         [self GetResult];
         //在此处对购买记录进行存储，可以存储到开发商的服务器端
     }else{
