@@ -68,3 +68,8 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+client/DailyPsychicClient/DailyPsychicClient.xcodeproj/project.xcworkspace/xcuserdata/zhanghe.xcuserdatad/UserInterfaceState.xcuserstate
+client/DailyPsychicClient/DailyPsychicClient.xcodeproj/project.xcworkspace/xcuserdata/lsy.xcuserdatad/UserInterfaceState.xcuserstate
+client/DailyPsychicClient/DailyPsychicClient.xcodeproj/project.xcworkspace/xcuserdata/zhanghe.xcuserdatad/UserInterfaceState.xcuserstate
+*.xcbkptlist
+client/DailyPsychicClient/DailyPsychicClient.xcodeproj/project.xcworkspace/xcuserdata/lsy.xcuserdatad/UserInterfaceState.xcuserstate
