@@ -8,6 +8,7 @@
 
 #import "DPTestListCell.h"
 #import "UILable+TextEffect.h"
+#import "NSString+IntValue.h"
 
 @implementation DPTestListCell
 
@@ -64,7 +65,7 @@
     m_pTitle.frame = CGRectMake(m_pThumbnail.right + 10 * AdaptRate, m_pThumbnail.top, m_pContentImg.width - m_pThumbnail.width - 35 * AdaptRate, 47 * AdaptRate);
     m_pEye.center = CGPointMake(m_pThumbnail.right + 10 * AdaptRate + m_pEye.width * 0.5, m_pTitle.bottom + m_pEye.height * 0.5);
     [m_pCount sizeToFit];
-    m_pCount.center = CGPointMake(m_pEye.right + 10 * AdaptRate + m_pCount.width * 0.5, m_pEye.center.y);
+    m_pCount.center = CGPointMake(m_pEye.right + 5 * AdaptRate + m_pCount.width * 0.5, m_pEye.center.y);
 
 }
 
@@ -78,7 +79,10 @@
     NSDictionary *dict = argData;
     [m_pThumbnail setImage:[UIImage imageNamed:dict[@"headImage"]]];
     m_pTitle.text = dict[@"title"];
-    m_pCount.text = dict[@"watchNum"];
+    int x = arc4random() % 100;
+    NSString *num = dict[@"watchNum"];
+    int intnum = [num intValue] + x;
+    m_pCount.text = [NSString IntString:intnum];
     [m_pCount sizeToFit];
 }
 
