@@ -11,6 +11,7 @@
 #import "DPPalmAnalysisView.h"
 #import "DPPalmResultController.h"
 #import <StoreKit/StoreKit.h>
+#import "NSString+TimeFormat.h"
 
 //沙盒测试环境验证
 #define SANDBOX @"https://sandbox.itunes.apple.com/verifyReceipt"
@@ -19,6 +20,8 @@
 
 //内购中创建的商品
 #define ProductID_IAP01 @"com.dailypsychic.horoscope01"//购买产品ID号
+//共享秘钥
+#define SharedSecretKey @"a727f397ec8d4ff69e35948f1ead6237"//共享秘钥
 
 @interface DPPalmAnalysisController ()<AFBaseTableViewDelegate,SKPaymentTransactionObserver,SKProductsRequestDelegate>
 {
@@ -46,6 +49,7 @@
 
 - (void)GetResult
 {
+    [AlertManager HideProgressHUD];
     DPPalmResultController *resultVc = [[DPPalmResultController alloc]init];
     if ([self.analysisType isEqualToString:@"test"]) {
         resultVc.dpResultType = DPResultTest;
@@ -60,13 +64,23 @@
 #pragma mark - 内购
 - (void)PushToNextPage:(id)argData
 {
-    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
-    if([SKPaymentQueue canMakePayments]){
-        [AlertManager ShowProgressHUDWithMessage:@""];
-        [self requestProductData:ProductID_IAP01];
-     }else{
+    NSURL *receiptUrl=[[NSBundle mainBundle] appStoreReceiptURL];
+    NSData *receiptData=[NSData dataWithContentsOfURL:receiptUrl];
+    if (receiptData != nil) {
+        NSLog(@"------本地沙盒存放了receiptData数据-----");
+        [self checkReceiptIsValid:SANDBOX];
+    }else{
+        NSLog(@"------本地沙盒没有receiptData数据-----");
+        [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
+        if([SKPaymentQueue canMakePayments]){
+            [AlertManager ShowProgressHUDWithMessage:@""];
+            [self requestProductData:ProductID_IAP01];
+        }else{
             NSLog(@"-------------不允许程序内付费-------------");
-     }
+        }
+
+    }
+
 }
 //请求商品信息
 - (void)requestProductData:(NSString *)type{
@@ -109,8 +123,8 @@
         }
     }
     
-//    [[SKPaymentQueue defaultQueue] removeTransactionObserver:self];
-//    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
+    [[SKPaymentQueue defaultQueue] removeTransactionObserver:self];
+    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     @try {
         NSLog(@"发送购买请求");
         SKPayment *payment = [SKPayment paymentWithProduct:p];
@@ -143,7 +157,7 @@
     for(SKPaymentTransaction *tran in transaction){
         switch (tran.transactionState) {
             case SKPaymentTransactionStatePurchased:
-                NSLog(@"交易完成");
+                NSLog(@"---购买操作后的回调-------交易完成");
                 [self completeTransaction:tran];
                 break;
             case SKPaymentTransactionStatePurchasing:
@@ -155,7 +169,7 @@
                 break;
             case SKPaymentTransactionStateFailed:
             {
-                NSLog(@"交易失败%d",tran.error.code);
+                NSLog(@"交易失败%ld",tran.error.code);
                 [AlertManager HideProgressHUD];
                 [self failedTransaction:tran];
                 break;
@@ -254,7 +268,7 @@
     NSString *receiptString=[receiptData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];//转化为base64字符串
     NSMutableDictionary *bodyDic = [[NSMutableDictionary alloc]init];
     [bodyDic setValue:receiptString forKey:@"receipt-data"];
-    [bodyDic setValue:@"a727f397ec8d4ff69e35948f1ead6237" forKey:@"password"];
+    [bodyDic setValue:SharedSecretKey forKey:@"password"];
     NSData *data=[NSJSONSerialization dataWithJSONObject:bodyDic options:NSJSONWritingPrettyPrinted error:nil];
     NSString *bodyString=[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];//拼接请求数据
     NSData *bodyData = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
@@ -269,32 +283,72 @@
     if (error) {
         NSLog(@"验证购买过程中发生错误，错误信息：%@",error.localizedDescription);
         [AlertManager HideProgressHUD];
+        [AlertManager ShowRelutWithMessage:@"交易失败" Dismiss:nil];
         return;
     }
-    NSDictionary *dic=[NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:nil];
-    NSLog(@"------- 李少艳responseDic---------%@",dic);
-    if([dic[@"status"] intValue]==0){
-        NSLog(@"购买成功！");
-        [AlertManager HideProgressHUD];
-        NSDictionary *dicReceipt = dic[@"receipt"];
-        NSLog(@"----------------------dicReceipt------%@",dicReceipt);
-        NSDictionary *dicInApp = [dicReceipt[@"in_app"] firstObject];
-        //如果是消耗品则记录购买数量，非消耗品则记录是否购买过
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//        if ([productIdentifier isEqualToString:ProductID_IAP01]) {
-//            long purchasedCount = [defaults integerForKey:productIdentifier];//已购买数量
-//            [[NSUserDefaults standardUserDefaults] setInteger:(purchasedCount+1) forKey:productIdentifier];
-//        }else{
-//            [defaults setBool:YES forKey:productIdentifier];
-//            [defaults setBool:YES forKey:@"com.dailypsychic.horoscope01"];
-//        }
-        [defaults synchronize];
-        //在此处对购买记录进行存储，可以存储到开发商的服务器端
-    }else if ([dic[@"status"] intValue]==21007)
+    
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:nil];
+    
+    if([dic[@"status"] intValue] == 0){
+        
+        NSArray *arrLatestReceipt = dic[@"latest_receipt_info"];
+        NSLog(@"------取得arrLatestReceipt 看第一次购买有几个值--%@",arrLatestReceipt);
+        if (arrLatestReceipt.count)
+        {
+            //已经购买过，在这里判断订阅是否过期
+            NSDictionary *info = arrLatestReceipt.lastObject;
+            //最后一次购买的过期时间时间戳
+            long int expires = [info[@"expires_date_ms"] integerValue];
+            //当前时间时间戳
+            NSDate *dat = [NSDate dateWithTimeIntervalSinceNow:0];
+            long int now = (long)[dat timeIntervalSince1970] * 1000;
+            
+            if (expires > now)
+            {
+                //订阅没过期
+                NSLog(@"****************订阅没过期*******************");
+                [self GetResult];
+            }
+            else
+            {
+                //订阅过期
+                NSLog(@"****************订阅过期*******************");
+                [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
+                if([SKPaymentQueue canMakePayments]){
+                    [AlertManager ShowProgressHUDWithMessage:@""];
+                    [self requestProductData:ProductID_IAP01];
+                }else{
+                    NSLog(@"-------------不允许程序内付费-------------");
+                }
+                
+            }
+        }
+        else
+        {
+            //第一次购买
+            NSLog(@"****************第一次购买*******************");
+            [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
+            if([SKPaymentQueue canMakePayments]){
+                [AlertManager ShowProgressHUDWithMessage:@""];
+                [self requestProductData:ProductID_IAP01];
+            }else{
+                NSLog(@"-------------不允许程序内付费-------------");
+            }
+//            NSLog(@"购买成功！");
+//            [AlertManager HideProgressHUD];
+//            [self GetResult];
+            
+        }
+    }
+    
+    else if ([dic[@"status"] intValue] == 21007)
     {
         NSLog(@"购买失败，未通过验证！");
-        [self checkReceiptIsValid:SANDBOX];
-    }else
+        [AlertManager HideProgressHUD];
+        [AlertManager ShowRelutWithMessage:@"交易失败" Dismiss:nil];
+//        [self checkReceiptIsValid:SANDBOX];
+    }
+    else
     {
         [AlertManager HideProgressHUD];
         [AlertManager ShowRelutWithMessage:@"交易失败" Dismiss:nil];
@@ -308,7 +362,7 @@
 }
 
 - (void)completeTransaction:(SKPaymentTransaction *)transaction{
-    NSLog(@"交易完成");
+    NSLog(@"-----1------交易完成开始2次验证");
     [self checkReceiptIsValid:SANDBOX];       //把self.receipt发送到服务器验证是否有效
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
 }

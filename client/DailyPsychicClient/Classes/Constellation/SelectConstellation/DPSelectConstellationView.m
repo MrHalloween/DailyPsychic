@@ -27,6 +27,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        [[NSUserDefaults standardUserDefaults]setObject:@(0) forKey:@"selectConstalletion"];
+        [[NSUserDefaults standardUserDefaults]synchronize];
         NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"constellation" ofType:@"plist"];
         NSArray *m_arrConstel = [NSArray arrayWithContentsOfFile: plistPath];
         m_arrData = [NSMutableArray arrayWithArray:m_arrConstel];
