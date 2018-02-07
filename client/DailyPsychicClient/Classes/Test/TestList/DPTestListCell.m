@@ -82,10 +82,10 @@
     [m_pCount sizeToFit];
 }
 
-- (void)setFrame:(CGRect)frame
-{
-    frame.origin.y += 15 * AdaptRate;
-    [super setFrame:frame];
-}
+//- (void)setFrame:(CGRect)frame
+//{
+//    frame.origin.y += 15 * AdaptRate;
+//    [super setFrame:frame];
+//}
 
 @end
