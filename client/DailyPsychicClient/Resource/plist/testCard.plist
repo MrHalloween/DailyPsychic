@@ -4,48 +4,79 @@
 <array>
 	<dict>
 		<key>testId</key>
+		<string>0</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>1-1</string>
+				<key>title</key>
+				<string>How often do you change your bed sheets?</string>
+				<key>answers</key>
+				<string>Once a month#Once a week#Once a year#Never</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>1-2</string>
+				<key>title</key>
+				<string>How do you start a text message?</string>
+				<key>answers</key>
+				<string>Babes#Hi#Bae#Hello</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>1-3</string>
+				<key>title</key>
+				<string>How do you eat a Creme egg？</string>
+				<key>answers</key>
+				<string>Spoon#Chop#Munch#Lick</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>1-4</string>
+				<key>title</key>
+				<string>Do you believe in a divination?</string>
+				<key>answers</key>
+				<string>Yes#No#A little bit#Not sure</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
 		<string>1</string>
 		<key>test</key>
 		<array>
 			<dict>
 				<key>headImage</key>
-				<string>questionImage_1.jpg</string>
+				<string>2-1</string>
 				<key>title</key>
-				<string>Xatu or Oricorio?</string>
+				<string>What do you see?</string>
 				<key>answers</key>
-				<string>Xatu!#Oricorio!</string>
+				<string>A skull#A tree#A cloud of smoke#Something else</string>
 			</dict>
 			<dict>
 				<key>headImage</key>
-				<string>questionImage_2.jpg</string>
+				<string>2-2</string>
 				<key>title</key>
-				<string>Mimikyu or Spirtomb?</string>
+				<string>What do you see?</string>
 				<key>answers</key>
-				<string>Spiritomb!#Mimikyu！</string>
+				<string>A monster#A dog#An island#Something else</string>
 			</dict>
 			<dict>
 				<key>headImage</key>
-				<string>questionImage_3.jpg</string>
+				<string>2-3</string>
 				<key>title</key>
-				<string>Lycanroc or Stoutland?</string>
+				<string>What do you see?</string>
 				<key>answers</key>
-				<string>Stoutland!#Lycanroc!</string>
+				<string>An explosion#A heart#A mushroom cloud#Something else</string>
 			</dict>
 			<dict>
 				<key>headImage</key>
-				<string>questionImage_4.jpg</string>
+				<string>2-4</string>
 				<key>title</key>
-				<string>Primarina or Empoleon?</string>
+				<string>What do you see?</string>
 				<key>answers</key>
-				<string>Primarina!#Empoleon!</string>
-			</dict>
-			<dict>
-				<key>headImage</key>
-				<string>questionImage_5.jpg</string>
-				<key>title</key>
-				<string>BONUS! Pick a starter Pokemon!</string>
-				<key>answers</key>
-				<string>Squirtle!#Bulbasaur!</string>
+				<string>A gun#A shoe#A chair#Not sure</string>
 			</dict>
 		</array>
 	</dict>
@@ -56,39 +87,35 @@
 		<array>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>3-1</string>
 				<key>title</key>
-				<string>What kind of temperament are you2？</string>
+				<string>What&apos;s your favorite color?</string>
 				<key>answers</key>
-				<string>Lovely2#Hot2#Pretty2#Beatiful2</string>
+				<string>Red#Green#Orange#Blue</string>
 			</dict>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>3-2</string>
 				<key>title</key>
-				<string>What color do you like2？</string>
+				<string>Pick a weapon.</string>
 				<key>answers</key>
-				<string>Red2#Green2#Blue2#Pink2</string>
+				<string>Sword#Poison#Bow#Brains</string>
 			</dict>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>3-3</string>
 				<key>title</key>
-				<string>What kind of tea do you like2？
-
-</string>
+				<string>What&apos;s more important to you?</string>
 				<key>answers</key>
-				<string>dark tea2#green tea2#black tea2#oolong tea2</string>
+				<string>Friends#Family#Power#Other</string>
 			</dict>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>3-4</string>
 				<key>title</key>
-				<string>What kind of tea do you like2？
-
-</string>
+				<string>Where would you rather live?</string>
 				<key>answers</key>
-				<string>dark tea2#green tea2#black tea2#oolong tea2</string>
+				<string>Mountaine#Town#Near the sea#Jungle</string>
 			</dict>
 		</array>
 	</dict>
@@ -99,29 +126,35 @@
 		<array>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>4-1</string>
 				<key>title</key>
-				<string>What kind of temperament are you？</string>
+				<string>You get home from long day at school / work, you relax by...</string>
 				<key>answers</key>
-				<string>Lovely#Hot#Pretty#Beatiful</string>
+				<string>Eating candy and seeing how many marshmallows you can fit in your mouth at once.#Lying on a bench / hammock and reading your favorite book.#Kicking off your shoes and watching Netflix#Texting your BF/GF</string>
 			</dict>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>4-2</string>
 				<key>title</key>
-				<string>What color do you like？</string>
+				<string>Who’s your favorite pop star?</string>
 				<key>answers</key>
-				<string>Red#Green#Blue#Pink</string>
+				<string>Sam Smith#Ed Sheehan#Meghan Trainor#Other</string>
 			</dict>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>4-3</string>
 				<key>title</key>
-				<string>What kind of tea do you like？
-
-</string>
+				<string>Music, dance, or drama?</string>
 				<key>answers</key>
-				<string>dark tea#green tea#black tea#oolong tea</string>
+				<string>Music#Dance#Drama#I hate all of them</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>4-4</string>
+				<key>title</key>
+				<string>And finally, what letter of the alphabet does your first name start with?</string>
+				<key>answers</key>
+				<string>A-G#H-M#N-S#T-Z</string>
 			</dict>
 		</array>
 	</dict>
@@ -132,29 +165,35 @@
 		<array>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>5-1</string>
 				<key>title</key>
-				<string>What kind of temperament are you？</string>
+				<string>If this little thing had just stolen your lunch, how would you feel?</string>
 				<key>answers</key>
-				<string>Lovely#Hot#Pretty#Beatiful</string>
+				<string>It needs to eat too#Just a cute little thing#Angry#Kill it</string>
 			</dict>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>5-2</string>
 				<key>title</key>
-				<string>What color do you like？</string>
+				<string>This little boy is...</string>
 				<key>answers</key>
-				<string>Red#Green#Blue#Pink</string>
+				<string>Innocent#Obsessed#Adorable#Silly</string>
 			</dict>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>5-3</string>
 				<key>title</key>
-				<string>What kind of tea do you like？
-
-</string>
+				<string>This squirrel...</string>
 				<key>answers</key>
-				<string>dark tea#green tea#black tea#oolong tea</string>
+				<string>Wants to get drunk#Is stealing#Is so thirsty#Is dancing</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>5-4</string>
+				<key>title</key>
+				<string>At what age did you discover Santa clause was not real?</string>
+				<key>answers</key>
+				<string>6-12#Not sure#2-5#He isn’t real?</string>
 			</dict>
 		</array>
 	</dict>
@@ -165,29 +204,66 @@
 		<array>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>6-1</string>
 				<key>title</key>
-				<string>What kind of temperament are you？</string>
+				<string>What&apos;s your favorite kind of app?</string>
 				<key>answers</key>
-				<string>Lovely#Hot#Pretty#Beatiful</string>
+				<string>Arcade#Sports#Social media#Roleplay</string>
 			</dict>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>6-2</string>
 				<key>title</key>
-				<string>What color do you like？</string>
+				<string>How often do you wear high heels?</string>
 				<key>answers</key>
-				<string>Red#Green#Blue#Pink</string>
+				<string>All the time!#A lot#Never!#Only on special occasions</string>
 			</dict>
 			<dict>
 				<key>headImage</key>
-				<string>test_pic.png</string>
+				<string>6-3</string>
 				<key>title</key>
-				<string>What kind of tea do you like？
-
-</string>
+				<string>Do you like the outdoors?</string>
 				<key>answers</key>
-				<string>dark tea#green tea#black tea#oolong tea</string>
+				<string>Sometimes#Yes!!All time#Only to paly sports#No! Too many bugs</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>6-4</string>
+				<key>title</key>
+				<string>Your favorite thing to do is...</string>
+				<key>answers</key>
+				<string>Dance!#Play sports#Go shopping#Hang out with friends</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>6</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>7-1</string>
+				<key>title</key>
+				<string>Pick a vacation getaway</string>
+				<key>answers</key>
+				<string>Hawaii#Aspen#San Francisco#Paris</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>7-2</string>
+				<key>title</key>
+				<string>What is your favorite clothing accessory?</string>
+				<key>answers</key>
+				<string>Scarf#Purse#Hat#Belt</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>7-3</string>
+				<key>title</key>
+				<string>Where is your happy place?</string>
+				<key>answers</key>
+				<string>With family#Curled up in bed with a book#Relaxing on the beach#Hiking through the forest</string>
 			</dict>
 		</array>
 	</dict>
