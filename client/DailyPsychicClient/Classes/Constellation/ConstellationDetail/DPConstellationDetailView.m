@@ -81,7 +81,7 @@
     
     //today
     UILabel *pTodayLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, m_pDateBtn.width, SIZE_HEIGHT(15))];
-    [pTodayLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueThinFont] FontSize:15 Placehoder:@"TODAY"];
+    [pTodayLabel SetTextColor:UIColorFromHex(0xFFFFFF) FontName:[TextManager HelveticaNeueThinFont] FontSize:15 Placehoder:@"DATE"];
     pTodayLabel.textAlignment = NSTextAlignmentCenter;
     [m_pDateBtn addSubview:pTodayLabel];
 
