@@ -16,4 +16,6 @@
 
 @property (nonatomic,copy) NSString *currentProId;
 
+@property (nonatomic,copy) NSString *testId;    ///测试题目id
+
 @end

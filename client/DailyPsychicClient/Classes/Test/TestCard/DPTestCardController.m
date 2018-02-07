@@ -25,6 +25,8 @@
     m_pTestCardView = [[DPTestCardView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
     ///从测试列表进入
     if (self.testId.length) {
+        [[NSUserDefaults standardUserDefaults] setObject:self.testId forKey:@"testidtestid"];
+        [[NSUserDefaults standardUserDefaults]synchronize];
         m_pTestCardView.testId = self.testId;
     }
     if (self.dictTest) {
@@ -53,6 +55,8 @@
     if (arr.count == 0) {
         DPPalmAnalysisController *pVC = [[DPPalmAnalysisController alloc]init];
         pVC.analysisType = @"test";
+        NSString *testid = [[NSUserDefaults standardUserDefaults]objectForKey:@"testidtestid"];
+        pVC.testId = testid;
         [self PushChildViewController:pVC animated:YES];
 
     }else{

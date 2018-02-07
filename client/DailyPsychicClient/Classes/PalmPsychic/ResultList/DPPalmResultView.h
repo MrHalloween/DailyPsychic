@@ -12,4 +12,6 @@
 
 @property (nonatomic, assign) int resultType; /// < 结果页类型
 
+@property (nonatomic,copy) NSString *testId;    ///测试题目id
+
 @end

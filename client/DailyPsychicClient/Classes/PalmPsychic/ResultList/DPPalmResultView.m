@@ -9,23 +9,23 @@
 #import "DPPalmResultView.h"
 #import "DPPalmResultCell.h"
 
+@interface DPPalmResultView()
+{
+    NSArray *m_arrAlternative;
+}
+@end
+
 @implementation DPPalmResultView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
         m_pBaseTable.showsVerticalScrollIndicator = NO;
-        
         //给tableView添加header
         UIView *pHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.width, 20 * AdaptRate)];
         pHeaderView.backgroundColor = [UIColor clearColor];
         m_pBaseTable.tableHeaderView = pHeaderView;
-        
-        NSArray *plistData = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"resultAnalysis" ofType:@"plist"]];
-        m_arrData = [NSMutableArray arrayWithArray:plistData];
-        
         self.backgroundColor = [UIColor clearColor];
     }
     return self;
@@ -59,6 +59,24 @@
     [pCell ClearData];
     [pCell SetCellData:m_arrData[indexPath.row]];
     return [pCell GetCellHeight];
+}
+
+
+- (void)setTestId:(NSString *)testId
+{
+    _testId = testId;
+    NSArray *plistData = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"testResult" ofType:@"plist"]];
+    for (int i = 0; i < plistData.count; i ++) {
+        NSDictionary *dict = plistData[i];
+        NSString *strTestId = dict[@"testId"];
+        if ([strTestId isEqualToString:testId]) {
+            m_arrAlternative = dict[@"result"];
+            break;
+        }
+    }
+    int x = arc4random() % m_arrAlternative.count;
+    m_arrData = [NSMutableArray arrayWithArray:m_arrAlternative[x]];
+    [m_pBaseTable reloadData];
 }
 
 @end

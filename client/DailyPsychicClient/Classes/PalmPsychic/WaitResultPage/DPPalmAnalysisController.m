@@ -46,6 +46,7 @@
     DPPalmResultController *resultVc = [[DPPalmResultController alloc]init];
     if ([self.analysisType isEqualToString:@"test"]) {
         resultVc.dpResultType = DPResultTest;
+        resultVc.testId = self.testId;
     }else if ([self.analysisType isEqualToString:@"palm"]) {
         resultVc.dpResultType = DPResultPalm;
     }
@@ -54,20 +55,21 @@
 
 - (void)PushToNextPage:(id)argData
 {
-    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
-//    BOOL isbuy = [[NSUserDefaults standardUserDefaults]boolForKey:@"com.dailypsychic.horoscope01"];
-//    if (isbuy) {
-//        [self GetResult];
-//    }else{
-        NSString *product = @"com.dailypsychic.horoscope01";
-        _currentProId = product;
-        if([SKPaymentQueue canMakePayments]){
-            [AlertManager ShowProgressHUDWithMessage:@""];
-            [self requestProductData:product];
-        }else{
-            NSLog(@"不允许程序内付费");
-        }
-//    }
+    [self GetResult];
+//    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
+////    BOOL isbuy = [[NSUserDefaults standardUserDefaults]boolForKey:@"com.dailypsychic.horoscope01"];
+////    if (isbuy) {
+////        [self GetResult];
+////    }else{
+//        NSString *product = @"com.dailypsychic.horoscope01";
+//        _currentProId = product;
+//        if([SKPaymentQueue canMakePayments]){
+//            [AlertManager ShowProgressHUDWithMessage:@""];
+//            [self requestProductData:product];
+//        }else{
+//            NSLog(@"不允许程序内付费");
+//        }
+////    }
 }
 #pragma mark - iap
 #pragma mark - 内购

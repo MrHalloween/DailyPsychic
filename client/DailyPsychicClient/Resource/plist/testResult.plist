@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Weird is wonderful in your eyes and you believe that the world is full of weirdoes. Let’s face it. Humans are pretty weird species. When we compare ourselves to other things in this world, we just add to the weird and wonderful parts of it. You like your egg scrambled and hate routine. Life is a rollercoaster for you and most people don’t understand your lifestyle and what you do as you have stepped out of your comfort zone and stepped into the weirdness.</string>
+					<key>title</key>
+					<string>Weird</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are as normal as normal gets-if there ever was such a thing! You wouldn’t miss a night without brushing your teeth or go a week without washing your bed sheets if your life depended on it. You love structure and routine and this is what keeps you on the right path. You can’t roll your tongue and you should be grateful that you have not been mixed with alien beings that make that ability possible. Being normal is by no means a bad thing; it just means you are part of select part of society and move along with it wherever life takes you.</string>
+					<key>title</key>
+					<string>Normal</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You like to think you lead a normal life but something is quite off balance. You have strange habits and like obscure things. Your taste is refined and being obscure might be an understatement. People find it difficult to understand you and instead of following the crowd and eating fried eggs, or scrambled or dippy, you will go for poached-you like to go to the extreme of situations, try new things and look at things in a different perspective.</string>
+					<key>title</key>
+					<string>Obscure</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Umm we&apos;re a little scared to say this but OK, here we go: You a total, 100% psychopath! You are not a very social person, you prefer being alone in your apartment, doing your own thing, with no intervention from the outside world. You are not a very empathic person, but you don&apos;t see that as a problem, you see that as an advantage! Our advice to you is to try to be more social (without kidnapping anyone), and see how you feel. You might like it!</string>
+					<key>title</key>
+					<string>100% psychopath!</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You&apos;re a bit of a psycho :)Sometimes you are a little distant from other people. You are no stranger to difficult times and a little depression, but overall, you are fairly friendly, outgoing and enjoy the company of others. You don&apos;t like to be on your own too much, you are very empathic, and you do feel bad when you see someone in need (heck, you might even help others from time to time!)Don&apos;t worry about your potential to become a psychopath, as long as you keep yourself surrounded with good people and a healthy lifestyle, you will be fine!</string>
+					<key>title</key>
+					<string>60% psychopath!</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You passed the psychopath test! You are a smart, assertive and dedicated person, but you are NOT a psychopath! You like to speak with other people, work, travel and learn. You don&apos;t feel caged in your daily life, and you are always there for others.</string>
+					<key>title</key>
+					<string>You&apos;re not really a psychopath</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>The eagle is a natural scavenger watching you closely from a birds eye view. You&apos;ve gained this gift from helping an innocent being through tough times.</string>
+					<key>title</key>
+					<string>Eagle</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>The fox is a cunning agile master of deception, watching from a close distance. You&apos;ve gained this gift by putting yourself in harms way to protect another.</string>
+					<key>title</key>
+					<string>Fox</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>The wolf is a born hunter, following you, never letting you leave their sight. You&apos;ve gained this gift from conquering something difficult.</string>
+					<key>title</key>
+					<string>Wolf</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You&apos;re very smooth; it may take you time to bond with someone, but once you do, you have something special.</string>
+					<key>title</key>
+					<string>Siamese</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are normally calm and laid- back, but you can be quite bubbly at times.</string>
+					<key>title</key>
+					<string>Ragdoll</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are kind and friendly, and sometimes all you want is a cuddle!</string>
+					<key>title</key>
+					<string>Tabby</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You pride your appearance and spend a lot of time getting ready in the mornings! You are also quite proud of yourself and your family.</string>
+					<key>title</key>
+					<string>Bengal</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You have reached a humble age where you understand the world we live in and your innocence has been tainted by reality. You are a trooper and your soul is still pure but it is also real. No-one will take you for a fool and you know exactly how to handle any situation as you have seen and done it all.</string>
+					<key>title</key>
+					<string>Smokey Soul</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are a pure human being and believe in doing the right thing in the right situation. You understand when things are better left unsaid and understand that pure innocence doesn&apos;t really exist in this world so you prefer to use your innocence when it is needed the most.</string>
+					<key>title</key>
+					<string>Pretty Puritan</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You couldn&apos;t be anymore transparent if you tried. You are the purest soul in the world and it actually hurts you to lie or keep a secret. Your morals are so strong that your innocence is one of a kind in this day and age. You like to stick to your strong morals and this is what makes your soul shiny and bright like a pure white light.</string>
+					<key>title</key>
+					<string>Purest Soul</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>4</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Maybe you play one or two- maybe three- sports, but you don&apos;t hate the color pink. You&apos;re fine with a little dirt, but you don&apos;t love the idea. You will wear a dress on special occasions because you know it&apos;s fun to dress up every once and a while. You don&apos;t take ten million hours each morning on your hair, but you don&apos;t wear a ponytail everyday. You&apos;re not a tomboy, yet you&apos;re not a girly girl. You&apos;re in the middle.</string>
+					<key>title</key>
+					<string>Neither</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You like sports, you play as many as possible and gym is your favorite subject. You like to get down and dirty. You go with the flow and love everyone. And the two things you hate in life are poufy dresses and the color pink.</string>
+					<key>title</key>
+					<string>Tomboy</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You love colors like pink and pastels, you don&apos;t play many sports, you love wearing skirts and dresses, and you hate bugs and getting dirty. Face it, you&apos;re a girly girl! And plus, you can&apos;t live without your iPhone and Starbucks.</string>
+					<key>title</key>
+					<string>Girly Girl</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>5</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Winter best describes your soul! You are a thoughtful, intuitive person who treasures time with loved ones over everything else in life.</string>
+					<key>title</key>
+					<string>Your soul is Winter</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Fall best describes your soul! You&apos;re at your happiest surrounded by the beauty of nature and are open to the changes life brings.</string>
+					<key>title</key>
+					<string>Your soul is Fall</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Summer best describes your soul! You are an outgoing, brave individual who is always looking for the next adventure.</string>
+					<key>title</key>
+					<string>Your soul is Summer</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>6</string>
+	</dict>
+</array>
+</plist>

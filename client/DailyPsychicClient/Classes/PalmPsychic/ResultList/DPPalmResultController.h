@@ -19,4 +19,6 @@ typedef enum
 
 @property (nonatomic, assign) DPResultType dpResultType; /// < 结果页类型
 
+@property (nonatomic,copy) NSString *testId;    ///测试题目id
+
 @end
