@@ -664,7 +664,7 @@ static int drag_animation_count        = 0;
             /*cell*/
             SCHCircleViewCell *cell       = [_circle_view_data_source circleView:self cellAtIndex:i];
             if (i==0) {
-                cell.scale = 1.2;
+                cell.scale = 1.1;
             }else{
                 cell.scale                    = [self getScaleByRadina:cell_radina originScale:_scale deviationRadian:_deviation_Radian];
             }

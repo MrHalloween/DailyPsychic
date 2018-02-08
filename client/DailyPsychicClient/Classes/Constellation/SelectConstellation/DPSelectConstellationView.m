@@ -18,6 +18,7 @@
     UIImageView *m_pMainImg;
     UILabel *m_pNameLabel;//星座名称
     UILabel *m_pDateLable;//星座日期
+    UIImageView *m_pCircleImage;//选中星座的外围圆圈图片
 }
 @end
 
@@ -48,6 +49,19 @@
     m_pMainImg.image = [UIImage imageNamed:@"constellation_main"];
     m_pMainImg.userInteractionEnabled = YES;
     [self addSubview:m_pMainImg];
+    
+    //选中的外围图片
+    m_pCircleImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 64 * AdaptRate, 64 * AdaptRate)];
+    m_pCircleImage.image = [UIImage imageNamed:@"constellation_ aries_circle"];
+    m_pCircleImage.center = CGPointMake(171 * AdaptRate, 78 * AdaptRate);
+    [m_pMainImg addSubview:m_pCircleImage];
+    
+    //向上三角
+    UIImageView * m_upwardImg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 19 * AdaptRate, 20 * AdaptRate)];
+    m_upwardImg.center = CGPointMake(171.5 * AdaptRate, 119 * AdaptRate);
+    m_upwardImg.image = [UIImage imageNamed:@"constellation_upward"];
+    [m_pMainImg addSubview:m_upwardImg];
+    
     
     //六芒星336336
     UIImageView *pHexaganalImg = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 168 * AdaptRate, 168 * AdaptRate)];
@@ -141,6 +155,8 @@
     DPConstellationModel * model = [DPConstellationModel ModelWithDictionary:m_arrData[currentIndex]];
     m_pNameLabel.text = model.nameEn;
     m_pDateLable.text = model.date;
+    NSLog(@"---圆圈%@----",model.imageCircle);
+    m_pCircleImage.image = [UIImage imageNamed:model.imageCircle];
     [[NSUserDefaults standardUserDefaults]setObject:@(currentIndex) forKey:@"selectConstalletion"];
     [[NSUserDefaults standardUserDefaults]synchronize];
 }

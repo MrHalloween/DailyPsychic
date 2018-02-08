@@ -17,6 +17,8 @@
     model.nameEn = dict[@"nameEn"];
     model.image = dict[@"image"];
     model.date = dict[@"date"];
+    model.imageSelect = [NSString stringWithFormat:@"constellation_%@_select",model.image];
+    model.imageCircle = [NSString stringWithFormat:@"constellation_%@_circle",model.image];
     return model;
 }
 
