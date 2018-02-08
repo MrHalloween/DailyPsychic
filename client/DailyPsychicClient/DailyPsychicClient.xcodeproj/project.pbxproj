@@ -104,6 +104,8 @@
 		1058E62220286386007F2D66 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 1058E62020286386007F2D66 /* close.png */; };
 		1058E62520286651007F2D66 /* righthand.png in Resources */ = {isa = PBXBuildFile; fileRef = 1058E62320286651007F2D66 /* righthand.png */; };
 		1058E62620286651007F2D66 /* lefthand.png in Resources */ = {isa = PBXBuildFile; fileRef = 1058E62420286651007F2D66 /* lefthand.png */; };
+		10990F9B202BE90C00A62EB0 /* DPTakePhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10990F99202BE90C00A62EB0 /* DPTakePhotoView.m */; };
+		10990F9C202BE90C00A62EB0 /* DPTakePhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10990F9A202BE90C00A62EB0 /* DPTakePhotoController.m */; };
 		1099F1E7201F245E00CE653E /* homepage_card_star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1DB201F245E00CE653E /* homepage_card_star@2x.png */; };
 		1099F1E8201F245E00CE653E /* homepage_card_star@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1DC201F245E00CE653E /* homepage_card_star@3x.png */; };
 		1099F1E9201F245E00CE653E /* homepage_ok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1DD201F245E00CE653E /* homepage_ok@2x.png */; };
@@ -204,8 +206,6 @@
 		10DB6D202022D5090084FC35 /* test_list_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D1C2022D5080084FC35 /* test_list_bg@3x.png */; };
 		10DB6D212022D5090084FC35 /* test_list_eye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D1D2022D5080084FC35 /* test_list_eye@2x.png */; };
 		10DB6D222022D5090084FC35 /* test_list_eye@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D1E2022D5080084FC35 /* test_list_eye@3x.png */; };
-		10DB6D2D2022EE380084FC35 /* DPTakePhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DB6D2C2022EE380084FC35 /* DPTakePhotoController.m */; };
-		10DB6D302022EE690084FC35 /* DPTakePhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DB6D2F2022EE690084FC35 /* DPTakePhotoView.m */; };
 		10DB6D372022EFC70084FC35 /* palm_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D312022EFC60084FC35 /* palm_right@2x.png */; };
 		10DB6D382022EFC70084FC35 /* palm_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D322022EFC60084FC35 /* palm_left@2x.png */; };
 		10DB6D392022EFC70084FC35 /* palm_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D332022EFC60084FC35 /* palm_right@3x.png */; };
@@ -551,6 +551,10 @@
 		1058E62020286386007F2D66 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		1058E62320286651007F2D66 /* righthand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = righthand.png; sourceTree = "<group>"; };
 		1058E62420286651007F2D66 /* lefthand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lefthand.png; sourceTree = "<group>"; };
+		10990F97202BE90C00A62EB0 /* DPTakePhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTakePhotoController.h; sourceTree = "<group>"; };
+		10990F98202BE90C00A62EB0 /* DPTakePhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTakePhotoView.h; sourceTree = "<group>"; };
+		10990F99202BE90C00A62EB0 /* DPTakePhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTakePhotoView.m; sourceTree = "<group>"; };
+		10990F9A202BE90C00A62EB0 /* DPTakePhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTakePhotoController.m; sourceTree = "<group>"; };
 		1099F1DB201F245E00CE653E /* homepage_card_star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_card_star@2x.png"; sourceTree = "<group>"; };
 		1099F1DC201F245E00CE653E /* homepage_card_star@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_card_star@3x.png"; sourceTree = "<group>"; };
 		1099F1DD201F245E00CE653E /* homepage_ok@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_ok@2x.png"; sourceTree = "<group>"; };
@@ -657,10 +661,6 @@
 		10DB6D1C2022D5080084FC35 /* test_list_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_list_bg@3x.png"; sourceTree = "<group>"; };
 		10DB6D1D2022D5080084FC35 /* test_list_eye@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_list_eye@2x.png"; sourceTree = "<group>"; };
 		10DB6D1E2022D5080084FC35 /* test_list_eye@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_list_eye@3x.png"; sourceTree = "<group>"; };
-		10DB6D2B2022EE380084FC35 /* DPTakePhotoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTakePhotoController.h; sourceTree = "<group>"; };
-		10DB6D2C2022EE380084FC35 /* DPTakePhotoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTakePhotoController.m; sourceTree = "<group>"; };
-		10DB6D2E2022EE690084FC35 /* DPTakePhotoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTakePhotoView.h; sourceTree = "<group>"; };
-		10DB6D2F2022EE690084FC35 /* DPTakePhotoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTakePhotoView.m; sourceTree = "<group>"; };
 		10DB6D312022EFC60084FC35 /* palm_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_right@2x.png"; sourceTree = "<group>"; };
 		10DB6D322022EFC60084FC35 /* palm_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_left@2x.png"; sourceTree = "<group>"; };
 		10DB6D332022EFC60084FC35 /* palm_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_right@3x.png"; sourceTree = "<group>"; };
@@ -1385,6 +1385,17 @@
 			path = CustomCamera;
 			sourceTree = "<group>";
 		};
+		10990F96202BE90B00A62EB0 /* TakePhoto */ = {
+			isa = PBXGroup;
+			children = (
+				10990F97202BE90C00A62EB0 /* DPTakePhotoController.h */,
+				10990F9A202BE90C00A62EB0 /* DPTakePhotoController.m */,
+				10990F98202BE90C00A62EB0 /* DPTakePhotoView.h */,
+				10990F99202BE90C00A62EB0 /* DPTakePhotoView.m */,
+			);
+			path = TakePhoto;
+			sourceTree = "<group>";
+		};
 		1099F1DA201F245E00CE653E /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1536,17 +1547,6 @@
 				10D009302020B85100ADAADB /* test_pic@3x.png */,
 			);
 			path = Test;
-			sourceTree = "<group>";
-		};
-		10DB6D282022EE170084FC35 /* TakePhoto */ = {
-			isa = PBXGroup;
-			children = (
-				10DB6D2B2022EE380084FC35 /* DPTakePhotoController.h */,
-				10DB6D2C2022EE380084FC35 /* DPTakePhotoController.m */,
-				10DB6D2E2022EE690084FC35 /* DPTakePhotoView.h */,
-				10DB6D2F2022EE690084FC35 /* DPTakePhotoView.m */,
-			);
-			path = TakePhoto;
 			sourceTree = "<group>";
 		};
 		29101A1F2023F3ED00788AD9 /* BasicInformation */ = {
@@ -1752,10 +1752,10 @@
 		D630AF672021DBAE0006B16C /* PalmPsychic */ = {
 			isa = PBXGroup;
 			children = (
+				10990F96202BE90B00A62EB0 /* TakePhoto */,
 				1058E61B202860BE007F2D66 /* CustomCamera */,
 				2977F80C202303190016B617 /* ResultList */,
 				2977F807202303190016B617 /* WaitResultPage */,
-				10DB6D282022EE170084FC35 /* TakePhoto */,
 			);
 			path = PalmPsychic;
 			sourceTree = "<group>";
@@ -2123,7 +2123,9 @@
 				1022E58D20197ECF007E421B /* PGIndexBannerSubiew.m in Sources */,
 				1006BDBA20158E770041DC86 /* UIImage+GIF.m in Sources */,
 				1006BD0F20158E6C0041DC86 /* NSString+TimeFormat.m in Sources */,
+				10990F9B202BE90C00A62EB0 /* DPTakePhotoView.m in Sources */,
 				29BFF06F202193C900B70DBD /* DPSelectConstellationController.m in Sources */,
+				10990F9C202BE90C00A62EB0 /* DPTakePhotoController.m in Sources */,
 				1006BDAC20158E770041DC86 /* MJRefreshAutoFooter.m in Sources */,
 				104079ED20170DB100700777 /* DPHomePageView.m in Sources */,
 				1006BDAE20158E770041DC86 /* AFURLResponseSerialization.m in Sources */,
@@ -2144,7 +2146,6 @@
 				1006BD9E20158E770041DC86 /* UIScrollView+MJExtension.m in Sources */,
 				D6EB890720235192005045B4 /* DPPalmAnaylyingView.m in Sources */,
 				1006BDA320158E770041DC86 /* MJRefreshAutoStateFooter.m in Sources */,
-				10DB6D2D2022EE380084FC35 /* DPTakePhotoController.m in Sources */,
 				1006BD1420158E6C0041DC86 /* BUChannelsView.m in Sources */,
 				1006BD0920158E6C0041DC86 /* UILable+TextEffect.m in Sources */,
 				1006BDBB20158E770041DC86 /* UIImage+MultiFormat.m in Sources */,
@@ -2222,7 +2223,6 @@
 				1006BDB520158E770041DC86 /* MKAnnotationView+WebCache.m in Sources */,
 				1006BDB320158E770041DC86 /* AFSecurityPolicy.m in Sources */,
 				1006BD2520158E6C0041DC86 /* AFBaseModuleData.m in Sources */,
-				10DB6D302022EE690084FC35 /* DPTakePhotoView.m in Sources */,
 				1006BDC220158E770041DC86 /* NSImage+WebCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
