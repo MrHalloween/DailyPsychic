@@ -71,17 +71,22 @@
         [self checkReceiptIsValid:SANDBOX];
     }else{
         NSLog(@"------本地沙盒没有receiptData数据-----");
-        [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
-        if([SKPaymentQueue canMakePayments]){
-            [AlertManager ShowProgressHUDWithMessage:@""];
-            [self requestProductData:ProductID_IAP01];
-        }else{
-            NSLog(@"-------------不允许程序内付费-------------");
-        }
+        [self RequestProduct];
 
     }
-
 }
+
+- (void)RequestProduct
+{
+    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
+    if([SKPaymentQueue canMakePayments]){
+        [AlertManager ShowProgressHUDWithMessage:@""];
+        [self requestProductData:ProductID_IAP01];
+    }else{
+        NSLog(@"-------------不允许程序内付费-------------");
+    }
+}
+
 //请求商品信息
 - (void)requestProductData:(NSString *)type{
     NSLog(@"-------------请求对应的产品信息----------------");
@@ -170,7 +175,6 @@
             case SKPaymentTransactionStateFailed:
             {
                 NSLog(@"交易失败%ld",tran.error.code);
-                [AlertManager HideProgressHUD];
                 [self failedTransaction:tran];
                 break;
             }
@@ -187,8 +191,10 @@
 }
 
 ///这个SKErrorUnknown实在是很难处理，我找了好多的帖子，包括stackoverflow，也没看到太多的说法，有一些说可能是越狱手机，才会出现这种状态，在测试的时候，我们通常也会遇到这种问题。测试的时候，我们要再iTunes connect申请测试账号，有的时候，测试账号出问题，或者，测试账号已经被取消了，不再使用了，而支付的时候，仍然在使用这个测试账号，这个时候，也会出现unknown状态。http://www.w2bc.com/article/115403
-
 - (void)failedTransaction:(SKPaymentTransaction *)transaction {
+    
+    [AlertManager HideProgressHUD];
+    [AlertManager ShowRelutWithMessage:@"交易失败" Dismiss:nil];
     NSString *detail = @"";
     switch (transaction.error.code) {
             
@@ -313,27 +319,14 @@
             {
                 //订阅过期
                 NSLog(@"****************订阅过期*******************");
-                [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
-                if([SKPaymentQueue canMakePayments]){
-                    [AlertManager ShowProgressHUDWithMessage:@""];
-                    [self requestProductData:ProductID_IAP01];
-                }else{
-                    NSLog(@"-------------不允许程序内付费-------------");
-                }
-                
+                [self RequestProduct];
             }
         }
         else
         {
             //第一次购买
             NSLog(@"****************第一次购买*******************");
-            [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
-            if([SKPaymentQueue canMakePayments]){
-                [AlertManager ShowProgressHUDWithMessage:@""];
-                [self requestProductData:ProductID_IAP01];
-            }else{
-                NSLog(@"-------------不允许程序内付费-------------");
-            }
+            [self RequestProduct];
 //            NSLog(@"购买成功！");
 //            [AlertManager HideProgressHUD];
 //            [self GetResult];
@@ -363,10 +356,10 @@
 
 - (void)completeTransaction:(SKPaymentTransaction *)transaction{
     NSLog(@"-----1------交易完成开始2次验证");
-    [self checkReceiptIsValid:SANDBOX];       //把self.receipt发送到服务器验证是否有效
+    //把self.receipt发送到服务器验证是否有效
+    [self checkReceiptIsValid:SANDBOX];
     [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
 }
-
 
 
 - (void)dealloc{
