@@ -33,6 +33,9 @@
 - (void)setResultType:(int)resultType{
     if (resultType== 1) {
         m_pTitleLabel.text = @"Palm analysis";
+        ///手相分析
+        [self ShowPalmistryResult];
+        
     }else if (resultType == 2){
         m_pTitleLabel.text = @"Constellation analysis";
     }else if (resultType == 3){
@@ -61,7 +64,7 @@
     return [pCell GetCellHeight];
 }
 
-
+///测试结果
 - (void)setTestId:(NSString *)testId
 {
     _testId = testId;
@@ -77,6 +80,25 @@
     int x = arc4random() % m_arrAlternative.count;
     m_arrData = [NSMutableArray arrayWithArray:m_arrAlternative[x]];
     [m_pBaseTable reloadData];
+}
+
+///手相分析结果
+- (void)ShowPalmistryResult
+{
+    ///Head
+    NSArray *heads = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"head" ofType:@"plist"]];
+    int x = arc4random() % heads.count;
+    [m_arrData addObject:heads[x]];
+    ///Line
+    NSArray *lines = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"line" ofType:@"plist"]];
+    int y = arc4random() % lines.count;
+    [m_arrData addObject:lines[y]];
+    ///Finger
+    NSArray *fingers = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"finger" ofType:@"plist"]];
+    int z = arc4random() % fingers.count;
+    [m_arrData addObject:fingers[z]];
+    [m_pBaseTable reloadData];
+
 }
 
 @end

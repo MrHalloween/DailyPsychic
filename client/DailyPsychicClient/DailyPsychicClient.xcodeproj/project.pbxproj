@@ -106,6 +106,9 @@
 		1058E62620286651007F2D66 /* lefthand.png in Resources */ = {isa = PBXBuildFile; fileRef = 1058E62420286651007F2D66 /* lefthand.png */; };
 		10990F9B202BE90C00A62EB0 /* DPTakePhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10990F99202BE90C00A62EB0 /* DPTakePhotoView.m */; };
 		10990F9C202BE90C00A62EB0 /* DPTakePhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10990F9A202BE90C00A62EB0 /* DPTakePhotoController.m */; };
+		10990F9E202C5A3A00A62EB0 /* head.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10990F9D202C5A3A00A62EB0 /* head.plist */; };
+		10990FA0202C5A4C00A62EB0 /* line.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10990F9F202C5A4C00A62EB0 /* line.plist */; };
+		10990FA2202C5A6600A62EB0 /* finger.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10990FA1202C5A6600A62EB0 /* finger.plist */; };
 		1099F1E7201F245E00CE653E /* homepage_card_star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1DB201F245E00CE653E /* homepage_card_star@2x.png */; };
 		1099F1E8201F245E00CE653E /* homepage_card_star@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1DC201F245E00CE653E /* homepage_card_star@3x.png */; };
 		1099F1E9201F245E00CE653E /* homepage_ok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1099F1DD201F245E00CE653E /* homepage_ok@2x.png */; };
@@ -557,6 +560,9 @@
 		10990F98202BE90C00A62EB0 /* DPTakePhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTakePhotoView.h; sourceTree = "<group>"; };
 		10990F99202BE90C00A62EB0 /* DPTakePhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTakePhotoView.m; sourceTree = "<group>"; };
 		10990F9A202BE90C00A62EB0 /* DPTakePhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTakePhotoController.m; sourceTree = "<group>"; };
+		10990F9D202C5A3A00A62EB0 /* head.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = head.plist; sourceTree = "<group>"; };
+		10990F9F202C5A4C00A62EB0 /* line.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = line.plist; sourceTree = "<group>"; };
+		10990FA1202C5A6600A62EB0 /* finger.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = finger.plist; sourceTree = "<group>"; };
 		1099F1DB201F245E00CE653E /* homepage_card_star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_card_star@2x.png"; sourceTree = "<group>"; };
 		1099F1DC201F245E00CE653E /* homepage_card_star@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_card_star@3x.png"; sourceTree = "<group>"; };
 		1099F1DD201F245E00CE653E /* homepage_ok@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homepage_ok@2x.png"; sourceTree = "<group>"; };
@@ -1801,6 +1807,9 @@
 				10A6B45E20243E93006520CE /* testCard.plist */,
 				D6D8796020257F4100F543EE /* resultAnalysis.plist */,
 				10C8770E202AB767008268BA /* testResult.plist */,
+				10990F9D202C5A3A00A62EB0 /* head.plist */,
+				10990F9F202C5A4C00A62EB0 /* line.plist */,
+				10990FA1202C5A6600A62EB0 /* finger.plist */,
 			);
 			path = plist;
 			sourceTree = "<group>";
@@ -1894,6 +1903,7 @@
 				10F4DF342029A9A9004CA8FA /* constellation_detail_in.png in Resources */,
 				2966C392202C3BEA0024B4B6 /* constellation_upward@2x.png in Resources */,
 				1099F1F1201F245E00CE653E /* homepage_bg@2x.png in Resources */,
+				10990FA2202C5A6600A62EB0 /* finger.plist in Resources */,
 				29BABFA820203B8800CE4E51 /* constellation_virgo@3x.png in Resources */,
 				29BABFAD20203B8800CE4E51 /* constellation_aquarius@2x.png in Resources */,
 				29BABFED20203B8800CE4E51 /* constellation_taurus_select@2x.png in Resources */,
@@ -1935,6 +1945,7 @@
 				29101A2F2023F5B000788AD9 /* basic_inputbg@2x.png in Resources */,
 				10C8770F202AB767008268BA /* testResult.plist in Resources */,
 				29BFF08A20219E8A00B70DBD /* constellation_detail_counselor@2x.png in Resources */,
+				10990FA0202C5A4C00A62EB0 /* line.plist in Resources */,
 				10C876F4202AAD12008268BA /* 6-3@3x.png in Resources */,
 				10C876DF202AAD12008268BA /* 2-3@3x.png in Resources */,
 				29BABFB020203B8800CE4E51 /* constellation_aquarius_circle@3x.png in Resources */,
@@ -1981,6 +1992,7 @@
 				10C876DE202AAD12008268BA /* 3-3@3x.png in Resources */,
 				1006BD1220158E6C0041DC86 /* README.md in Resources */,
 				1058E62120286386007F2D66 /* camera.png in Resources */,
+				10990F9E202C5A3A00A62EB0 /* head.plist in Resources */,
 				29BABFB820203B8800CE4E51 /* constellation_libra_circle@3x.png in Resources */,
 				29BABFE920203B8800CE4E51 /* constellation_taurus@2x.png in Resources */,
 				1099F1EE201F245E00CE653E /* homepage_card_test@3x.png in Resources */,
