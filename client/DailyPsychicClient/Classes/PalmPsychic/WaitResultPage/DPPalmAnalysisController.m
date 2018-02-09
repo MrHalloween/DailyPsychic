@@ -85,6 +85,8 @@
             ///没过期
             [self GetResult];
         }];
+    }else{
+        [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
     }
 }
 
