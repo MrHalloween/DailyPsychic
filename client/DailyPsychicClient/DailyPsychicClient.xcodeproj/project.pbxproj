@@ -206,6 +206,7 @@
 		10D009342020B85100ADAADB /* test_cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D0092E2020B85100ADAADB /* test_cell@2x.png */; };
 		10D009352020B85100ADAADB /* test_pic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D0092F2020B85100ADAADB /* test_pic@2x.png */; };
 		10D009362020B85100ADAADB /* test_pic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D009302020B85100ADAADB /* test_pic@3x.png */; };
+		10D2D8E3202D44B800E8379C /* constellationResult.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10D2D8E2202D44B800E8379C /* constellationResult.plist */; };
 		10DB6D1F2022D5090084FC35 /* test_list_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D1B2022D5080084FC35 /* test_list_bg@2x.png */; };
 		10DB6D202022D5090084FC35 /* test_list_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D1C2022D5080084FC35 /* test_list_bg@3x.png */; };
 		10DB6D212022D5090084FC35 /* test_list_eye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D1D2022D5080084FC35 /* test_list_eye@2x.png */; };
@@ -665,6 +666,7 @@
 		10D0092E2020B85100ADAADB /* test_cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_cell@2x.png"; sourceTree = "<group>"; };
 		10D0092F2020B85100ADAADB /* test_pic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_pic@2x.png"; sourceTree = "<group>"; };
 		10D009302020B85100ADAADB /* test_pic@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_pic@3x.png"; sourceTree = "<group>"; };
+		10D2D8E2202D44B800E8379C /* constellationResult.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = constellationResult.plist; sourceTree = "<group>"; };
 		10DB6D1B2022D5080084FC35 /* test_list_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_list_bg@2x.png"; sourceTree = "<group>"; };
 		10DB6D1C2022D5080084FC35 /* test_list_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_list_bg@3x.png"; sourceTree = "<group>"; };
 		10DB6D1D2022D5080084FC35 /* test_list_eye@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_list_eye@2x.png"; sourceTree = "<group>"; };
@@ -1408,6 +1410,7 @@
 			isa = PBXGroup;
 			children = (
 				10990FA4202C607D00A62EB0 /* constellation.plist */,
+				10D2D8E2202D44B800E8379C /* constellationResult.plist */,
 			);
 			path = Constellation;
 			sourceTree = "<group>";
@@ -1964,6 +1967,7 @@
 				29BABFD120203B8800CE4E51 /* constellation_leo_circle@2x.png in Resources */,
 				29101A2F2023F5B000788AD9 /* basic_inputbg@2x.png in Resources */,
 				29BFF08A20219E8A00B70DBD /* constellation_detail_counselor@2x.png in Resources */,
+				10D2D8E3202D44B800E8379C /* constellationResult.plist in Resources */,
 				10C876F4202AAD12008268BA /* 6-3@3x.png in Resources */,
 				10990FB0202C607D00A62EB0 /* head.plist in Resources */,
 				10C876DF202AAD12008268BA /* 2-3@3x.png in Resources */,
