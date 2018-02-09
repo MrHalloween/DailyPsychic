@@ -207,6 +207,7 @@
 		10D009352020B85100ADAADB /* test_pic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D0092F2020B85100ADAADB /* test_pic@2x.png */; };
 		10D009362020B85100ADAADB /* test_pic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D009302020B85100ADAADB /* test_pic@3x.png */; };
 		10D2D8E3202D44B800E8379C /* constellationResult.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10D2D8E2202D44B800E8379C /* constellationResult.plist */; };
+		10D2D8E6202D52F400E8379C /* DPIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D2D8E5202D52F400E8379C /* DPIAPManager.m */; };
 		10DB6D1F2022D5090084FC35 /* test_list_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D1B2022D5080084FC35 /* test_list_bg@2x.png */; };
 		10DB6D202022D5090084FC35 /* test_list_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D1C2022D5080084FC35 /* test_list_bg@3x.png */; };
 		10DB6D212022D5090084FC35 /* test_list_eye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D1D2022D5080084FC35 /* test_list_eye@2x.png */; };
@@ -667,6 +668,8 @@
 		10D0092F2020B85100ADAADB /* test_pic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_pic@2x.png"; sourceTree = "<group>"; };
 		10D009302020B85100ADAADB /* test_pic@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_pic@3x.png"; sourceTree = "<group>"; };
 		10D2D8E2202D44B800E8379C /* constellationResult.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = constellationResult.plist; sourceTree = "<group>"; };
+		10D2D8E4202D52F400E8379C /* DPIAPManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPIAPManager.h; sourceTree = "<group>"; };
+		10D2D8E5202D52F400E8379C /* DPIAPManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPIAPManager.m; sourceTree = "<group>"; };
 		10DB6D1B2022D5080084FC35 /* test_list_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_list_bg@2x.png"; sourceTree = "<group>"; };
 		10DB6D1C2022D5080084FC35 /* test_list_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_list_bg@3x.png"; sourceTree = "<group>"; };
 		10DB6D1D2022D5080084FC35 /* test_list_eye@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_list_eye@2x.png"; sourceTree = "<group>"; };
@@ -945,6 +948,8 @@
 			children = (
 				1006BC9F20158D400041DC86 /* AppDelegate.h */,
 				1006BCA020158D400041DC86 /* AppDelegate.m */,
+				10D2D8E4202D52F400E8379C /* DPIAPManager.h */,
+				10D2D8E5202D52F400E8379C /* DPIAPManager.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -2189,6 +2194,7 @@
 				1006BD9C20158E770041DC86 /* MJRefreshConst.m in Sources */,
 				1006BD9E20158E770041DC86 /* UIScrollView+MJExtension.m in Sources */,
 				D6EB890720235192005045B4 /* DPPalmAnaylyingView.m in Sources */,
+				10D2D8E6202D52F400E8379C /* DPIAPManager.m in Sources */,
 				1006BDA320158E770041DC86 /* MJRefreshAutoStateFooter.m in Sources */,
 				1006BD1420158E6C0041DC86 /* BUChannelsView.m in Sources */,
 				1006BD0920158E6C0041DC86 /* UILable+TextEffect.m in Sources */,
