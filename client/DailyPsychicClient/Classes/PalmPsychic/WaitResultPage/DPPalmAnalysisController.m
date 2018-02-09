@@ -25,6 +25,7 @@
 @interface DPPalmAnalysisController ()<AFBaseTableViewDelegate>
 {
     DPPalmAnalysisView *m_pPalmAnalysisView;
+    BOOL m_bIsShow;
 }
 @end
 
@@ -59,6 +60,7 @@
 - (void)GetResult
 {
     [AlertManager HideProgressHUD];
+    m_bIsShow = NO;
     DPPalmResultController *resultVc = [[DPPalmResultController alloc]init];
     if ([self.analysisType isEqualToString:@"test"]) {
         resultVc.dpResultType = DPResultTest;
@@ -72,6 +74,11 @@
 #pragma mark - iap
 - (void)PushToNextPage:(id)argData
 {
+    if (m_bIsShow) {
+        return;
+    }
+    [AlertManager ShowProgressHUDWithMessage:@""];
+    m_bIsShow = YES;
     if ([[DPIAPManager sharedManager]isHaveReceiptInSandBox]) {
 
         [[DPIAPManager sharedManager]checkReceiptIsValid:SANDBOX firstBuy:^{

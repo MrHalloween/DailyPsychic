@@ -70,7 +70,6 @@ static DPIAPManager *_iap;
 {
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     if([SKPaymentQueue canMakePayments]){
-        [AlertManager ShowProgressHUDWithMessage:@""];
         NSLog(@"-------------请求对应的产品信息----------------");
         NSArray *product = [[NSArray alloc] initWithObjects:productId, nil];
         NSSet *nsset = [NSSet setWithArray:product];
@@ -94,7 +93,6 @@ static DPIAPManager *_iap;
         NSLog(@"--------------没有商品------------------");
         UIAlertView *pAlert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"商店没有商品信息" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"知道了", nil];
         [pAlert show];
-        [AlertManager HideProgressHUD];
         return;
     }
     NSLog(@"productID:%@", response.invalidProductIdentifiers);
@@ -112,7 +110,6 @@ static DPIAPManager *_iap;
         }else{
             UIAlertView *pAlert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"商品id不匹配" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"知道了", nil];
             [pAlert show];
-            [AlertManager HideProgressHUD];
             return;
         }
     }
@@ -126,7 +123,6 @@ static DPIAPManager *_iap;
     } @catch (NSException *exception) {
         UIAlertView *pAlert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"购买出错，请重试" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"知道了", nil];
         [pAlert show];
-        [AlertManager HideProgressHUD];
     } @finally {
         
     }
@@ -137,7 +133,6 @@ static DPIAPManager *_iap;
     NSLog(@"------------------错误-----------------:%@", error);
     UIAlertView *pAlert = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"%@",error.description] delegate:nil cancelButtonTitle:nil otherButtonTitles:@"知道了", nil];
     [pAlert show];
-    [AlertManager HideProgressHUD];
     return;
 }
 
@@ -197,8 +192,6 @@ static DPIAPManager *_iap;
 ///这个SKErrorUnknown实在是很难处理，我找了好多的帖子，包括stackoverflow，也没看到太多的说法，有一些说可能是越狱手机，才会出现这种状态，在测试的时候，我们通常也会遇到这种问题。测试的时候，我们要再iTunes connect申请测试账号，有的时候，测试账号出问题，或者，测试账号已经被取消了，不再使用了，而支付的时候，仍然在使用这个测试账号，这个时候，也会出现unknown状态。http://www.w2bc.com/article/115403
 - (void)failedTransaction:(SKPaymentTransaction *)transaction {
     
-    [AlertManager HideProgressHUD];
-    [AlertManager ShowRelutWithMessage:@"交易失败" Dismiss:nil];
     NSString *detail = @"";
     switch (transaction.error.code) {
             
@@ -246,7 +239,6 @@ static DPIAPManager *_iap;
 ///验证购买，避免越狱软件模拟苹果请求达到非法购买问题
 - (void)checkReceiptIsValid:(NSString *)environment firstBuy:(block)firstBuy outDate:(block)outDate inDate:(block)inDate
 {
-    [AlertManager ShowProgressHUDWithMessage:@""];
     //从沙盒中获取交易凭证并且拼接成请求体数据
     NSURL *receiptUrl=[[NSBundle mainBundle] appStoreReceiptURL];
     NSData *receiptData=[NSData dataWithContentsOfURL:receiptUrl];
@@ -267,8 +259,6 @@ static DPIAPManager *_iap;
     NSData *responseData=[NSURLConnection sendSynchronousRequest:requestM returningResponse:nil error:&error];
     if (error) {
         NSLog(@"验证购买过程中发生错误，错误信息：%@",error.localizedDescription);
-        [AlertManager HideProgressHUD];
-        [AlertManager ShowRelutWithMessage:@"交易失败" Dismiss:nil];
         return;
     }
     
@@ -295,7 +285,7 @@ static DPIAPManager *_iap;
                 if (inDate) {
                     inDate();
                 }
-                [AlertManager HideProgressHUD];
+                
             }
             else
             {
@@ -304,8 +294,6 @@ static DPIAPManager *_iap;
                 if (outDate) {
                     outDate();
                 }
-                [AlertManager HideProgressHUD];
-                
             }
         }
         else
@@ -315,24 +303,18 @@ static DPIAPManager *_iap;
             if (firstBuy) {
                 firstBuy();
             }
-            [AlertManager HideProgressHUD];
         }
     }
     
     else if ([dic[@"status"] intValue] == 21007)
     {
         NSLog(@"购买失败，未通过验证！");
-        [AlertManager HideProgressHUD];
-        [AlertManager ShowRelutWithMessage:@"交易失败" Dismiss:nil];
-        
 //        if (self.propCheckReceipt) {
 //            self.propCheckReceipt(nil);
 //        }
     }
     else
     {
-        [AlertManager HideProgressHUD];
-        [AlertManager ShowRelutWithMessage:@"交易失败" Dismiss:nil];
         NSLog(@"购买失败，未通过验证！");
     }
 }

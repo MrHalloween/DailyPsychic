@@ -29,6 +29,7 @@
 @interface DPConstellationDetailController ()<AFBaseTableViewDelegate,DPConstellationDetailDelegate>
 {
     DPConstellationDetailView *m_pConstellDetail;
+    BOOL m_bIsShow;
 }
 @end
 
@@ -67,6 +68,11 @@
     switch (btnTag) {
         case 100:
         {
+            if (m_bIsShow) {
+                return;
+            }
+            [AlertManager ShowProgressHUDWithMessage:@""];
+            m_bIsShow = YES;
             [self iap];
         }
             break;
@@ -126,6 +132,8 @@
 
 - (void)GetResult
 {
+    m_bIsShow = NO;
+    [AlertManager HideProgressHUD];
     DPPalmResultController *pVC = [[DPPalmResultController alloc]init];
     pVC.dpResultType = DPResultConstellation;
     [self PushChildViewController:pVC animated:YES];
