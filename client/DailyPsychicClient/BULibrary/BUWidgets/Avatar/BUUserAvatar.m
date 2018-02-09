@@ -166,7 +166,6 @@
 
 - (void)changeAvatar:(UIButton *)argButton
 {
-    NSLog(@"修改用户头像");
     UIViewController *pSelfController = [self LocationController];
     UIAlertController *pAlertVC = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {

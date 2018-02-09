@@ -91,12 +91,10 @@
 }
 
 - (void)didSelectCell:(UIView *)subView withSubViewIndex:(NSInteger)subIndex {
-    NSLog(@"点击了第%ld张图",(long)subIndex + 1);
 }
 
 - (void)didScrollToPage:(NSInteger)pageNumber inFlowView:(NewPagedFlowView *)flowView {
     m_ipageNumber = pageNumber;
-    NSLog(@"ViewController 滚动到了第%zd页",pageNumber);
 }
 
 #pragma mark NewPagedFlowView Datasource

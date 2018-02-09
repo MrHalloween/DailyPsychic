@@ -80,17 +80,14 @@
             point = [gestureRecognizer locationInView:self];
             // [_delegate gridDidEnterMoveMode:self withLocation:point moveGestureRecognizer:gestureRecognizer];
             //放大这个item
-            // NSLog(@"press long began");
             break;
         case UIGestureRecognizerStateEnded:
             point = [gestureRecognizer locationInView:self];
             // [_delegate gridDidEndMoved:self withLocation:point moveGestureRecognizer:gestureRecognizer];
             //变回原来大小
-            //NSLog(@"press long ended");
             
             break;
         case UIGestureRecognizerStateFailed:
-            //NSLog(@"press long failed");
             
             break;
         case UIGestureRecognizerStateCancelled:
@@ -102,10 +99,8 @@
             //移动
             point = [gestureRecognizer locationInView:self];
             //   [_delegate gridDidMoved:self withLocation:point moveGestureRecognizer:gestureRecognizer];
-            //NSLog(@"press long changed");
             break;
         default:
-            //NSLog(@"press long else");
             break;
     }
     

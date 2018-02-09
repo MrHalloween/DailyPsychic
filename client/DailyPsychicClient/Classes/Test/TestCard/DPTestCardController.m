@@ -60,7 +60,6 @@
         [self PushChildViewController:pVC animated:YES];
 
     }else{
-        NSLog(@"选择了一个答案");
         DPTestCardController *pVC = [[DPTestCardController alloc]init];
         pVC.dictTest = arr[0];
         [arr removeObjectAtIndex:0];

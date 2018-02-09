@@ -305,7 +305,6 @@
             [m_arrTotalDate addObject:objDate];
         }
     }
-    NSLog(@"%@",m_arrTotalDate);
     return dateArr;
 }
 

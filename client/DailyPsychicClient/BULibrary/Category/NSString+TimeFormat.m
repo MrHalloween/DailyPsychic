@@ -120,7 +120,6 @@
     date1 = [formatter dateFromString:startDate];
     date2 = [formatter dateFromString:endDate];
     NSComparisonResult result = [date1 compare:date2];
-//    NSLog(@"result==%ld",(long)result);
     switch (result)
     {
             //date02比date01大
@@ -173,7 +172,6 @@
     if (error) {
         return [NSDate date];
     }
-    NSLog(@"response is %@",response);
     NSString *date = [[response allHeaderFields] objectForKey:@"Date"];
     date = [date substringFromIndex:5];
     date = [date substringToIndex:[date length]-4];

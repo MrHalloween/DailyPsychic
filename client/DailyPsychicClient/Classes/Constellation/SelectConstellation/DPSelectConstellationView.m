@@ -155,7 +155,6 @@
     DPConstellationModel * model = [DPConstellationModel ModelWithDictionary:m_arrData[currentIndex]];
     m_pNameLabel.text = model.nameEn;
     m_pDateLable.text = model.date;
-    NSLog(@"---圆圈%@----",model.imageCircle);
     m_pCircleImage.image = [UIImage imageNamed:model.imageCircle];
     [[NSUserDefaults standardUserDefaults]setObject:@(currentIndex) forKey:@"selectConstalletion"];
     [[NSUserDefaults standardUserDefaults]synchronize];

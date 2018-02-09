@@ -339,7 +339,6 @@ static int drag_animation_count        = 0;
 }
 - (void)singleTapCircleNoRoll:(NSMutableArray *)array touchCell:(SCHCircleViewCell *)cell touchIndex:(NSInteger)touch_index
 {
-    NSLog(@"ggg%ld",(long)touch_index);
     if([_circle_view_delegate respondsToSelector:@selector(touchEndCircleViewCell:indexOfCircleViewCell:)])
     {
         [_circle_view_delegate touchEndCircleViewCell:cell indexOfCircleViewCell:touch_index];
@@ -519,7 +518,6 @@ static int drag_animation_count        = 0;
     (radian <= M_PI)?(change_radin = fabsf(radian - d_radina)):(change_radin = fabsf(2 * M_PI - radian - d_radina));
  
     CGFloat change_scale = 1.0f - (1.0f - origin_scale) * (change_radin /  M_PI);
-  //  NSLog(@"%f",change_scale);
     return change_scale;
     
 }
