@@ -38,6 +38,7 @@
 - (void)AddSubViews
 {
     m_pCircleView = [[NewPagedFlowView alloc] initWithFrame:CGRectMake(0, m_pTitleLabel.bottom + 41 * AdaptRate, self.width, 300 * AdaptRate)];
+   
     m_pCircleView.delegate = self;
     m_pCircleView.dataSource = self;
     m_pCircleView.minimumPageAlpha = 0.1;
@@ -91,10 +92,12 @@
 }
 
 - (void)didSelectCell:(UIView *)subView withSubViewIndex:(NSInteger)subIndex {
+    NSLog(@"点击了第%ld张图",(long)subIndex + 1);
 }
 
 - (void)didScrollToPage:(NSInteger)pageNumber inFlowView:(NewPagedFlowView *)flowView {
     m_ipageNumber = pageNumber;
+    NSLog(@"ViewController 滚动到了第%zd页",pageNumber);
 }
 
 #pragma mark NewPagedFlowView Datasource

@@ -24,6 +24,7 @@
     m_pTitleLabel.text =@"Palm analysis";
     //主图形
     UIImageView *pMainImg = [[UIImageView alloc]initWithFrame:CGRectMake(21 * AdaptRate, 102 * AdaptRate, 335 * AdaptRate, 409 * AdaptRate)];
+    pMainImg.center = CGPointMake(self.width/2, self.height/2 - 30 * AdaptRate);
     pMainImg.image = [UIImage imageNamed:@"palm_main"];
     [self addSubview:pMainImg];
     

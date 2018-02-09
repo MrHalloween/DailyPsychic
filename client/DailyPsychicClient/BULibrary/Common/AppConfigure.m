@@ -63,7 +63,13 @@
     if([[UIDevice currentDevice] resolution]==UIDeviceResolution_iPhoneRetina4 ||
        [[UIDevice currentDevice] resolution]==UIDeviceResolution_iPhoneRetina35)
     {
-        rate = 320/375.0;
+        NSString *deviceType = [UIDevice currentDevice].model;
+        if([deviceType isEqualToString:@"iPad"]) {
+            rate = 0.72;
+        }else{
+            rate = 320/375.0;
+        }
+        
     }
     if([[UIDevice currentDevice] resolution]==UIDeviceResolution_iPhoneRetina47)
     {
@@ -75,11 +81,11 @@
     }
     else if([[UIDevice currentDevice] resolution]==UIDeviceResolution_iPadRetina )
     {
-        return 768.0/320.0;
+        return 768/375.0;
     }
     else if([[UIDevice currentDevice] resolution]==UIDeviceResolution_iPadStandard)
     {
-        return 768.0/320.0;
+        return 768/375.0;
     }
     return rate;
 }
