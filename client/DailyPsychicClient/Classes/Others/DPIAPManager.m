@@ -160,6 +160,7 @@ static DPIAPManager *_iap;
                 break;
             case SKPaymentTransactionStateFailed:
             {
+                [AlertManager HideProgressHUD];
                 NSLog(@"交易失败%ld",tran.error.code);
                 [self failedTransaction:tran];
                 break;
@@ -194,6 +195,7 @@ static DPIAPManager *_iap;
 ///这个SKErrorUnknown实在是很难处理，我找了好多的帖子，包括stackoverflow，也没看到太多的说法，有一些说可能是越狱手机，才会出现这种状态，在测试的时候，我们通常也会遇到这种问题。测试的时候，我们要再iTunes connect申请测试账号，有的时候，测试账号出问题，或者，测试账号已经被取消了，不再使用了，而支付的时候，仍然在使用这个测试账号，这个时候，也会出现unknown状态。http://www.w2bc.com/article/115403
 - (void)failedTransaction:(SKPaymentTransaction *)transaction {
     
+    [AlertManager HideProgressHUD];
     NSString *detail = @"";
     switch (transaction.error.code) {
             
@@ -260,6 +262,7 @@ static DPIAPManager *_iap;
     NSError *error=nil;
     NSData *responseData=[NSURLConnection sendSynchronousRequest:requestM returningResponse:nil error:&error];
     if (error) {
+        [AlertManager HideProgressHUD];
         NSLog(@"验证购买过程中发生错误，错误信息：%@",error.localizedDescription);
         return;
     }
