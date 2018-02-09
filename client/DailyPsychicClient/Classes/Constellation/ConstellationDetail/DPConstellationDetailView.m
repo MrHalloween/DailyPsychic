@@ -237,8 +237,6 @@
 - (NSArray *)getcurrentWeekDate{
     
     NSDate * nowDateTotal = [NSDate dateWithTimeIntervalSinceNow:0];
-    //当前时间的时间戳 *1000 是精确到毫秒，不乘就是精确到秒
-    long int nowTimeSp = (long)[nowDateTotal timeIntervalSince1970];
     NSDate *nowDate = [NSDate date];
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *comp = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday fromDate:nowDate];
@@ -265,6 +263,10 @@
     NSDateComponents *firstDayComp = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay  fromDate:nowDate];
     [firstDayComp setDay:day + firstDiff];
     NSDate *firstDayOfWeek = [calendar dateFromComponents:firstDayComp];
+    //时间转时间戳的方法  每周的第一天
+    long int timeSp = [[NSNumber numberWithDouble:[firstDayOfWeek timeIntervalSince1970]] integerValue];
+    
+    
     NSDateComponents *lastDayComp = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay   fromDate:nowDate];
     [lastDayComp setDay:day + lastDiff];
     NSDate *lastDayOfWeek = [calendar dateFromComponents:lastDayComp];
@@ -275,33 +277,35 @@
     int firstValue = firstDay.intValue;
     int lastValue = lastDay.intValue;
     NSMutableArray *dateArr = [[NSMutableArray alloc]init];
-    if (firstValue < lastValue) {
+    if (firstValue < lastValue) {//在同一个月
         for (int j = 0; j<7; j++) {
             NSString *obj = [NSString stringWithFormat:@"%d",firstValue+j];
             [dateArr addObject:obj];
             //将完整日期添加到数组
-            NSString * timeStapString = [NSString stringWithFormat:@"%ld",nowTimeSp + (j * 86400)];
+            NSString * timeStapString = [NSString stringWithFormat:@"%ld",timeSp + (j * 86400)];
             NSString * objDate = [NSString timeWithTimeIntervalString:timeStapString];
             [m_arrTotalDate addObject:objDate];
         }
     }
-    else if (firstValue > lastValue)
+    else if (firstValue > lastValue)//不在同一个月
     {
+        //前一个月
         for (int j = 0; j < 7-lastValue; j++) {
             NSString *obj = [NSString stringWithFormat:@"%d",firstValue+j];
             [dateArr addObject:obj];
-            NSString * timeStapString = [NSString stringWithFormat:@"%ld",nowTimeSp + (j * 86400)];
+            NSString * timeStapString = [NSString stringWithFormat:@"%ld",timeSp + (j * 86400)];
             NSString * objDate = [NSString timeWithTimeIntervalString:timeStapString];
             [m_arrTotalDate addObject:objDate];
         }
         for (int z = 0; z<lastValue; z++) {
             NSString *obj = [NSString stringWithFormat:@"%d",z+1];
             [dateArr addObject:obj];
-            NSString * timeStapString = [NSString stringWithFormat:@"%ld",nowTimeSp + (z * 86400)];
+            NSString * timeStapString = [NSString stringWithFormat:@"%ld",timeSp + (7-lastValue + z) * 86400];
             NSString * objDate = [NSString timeWithTimeIntervalString:timeStapString];
             [m_arrTotalDate addObject:objDate];
         }
     }
+    NSLog(@"%@",m_arrTotalDate);
     return dateArr;
 }
 
