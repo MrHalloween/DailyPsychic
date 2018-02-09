@@ -156,7 +156,7 @@
         [pLockBtn setBackgroundImage:[UIImage imageNamed:@"constellation_detail_lock"] forState:UIControlStateNormal];
         [pCircleBtn addSubview:pLockBtn];
         
-        if (i != 2) {
+        if (i == 0) {
             [pLockBtn setBackgroundImage:[UIImage imageNamed:@"constellation_detail_lock"] forState:UIControlStateNormal];
         }else{
             pLockBtn.bounds = CGRectMake(0, 0, 54 * AdaptRate, 54 * AdaptRate);
