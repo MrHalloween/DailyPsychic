@@ -156,7 +156,10 @@
         [pLockBtn setBackgroundImage:[UIImage imageNamed:@"constellation_detail_lock"] forState:UIControlStateNormal];
         [pCircleBtn addSubview:pLockBtn];
         
-        if (i == 0) {
+        BOOL isBuy = [mUserDefaults boolForKey:@"isbuy"];
+
+        
+        if (i == 0 && !isBuy) {
             [pLockBtn setBackgroundImage:[UIImage imageNamed:@"constellation_detail_lock"] forState:UIControlStateNormal];
         }else{
             pLockBtn.bounds = CGRectMake(0, 0, 54 * AdaptRate, 54 * AdaptRate);

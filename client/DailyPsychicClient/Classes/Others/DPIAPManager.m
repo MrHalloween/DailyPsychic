@@ -148,6 +148,8 @@ static DPIAPManager *_iap;
             case SKPaymentTransactionStatePurchased:
                 NSLog(@"---购买操作后的回调-------交易完成");
                 [self completeTransaction:tran];
+                [mUserDefaults setBool:YES forKey:@"isbuy"];
+                [mUserDefaults synchronize];
                 break;
             case SKPaymentTransactionStatePurchasing:
                 NSLog(@"商品添加进列表");
@@ -294,6 +296,8 @@ static DPIAPManager *_iap;
                 if (outDate) {
                     outDate();
                 }
+                [mUserDefaults setBool:NO forKey:@"isbuy"];
+                [mUserDefaults synchronize];
             }
         }
         else
