@@ -13,6 +13,16 @@
 #import "DPConstellationModel.h"
 #import "DPTakePhotoController.h"
 #import "DPTestListController.h"
+#import "DPIAPManager.h"
+
+
+//沙盒测试环境验证
+#define SANDBOX @"https://sandbox.itunes.apple.com/verifyReceipt"
+//正式环境验证
+#define AppStore @"https://buy.itunes.apple.com/verifyReceipt"
+
+//内购中创建的商品
+#define ProductID_IAP01 @"com.dailypsychic.horoscope01"//购买产品ID号
 
 @class DPSelectConstellationController;
 
@@ -31,6 +41,20 @@
     m_pConstellDetail.proDelegate = self;
     m_pConstellDetail.conDetailDel = self;
     [self.view addSubview:m_pConstellDetail];
+    
+    [DPIAPManager sharedManager].propCheckReceipt = ^(id object) {
+        [[DPIAPManager sharedManager]checkReceiptIsValid:SANDBOX firstBuy:^{
+            ///第一次购买
+            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
+        } outDate:^{
+            ///过期
+            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
+            
+        } inDate:^{
+            ///没过期
+            [self GetResult];
+        }];
+    };
 }
 
 - (void)PopPreviousPage{
@@ -43,9 +67,7 @@
     switch (btnTag) {
         case 100:
         {
-            DPPalmResultController *pVC = [[DPPalmResultController alloc]init];
-            pVC.dpResultType = DPResultConstellation;
-            [self PushChildViewController:pVC animated:YES];
+            [self iap];
         }
             break;
         case 101:
@@ -77,6 +99,36 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - iap
+- (void)iap
+{
+    if ([[DPIAPManager sharedManager]isHaveReceiptInSandBox]) {
+        
+        [[DPIAPManager sharedManager]checkReceiptIsValid:SANDBOX firstBuy:^{
+            ///第一次购买
+            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
+        } outDate:^{
+            ///过期
+            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
+            
+        } inDate:^{
+            ///没过期
+            [self GetResult];
+        }];
+        
+    }else{
+        [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
+    }
+    
+}
+
+- (void)GetResult
+{
+    DPPalmResultController *pVC = [[DPPalmResultController alloc]init];
+    pVC.dpResultType = DPResultConstellation;
+    [self PushChildViewController:pVC animated:YES];
 }
 
 /*
