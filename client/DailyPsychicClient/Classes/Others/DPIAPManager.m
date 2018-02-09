@@ -295,6 +295,7 @@ static DPIAPManager *_iap;
                 if (inDate) {
                     inDate();
                 }
+                [AlertManager HideProgressHUD];
             }
             else
             {
@@ -303,6 +304,7 @@ static DPIAPManager *_iap;
                 if (outDate) {
                     outDate();
                 }
+                [AlertManager HideProgressHUD];
                 
             }
         }
@@ -313,7 +315,7 @@ static DPIAPManager *_iap;
             if (firstBuy) {
                 firstBuy();
             }
-            
+            [AlertManager HideProgressHUD];
         }
     }
     
