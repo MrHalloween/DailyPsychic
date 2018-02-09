@@ -38,6 +38,8 @@
         
     }else if (resultType == 2){
         m_pTitleLabel.text = @"Constellation analysis";
+        ///星座分析
+        [self ShowConstellationResult];
     }else if (resultType == 3){
         m_pTitleLabel.text = @"Test analysis";
     }
@@ -99,6 +101,14 @@
     [m_arrData addObject:fingers[z]];
     [m_pBaseTable reloadData];
 
+}
+
+///星座分析结果
+- (void)ShowConstellationResult
+{
+    NSArray *results = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"constellationResult" ofType:@"plist"]];
+    int x = arc4random() % results.count;
+    [m_arrData addObject:results[x]];
 }
 
 @end

@@ -12,6 +12,7 @@
 #import "DPSelectConstellationController.h"
 #import "DPConstellationModel.h"
 #import "DPTakePhotoController.h"
+#import "DPTestListController.h"
 
 @class DPSelectConstellationController;
 
@@ -49,8 +50,7 @@
             break;
         case 101:
         {
-            DPPalmResultController *pVC = [[DPPalmResultController alloc]init];
-            pVC.dpResultType = DPResultTest;
+            DPTestListController *pVC = [[DPTestListController alloc]init];
             [self PushChildViewController:pVC animated:YES];
         }
             break;
