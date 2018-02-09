@@ -139,7 +139,7 @@
         [pAlert show];
         [AlertManager HideProgressHUD];
     } @finally {
-        
+
     }
 }
 
@@ -268,6 +268,7 @@
  */
 - (void)checkReceiptIsValid:(NSString *)argStr
 {
+    [AlertManager ShowProgressHUDWithMessage:@""];
     //从沙盒中获取交易凭证并且拼接成请求体数据
     NSURL *receiptUrl=[[NSBundle mainBundle] appStoreReceiptURL];
     NSData *receiptData=[NSData dataWithContentsOfURL:receiptUrl];
