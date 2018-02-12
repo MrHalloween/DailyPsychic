@@ -2,18 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Do you allow this App to access your media database?
-
-</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Do you allow this App to use your microphone?
-
-Do you allow this App to use your microphone?
-
-Do you allow this App to use your microphone?
-
-</string>
 	<key>CFBundleAllowMixedLocalizations</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
@@ -32,12 +20,37 @@ Do you allow this App to use your microphone?
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb558858564476541</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>1.3</string>
+	<key>FacebookAppID</key>
+	<string>558858564476541</string>
+	<key>FacebookDisplayName</key>
+	<string>Daily Psychic</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>Do you allow this App to use your camera?
+
+</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Do you allow this App to use your microphone?
+
+Do you allow this App to use your microphone?
+
+Do you allow this App to use your microphone?
+
+</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Do you allow this App to access your media database?
 
 </string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -59,18 +72,5 @@ Do you allow this App to use your microphone?
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>fb558858564476541</string>
-			</array>
-		</dict>
-	</array>
-	<key>FacebookAppID</key>
-	<string>558858564476541</string>
-	<key>FacebookDisplayName</key>
-	<string>Daily Psychic</string>
 </dict>
 </plist>
