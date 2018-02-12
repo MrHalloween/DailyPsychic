@@ -56,7 +56,11 @@
     for (int i = 0; i < arr.count; i++) {
         UIButton *pProtocol = [UIButton buttonWithType:UIButtonTypeCustom];
         [pProtocol addTarget:self action:@selector(Protocol:) forControlEvents:UIControlEventTouchUpInside];
-        pProtocol.bounds = CGRectMake(0, 0,  100 * AdaptRate, 30 * AdaptRate);
+        if ([[UIDevice currentDevice].model isEqualToString:@"iPad"]) {
+            pProtocol.bounds = CGRectMake(0, 0,  150 * AdaptRate, 30 * AdaptRate);
+        }else{
+            pProtocol.bounds = CGRectMake(0, 0,  100 * AdaptRate, 30 * AdaptRate);
+        }
         CGFloat centerX = i == 0 ? pRestore.left + pProtocol.width * 0.5 : pRestore.right - pProtocol.width * 0.5;
         pProtocol.center = CGPointMake(centerX, pRestore.bottom + 15 * AdaptRate + pProtocol.height * 0.5);
         [pProtocol setTitle:arr[i] forState:0];
