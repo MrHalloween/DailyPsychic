@@ -219,6 +219,10 @@
 		10DB6D3B2022EFC70084FC35 /* palm_left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D352022EFC60084FC35 /* palm_left@3x.png */; };
 		10DB6D3C2022EFC70084FC35 /* palm_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10DB6D362022EFC60084FC35 /* palm_camera@2x.png */; };
 		10F4DF342029A9A9004CA8FA /* constellation_detail_in.png in Resources */ = {isa = PBXBuildFile; fileRef = 10F4DF332029A9A8004CA8FA /* constellation_detail_in.png */; };
+		10F8E924203199790064A6AF /* DPUserProtocolController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F8E923203199790064A6AF /* DPUserProtocolController.m */; };
+		10F8E927203199850064A6AF /* DPUserProtocolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F8E926203199850064A6AF /* DPUserProtocolView.m */; };
+		10F8E92A2031A7260064A6AF /* DPTermsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F8E9292031A7260064A6AF /* DPTermsController.m */; };
+		10F8E92D2031A7400064A6AF /* DPTermsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F8E92C2031A7400064A6AF /* DPTermsView.m */; };
 		29101A222023F41000788AD9 /* DPBasicInforController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29101A212023F41000788AD9 /* DPBasicInforController.m */; };
 		29101A252023F45200788AD9 /* DPBasicInforView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29101A242023F45100788AD9 /* DPBasicInforView.m */; };
 		29101A2D2023F5B000788AD9 /* basic_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29101A272023F5B000788AD9 /* basic_bg@2x.png */; };
@@ -681,6 +685,14 @@
 		10DB6D352022EFC60084FC35 /* palm_left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_left@3x.png"; sourceTree = "<group>"; };
 		10DB6D362022EFC60084FC35 /* palm_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_camera@2x.png"; sourceTree = "<group>"; };
 		10F4DF332029A9A8004CA8FA /* constellation_detail_in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = constellation_detail_in.png; sourceTree = "<group>"; };
+		10F8E922203199790064A6AF /* DPUserProtocolController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPUserProtocolController.h; sourceTree = "<group>"; };
+		10F8E923203199790064A6AF /* DPUserProtocolController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPUserProtocolController.m; sourceTree = "<group>"; };
+		10F8E925203199850064A6AF /* DPUserProtocolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPUserProtocolView.h; sourceTree = "<group>"; };
+		10F8E926203199850064A6AF /* DPUserProtocolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPUserProtocolView.m; sourceTree = "<group>"; };
+		10F8E9282031A7260064A6AF /* DPTermsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTermsController.h; sourceTree = "<group>"; };
+		10F8E9292031A7260064A6AF /* DPTermsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTermsController.m; sourceTree = "<group>"; };
+		10F8E92B2031A7400064A6AF /* DPTermsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTermsView.h; sourceTree = "<group>"; };
+		10F8E92C2031A7400064A6AF /* DPTermsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTermsView.m; sourceTree = "<group>"; };
 		29101A202023F41000788AD9 /* DPBasicInforController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPBasicInforController.h; sourceTree = "<group>"; };
 		29101A212023F41000788AD9 /* DPBasicInforController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPBasicInforController.m; sourceTree = "<group>"; };
 		29101A232023F45100788AD9 /* DPBasicInforView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPBasicInforView.h; sourceTree = "<group>"; };
@@ -933,6 +945,7 @@
 		1006BC9D20158D400041DC86 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				10F8E921203199620064A6AF /* UserProtocol */,
 				29101A1F2023F3ED00788AD9 /* BasicInformation */,
 				D630AF672021DBAE0006B16C /* PalmPsychic */,
 				10015C9220204B4100C54C94 /* Test */,
@@ -1593,6 +1606,21 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		10F8E921203199620064A6AF /* UserProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				10F8E922203199790064A6AF /* DPUserProtocolController.h */,
+				10F8E923203199790064A6AF /* DPUserProtocolController.m */,
+				10F8E925203199850064A6AF /* DPUserProtocolView.h */,
+				10F8E926203199850064A6AF /* DPUserProtocolView.m */,
+				10F8E9282031A7260064A6AF /* DPTermsController.h */,
+				10F8E9292031A7260064A6AF /* DPTermsController.m */,
+				10F8E92B2031A7400064A6AF /* DPTermsView.h */,
+				10F8E92C2031A7400064A6AF /* DPTermsView.m */,
+			);
+			path = UserProtocol;
+			sourceTree = "<group>";
+		};
 		29101A1F2023F3ED00788AD9 /* BasicInformation */ = {
 			isa = PBXGroup;
 			children = (
@@ -2199,12 +2227,15 @@
 				1006BD1420158E6C0041DC86 /* BUChannelsView.m in Sources */,
 				1006BD0920158E6C0041DC86 /* UILable+TextEffect.m in Sources */,
 				1006BDBB20158E770041DC86 /* UIImage+MultiFormat.m in Sources */,
+				10F8E92D2031A7400064A6AF /* DPTermsView.m in Sources */,
 				1006BD0C20158E6C0041DC86 /* UITextView+Placeholder.m in Sources */,
 				1006BDA620158E770041DC86 /* MJRefreshNormalHeader.m in Sources */,
 				29101A222023F41000788AD9 /* DPBasicInforController.m in Sources */,
 				1006BD2B20158E6C0041DC86 /* NSUserDefaults+RMSaveCustomObject.m in Sources */,
+				10F8E924203199790064A6AF /* DPUserProtocolController.m in Sources */,
 				1006BD2720158E6C0041DC86 /* AFBaseCell.m in Sources */,
 				2977F811202303430016B617 /* DPPalmResultController.m in Sources */,
+				10F8E92A2031A7260064A6AF /* DPTermsController.m in Sources */,
 				1006BD1320158E6C0041DC86 /* RSAEncryptor.m in Sources */,
 				1006BDA020158E770041DC86 /* MJRefreshBackGifFooter.m in Sources */,
 				1006BD1520158E6C0041DC86 /* BUChannelNameCell.m in Sources */,
@@ -2214,6 +2245,7 @@
 				1006BD1B20158E6C0041DC86 /* AFDetailTimeSelectedView.m in Sources */,
 				1006BD1E20158E6C0041DC86 /* BUTopBannerView.m in Sources */,
 				1006BD2320158E6C0041DC86 /* AFTabBarViewController.m in Sources */,
+				10F8E927203199850064A6AF /* DPUserProtocolView.m in Sources */,
 				1006BD0A20158E6C0041DC86 /* UIDevice+Resolutions.m in Sources */,
 				1006BDAB20158E770041DC86 /* MJRefreshBackFooter.m in Sources */,
 				1006BD0D20158E6C0041DC86 /* NSString+IntValue.m in Sources */,
