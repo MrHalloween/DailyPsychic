@@ -43,7 +43,7 @@
     m_pPickView.dataSource = self;
     [m_pBg addSubview:m_pPickView];
     
-    UIButton *pCloseButton = [[UIButton alloc] initWithFrame:CGRectMake(10 * [AppConfigure GetLengthAdaptRate], 0 , 40 * [AppConfigure GetLengthAdaptRate], 50 * [AppConfigure GetLengthAdaptRate])];
+    UIButton *pCloseButton = [[UIButton alloc] initWithFrame:CGRectMake(10 * [AppConfigure GetLengthAdaptRate], 0 , 50 * [AppConfigure GetLengthAdaptRate], 50 * [AppConfigure GetLengthAdaptRate])];
     [pCloseButton setTitle:@"Close" forState:UIControlStateNormal];
     [pCloseButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     pCloseButton.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:14];
