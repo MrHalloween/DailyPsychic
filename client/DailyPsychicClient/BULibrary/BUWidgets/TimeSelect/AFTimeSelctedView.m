@@ -44,14 +44,14 @@
     [m_pBg addSubview:m_pPickView];
     
     UIButton *pCloseButton = [[UIButton alloc] initWithFrame:CGRectMake(10 * [AppConfigure GetLengthAdaptRate], 0 , 40 * [AppConfigure GetLengthAdaptRate], 50 * [AppConfigure GetLengthAdaptRate])];
-    [pCloseButton setTitle:@"关闭" forState:UIControlStateNormal];
+    [pCloseButton setTitle:@"Close" forState:UIControlStateNormal];
     [pCloseButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     pCloseButton.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:14];
     [pCloseButton addTarget:self action:@selector(ClosePickerView) forControlEvents:UIControlEventTouchUpInside];
     [m_pBg addSubview:pCloseButton];
     
     UIButton *pSendButton = [[UIButton alloc] initWithFrame:CGRectMake(self.width - 50 * [AppConfigure GetLengthAdaptRate], 0 , 40 * [AppConfigure GetLengthAdaptRate], 50 * [AppConfigure GetLengthAdaptRate])];
-    [pSendButton setTitle:@"确定" forState:UIControlStateNormal];
+    [pSendButton setTitle:@"Ture" forState:UIControlStateNormal];
     [pSendButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     pSendButton.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:14];
     [pSendButton addTarget:self action:@selector(SureSelectedTime) forControlEvents:UIControlEventTouchUpInside];
@@ -60,7 +60,7 @@
 - (void)MakeYearMonthDayLabel{
     
     CGFloat width = (m_pPickView.width - 50.0f)/3.0f;
-    NSArray *arrFlag = @[@"年",@"月",@"日"];
+    NSArray *arrFlag = @[@"Y",@"M",@"D"];
     
     for (NSInteger i = 0; i < 3; i ++)
     {
