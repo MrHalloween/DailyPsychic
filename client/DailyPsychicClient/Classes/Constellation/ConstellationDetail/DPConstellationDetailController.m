@@ -14,6 +14,7 @@
 #import "DPTakePhotoController.h"
 #import "DPTestListController.h"
 #import "DPIAPManager.h"
+#import "DPUserProtocolController.h"
 
 
 //沙盒测试环境验证
@@ -42,6 +43,16 @@
     m_pConstellDetail.proDelegate = self;
     m_pConstellDetail.conDetailDel = self;
     [self.view addSubview:m_pConstellDetail];
+    
+    //NOTICE
+    UIButton *pNotice = [UIButton buttonWithType:UIButtonTypeCustom];
+    [pNotice addTarget:self action:@selector(Notice:) forControlEvents:UIControlEventTouchUpInside];
+    [pNotice setTitle:@"NOTICE" forState:0];
+    pNotice.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:16];
+    pNotice.titleLabel.textColor = [UIColor whiteColor];
+    pNotice.bounds = CGRectMake(0, 0, 80 * AdaptRate, 44);
+    pNotice.center = CGPointMake(self.view.width - pNotice.width * 0.5, NAVIGATION_BAR_Y + pNotice.height * 0.5);
+    [self.view addSubview:pNotice];
     
     [DPIAPManager sharedManager].propCheckReceipt = ^(id object) {
         [[DPIAPManager sharedManager]checkReceiptIsValid:AppStore firstBuy:^{
@@ -139,14 +150,9 @@
     [self PushChildViewController:pVC animated:YES];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)Notice:(UIButton *)argButton
+{
+    DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
+    [self PushChildViewController:pVC animated:YES];
 }
-*/
-
 @end

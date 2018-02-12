@@ -13,6 +13,7 @@
 #import <StoreKit/StoreKit.h>
 #import "NSString+TimeFormat.h"
 #import "DPIAPManager.h"
+#import "DPUserProtocolController.h"
 
 //沙盒测试环境验证
 #define SANDBOX @"https://sandbox.itunes.apple.com/verifyReceipt"
@@ -36,6 +37,16 @@
     m_pPalmAnalysisView = [[DPPalmAnalysisView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
     m_pPalmAnalysisView.proDelegate = self;
     [self.view addSubview:m_pPalmAnalysisView];
+    
+    //NOTICE
+    UIButton *pNotice = [UIButton buttonWithType:UIButtonTypeCustom];
+    [pNotice addTarget:self action:@selector(Notice:) forControlEvents:UIControlEventTouchUpInside];
+    [pNotice setTitle:@"NOTICE" forState:0];
+    pNotice.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:16];
+    pNotice.titleLabel.textColor = [UIColor whiteColor];
+    pNotice.bounds = CGRectMake(0, 0, 80 * AdaptRate, 44);
+    pNotice.center = CGPointMake(self.view.width - pNotice.width * 0.5, NAVIGATION_BAR_Y + pNotice.height * 0.5);
+    [self.view addSubview:pNotice];
     
     [DPIAPManager sharedManager].propCheckReceipt = ^(id object) {
         [[DPIAPManager sharedManager]checkReceiptIsValid:AppStore firstBuy:^{
@@ -95,6 +106,12 @@
     }else{
         [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
     }
+}
+
+- (void)Notice:(UIButton *)argButton
+{
+    DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
+    [self PushChildViewController:pVC animated:YES];
 }
 
 @end
