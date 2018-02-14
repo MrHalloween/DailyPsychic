@@ -61,11 +61,11 @@
         BOOL isBuy = [mUserDefaults boolForKey:@"isbuy"];
         if (isBuy) {
             [AlertManager ShowRelutWithMessage:@"Restore Defeat !!!" Dismiss:^{
-                [self.navigationController popViewControllerAnimated:YES];
+//                [self.navigationController popViewControllerAnimated:YES];
             }];
         }else{
             [AlertManager ShowRelutWithMessage:@"Please buy it first !!!" Dismiss:^{
-                [self.navigationController popViewControllerAnimated:YES];
+//                [self.navigationController popViewControllerAnimated:YES];
             }];
         }
 
