@@ -43,7 +43,7 @@
 #pragma mark - 返回以及跳转按钮
 - (void)PopPreviousPage
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 #pragma mark - iap
