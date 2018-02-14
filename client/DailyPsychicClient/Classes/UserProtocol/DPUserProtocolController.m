@@ -49,7 +49,7 @@
     [self.view addSubview:pNotice];
     
     [DPIAPManager sharedManager].propCheckReceipt = ^(id object) {
-        [[DPIAPManager sharedManager]checkReceiptIsValid:SANDBOX firstBuy:^{
+        [[DPIAPManager sharedManager]checkReceiptIsValid:AppStore firstBuy:^{
             ///第一次购买
             [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
         } outDate:^{
@@ -117,7 +117,7 @@
     m_bIsShow = YES;
     if ([[DPIAPManager sharedManager]isHaveReceiptInSandBox]) {
 
-        [[DPIAPManager sharedManager]checkReceiptIsValid:SANDBOX firstBuy:^{
+        [[DPIAPManager sharedManager]checkReceiptIsValid:AppStore firstBuy:^{
             ///第一次购买
             [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
         } outDate:^{
