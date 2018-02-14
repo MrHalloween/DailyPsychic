@@ -10,4 +10,6 @@
 
 @interface DPUserProtocolController : BUCustomViewController
 
+@property (nonatomic,copy) NSString *propTitle;
+
 @end

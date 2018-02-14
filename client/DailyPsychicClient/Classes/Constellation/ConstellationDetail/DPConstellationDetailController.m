@@ -44,15 +44,15 @@
     m_pConstellDetail.conDetailDel = self;
     [self.view addSubview:m_pConstellDetail];
     
-    //NOTICE
-    UIButton *pNotice = [UIButton buttonWithType:UIButtonTypeCustom];
-    [pNotice addTarget:self action:@selector(Notice:) forControlEvents:UIControlEventTouchUpInside];
-    [pNotice setTitle:@"NOTICE" forState:0];
-    pNotice.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:15];
-    pNotice.titleLabel.textColor = [UIColor whiteColor];
-    pNotice.bounds = CGRectMake(0, 0, 100 * AdaptRate, 44);
-    pNotice.center = CGPointMake(self.view.width - pNotice.width * 0.5, NAVIGATION_BAR_Y + pNotice.height * 0.5);
-    [self.view addSubview:pNotice];
+//    //NOTICE
+//    UIButton *pNotice = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [pNotice addTarget:self action:@selector(Notice:) forControlEvents:UIControlEventTouchUpInside];
+//    [pNotice setTitle:@"NOTICE" forState:0];
+//    pNotice.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:15];
+//    pNotice.titleLabel.textColor = [UIColor whiteColor];
+//    pNotice.bounds = CGRectMake(0, 0, 100 * AdaptRate, 44);
+//    pNotice.center = CGPointMake(self.view.width - pNotice.width * 0.5, NAVIGATION_BAR_Y + pNotice.height * 0.5);
+//    [self.view addSubview:pNotice];
     
     [DPIAPManager sharedManager].propCheckReceipt = ^(id object) {
         [[DPIAPManager sharedManager]checkReceiptIsValid:AppStore firstBuy:^{
@@ -71,7 +71,7 @@
 
 - (void)PopPreviousPage{
 
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)PushToNextPage:(id)argData{
     

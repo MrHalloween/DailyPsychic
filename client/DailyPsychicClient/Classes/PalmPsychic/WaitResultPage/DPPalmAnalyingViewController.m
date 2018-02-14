@@ -9,6 +9,7 @@
 #import "DPPalmAnalyingViewController.h"
 #import "DPPalmAnaylyingView.h"
 #import "DPPalmAnalysisController.h"
+#import "DPUserProtocolController.h"
 
 @interface DPPalmAnalyingViewController ()<AFBaseTableViewDelegate>
 {
@@ -27,9 +28,17 @@
 
 - (void)PushToNextPage:(id)argData{
     
-    DPPalmAnalysisController * palmAnalysisVc = [[DPPalmAnalysisController alloc]init];
-    palmAnalysisVc.analysisType = @"palm";
-    [self PushChildViewController:palmAnalysisVc animated:YES];
+    BOOL isBuy = [mUserDefaults boolForKey:@"isbuy"];
+    if (isBuy) {
+        DPPalmAnalysisController * palmAnalysisVc = [[DPPalmAnalysisController alloc]init];
+        palmAnalysisVc.analysisType = @"palm";
+        [self PushChildViewController:palmAnalysisVc animated:YES];
+    }else{
+        
+        DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
+        [self PushChildViewController:pVC animated:YES];
+    }
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

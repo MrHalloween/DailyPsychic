@@ -9,6 +9,7 @@
 #import "DPTestCardController.h"
 #import "DPTestCardView.h"
 #import "DPPalmAnalysisController.h"
+#import "DPUserProtocolController.h"
 
 @interface DPTestCardController ()<AFBaseTableViewDelegate,DPTestCardViewDelegate>
 {
@@ -46,18 +47,29 @@
 #pragma mark - AFBaseTableViewDelegate
 - (void)PopPreviousPage
 {
-    [self Back];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)SelectedAnswer
 {
     NSMutableArray *arr = [NSMutableArray arrayWithArray:[[NSUserDefaults standardUserDefaults]objectForKey:@"questions"]];
     if (arr.count == 0) {
-        DPPalmAnalysisController *pVC = [[DPPalmAnalysisController alloc]init];
-        pVC.analysisType = @"test";
-        NSString *testid = [[NSUserDefaults standardUserDefaults]objectForKey:@"testidtestid"];
-        pVC.testId = testid;
-        [self PushChildViewController:pVC animated:YES];
+        
+        BOOL isBuy = [mUserDefaults boolForKey:@"isbuy"];
+        if (isBuy) {
+            
+            DPPalmAnalysisController *pVC = [[DPPalmAnalysisController alloc]init];
+            pVC.analysisType = @"test";
+            NSString *testid = [[NSUserDefaults standardUserDefaults]objectForKey:@"testidtestid"];
+            pVC.testId = testid;
+            [self PushChildViewController:pVC animated:YES];
+
+        }else{
+            
+            DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
+            pVC.propTitle = @"测试";
+            [self PushChildViewController:pVC animated:YES];
+        }
 
     }else{
         DPTestCardController *pVC = [[DPTestCardController alloc]init];

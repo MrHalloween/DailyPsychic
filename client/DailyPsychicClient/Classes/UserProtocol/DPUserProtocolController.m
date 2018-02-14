@@ -9,6 +9,9 @@
 #import "DPUserProtocolController.h"
 #import "DPUserProtocolView.h"
 #import "DPTermsController.h"
+#import "DPPalmAnalysisController.h"
+#import "DPConstellationDetailController.h"
+
 
 @interface DPUserProtocolController ()<AFBaseTableViewDelegate,DPUserProtocolViewDelegate>
 {
@@ -24,6 +27,16 @@
     m_pUserProtocolView.proDelegate = self;
     m_pUserProtocolView.userDelegate = self;
     [self.view addSubview:m_pUserProtocolView];
+    
+    //AGREE
+    UIButton *pNotice = [UIButton buttonWithType:UIButtonTypeCustom];
+    [pNotice addTarget:self action:@selector(agree:) forControlEvents:UIControlEventTouchUpInside];
+    [pNotice setTitle:@"AGREE" forState:0];
+    pNotice.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:15];
+    pNotice.titleLabel.textColor = [UIColor whiteColor];
+    pNotice.bounds = CGRectMake(0, 0, 100 * AdaptRate, 44);
+    pNotice.center = CGPointMake(self.view.width - pNotice.width * 0.5, NAVIGATION_BAR_Y + pNotice.height * 0.5);
+    [self.view addSubview:pNotice];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,7 +47,7 @@
 #pragma mark - 返回以及跳转按钮
 - (void)PopPreviousPage
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 #pragma mark - DPUserProtocolViewDelegate
@@ -73,5 +86,23 @@
 
     }
     [self PushChildViewController:pVC animated:YES];
+}
+
+- (void)agree:(UIButton *)argButton
+{
+    if ([self.propTitle isEqualToString:@"星座"]) {
+        DPConstellationDetailController *detailVc = [[DPConstellationDetailController alloc]init];
+        [self PushChildViewController:detailVc animated:YES];
+    }else if ([self.propTitle isEqualToString:@"测试"]){
+        DPPalmAnalysisController *pVC = [[DPPalmAnalysisController alloc]init];
+        pVC.analysisType = @"test";
+        NSString *testid = [[NSUserDefaults standardUserDefaults]objectForKey:@"testidtestid"];
+        pVC.testId = testid;
+        [self PushChildViewController:pVC animated:YES];
+    }else{
+        DPPalmAnalysisController * palmAnalysisVc = [[DPPalmAnalysisController alloc]init];
+        palmAnalysisVc.analysisType = @"palm";
+        [self PushChildViewController:palmAnalysisVc animated:YES];
+    }
 }
 @end
