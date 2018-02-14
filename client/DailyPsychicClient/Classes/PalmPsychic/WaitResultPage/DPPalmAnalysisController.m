@@ -12,6 +12,10 @@
 #import "DPPalmResultController.h"
 #import "NSString+TimeFormat.h"
 #import "DPUserProtocolController.h"
+#import "DPIAPManager.h"
+
+//内购中创建的商品
+#define ProductID_IAP01 @"com.dailypsychic.horoscope01"//购买产品ID号
 
 
 @interface DPPalmAnalysisController ()<AFBaseTableViewDelegate>
@@ -38,6 +42,20 @@
     pNotice.bounds = CGRectMake(0, 0, 100 * AdaptRate, 44);
     pNotice.center = CGPointMake(self.view.width - pNotice.width * 0.5, NAVIGATION_BAR_Y + pNotice.height * 0.5);
     [self.view addSubview:pNotice];
+    
+    [DPIAPManager sharedManager].propCheckReceipt = ^(id object) {
+        [[DPIAPManager sharedManager]checkReceiptIsValid:[AppConfigure GetEnvironment] firstBuy:^{
+            ///第一次购买
+            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
+        } outDate:^{
+            ///过期
+            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
+            
+        } inDate:^{
+            ///没过期
+            [self GetResult];
+        }];
+    };
 
 }
 #pragma mark - 返回以及跳转按钮
@@ -49,28 +67,21 @@
 #pragma mark - iap
 - (void)PushToNextPage:(id)argData
 {
-    BOOL isbuy = [mUserDefaults boolForKey:@"isbuy"];
-    if (isbuy)
-    {
-        DPPalmResultController *resultVc = [[DPPalmResultController alloc]init];
-        if ([self.analysisType isEqualToString:@"test"]) {
-            resultVc.dpResultType = DPResultTest;
-            resultVc.testId = self.testId;
-        }else if ([self.analysisType isEqualToString:@"palm"]) {
-            resultVc.dpResultType = DPResultPalm;
-        }
-        [self PushChildViewController:resultVc animated:YES];
-    }
-    else
-    {
-        DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
-        if ([self.analysisType isEqualToString:@"test"]) {
-            pVC.analysisType = @"test";
-            pVC.testId = self.testId;
-        }else if ([self.analysisType isEqualToString:@"palm"]) {
-            pVC.analysisType = @"palm";
-        }
-        [self PushChildViewController:pVC animated:YES];
+    if ([[DPIAPManager sharedManager]isHaveReceiptInSandBox]) {
+        
+        [[DPIAPManager sharedManager]checkReceiptIsValid:[AppConfigure GetEnvironment] firstBuy:^{
+            ///第一次购买
+            [self PushProtocol];
+        } outDate:^{
+            ///过期
+            [self PushProtocol];
+
+        } inDate:^{
+            ///没过期
+            [self GetResult];
+        }];
+    }else{
+        [self PushProtocol];
     }
 }
 
@@ -78,6 +89,30 @@
 {
     DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
     pVC.notice = @"notice";
+    [self PushChildViewController:pVC animated:YES];
+}
+
+- (void)GetResult
+{
+    DPPalmResultController *resultVc = [[DPPalmResultController alloc]init];
+    if ([self.analysisType isEqualToString:@"test"]) {
+        resultVc.dpResultType = DPResultTest;
+        resultVc.testId = self.testId;
+    }else if ([self.analysisType isEqualToString:@"palm"]) {
+        resultVc.dpResultType = DPResultPalm;
+    }
+    [self PushChildViewController:resultVc animated:YES];
+}
+
+- (void)PushProtocol
+{
+    DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
+    if ([self.analysisType isEqualToString:@"test"]) {
+        pVC.analysisType = @"test";
+        pVC.testId = self.testId;
+    }else if ([self.analysisType isEqualToString:@"palm"]) {
+        pVC.analysisType = @"palm";
+    }
     [self PushChildViewController:pVC animated:YES];
 }
 @end

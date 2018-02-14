@@ -43,4 +43,5 @@
 
 #define AdaptRate [AppConfigure GetLengthAdaptRate]
 
+
 #endif /* DimensMacros_h */

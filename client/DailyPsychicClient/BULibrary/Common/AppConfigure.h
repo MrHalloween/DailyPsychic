@@ -16,6 +16,7 @@
 + (NSString*)GetFileDomain;
 + (NSString*)GetPayDomain;
 + (NSString*)GetShareDomain;
++ (NSString *)GetEnvironment;
 
 #pragma mark - screen adaption
 +(CGFloat) GetLengthAdaptRate;

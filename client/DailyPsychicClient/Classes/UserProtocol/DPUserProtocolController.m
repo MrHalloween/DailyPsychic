@@ -14,11 +14,6 @@
 #import "DPIAPManager.h"
 #import "DPPalmResultController.h"
 
-//沙盒测试环境验证
-#define SANDBOX @"https://sandbox.itunes.apple.com/verifyReceipt"
-//正式环境验证
-#define AppStore @"https://buy.itunes.apple.com/verifyReceipt"
-
 //内购中创建的商品
 #define ProductID_IAP01 @"com.dailypsychic.horoscope01"//购买产品ID号
 
@@ -50,7 +45,7 @@
     pNotice.hidden = [self.notice isEqualToString:@"notice"];
     
     [DPIAPManager sharedManager].propCheckReceipt = ^(id object) {
-        [[DPIAPManager sharedManager]checkReceiptIsValid:AppStore firstBuy:^{
+        [[DPIAPManager sharedManager]checkReceiptIsValid:[AppConfigure GetEnvironment] firstBuy:^{
             ///第一次购买
             [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
         } outDate:^{
@@ -137,21 +132,6 @@
     }
     [AlertManager ShowProgressHUDWithMessage:@""];
     m_bIsShow = YES;
-    if ([[DPIAPManager sharedManager]isHaveReceiptInSandBox]) {
-        
-        [[DPIAPManager sharedManager]checkReceiptIsValid:AppStore firstBuy:^{
-            ///第一次购买
-            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
-        } outDate:^{
-            ///过期
-            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
-            
-        } inDate:^{
-            ///没过期
-            [self GetResult];
-        }];
-    }else{
-        [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
-    }
+    [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
 }
 @end

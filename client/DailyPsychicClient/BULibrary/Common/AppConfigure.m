@@ -16,6 +16,14 @@
     return YES;
 }
 
++ (NSString *)GetEnvironment
+{
+    if ([AppConfigure IsProductionServer])
+        return @"https://buy.itunes.apple.com/verifyReceipt";    //正式服务器
+    else
+        return @"https://sandbox.itunes.apple.com/verifyReceipt";    //测试服务器
+}
+
 + (NSString*)GetWebServiceDomain
 {
     if ([AppConfigure IsProductionServer])
