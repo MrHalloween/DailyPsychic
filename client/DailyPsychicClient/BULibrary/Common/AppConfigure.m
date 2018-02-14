@@ -13,7 +13,7 @@
 
 +(BOOL)IsProductionServer
 {
-    return YES;
+    return NO;
 }
 
 + (NSString *)GetEnvironment
