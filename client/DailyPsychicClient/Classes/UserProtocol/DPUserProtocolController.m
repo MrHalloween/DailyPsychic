@@ -47,6 +47,7 @@
     pNotice.bounds = CGRectMake(0, 0, 100 * AdaptRate, 44);
     pNotice.center = CGPointMake(self.view.width - pNotice.width * 0.5, NAVIGATION_BAR_Y + pNotice.height * 0.5);
     [self.view addSubview:pNotice];
+    pNotice.hidden = [self.notice isEqualToString:@"notice"];
     
     [DPIAPManager sharedManager].propCheckReceipt = ^(id object) {
         [[DPIAPManager sharedManager]checkReceiptIsValid:AppStore firstBuy:^{

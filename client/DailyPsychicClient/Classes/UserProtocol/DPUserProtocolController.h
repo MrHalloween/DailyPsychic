@@ -14,4 +14,7 @@
 
 @property (nonatomic,copy) NSString *testId;    ///测试题目id
 
+@property (nonatomic,copy) NSString *notice;
+
+
 @end

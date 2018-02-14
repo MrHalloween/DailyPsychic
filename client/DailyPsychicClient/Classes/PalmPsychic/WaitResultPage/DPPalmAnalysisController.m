@@ -30,14 +30,14 @@
     [self.view addSubview:m_pPalmAnalysisView];
     
     //NOTICE
-//    UIButton *pNotice = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [pNotice addTarget:self action:@selector(Notice:) forControlEvents:UIControlEventTouchUpInside];
-//    [pNotice setTitle:@"NOTICE" forState:0];
-//    pNotice.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:15];
-//    pNotice.titleLabel.textColor = [UIColor whiteColor];
-//    pNotice.bounds = CGRectMake(0, 0, 100 * AdaptRate, 44);
-//    pNotice.center = CGPointMake(self.view.width - pNotice.width * 0.5, NAVIGATION_BAR_Y + pNotice.height * 0.5);
-//    [self.view addSubview:pNotice];
+    UIButton *pNotice = [UIButton buttonWithType:UIButtonTypeCustom];
+    [pNotice addTarget:self action:@selector(Notice:) forControlEvents:UIControlEventTouchUpInside];
+    [pNotice setTitle:@"NOTICE" forState:0];
+    pNotice.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:15];
+    pNotice.titleLabel.textColor = [UIColor whiteColor];
+    pNotice.bounds = CGRectMake(0, 0, 100 * AdaptRate, 44);
+    pNotice.center = CGPointMake(self.view.width - pNotice.width * 0.5, NAVIGATION_BAR_Y + pNotice.height * 0.5);
+    [self.view addSubview:pNotice];
 
 }
 #pragma mark - 返回以及跳转按钮
@@ -74,4 +74,10 @@
     }
 }
 
+- (void)Notice:(UIButton *)button
+{
+    DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
+    pVC.notice = @"notice";
+    [self PushChildViewController:pVC animated:YES];
+}
 @end
