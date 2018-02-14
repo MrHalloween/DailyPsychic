@@ -75,17 +75,19 @@
 - (void)RestorePurchase
 {
     NSLog(@"Restore Purchase");
-    [AlertManager ShowProgressHUDWithMessage:@"Restoring..."];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [AlertManager HideProgressHUD];
-        BOOL isBuy = [mUserDefaults boolForKey:@"isbuy"];
-        if (isBuy) {
-            [self iap];
-        }else{
-            [AlertManager ShowRelutWithMessage:@"Please buy it first !!!" Dismiss:nil];
-        }
+//    [AlertManager ShowProgressHUDWithMessage:@"Restoring..."];
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [AlertManager HideProgressHUD];
+//        BOOL isBuy = [mUserDefaults boolForKey:@"isbuy"];
+//        if (isBuy) {
+//            [self iap];
+//        }else{
+//            [AlertManager ShowRelutWithMessage:@"Please buy it first !!!" Dismiss:nil];
+//        }
+//
+//    });
+    [self iap];
 
-    });
 }
 ///用户协议
 - (void)UserProtocolWithTitle:(NSString *)title
