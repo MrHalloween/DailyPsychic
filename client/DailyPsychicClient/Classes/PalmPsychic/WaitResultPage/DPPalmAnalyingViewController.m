@@ -28,17 +28,9 @@
 
 - (void)PushToNextPage:(id)argData{
     
-    BOOL isBuy = [mUserDefaults boolForKey:@"isbuy"];
-    if (isBuy) {
-        DPPalmAnalysisController * palmAnalysisVc = [[DPPalmAnalysisController alloc]init];
-        palmAnalysisVc.analysisType = @"palm";
-        [self PushChildViewController:palmAnalysisVc animated:YES];
-    }else{
-        
-        DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
-        [self PushChildViewController:pVC animated:YES];
-    }
-
+    DPPalmAnalysisController * palmAnalysisVc = [[DPPalmAnalysisController alloc]init];
+    palmAnalysisVc.analysisType = @"palm";
+    [self PushChildViewController:palmAnalysisVc animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

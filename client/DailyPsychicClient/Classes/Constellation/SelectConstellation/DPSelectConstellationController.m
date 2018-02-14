@@ -40,19 +40,8 @@
         [self dismissViewControllerAnimated:YES completion:nil];
         [mNotificationCenter postNotificationName:constellationChangedNotification object:nil];
     }else{
-        
-        BOOL isBuy = [mUserDefaults boolForKey:@"isbuy"];
-        if (isBuy) {
-            DPConstellationDetailController *detailVc = [[DPConstellationDetailController alloc]init];
-            [self PushChildViewController:detailVc animated:YES];
-        }else{
-            
-            DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
-            pVC.propTitle = @"星座";
-            [self PushChildViewController:pVC animated:YES];
-        }
-        
-
+        DPConstellationDetailController *detailVc = [[DPConstellationDetailController alloc]init];
+        [self PushChildViewController:detailVc animated:YES];
     }
 }
 - (void)didReceiveMemoryWarning {

@@ -11,11 +11,21 @@
 #import "DPTermsController.h"
 #import "DPPalmAnalysisController.h"
 #import "DPConstellationDetailController.h"
+#import "DPIAPManager.h"
+#import "DPPalmResultController.h"
 
+//沙盒测试环境验证
+#define SANDBOX @"https://sandbox.itunes.apple.com/verifyReceipt"
+//正式环境验证
+#define AppStore @"https://buy.itunes.apple.com/verifyReceipt"
+
+//内购中创建的商品
+#define ProductID_IAP01 @"com.dailypsychic.horoscope01"//购买产品ID号
 
 @interface DPUserProtocolController ()<AFBaseTableViewDelegate,DPUserProtocolViewDelegate>
 {
     DPUserProtocolView *m_pUserProtocolView;
+    BOOL m_bIsShow;
 }
 @end
 
@@ -37,6 +47,20 @@
     pNotice.bounds = CGRectMake(0, 0, 100 * AdaptRate, 44);
     pNotice.center = CGPointMake(self.view.width - pNotice.width * 0.5, NAVIGATION_BAR_Y + pNotice.height * 0.5);
     [self.view addSubview:pNotice];
+    
+    [DPIAPManager sharedManager].propCheckReceipt = ^(id object) {
+        [[DPIAPManager sharedManager]checkReceiptIsValid:SANDBOX firstBuy:^{
+            ///第一次购买
+            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
+        } outDate:^{
+            ///过期
+            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
+            
+        } inDate:^{
+            ///没过期
+            [self GetResult];
+        }];
+    };
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,13 +84,9 @@
         [AlertManager HideProgressHUD];
         BOOL isBuy = [mUserDefaults boolForKey:@"isbuy"];
         if (isBuy) {
-            [AlertManager ShowRelutWithMessage:@"Restore Defeat !!!" Dismiss:^{
-//                [self.navigationController popViewControllerAnimated:YES];
-            }];
+            [AlertManager ShowRelutWithMessage:@"Restore Defeat !!!" Dismiss:nil];
         }else{
-            [AlertManager ShowRelutWithMessage:@"Please buy it first !!!" Dismiss:^{
-//                [self.navigationController popViewControllerAnimated:YES];
-            }];
+            [AlertManager ShowRelutWithMessage:@"Please buy it first !!!" Dismiss:nil];
         }
 
     });
@@ -90,19 +110,43 @@
 
 - (void)agree:(UIButton *)argButton
 {
-    if ([self.propTitle isEqualToString:@"星座"]) {
-        DPConstellationDetailController *detailVc = [[DPConstellationDetailController alloc]init];
-        [self PushChildViewController:detailVc animated:YES];
-    }else if ([self.propTitle isEqualToString:@"测试"]){
-        DPPalmAnalysisController *pVC = [[DPPalmAnalysisController alloc]init];
-        pVC.analysisType = @"test";
-        NSString *testid = [[NSUserDefaults standardUserDefaults]objectForKey:@"testidtestid"];
-        pVC.testId = testid;
-        [self PushChildViewController:pVC animated:YES];
-    }else{
-        DPPalmAnalysisController * palmAnalysisVc = [[DPPalmAnalysisController alloc]init];
-        palmAnalysisVc.analysisType = @"palm";
-        [self PushChildViewController:palmAnalysisVc animated:YES];
+    if (m_bIsShow) {
+        return;
     }
+    [AlertManager ShowProgressHUDWithMessage:@""];
+    m_bIsShow = YES;
+    if ([[DPIAPManager sharedManager]isHaveReceiptInSandBox]) {
+
+        [[DPIAPManager sharedManager]checkReceiptIsValid:SANDBOX firstBuy:^{
+            ///第一次购买
+            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
+        } outDate:^{
+            ///过期
+            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
+
+        } inDate:^{
+            ///没过期
+            [self GetResult];
+        }];
+    }else{
+        [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
+    }
+}
+
+- (void)GetResult
+{
+    [AlertManager HideProgressHUD];
+    m_bIsShow = NO;
+    DPPalmResultController *resultVc = [[DPPalmResultController alloc]init];
+    if ([self.analysisType isEqualToString:@"test"]) {
+        resultVc.dpResultType = DPResultTest;
+        resultVc.testId = self.testId;
+    }else if ([self.analysisType isEqualToString:@"palm"]) {
+        resultVc.dpResultType = DPResultPalm;
+    }else
+    {
+        resultVc.dpResultType = DPResultConstellation;
+    }
+    [self PushChildViewController:resultVc animated:YES];
 }
 @end

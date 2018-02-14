@@ -13,24 +13,14 @@
 #import "DPConstellationModel.h"
 #import "DPTakePhotoController.h"
 #import "DPTestListController.h"
-#import "DPIAPManager.h"
 #import "DPUserProtocolController.h"
 
-
-//沙盒测试环境验证
-#define SANDBOX @"https://sandbox.itunes.apple.com/verifyReceipt"
-//正式环境验证
-#define AppStore @"https://buy.itunes.apple.com/verifyReceipt"
-
-//内购中创建的商品
-#define ProductID_IAP01 @"com.dailypsychic.horoscope01"//购买产品ID号
 
 @class DPSelectConstellationController;
 
 @interface DPConstellationDetailController ()<AFBaseTableViewDelegate,DPConstellationDetailDelegate>
 {
     DPConstellationDetailView *m_pConstellDetail;
-    BOOL m_bIsShow;
 }
 @end
 
@@ -44,7 +34,7 @@
     m_pConstellDetail.conDetailDel = self;
     [self.view addSubview:m_pConstellDetail];
     
-//    //NOTICE
+    //NOTICE
 //    UIButton *pNotice = [UIButton buttonWithType:UIButtonTypeCustom];
 //    [pNotice addTarget:self action:@selector(Notice:) forControlEvents:UIControlEventTouchUpInside];
 //    [pNotice setTitle:@"NOTICE" forState:0];
@@ -53,20 +43,7 @@
 //    pNotice.bounds = CGRectMake(0, 0, 100 * AdaptRate, 44);
 //    pNotice.center = CGPointMake(self.view.width - pNotice.width * 0.5, NAVIGATION_BAR_Y + pNotice.height * 0.5);
 //    [self.view addSubview:pNotice];
-    
-    [DPIAPManager sharedManager].propCheckReceipt = ^(id object) {
-        [[DPIAPManager sharedManager]checkReceiptIsValid:AppStore firstBuy:^{
-            ///第一次购买
-            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
-        } outDate:^{
-            ///过期
-            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
-            
-        } inDate:^{
-            ///没过期
-            [self GetResult];
-        }];
-    };
+
 }
 
 - (void)PopPreviousPage{
@@ -79,12 +56,17 @@
     switch (btnTag) {
         case 100:
         {
-            if (m_bIsShow) {
-                return;
+            BOOL isbuy = [mUserDefaults boolForKey:@"isbuy"];
+            if (isbuy) {
+                DPPalmResultController *resultVc = [[DPPalmResultController alloc]init];
+                resultVc.dpResultType = DPResultConstellation;
+                [self PushChildViewController:resultVc animated:YES];
             }
-            [AlertManager ShowProgressHUDWithMessage:@""];
-            m_bIsShow = YES;
-            [self iap];
+            else
+            {
+                DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
+                [self PushChildViewController:pVC animated:YES];
+            }
         }
             break;
         case 101:
@@ -116,43 +98,5 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - iap
-- (void)iap
-{
-    if ([[DPIAPManager sharedManager]isHaveReceiptInSandBox]) {
-        
-        [[DPIAPManager sharedManager]checkReceiptIsValid:AppStore firstBuy:^{
-            ///第一次购买
-            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
-        } outDate:^{
-            ///过期
-            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
-            
-        } inDate:^{
-            ///没过期
-            [self GetResult];
-        }];
-        
-    }else{
-        [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
-    }
-    
-}
-
-- (void)GetResult
-{
-    m_bIsShow = NO;
-    [AlertManager HideProgressHUD];
-    DPPalmResultController *pVC = [[DPPalmResultController alloc]init];
-    pVC.dpResultType = DPResultConstellation;
-    [self PushChildViewController:pVC animated:YES];
-}
-
-- (void)Notice:(UIButton *)argButton
-{
-    DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
-    [self PushChildViewController:pVC animated:YES];
 }
 @end
