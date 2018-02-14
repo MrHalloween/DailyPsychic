@@ -38,10 +38,10 @@
     m_pUserProtocolView.userDelegate = self;
     [self.view addSubview:m_pUserProtocolView];
     
-    //AGREE
+    //NEXT
     UIButton *pNotice = [UIButton buttonWithType:UIButtonTypeCustom];
     [pNotice addTarget:self action:@selector(agree:) forControlEvents:UIControlEventTouchUpInside];
-    [pNotice setTitle:@"AGREE" forState:0];
+    [pNotice setTitle:@"NEXT" forState:0];
     pNotice.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:15];
     pNotice.titleLabel.textColor = [UIColor whiteColor];
     pNotice.bounds = CGRectMake(0, 0, 100 * AdaptRate, 44);
@@ -85,7 +85,7 @@
         [AlertManager HideProgressHUD];
         BOOL isBuy = [mUserDefaults boolForKey:@"isbuy"];
         if (isBuy) {
-            [AlertManager ShowRelutWithMessage:@"Restore Defeat !!!" Dismiss:nil];
+            [self iap];
         }else{
             [AlertManager ShowRelutWithMessage:@"Please buy it first !!!" Dismiss:nil];
         }
@@ -111,27 +111,7 @@
 
 - (void)agree:(UIButton *)argButton
 {
-    if (m_bIsShow) {
-        return;
-    }
-    [AlertManager ShowProgressHUDWithMessage:@""];
-    m_bIsShow = YES;
-    if ([[DPIAPManager sharedManager]isHaveReceiptInSandBox]) {
-
-        [[DPIAPManager sharedManager]checkReceiptIsValid:AppStore firstBuy:^{
-            ///第一次购买
-            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
-        } outDate:^{
-            ///过期
-            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
-
-        } inDate:^{
-            ///没过期
-            [self GetResult];
-        }];
-    }else{
-        [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
-    }
+    [self iap];
 }
 
 - (void)GetResult
@@ -149,5 +129,29 @@
         resultVc.dpResultType = DPResultConstellation;
     }
     [self PushChildViewController:resultVc animated:YES];
+}
+
+- (void)iap{
+    if (m_bIsShow) {
+        return;
+    }
+    [AlertManager ShowProgressHUDWithMessage:@""];
+    m_bIsShow = YES;
+    if ([[DPIAPManager sharedManager]isHaveReceiptInSandBox]) {
+        
+        [[DPIAPManager sharedManager]checkReceiptIsValid:AppStore firstBuy:^{
+            ///第一次购买
+            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
+        } outDate:^{
+            ///过期
+            [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
+            
+        } inDate:^{
+            ///没过期
+            [self GetResult];
+        }];
+    }else{
+        [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
+    }
 }
 @end
