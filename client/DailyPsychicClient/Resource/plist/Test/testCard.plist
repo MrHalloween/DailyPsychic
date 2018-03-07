@@ -267,5 +267,585 @@
 			</dict>
 		</array>
 	</dict>
+	<dict>
+		<key>testId</key>
+		<string>7</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>8-1</string>
+				<key>title</key>
+				<string>What are your favorite colors out of these? </string>
+				<key>answers</key>
+				<string>Green#Red or pink#Purple#Yellow</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>8-2</string>
+				<key>title</key>
+				<string>Which of the following animal specifies if your favorite?</string>
+				<key>answers</key>
+				<string>Dragon#Orca/Killer Whale#Hawk#Tiger</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>8-3</string>
+				<key>title</key>
+				<string>What would your friends describe you as?</string>
+				<key>answers</key>
+				<string>Loyal and Brave#Fun-loving and kind#Smart and sensible#Stealthy and secretive</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>8-4</string>
+				<key>title</key>
+				<string>What school subjects and activities deal with the job you want to do?</string>
+				<key>answers</key>
+				<string>Science and imagining things#Reading and music class/band#Language Arts and playing on electronics#Physical Education and playing sports</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>8</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>9-1</string>
+				<key>title</key>
+				<string>What is your favorite color to become your coffin&apos;s hue?</string>
+				<key>answers</key>
+				<string>White#I think black#Brown or gray#I don&apos;t want coffin</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>9-2</string>
+				<key>title</key>
+				<string>Do you prefer dying with sickness or dying naturally?</string>
+				<key>answers</key>
+				<string>Let me die naturally#Sickness#You can never chooses which is which...#I don&apos;t wanna die!</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>9-3</string>
+				<key>title</key>
+				<string>What is you favorite song?</string>
+				<key>answers</key>
+				<string>Think of Laura#If I Ain&apos;t Got You#Any song from Adele#I like country music</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>9-4</string>
+				<key>title</key>
+				<string>Do you believe that hell exist? </string>
+				<key>answers</key>
+				<string>No!#It&apos;s true and it&apos;s like a blazing fire.#I think we&apos;ll know after we die.#If it&apos;s true, then I&apos;ll prepare a fire extinguisher.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>9-5</string>
+				<key>title</key>
+				<string>Are you a sinner?</string>
+				<key>answers</key>
+				<string>I admit yes!#Everybody&apos; a sinner.#No way.#Sometimes but not everyday...</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>9-6</string>
+				<key>title</key>
+				<string>If reincarnation is true, what is your desired next life?</string>
+				<key>answers</key>
+				<string>I think a son of a billionaire.#Anything as long as it&apos;s a normal kind of life and being.#A human again.#A royalty.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>9</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>10-1</string>
+				<key>title</key>
+				<string>Your friend has just been dumped. What do you do? </string>
+				<key>answers</key>
+				<string>Bring her favorite movie to her house &amp; spend the day with her#Call her and try to make her feel better#Message her and hope she feels better#Leave her alone</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>10-2</string>
+				<key>title</key>
+				<string>What is your average grade?</string>
+				<key>answers</key>
+				<string>A#B#C#Below C</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>10-3</string>
+				<key>title</key>
+				<string>What is your body type?</string>
+				<key>answers</key>
+				<string>Slim, athletic#Slim, average#Chubby but healthy#Round, overweight</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>10-4</string>
+				<key>title</key>
+				<string>What is one of your hobbies?</string>
+				<key>answers</key>
+				<string>Exercising#Watching TV#Reading#Eating</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>10-5</string>
+				<key>title</key>
+				<string>How would you describe your fashion style?</string>
+				<key>answers</key>
+				<string>Chic#Glamorous#Casual#Simple</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>10</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>11-1</string>
+				<key>title</key>
+				<string>Your in a big group of people.</string>
+				<key>answers</key>
+				<string>I love to get convoys going. #I join in the gossip.#I am more of a listener.#I get out of there immediately.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>11-2</string>
+				<key>title</key>
+				<string>The teacher asks you a question, but you get the question wrong, everyone is now laughing and staring, what do you do?</string>
+				<key>answers</key>
+				<string>I laugh along.#I blush and shrug.#I keep quiet.#I hide my face in a book.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>11-3</string>
+				<key>title</key>
+				<string> It is the school talent show. Your class has been chosen to make up a dance and show the whole school!</string>
+				<key>answers</key>
+				<string>I would be leading the group.#I would be up front, blushing the whole way threw.#I would be in the back. #I would make myself throw up.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>11-4</string>
+				<key>title</key>
+				<string>A girl at school is making fun of you...</string>
+				<key>answers</key>
+				<string>I will fight back! #I start to get nervous, but I wont back down!#I cry!#I would walk away.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>11</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>12-1</string>
+				<key>title</key>
+				<string>Do your parents say &quot;I love you&quot; or even say &quot;I love you big&quot;?</string>
+				<key>answers</key>
+				<string>Yes.#No.#Sometimes.#Never.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>12-2</string>
+				<key>title</key>
+				<string>Do your parents feed you or tell you &quot;You got two hands! Do it your self&quot; or something like that?</string>
+				<key>answers</key>
+				<string>They feed me.#They tell me fix it myself.#They tell me both.#Either.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>12-3</string>
+				<key>title</key>
+				<string>Do your parents ever say you were a mistake for this world?</string>
+				<key>answers</key>
+				<string>Always.#Sometimes.#Never.#Often.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>12-4</string>
+				<key>title</key>
+				<string>Does your parents abuse you?</string>
+				<key>answers</key>
+				<string>Always.#Yes.#Never.#Not Often.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>12-5</string>
+				<key>title</key>
+				<string>Do your parents say they whip you and punish you because they Luv ya?</string>
+				<key>answers</key>
+				<string>Yes.#No.#I don’t get whipped or punished.#Often.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>12</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>13-1</string>
+				<key>title</key>
+				<string>What does he always say to you?</string>
+				<key>answers</key>
+				<string>He always compliments me.#He always tells me that I&apos;m beautiful.#That he loves everything about me.#Nothing much.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>13-2</string>
+				<key>title</key>
+				<string>What is his usual response after you give him a gift?</string>
+				<key>answers</key>
+				<string>A simple &quot;thanks”.#He says thanks and gives you a kiss.#He says thanks#He usually says &quot; gotten me sth. better&quot;.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>13-3</string>
+				<key>title</key>
+				<string>What is his response when you ask him &quot;how do I look&quot; after putting on a new dress?</string>
+				<key>answers</key>
+				<string>Whoa! You look gorgeous babe!#You look fine *without even looking*#That dress does not fit you.#You should put on something sexier!</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>13-4</string>
+				<key>title</key>
+				<string>Do you give him stuff?</string>
+				<key>answers</key>
+				<string>All the time and he always wants more!#What kind of stuff #Yeah and he returns the gift#Sometimes but usually he gives me stuff</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>13-5</string>
+				<key>title</key>
+				<string>How often does he flirt with other women?</string>
+				<key>answers</key>
+				<string>I can&apos;t tell if he&apos;s flirting or not!#All the time!!#He is a chick magnet#He does.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>13</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>14-1</string>
+				<key>title</key>
+				<string>How old are you?</string>
+				<key>answers</key>
+				<string>None of your business.#11 or younger.#12-18#19 or older.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>14-2</string>
+				<key>title</key>
+				<string>Someone comes over to you and kicks you. What do you do?</string>
+				<key>answers</key>
+				<string>Ignore them#Scratch them#Call the police#Run away</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>14-3</string>
+				<key>title</key>
+				<string>You step in a big pile of dung. What do you do?</string>
+				<key>answers</key>
+				<string>I won’t answer.#What is dung?#All well. I&apos;ll eat it.#Pick it up and though it away. Duh.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>14-4</string>
+				<key>title</key>
+				<string>Can you climb?</string>
+				<key>answers</key>
+				<string>I was born to climb.#Of course!#No way!#Maybe</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>14-5</string>
+				<key>title</key>
+				<string>You fall in love. What would you do?</string>
+				<key>answers</key>
+				<string>Fart#Blush#Propose#Love is stupid</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>14-6</string>
+				<key>title</key>
+				<string>What is your hair color?</string>
+				<key>answers</key>
+				<string>Brown, Black, or White.#Red#Blond#My hair is dyed.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>14-7</string>
+				<key>title</key>
+				<string>If you had any type of power, what will it be?</string>
+				<key>answers</key>
+				<string>Fire#Ice#Water#Wind</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>14</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>15-1</string>
+				<key>title</key>
+				<string>You pass him in the street or in the hallway at school. He’s with a group of friends, what does he do?</string>
+				<key>answers</key>
+				<string>Ignore you#Acknowledge you subtly, with a nod or a wink#Wave and smile#Catch up with you and have a chat</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>15-2</string>
+				<key>title</key>
+				<string> You’re upset about something and you text him. What does he do?</string>
+				<key>answers</key>
+				<string>Text back a sweet message#Say he would come over to cheer you up.#Come round armed with ice cream and movies#Says cheer up and changes the convoy</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>15-3</string>
+				<key>title</key>
+				<string>You’re going to a wedding and have a +1. When you mention this to him he:</string>
+				<key>answers</key>
+				<string>Suggests you should both go together#Says he’ll help you find a date#Brushes over the topic#Jokes.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>15-4</string>
+				<key>title</key>
+				<string>What is your main method of contact?</string>
+				<key>answers</key>
+				<string>Phone call#Text or instant message#Online message#We only speak at school/work</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>15</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>16-1</string>
+				<key>title</key>
+				<string>Which college major would you rather take?</string>
+				<key>answers</key>
+				<string>Criminal Justice#Dental Hygiene#Visual Media#Animation and Special Effects</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>16-2</string>
+				<key>title</key>
+				<string>Your parents are encouraging you to do an internship over the summer. Where do you apply for an internship?</string>
+				<key>answers</key>
+				<string>Police Department#UCSF Dental Clinic#Magnum Photographers#Walt Disney Animation Studios</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>16-3</string>
+				<key>title</key>
+				<string>What is your favorite film genre?</string>
+				<key>answers</key>
+				<string>Crime#Comedy#Indie#Animation</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>16-4</string>
+				<key>title</key>
+				<string>Which non-fiction book would you most likely read?</string>
+				<key>answers</key>
+				<string>&quot;Columbine&quot; by Dave Cullen (2009)#&quot;Complications &quot; (2002)#&quot;Creative 52 &quot; (2013)#&quot;The Mickey Mouse Treasures&quot; (2007)</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>16-5</string>
+				<key>title</key>
+				<string>How would you describe your personality?</string>
+				<key>answers</key>
+				<string>Predictable#Friendly#Innovative#Individualistic</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>16</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>17-1</string>
+				<key>title</key>
+				<string>when did you last talk?</string>
+				<key>answers</key>
+				<string>when did you last talk?#Yesterday!#Last week!#Um, a month or more ago...</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>17-2</string>
+				<key>title</key>
+				<string>How long have you known them for?</string>
+				<key>answers</key>
+				<string>Since I was born!#About...five years?#For a year or two…#Less than six months.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>17-3</string>
+				<key>title</key>
+				<string>How often do you text, email or talk on the phone?</string>
+				<key>answers</key>
+				<string>Almost everyday, without fail.#At least a few times a week!#Oh, a few times every month or so…#I don&apos;t even have their number/address!</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>17-4</string>
+				<key>title</key>
+				<string>Do you know their birthday?</string>
+				<key>answers</key>
+				<string>The exact time too!#Of course, all, the year, month and day!#I know the month.#Uh....no.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>17-5</string>
+				<key>title</key>
+				<string>Are you friends with any of their family?</string>
+				<key>answers</key>
+				<string>I fit in like I am part of the family!#Yep! A few, at least…#I have heard about them….#What family?</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>17-6</string>
+				<key>title</key>
+				<string>Do you wish they were with you right now?</string>
+				<key>answers</key>
+				<string>They are here!#YES#Wouldn&apos;t mind their company!#Uh, perhaps... Actually no.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>17</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>18-1</string>
+				<key>title</key>
+				<string>What fulfills you the most of the following?</string>
+				<key>answers</key>
+				<string>Solving a puzzle#Being there for a friend#Discovering a new recipe#Winning a debate</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>18-2</string>
+				<key>title</key>
+				<string>What is a word your friends would use to describe you?</string>
+				<key>answers</key>
+				<string>Nurturing#Curious#Ordered#Demanding</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>18-3</string>
+				<key>title</key>
+				<string>Which of these is your favorite high school subject?</string>
+				<key>answers</key>
+				<string>Algebra#Biology#Social Studies#History</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>18-4</string>
+				<key>title</key>
+				<string>Which of these bothers you the most?</string>
+				<key>answers</key>
+				<string>Disorder#Someone who is being hurt#Failure#Ignorance</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>18-5</string>
+				<key>title</key>
+				<string>Which of these would you want to learn?</string>
+				<key>answers</key>
+				<string>How to see something differently#To understand why things happen#To make things happen#To make sure things don&apos;t stop happening</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>18</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>19-1</string>
+				<key>title</key>
+				<string>What color is you hair?</string>
+				<key>answers</key>
+				<string>Brown#Blond#Black#Dirty Blond</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>19-2</string>
+				<key>title</key>
+				<string>What color are you eyes?</string>
+				<key>answers</key>
+				<string>Brown#Chocolate brown#Black/ Very Dark Brown#Natuarly Blue</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>19-3</string>
+				<key>title</key>
+				<string>Which of these words describes you best?</string>
+				<key>answers</key>
+				<string>Adorable!#Fun-loving!#Talented!#Out-going!</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>19-4</string>
+				<key>title</key>
+				<string>What is your favorite color?</string>
+				<key>answers</key>
+				<string>Purple#Green#Lavender#Black or Red</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>19-5</string>
+				<key>title</key>
+				<string>How many brothers and sisters do you have? (not counting you)</string>
+				<key>answers</key>
+				<string>5 (big family!)#0#1#2</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>19-6</string>
+				<key>title</key>
+				<string>How many pets do you have and what are they?</string>
+				<key>answers</key>
+				<string>Turtles, birds, dogs, cats, exotic animals#No pets#</string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>

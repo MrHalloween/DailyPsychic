@@ -10,7 +10,7 @@
 		<key>title</key>
 		<string>How Normal Are You?</string>
 		<key>watchNum</key>
-		<string>1200</string>
+		<string>150</string>
 	</dict>
 	<dict>
 		<key>testId</key>
@@ -20,7 +20,7 @@
 		<key>title</key>
 		<string>How twisted is your brain?</string>
 		<key>watchNum</key>
-		<string>200</string>
+		<string>105</string>
 	</dict>
 	<dict>
 		<key>testId</key>
@@ -30,7 +30,7 @@
 		<key>title</key>
 		<string>What&apos;s Your Guardian Animal?</string>
 		<key>watchNum</key>
-		<string>490</string>
+		<string>157</string>
 	</dict>
 	<dict>
 		<key>testId</key>
@@ -40,7 +40,7 @@
 		<key>title</key>
 		<string>Which Cat Breed Are You?</string>
 		<key>watchNum</key>
-		<string>798</string>
+		<string>132</string>
 	</dict>
 	<dict>
 		<key>testId</key>
@@ -50,7 +50,7 @@
 		<key>title</key>
 		<string>How pure are you really?</string>
 		<key>watchNum</key>
-		<string>3400</string>
+		<string>138</string>
 	</dict>
 	<dict>
 		<key>testId</key>
@@ -60,7 +60,7 @@
 		<key>title</key>
 		<string>Are You A Girly Girl Or Tomboy?</string>
 		<key>watchNum</key>
-		<string>3400</string>
+		<string>135</string>
 	</dict>
 	<dict>
 		<key>testId</key>
@@ -70,7 +70,7 @@
 		<key>title</key>
 		<string>Which Season Best Describes Your Soul?</string>
 		<key>watchNum</key>
-		<string>3400</string>
+		<string>147</string>
 	</dict>
 </array>
 </plist>

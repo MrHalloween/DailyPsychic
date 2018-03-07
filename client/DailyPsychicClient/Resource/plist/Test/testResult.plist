@@ -227,5 +227,503 @@
 		<key>testId</key>
 		<string>6</string>
 	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are loyal and brave.  You enjoy making up things like stories and games.  You are very eco-friendly and you hate it when people litter and pollute.</string>
+					<key>title</key>
+					<string>Emerald Dragon</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are fun-loving and kind. You enjoy listening to music and reading hanging out with friends. You are very friendly and you hate it when people don&apos;t like you.</string>
+					<key>title</key>
+					<string>Pink Dolphin</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are smart and sensible.  You enjoy learning and reading books.  You are very intelligent and you hate it when you do something wrong.</string>
+					<key>title</key>
+					<string>Purple Owl</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>7</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You will die alone, so best to carry a good book to avoid boredom on the way to heaven.</string>
+					<key>title</key>
+					<string>You will die alone.</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You will die with a Goldfish, because your death will be drowning inside a tub.</string>
+					<key>title</key>
+					<string>You will die with a Goldfish.</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You can select who to die with. Grim Reaper loves you so much to have let you die with someone your choice.</string>
+					<key>title</key>
+					<string>You can select who to die with.</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>8</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are definitely attractive! You have a lovely, warm personality that everyone is attracted to you and you are also easy on the eyes. People enjoy your company and you always bring joy and happiness wherever you go.</string>
+					<key>title</key>
+					<string>You are definitely attractive!</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are somewhat attractive! While you are nice and kind, you can sometimes be a bit quiet and introverted, so people don’t enjoy spending time with you as much as they could be! Try to open yourself up a bit more and don’t be afraid to pamper yourself and try out new styles that will make your personality shine!</string>
+					<key>title</key>
+					<string>You are somewhat attractive!</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You need to take care of yourself more and take care of your body and health. You have a great personality, but it hardly comes out because of your low self-esteem and lack of self-confidence. Spend time with people you like and find hobbies you enjoy in order to raise your confidence, and soon people will start loving you more and more!</string>
+					<key>title</key>
+					<string>You are a little bit attractive!</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>9</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You got a great personality! All your friends love you and if anything happens to them, you are right there to defend them! Keep it up!</string>
+					<key>title</key>
+					<string>You are really fun to be around!</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>But you are a great person. You are funny and people love to hear and be around you. But you tend to get a little moody at times. But you are still a great person.</string>
+					<key>title</key>
+					<string> You are not the big cheese.</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You have friends, and you are kind, but you tend to be a little too quiet. You should break out and be that social butterfly that is waiting to break free! but remember be who you are too!</string>
+					<key>title</key>
+					<string>Your personality is well.</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are somehow not much of a people person. You tend to be quiet and not care at all. You don’t find things funny very much, and you try to act fake.</string>
+					<key>title</key>
+					<string>You personality is a 0!</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>10</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Your parents never stopped loving you!</string>
+					<key>title</key>
+					<string>Result</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Your parents don’t like you that much.</string>
+					<key>title</key>
+					<string>Result</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Your parents love you but they don’t know the right way.</string>
+					<key>title</key>
+					<string>Result</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>11</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>When was the last time you had fun with your boyfriend? Consider saving the relationship if you are still able to enjoy each others&apos; company. But if the relationship feels stale and neither one of you wants to make an effort to liven things up, re-examine the reasons you want to stick around. Try doing something different than the usual boring dinner dates. Maybe go bowling? Catch a baseball game? Or go get wasted at a nightclub!</string>
+					<key>title</key>
+					<string>It can be saved! Just add excitement.</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>There seems to be a lack of communication between you two. Both of you need to sit down and air everything out! Don&apos;t leave any stone unturned. A good &quot;airing out&quot; session will let you understand each other&apos;s issues and then you can both can come up with solutions to resolve them.</string>
+					<key>title</key>
+					<string> It can be saved! Just communicate more often!</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>By the looks of it, you’re relationship is heading straight towards a dead-end. You can try to communicate more and try doing other things, but it seems like that initial spark isn&apos;t there anymore. He may have changed and wants someone different.  Or it might be that has changed and you don&apos;t even know it! Whatever it is, your relationship is unlikely to be salvaged. Move on to someone better!</string>
+					<key>title</key>
+					<string>Your relationship seems unlikely to be saved.</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>12</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Fox Wow! You are a fox. You must have nice red fur. But some people hunt you down to make you into a coat. How sad.</string>
+					<key>title</key>
+					<string>Fox</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are a cat. You scratch people if they get in your way. Sometimes you can get a little bossy.</string>
+					<key>title</key>
+					<string>Cat</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are a rabbit. You&apos;re cuddly, cute, but not the bravest around.</string>
+					<key>title</key>
+					<string>Rabbit</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are a raccoon!! You like to eat from the trashcan. And if you get bullied, you will bite someone to defend yourself.</string>
+					<key>title</key>
+					<string>Raccoon</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>13</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Sorry, it seems like this guy doesn&apos;t have any type of crush on you. He&apos;s too busy with his current girlfriend or asking cheerleaders to prom! Let this one go, and find someone who you deserve.</string>
+					<key>title</key>
+					<string>He doesn&apos;t see you in that way.</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>This guy definitely has a secret crush on you. But beware, he probably has a crush on a few other girls too!</string>
+					<key>title</key>
+					<string>He likes you!</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Yellow Fox</string>
+					<key>title</key>
+					<string>Yellow Fox</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Purple Owl</string>
+					<key>title</key>
+					<string>Purple Owl</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>14</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You should be a Dental Hygienist! You are gentle, cheerful, spontaneous, and friendly. You have a warm personality, and you are tolerant and nonjudgmental, so patients will feel comfortable and safe in your hands. You are also loyal and modest, making your warmth and kindness more comforting.</string>
+					<key>title</key>
+					<string>Dental Hygienist</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You should be a Photographer! You are innovative, curious, clever, open-minded, and unconventional. You are super creative and you always look at things from a unique angle. You are quick-witted and you have a fun personality.</string>
+					<key>title</key>
+					<string>Photographer</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You should be an Animator! You are imaginative, idealistic, compassionate, and caring. You are sensitive and individualistic, so you often prefer to do things on your own. You are also artistic, original, and nonjudgmental, making you a generally open-minded person.</string>
+					<key>title</key>
+					<string>Animator</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You should be a Police Officer! You are hardworking, rule-abiding, systematic, and organized. You have quite predictable behavior you strictly adhere to rules and routines, and you also follow the facts.</string>
+					<key>title</key>
+					<string>Police Officer</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>15</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Congrats! In fact....why did you even take this test? You are the greatest friends ever! Close as brothers/sisters! Remember, consider your other friends too! You don&apos;t want them getting jealous!</string>
+					<key>title</key>
+					<string>Best Friends for Life!</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are really good friends, but it may not last forever. However, what you have now is brilliant, and I hope it is long lived!</string>
+					<key>title</key>
+					<string>Best Friends.....not forever?</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You two are good friends, but you cannot call yourselves the best quite yet...</string>
+					<key>title</key>
+					<string>Friends, but not the best...</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You two don&apos;t really look like the greatest friends out there, but give this friendship some work, and a bit of patience, and hopefully you&apos;ll improve!</string>
+					<key>title</key>
+					<string>Uh.....friends? Not much.</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>16</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are a natural carer. When you see hurt or pain you are immediately there for your friends in whatever way that they need. You don&apos;t even mind if you don&apos;t get it back from them you take pride in knowing that you are helping people through their time of need and you feel very fulfilled doing that. Psychology is the route for you to consider as you are setting yourself up for a career of providing help to everyone who comes to you for it.</string>
+					<key>title</key>
+					<string>Psychology</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>This is such a wide field of options in front of you - chemistry, physics, and biology. The field of science is really a blank canvas where you can take your own paths to solve a problem. This is a field that constantly wants change and new approaches around every corner. Yes you can go about solving a problem the way its worked before- but thinking out of the box is not only encouraged but desired.</string>
+					<key>title</key>
+					<string>Science</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are a process thinker, methodical. You prefer to think about a problem and everything that surrounds it before even thinking about approaching it. Engineering is a limitless field with options around every corner from bridge building to cell phone making. Engineering appeals to those who like puzzles and processes- and if this is you, this could be a career that you fall in love with.</string>
+					<key>title</key>
+					<string>Engineering</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>17</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are cute and bubbly. Everyone likes you. You have brown hair and pretty brown eyes. Sometimes you can be scandalous but it doesn&apos;t matter you can get away with most things if you bat your eyes.</string>
+					<key>title</key>
+					<string>Miley Cyrus</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You have black hair and you are adorable. You are perfect in every way and everyone young and old loves you.</string>
+					<key>title</key>
+					<string>Selena Gomez</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Everyone loves you and looks up to you. You have pretty blond hair with beautiful blue eyes. You like singing and you are good at it too. you have blonde hair and blue eyes.</string>
+					<key>title</key>
+					<string>Taylor Swift</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are fun and outgoing. You don&apos;t care what other people thinks you will wear some pretty weird outfits, but thats what people like about u. You have brown hair and brown eyes.</string>
+					<key>title</key>
+					<string>Demi Lovato</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>18</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You have a wild heart that belongs by the beach and the mountains all at the same time. So what does someone like you settle on- Argentina. This country was made for you. Everything you could possibly want is here for you to discover and explore. This is a rich country with wildlife from coast to coast and a bountiful landscape that offers new adventures at every stop- get there quick.</string>
+					<key>title</key>
+					<string>Argentina</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You were meant for a life slow paced leisure and luxury. Italy is a place that is happy to welcome you with open arms. A country that is equipped with one of the most beautiful set of landscapes you could imagine- you have endless opportunities to explore the unknown and eat your way through an amazing country. Contained within this country you are able to experience fashion, history and leisure- you&apos;ve got it made.</string>
+					<key>title</key>
+					<string>Italy</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>A country that never settles for - settling. Even though it is steeped in rich history and ancient ruins that could keep you busy for ages- it continues to keep on the forefront of development and technology, with a capitol that is in the forefront of the world. Living in Japan puts you in the middle of innovation and culture. This is a place where you will never ever get bored.</string>
+					<key>title</key>
+					<string>Japan</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Okay, so a lot of people give Canada a hard knock- but what a truly beautiful country this is with everything contained in it to see and do. You have lush cities with all the style and edge of the world’s fashion scene. A short distance from there you can relax by the lake or up in a ski lodge. Canada is a place that respects your me time and your need to explore.</string>
+					<key>title</key>
+					<string>Canada</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>19</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>It&apos;s awesome because you are really doing great and its a kind of art that takes a long time and more attention, not all can do what you are doing!</string>
+					<key>title</key>
+					<string>Awesome</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Yes It is unbelievable how you made things and finish it.. its very amazing and wonderful i know everyone will love it.</string>
+					<key>title</key>
+					<string>Unbelievable</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Because, this kind of art work is made from your feelings, or should I say emotion, its express what do you exactly feel and its very meaningful, its explains a bit things and happenings in our life.</string>
+					<key>title</key>
+					<string>Expressive</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Simply its very unique for sure, because it is your own ideas, own art, and very different from other&apos;s surely.</string>
+					<key>title</key>
+					<string>Unique</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>20</string>
+	</dict>
 </array>
 </plist>
