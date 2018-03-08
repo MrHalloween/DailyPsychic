@@ -482,17 +482,9 @@
 			<array>
 				<dict>
 					<key>content</key>
-					<string>Yellow Fox</string>
+					<string>We bet he&apos;s just too shy to do anything about it. Give him a little help or a positive sign that you feel the same.</string>
 					<key>title</key>
-					<string>Yellow Fox</string>
-				</dict>
-			</array>
-			<array>
-				<dict>
-					<key>content</key>
-					<string>Purple Owl</string>
-					<key>title</key>
-					<string>Purple Owl</string>
+					<string>He totally does.</string>
 				</dict>
 			</array>
 		</array>
@@ -724,6 +716,255 @@
 		</array>
 		<key>testId</key>
 		<string>20</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You should be a Dental Hygienist! You are gentle, cheerful, spontaneous, and friendly. You have a warm personality, and you are tolerant and nonjudgmental, so patients will feel comfortable and safe in your hands. You are also loyal and modest, making your warmth and kindness more comforting.</string>
+					<key>title</key>
+					<string>Dental Hygienist</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You should be a Photographer! You are innovative, curious, clever, open-minded, and unconventional. You are super creative and you always look at things from a unique angle. You are quick-witted and you have a fun personality.</string>
+					<key>title</key>
+					<string>Photographer</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You should be an Animator! You are imaginative, idealistic, compassionate, and caring. You are sensitive and individualistic, so you often prefer to do things on your own. You are also artistic, original, and nonjudgmental, making you a generally open-minded person.</string>
+					<key>title</key>
+					<string>Animator</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You should be a Police Officer! You are hardworking, rule-abiding, systematic, and organized. You have quite predictable behavior you strictly adhere to rules and routines, and you also follow the facts.</string>
+					<key>title</key>
+					<string>Police Officer</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>21</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Apparently you are very intelligent and like technology. You are going to grow up to be someone who can deal with techno stuff. You might be a filmer for movies or maybe a cartoon maker for Saturday morning cartoons. Whatever it is, you will enjoy it greatly. Keep exploring and learning new technology and you will become something you will love.</string>
+					<key>title</key>
+					<string>Computers</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You&apos;ll end up being a care giver. If someone needs a babysitter on short notice, they know who to call. You will help babies, kids, teenagers, adults, and even the elderly. You are just that kind. If you keep taking care of those in need, you will have a good career in no time.</string>
+					<key>title</key>
+					<string>Caring</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are very organized and know what you are doing. You know what to do and are a deep thinker when there is a problem. You are likely to grow up to be a business man/woman and own a big company and become very wealthy off of it. You may even become the president or be in the supreme court.</string>
+					<key>title</key>
+					<string>President</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>22</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>For Thompson to remember and pen his experiences with such clarity and wit is nothing short of a miracle; an impressive feat no matter how one feels about the subject matter. A first-rate sensibility twinger, Fear and Loathing in Las Vegas is a pop-culture classic, an icon of an era past, and a nugget of pure comedic genius.</string>
+					<key>title</key>
+					<string>Fear and Loathing in Las Vegas by Hunter S. Thompson.</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Since his debut in 1951 as The Catcher in the Rye, Holden Caulfield has been synonymous with &quot;cynical adolescent.&quot; Holden narrates the story of a couple of days in his sixteen-year-old life, just after he&apos;s been expelled from prep school, in a slang that sounds edgy even today and keeps this novel on banned book lists.</string>
+					<key>title</key>
+					<string>The Catcher in the Rye by J.D. Salinger</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>The astounding story of a man who said that he would stop the motor of the world -- and did.  Tremendous in scope, breathtaking it its suspense, ATLAS SHRUGGED is unlike any other book you have ever read.  It is a mystery story, not about the murder of a man&apos;s body, but about the murder--and rebirth--of man&apos;s spirit.</string>
+					<key>title</key>
+					<string>Atlas Shrugged by Ayn Rand</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>23</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are Lady Gaga, you are crazy and creative in your own unique way. You can sometimes keep to yourself but you also have your time to shine.</string>
+					<key>title</key>
+					<string>Lady Gaga</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are Justin Bieber, you are caring, loving and supportive. You are a load of fun to be around and everybody loves you for who you are.</string>
+					<key>title</key>
+					<string>Justin Bieber</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are Eminem, you are laid back and let life happen. You love the night and going to parties. Also you can be a bit of a rebel.</string>
+					<key>title</key>
+					<string>Eminem</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>24</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You have a taste for the elite things in life. Your mom probably packed  a cookie in your lunch box every day when you were young and now you think you can have whatever you want, when you want it. Nobody will ever find you eating hamburger helper because you&apos;re simply too good for it. You tend to piss people off a lot.</string>
+					<key>title</key>
+					<string>You&apos;re snobby!</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You definitely enjoy the simple things in life. You don&apos;t make a big deal out of things and you&apos;re not full of drama. You would be equally happy whether you were riding a bull in a bar or staring at your pet cat Fluffy for three hours. You&apos;ve never really been disappointed in life, but then again you&apos;ve also never really won anything.</string>
+					<key>title</key>
+					<string>You&apos;re plain!</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are always willing to try new things and nothing scares you. Escargot topped with pâté? You&apos;re up for it! You have succeeded in almost everything you&apos;ve done in life so far and people are both amazed and disgusted by you. You will definitely be in the Guinness book of World Records someday.</string>
+					<key>title</key>
+					<string>You&apos;re Adventurous!</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>25</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>If you have a rounded one, like Christina Ricci, it typically means you&apos;re creative, artistic, highly emotional, but not always logical.</string>
+					<key>title</key>
+					<string>Rounded Forehead</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>If you have a brushy set of brows, like Camilla Belle&apos;s, in addition to having confidence, Haner says, &quot;you&apos;ll also tend to take a logical approach to life and have a strong sex drive. Even more, you&apos;ll be able to deal with strong emotions and stand up to people more easily.&quot;</string>
+					<key>title</key>
+					<string>Strong Eyebrows</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Wide-eyed people, like Zooey Deschanel, usually have an open   heart and tend to talk a lot. They&apos;ll talk to strangers, opening up to them, and they often think that&apos;s how everyone should be.</string>
+					<key>title</key>
+					<string>Big Beautiful Eyes</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>The Chinese say the more prominent your nose is, like Lea Michele&apos;s, the more you care about the quality of your work and the more you&apos;ll notice details that others miss, for example that the picture on the wall is crooked. It also means you&apos;re picky, sensitive to little things, and that you&apos;re a perfectionist that likes to plan ahead</string>
+					<key>title</key>
+					<string>Prominent Nose</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>If you have a larger mouth or fuller lips, like Angelia Jolie, it usually means that friendships or relationships are really important to you and you&apos;re a naturally giving person. This is also the sign of someone who wants to be a mother</string>
+					<key>title</key>
+					<string>Full Lips</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>26</string>
+	</dict>
+	<dict>
+		<key>result</key>
+		<array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>Being an Atheist doesn&apos;t mean you believe in nothing, that would be a Nihilist. But being an Atheist doesn&apos;t mean you believe in a higher power, that would be an Agnostic. You can live a full spiritual life as an Atheist</string>
+					<key>title</key>
+					<string>Atheist</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You like East Asian culture. You love East Asian food. You like East Asian women. You have an East Asian - yellow fever, and you like harmony melody chants so Buddhism matches your taste.</string>
+					<key>title</key>
+					<string>Buddhism</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You&apos;re an old soul looking to connect with the Light. Zoroastrianism is one of the most ancient religious philosophies in the world. Originating in Persia (modern day Iran), Zoroastrianism was a major religion until the arrival of Islam. Zoroastrianism teaches the existence of one, supreme God who is the source of good in the world. Pain and suffering are explained by the existence of a chaotic force that battles God. There are less than 2 million followers in the world, most of which are in Iran and India. You are one of a kind!</string>
+					<key>title</key>
+					<string>Zoroastrianism</string>
+				</dict>
+			</array>
+			<array>
+				<dict>
+					<key>content</key>
+					<string>You are the Ifrit an Infernal class of Jinn, Often living in ruins you prefer the life of evil. Brute strength and fiery magic keep you company But beware no cunning makes you an easy target.</string>
+					<key>title</key>
+					<string>Ifrit</string>
+				</dict>
+			</array>
+		</array>
+		<key>testId</key>
+		<string>27</string>
 	</dict>
 </array>
 </plist>

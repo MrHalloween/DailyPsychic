@@ -238,6 +238,7 @@
 		29438F252020674D006B7497 /* SCHCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F222020674D006B7497 /* SCHCircleView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		29438F262020674D006B7497 /* SCHCircleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F242020674D006B7497 /* SCHCircleViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		29438F2920206771006B7497 /* SCHAnimationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 29438F2720206771006B7497 /* SCHAnimationGroup.m */; };
+		2958D9E22050CE5D0019C332 /* testList5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2958D9E12050CE5D0019C332 /* testList5.plist */; };
 		2966C391202C3BEA0024B4B6 /* constellation_upward@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2966C38F202C3BEA0024B4B6 /* constellation_upward@3x.png */; };
 		2966C392202C3BEA0024B4B6 /* constellation_upward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2966C390202C3BEA0024B4B6 /* constellation_upward@2x.png */; };
 		2977F7F72022AB800016B617 /* constellation_detail_triangle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2977F7F52022AB7F0016B617 /* constellation_detail_triangle@3x.png */; };
@@ -717,6 +718,7 @@
 		29438F242020674D006B7497 /* SCHCircleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHCircleViewCell.m; sourceTree = "<group>"; };
 		29438F2720206771006B7497 /* SCHAnimationGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHAnimationGroup.m; sourceTree = "<group>"; };
 		29438F2820206771006B7497 /* SCHAnimationGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCHAnimationGroup.h; sourceTree = "<group>"; };
+		2958D9E12050CE5D0019C332 /* testList5.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = testList5.plist; sourceTree = "<group>"; };
 		2966C38F202C3BEA0024B4B6 /* constellation_upward@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_upward@3x.png"; sourceTree = "<group>"; };
 		2966C390202C3BEA0024B4B6 /* constellation_upward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_upward@2x.png"; sourceTree = "<group>"; };
 		2977F7F52022AB7F0016B617 /* constellation_detail_triangle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_detail_triangle@3x.png"; sourceTree = "<group>"; };
@@ -1458,6 +1460,7 @@
 				299FE14D204F8C7300A6ACB6 /* testList2.plist */,
 				299FE14F204F942A00A6ACB6 /* testList3.plist */,
 				299FE151204FB91600A6ACB6 /* testList4.plist */,
+				2958D9E12050CE5D0019C332 /* testList5.plist */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -1966,6 +1969,7 @@
 				10C876F0202AAD12008268BA /* 4@3x.png in Resources */,
 				29BABFDD20203B8800CE4E51 /* constellation_sagittarius@2x.png in Resources */,
 				10D009342020B85100ADAADB /* test_cell@2x.png in Resources */,
+				2958D9E22050CE5D0019C332 /* testList5.plist in Resources */,
 				10F4DF342029A9A9004CA8FA /* constellation_detail_in.png in Resources */,
 				2966C392202C3BEA0024B4B6 /* constellation_upward@2x.png in Resources */,
 				1099F1F1201F245E00CE653E /* homepage_bg@2x.png in Resources */,

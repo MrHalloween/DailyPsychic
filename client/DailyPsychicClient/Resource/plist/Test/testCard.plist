@@ -847,5 +847,492 @@
 			</dict>
 		</array>
 	</dict>
+	<dict>
+		<key>testId</key>
+		<string>19</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>20-1</string>
+				<key>title</key>
+				<string>How would people describe your style?</string>
+				<key>answers</key>
+				<string>Different, but intriguing#Timeless#Versatile#Wishful Summer Thinking</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>20-2</string>
+				<key>title</key>
+				<string>What do you prefer to do with your free time?</string>
+				<key>answers</key>
+				<string>Read#Hangout with friends#Hangout with friends#Go out for a hike</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>20-3</string>
+				<key>title</key>
+				<string>Which of these is your ideal vacation?</string>
+				<key>answers</key>
+				<string>Beach#International Film Festival#Historical Sites#Skiing</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>20-4</string>
+				<key>title</key>
+				<string>What&apos;s your favorite dessert of the following?</string>
+				<key>answers</key>
+				<string>Baked Alaska#Churros#Mochi#Tiramisu</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>20-5</string>
+				<key>title</key>
+				<string>What would you want to take a tour of the most:</string>
+				<key>answers</key>
+				<string>The Pyramids#Buddhist Temples#The Louvre#Aspen</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>20</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>21-1</string>
+				<key>title</key>
+				<string>What kind of artwork do you do?</string>
+				<key>answers</key>
+				<string>Animation Art#Architecture#Art Brut#Assemblage Art</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>21-2</string>
+				<key>title</key>
+				<string>How many hours do you spent doing it?</string>
+				<key>answers</key>
+				<string>About 1 hour#2 hours#3 hours#I always need more time.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>21-3</string>
+				<key>title</key>
+				<string>What is mostly your mood when doing art?</string>
+				<key>answers</key>
+				<string>Happy#Inspired#Sad#Peaceful</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>21-4</string>
+				<key>title</key>
+				<string>Where do you exactly doing art?</string>
+				<key>answers</key>
+				<string>Anywhere peaceful#In the Work place#In the Public places#Inside the room</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>21-5</string>
+				<key>title</key>
+				<string>You were about to go to camp, which things will you bring?</string>
+				<key>answers</key>
+				<string>DVD portable#Tent#Paper and Pen#Any thing that is useful</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>21-6</string>
+				<key>title</key>
+				<string>What makes you inspired?</string>
+				<key>answers</key>
+				<string>Watching my favorite movie#Going in many places#Being Alone#Being In love</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>21-7</string>
+				<key>title</key>
+				<string>To make a beautiful art what do you think is the most important?</string>
+				<key>answers</key>
+				<string>Time#Attention#Effort#Imagination</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>21-8</string>
+				<key>title</key>
+				<string>You are tired and you want to relax, what will you do?</string>
+				<key>answers</key>
+				<string>Of course sleep.#Drink coffee..#Listen to my favorite musics#Go to a Beer house or bar and drink.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>21</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>22-1</string>
+				<key>title</key>
+				<string>Which color do you wear most often?</string>
+				<key>answers</key>
+				<string>Blue#White#Brown#Black</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>22-2</string>
+				<key>title</key>
+				<string>What is your favorite fruit?</string>
+				<key>answers</key>
+				<string>Bananas#Apples#Strawberries#Grapes</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>22-3</string>
+				<key>title</key>
+				<string>You&apos;re starting to get bored so you decide to take up a new hobby. Which hobby do you choose?</string>
+				<key>answers</key>
+				<string>Gardening#Swimming#Traveling#Creative writing</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>22-4</string>
+				<key>title</key>
+				<string>In which exotic location would you rather spend summer vacation?</string>
+				<key>answers</key>
+				<string>Barcelona, Spain#Hawaii#New Orleans#Vancouver, Canada</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>22-5</string>
+				<key>title</key>
+				<string>Out of the following, who is your favorite singer?</string>
+				<key>answers</key>
+				<string>Lady Gaga#Adele#Demi Lovato#Beyoncé</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>22</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>23-1</string>
+				<key>title</key>
+				<string>There is a little boy in the store that you find that is lost and crying. He is three years old. What would you do?</string>
+				<key>answers</key>
+				<string>Let someone else take care of him.#Pick him up and carry him to the front.#Ask him where his parents are and try to find them.#Panic and try to find someone to help you with him.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>23-2</string>
+				<key>title</key>
+				<string>There is a fight going on with two eleven year old boys. They are getting physical. What would you do?</string>
+				<key>answers</key>
+				<string>Go over to them.#Leave them. It is their business.#Go get their parents.#Tell them to break it up.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>23-3</string>
+				<key>title</key>
+				<string>You are working on a project with a partner but they get sick and you have to do their half of it. That means twice as much work. What would you do?</string>
+				<key>answers</key>
+				<string>Start panicking and fearing out.#Start on the project now.#Forget about it.#Immediately figure out a schedule.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>23-4</string>
+				<key>title</key>
+				<string>There is a rumor spreading about you at school that you wet the bed. What do you do?</string>
+				<key>answers</key>
+				<string>Track down exactly who started it.#Ignore it.#Spread a rumor.#Try to talk with anyone to stop it.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>23-5</string>
+				<key>title</key>
+				<string>You are going to the campground this weekend. What is your job?</string>
+				<key>answers</key>
+				<string>Making sure everything is packed.#Planning the next family trip.#Designing a chart of the schedule.#I am not really helping.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>23-6</string>
+				<key>title</key>
+				<string>You are going to the nature and science museum. What are you most excited about seeing?</string>
+				<key>answers</key>
+				<string>I want to visit the health section.#I don&apos;t really care. #I can&apos;t wait to see the space section.#I want to see the money section.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>23</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>24-1</string>
+				<key>title</key>
+				<string>How old are you?</string>
+				<key>answers</key>
+				<string>10 - 20 years old#20 - 30 years old#30 - 40 years old#40+years old</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>24-2</string>
+				<key>title</key>
+				<string>What is your career goal?</string>
+				<key>answers</key>
+				<string>I want a powerful position in a well paying job.#I want an easy full-time job that pays enough.#I want to &quot;live off the land&quot; as much as possible.#I have no idea.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>24-3</string>
+				<key>title</key>
+				<string>If your mouth was a movie, what would it be rated?</string>
+				<key>answers</key>
+				<string>G#PG#PG-13#R</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>24-4</string>
+				<key>title</key>
+				<string>You are going to have a party. Don&apos;t forget the:</string>
+				<key>answers</key>
+				<string>Pizza and soda.#Beer and pot.#Coffee or wine.#Shot glasses.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>24-5</string>
+				<key>title</key>
+				<string>How many people in your cell-phone Contacts list do you usually talk to in a week?</string>
+				<key>answers</key>
+				<string>1 or 2#3 - 5#5 - 10#10+</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>24</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>25-1</string>
+				<key>title</key>
+				<string>What’s your favorite color?</string>
+				<key>answers</key>
+				<string>Pink#Black#Rainbow#Purple</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>25-2</string>
+				<key>title</key>
+				<string>What describes your style?</string>
+				<key>answers</key>
+				<string>Hipster#Crazy and out there#Gangsta#Girly</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>25-3</string>
+				<key>title</key>
+				<string>You have a free weekend. what do you do?</string>
+				<key>answers</key>
+				<string>Hang out with friends#Create something new#Go shopping#Go to parties</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>25-4</string>
+				<key>title</key>
+				<string>If cops turned up at your door and blamed you for shoplifting what would you do?</string>
+				<key>answers</key>
+				<string>Tell the truth#Make up a story#Blame someone else#Act innocent</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>25-5</string>
+				<key>title</key>
+				<string>Your friends call and want to hand out?</string>
+				<key>answers</key>
+				<string>Yeah lets hang out and go to the park#Maybe later#OMG yes lets shop#Only if we go partying</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>25</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>26-1</string>
+				<key>title</key>
+				<string>What kind of meat do you eat most often?</string>
+				<key>answers</key>
+				<string>Hamburger#Seafood#Liver, Kidney, Camel Hump, or something like that#I don&apos;t eat meat; It&apos;s bad for you</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>26-2</string>
+				<key>title</key>
+				<string>You have a big bowl of ranch dressing at your disposal. what kind of vegetable do you dip in it?</string>
+				<key>answers</key>
+				<string>Carrots#Radishes#Pre-cut, pre-washed celery sticks#An assortment of veggies</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>26-3</string>
+				<key>title</key>
+				<string>If you had to eat one fruit for the rest of your life, what would it be?</string>
+				<key>answers</key>
+				<string>Kiwi#Apple#Mulberry#Lemon</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>26-4</string>
+				<key>title</key>
+				<string>What carb can you not live without?</string>
+				<key>answers</key>
+				<string>Pita bread with hummus#Cereal#Pasta#Potatoes</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>26-5</string>
+				<key>title</key>
+				<string>What&apos;s your biggest sweet indulgence?</string>
+				<key>answers</key>
+				<string>Dirt cake#Cheesecake#Fruit#Chocolate Chip Cookies</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>26-6</string>
+				<key>title</key>
+				<string>You&apos;re at a fully stocked bar with $100 you found in the parking lot.What do you get to drink?</string>
+				<key>answers</key>
+				<string>Whatever#Beer#Whiskey on the rocks#Keylime martini</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>26</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>27-1</string>
+				<key>title</key>
+				<string>Your face shape is?</string>
+				<key>answers</key>
+				<string>Broad#Thin#Round#Square</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>27-2</string>
+				<key>title</key>
+				<string>Your eyes are?</string>
+				<key>answers</key>
+				<string>Bulging#Deep-set#Far apart#Close together</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>27-3</string>
+				<key>title</key>
+				<string>Your Lips are?</string>
+				<key>answers</key>
+				<string>Big#Small#Average#Full</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>27-4</string>
+				<key>title</key>
+				<string>Your nose is?</string>
+				<key>answers</key>
+				<string>Upturned#Turned down#Round at the tip#Arched/hawk</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>27-5</string>
+				<key>title</key>
+				<string>Your chin is?</string>
+				<key>answers</key>
+				<string>Pointed#Square#Small#Round</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>27-6</string>
+				<key>title</key>
+				<string>Your cheek is?</string>
+				<key>answers</key>
+				<string>Bubbly#Thin#Flat#Big</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>27-7</string>
+				<key>title</key>
+				<string>Your ears are?</string>
+				<key>answers</key>
+				<string>Big#Small#Located toward the back of your head#Average</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>27-8</string>
+				<key>title</key>
+				<string>Your forehead is?</string>
+				<key>answers</key>
+				<string>Curved#Straight#Round#Big</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>27</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>28-1</string>
+				<key>title</key>
+				<string>Which religious or ritual object most intrigues you?</string>
+				<key>answers</key>
+				<string>Fire#Flags#Art#Flowers</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>28-2</string>
+				<key>title</key>
+				<string>What do you think happens after death?</string>
+				<key>answers</key>
+				<string>Reincarnation#Religious should be concern with this life#Life end with death#Heaven is the place on earth</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>28-3</string>
+				<key>title</key>
+				<string>How do you feel about eating pork?</string>
+				<key>answers</key>
+				<string>Eating animal is unethical#Faith is about what in your heart#Life without bacon#Religious can involve dietary restriction</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>28-4</string>
+				<key>title</key>
+				<string>Which of these holiday celebrations sounds best to you?</string>
+				<key>answers</key>
+				<string>Getting parents#Music, singing and dancing#Lots of talking and eating#A massive party</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>28-5</string>
+				<key>title</key>
+				<string>How would you rather pray?</string>
+				<key>answers</key>
+				<string>Yoga is my prayer#By the book#As a part of large ceremony#Dance, sing for several days in a row</string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>
