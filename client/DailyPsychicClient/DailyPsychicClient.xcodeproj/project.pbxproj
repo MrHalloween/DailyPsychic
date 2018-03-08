@@ -355,6 +355,8 @@
 		D630AF712021DDB40006B16C /* palm_main@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D630AF6F2021DDB40006B16C /* palm_main@3x.png */; };
 		D630AF722021DDB40006B16C /* palm_main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D630AF702021DDB40006B16C /* palm_main@2x.png */; };
 		D6D8795F2025744C00F543EE /* DPImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6D8795E2025744C00F543EE /* DPImageViewCell.xib */; };
+		D6E5E0F120510AF600E0DB90 /* testList6.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6E5E0F020510AF600E0DB90 /* testList6.plist */; };
+		D6E5E0F320510B0700E0DB90 /* testList7.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6E5E0F220510B0700E0DB90 /* testList7.plist */; };
 		D6EB8900202334AC005045B4 /* palm_resultbg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EB88FE202334AC005045B4 /* palm_resultbg@3x.png */; };
 		D6EB8901202334AC005045B4 /* palm_resultbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6EB88FF202334AC005045B4 /* palm_resultbg@2x.png */; };
 		D6EB890420235176005045B4 /* DPPalmAnalyingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EB890320235176005045B4 /* DPPalmAnalyingViewController.m */; };
@@ -848,6 +850,8 @@
 		D630AF6F2021DDB40006B16C /* palm_main@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_main@3x.png"; sourceTree = "<group>"; };
 		D630AF702021DDB40006B16C /* palm_main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_main@2x.png"; sourceTree = "<group>"; };
 		D6D8795E2025744C00F543EE /* DPImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPImageViewCell.xib; sourceTree = "<group>"; };
+		D6E5E0F020510AF600E0DB90 /* testList6.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = testList6.plist; sourceTree = "<group>"; };
+		D6E5E0F220510B0700E0DB90 /* testList7.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = testList7.plist; sourceTree = "<group>"; };
 		D6EB88FE202334AC005045B4 /* palm_resultbg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_resultbg@3x.png"; sourceTree = "<group>"; };
 		D6EB88FF202334AC005045B4 /* palm_resultbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_resultbg@2x.png"; sourceTree = "<group>"; };
 		D6EB890220235176005045B4 /* DPPalmAnalyingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPalmAnalyingViewController.h; sourceTree = "<group>"; };
@@ -1461,6 +1465,8 @@
 				299FE14F204F942A00A6ACB6 /* testList3.plist */,
 				299FE151204FB91600A6ACB6 /* testList4.plist */,
 				2958D9E12050CE5D0019C332 /* testList5.plist */,
+				D6E5E0F020510AF600E0DB90 /* testList6.plist */,
+				D6E5E0F220510B0700E0DB90 /* testList7.plist */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -2047,6 +2053,7 @@
 				10C876FF202AAD12008268BA /* 3-4@2x.png in Resources */,
 				10C876E2202AAD12008268BA /* 1@2x.png in Resources */,
 				10DB6D1F2022D5090084FC35 /* test_list_bg@2x.png in Resources */,
+				D6E5E0F320510B0700E0DB90 /* testList7.plist in Resources */,
 				1099F1E8201F245E00CE653E /* homepage_card_star@3x.png in Resources */,
 				2977F7F82022AB800016B617 /* constellation_detail_triangle@2x.png in Resources */,
 				10C876E1202AAD12008268BA /* 6-4@3x.png in Resources */,
@@ -2072,6 +2079,7 @@
 				10C876EE202AAD12008268BA /* 5-2@2x.png in Resources */,
 				1099F1EB201F245E00CE653E /* homepage_card_test@2x.png in Resources */,
 				29BABFCB20203B8800CE4E51 /* constellation_gemini_select@2x.png in Resources */,
+				D6E5E0F120510AF600E0DB90 /* testList6.plist in Resources */,
 				10C87704202AAD12008268BA /* 3-2@3x.png in Resources */,
 				10C876D1202AAD12008268BA /* 4-1@3x.png in Resources */,
 				10990FAE202C607D00A62EB0 /* finger.plist in Resources */,

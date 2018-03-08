@@ -1334,5 +1334,992 @@
 			</dict>
 		</array>
 	</dict>
+	<dict>
+		<key>testId</key>
+		<string>28</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>29-1</string>
+				<key>title</key>
+				<string>What holiday destination is calling your name?</string>
+				<key>answers</key>
+				<string>The romantic charm of Paris#The rolling hills Morocco#The buzzing streets of London#The glitz and glam of Dubai</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>29-2</string>
+				<key>title</key>
+				<string>Who is your fashion icon?</string>
+				<key>answers</key>
+				<string>Nicole Richie#Rihanna#Miranda Kerr#Blake Lively</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>29-3</string>
+				<key>title</key>
+				<string>What is your go to outfit?</string>
+				<key>answers</key>
+				<string>A breezy maxi#Simple white tee &amp; jeans#A gorgeous party dress#Ripped denim shorts &amp; singlet</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>29-4</string>
+				<key>title</key>
+				<string>What is your favorite fashion material?</string>
+				<key>answers</key>
+				<string>Glittering Crystals#A bit of roughed up leather#Simple shiny gold#Funky beads - any shape &amp; color!</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>29-5</string>
+				<key>title</key>
+				<string>What&apos;s your fave color combo?</string>
+				<key>answers</key>
+				<string>Tan and White#Brown and Coral#Gold and Silver#Black and Neon</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>29-6</string>
+				<key>title</key>
+				<string>What era do you most relate to?</string>
+				<key>answers</key>
+				<string>The roaring &amp; glamorous 20’s#Rock n Roll&apos;n 80’s#The peace &amp; love 70’s#The suburban charm of the 50&apos;s</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>29-7</string>
+				<key>title</key>
+				<string>How would you describe your personality?</string>
+				<key>answers</key>
+				<string>Down to earth#Calm and Collected#Trendsetter#Bubbly &amp; Girly</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>29</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>30-1</string>
+				<key>title</key>
+				<string>Which of these do you always take on vacations?</string>
+				<key>answers</key>
+				<string>Calculator#Playing cards#Watch#Crossword puzzles</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>30-2</string>
+				<key>title</key>
+				<string>You have a collection of... (pick which one is most like your collection)</string>
+				<key>answers</key>
+				<string>I don&apos;t have a collection#I am collecting something to donate to a charity#Animals or plants(real or fake)#Words(in my head!)</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>30-3</string>
+				<key>title</key>
+				<string>What is your favorite animal?</string>
+				<key>answers</key>
+				<string>Monkey#Bird#Ants or bees#Cat</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>30-4</string>
+				<key>title</key>
+				<string>What&apos;s your favrite color?</string>
+				<key>answers</key>
+				<string>Blue#Brown#Red#Orange</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>30-5</string>
+				<key>title</key>
+				<string>Which of these jobs would you rather do?</string>
+				<key>answers</key>
+				<string>Computer operator#Postal worker#Police officer#Musicianz</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>30-6</string>
+				<key>title</key>
+				<string>I am_____?</string>
+				<key>answers</key>
+				<string>Shy#Late to most things#Old#Poor</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>30-7</string>
+				<key>title</key>
+				<string>An___?</string>
+				<key>answers</key>
+				<string>Overweight#A woman#An adult#Short</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>30-8</string>
+				<key>title</key>
+				<string>I am also____.</string>
+				<key>answers</key>
+				<string>A boy#A woman#Old#Kind</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>30</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>31-1</string>
+				<key>title</key>
+				<string>How would your friends describe you? </string>
+				<key>answers</key>
+				<string>Adventurous#Wise#Quirky#Nurturing</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>31-2</string>
+				<key>title</key>
+				<string>What frustrates you the most?</string>
+				<key>answers</key>
+				<string>Lack of adventure#Not discovering yourself#No alone time#Not seeing everything there is to see</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>31-3</string>
+				<key>title</key>
+				<string>Which of these is your favorite element? </string>
+				<key>answers</key>
+				<string>Fire#Water#Air#Earth</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>31-4</string>
+				<key>title</key>
+				<string>What can&apos;t you travel without?</string>
+				<key>answers</key>
+				<string>Travel guide#There&apos;s nothing I can&apos;t replace#My camera#A sturdy pair of shoes</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>31-5</string>
+				<key>title</key>
+				<string>How do you prefer to travel? </string>
+				<key>answers</key>
+				<string>Alone#With my family#With my best friends#To make new friends on my way</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>31</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>32-1</string>
+				<key>title</key>
+				<string>How concerned are you about your family&apos;s meal choices?</string>
+				<key>answers</key>
+				<string>Not very concerned at all#A little bit concerned#Quite worried#I know we&apos;re not healthy enough</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>32-2</string>
+				<key>title</key>
+				<string>What type of bread do you normally eat?</string>
+				<key>answers</key>
+				<string>White bread#Wholemeal bread#Multigrain bread#We don&apos;t eat bread</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>32-3</string>
+				<key>title</key>
+				<string>What type of oil do you usually use?</string>
+				<key>answers</key>
+				<string>Olive Oil#Canola Oil#Vegetable Oil#Coconut Oil</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>32-4</string>
+				<key>title</key>
+				<string>What’s on the dessert menu this week?</string>
+				<key>answers</key>
+				<string>We don&apos;t usually eat dessert#A block of chocolate and/or a cup of Milo#Fruit and yoghurt#Chocolate cake with ice cream</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>32-5</string>
+				<key>title</key>
+				<string>How often do you get takeaway?</string>
+				<key>answers</key>
+				<string>Maybe once a month, if that#Once a week#At least twice a week#More than three times a week</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>32</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>33-1</string>
+				<key>title</key>
+				<string>What is your most common grade?</string>
+				<key>answers</key>
+				<string>A only#A to B#Bs and occasionally As#B to C</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>33-2</string>
+				<key>title</key>
+				<string>What food do you like best?</string>
+				<key>answers</key>
+				<string>Omelets or Crapes#Pasta#Burgers or Pizza#Steak, ribs, or chicken</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>33-3</string>
+				<key>title</key>
+				<string>What do you do in your spare time?</string>
+				<key>answers</key>
+				<string>Dance or other activities#Help out with chores#Text or Watch TV#Read or Homework</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>33-4</string>
+				<key>title</key>
+				<string>What can&apos;t you leave the house without?</string>
+				<key>answers</key>
+				<string>Phone#Makeup#Ipod#I don&apos;t need anything</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>33-5</string>
+				<key>title</key>
+				<string>How active are you ?</string>
+				<key>answers</key>
+				<string>Really active#Extremely active#Ehhh not really#Pretty active</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>33-6</string>
+				<key>title</key>
+				<string>What tattoo would you get out of these choices?</string>
+				<key>answers</key>
+				<string>Heart#Peace sign#Tiger#A saying</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>33</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>34-1</string>
+				<key>title</key>
+				<string>Have you ever gone cow tipping?</string>
+				<key>answers</key>
+				<string>What is cow tipping?#Tipped over every cow in town.#Heard about it but never did it.#Tried it a few times and laughed your butt off.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>34-2</string>
+				<key>title</key>
+				<string>How do you feel about camouflage clothing?</string>
+				<key>answers</key>
+				<string>Are there any other patterns?#Wouldn&apos;t be caught dead with it on.#A few pieces make the wardrobe.#No opinion just not your style.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>34-3</string>
+				<key>title</key>
+				<string>How far do you have to drive to a grocery store with more than five items?</string>
+				<key>answers</key>
+				<string>10 minutes#About twenty minutes.#There are stores with more than five items in them?#To the corner.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>34-4</string>
+				<key>title</key>
+				<string>What kind of pets do you have?</string>
+				<key>answers</key>
+				<string>Chickens and hens#Cats and dogs#Pigs and sheep#You aren&apos;t allowed to have pets where you live.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>34-5</string>
+				<key>title</key>
+				<string>What type of vehicle do you drive?</string>
+				<key>answers</key>
+				<string>Taxi or Bus#Tractor#Mud covered truck#Clean car or truck</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>34</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>35-1</string>
+				<key>title</key>
+				<string>When you are in a crowd you notice that?</string>
+				<key>answers</key>
+				<string>People smile at you.#People turn their look when they see you.#You feel uncomfortable.#I am lonely.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>35-2</string>
+				<key>title</key>
+				<string>What is your strange habit?</string>
+				<key>answers</key>
+				<string>I secretly note my friend`s birthdays.#I pick my nose in public.#I am afraid of talking to people.#I talk to myself.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>35-3</string>
+				<key>title</key>
+				<string>How many close friends you have?</string>
+				<key>answers</key>
+				<string>A lot of people. everyone loves me.#Just a few close friends.#Just me and my bff.#I don`t have friends.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>35-4</string>
+				<key>title</key>
+				<string>What is your biggest flaw?</string>
+				<key>answers</key>
+				<string>I don`t have patience.#I eat and make loud, strange noises.#I am not confident.#I am not very friendly.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>35-5</string>
+				<key>title</key>
+				<string>Do people find you easy to talk to?</string>
+				<key>answers</key>
+				<string>Yes.#No, people avoid me.#Sometimes, it depends on the person.#I don’t talk too much with other people.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>35</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>36-1</string>
+				<key>title</key>
+				<string>Which Personality Type Are You?</string>
+				<key>answers</key>
+				<string>Chess#Checkers#Backgammon#Dominoes</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>36-2</string>
+				<key>title</key>
+				<string>What genre of fiction are you into</string>
+				<key>answers</key>
+				<string>Science Fiction#Crime#Literature#Romance</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>36-3</string>
+				<key>title</key>
+				<string>Which hobby best describes you?</string>
+				<key>answers</key>
+				<string>Reading books#Playing music#Jigsaw puzzles#Singing</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>36-4</string>
+				<key>title</key>
+				<string>Which music best describes you?</string>
+				<key>answers</key>
+				<string>Classical#R&amp;B#Opera#Pop</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>36-5</string>
+				<key>title</key>
+				<string>What is your favorite season?</string>
+				<key>answers</key>
+				<string>Summer#Winter#Autumn#Spring</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>36</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>37-1</string>
+				<key>title</key>
+				<string>Choose a color</string>
+				<key>answers</key>
+				<string>Red#Black#Orange#Pink</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>37-2</string>
+				<key>title</key>
+				<string>What is your relationship status?</string>
+				<key>answers</key>
+				<string>Just broke up#Dating#It&apos;s complicated#Married</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>37-3</string>
+				<key>title</key>
+				<string>Friends would say you are ______</string>
+				<key>answers</key>
+				<string>Optimistic#Realist#Negative#Free Spirit</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>37-4</string>
+				<key>title</key>
+				<string>Do you have siblings?</string>
+				<key>answers</key>
+				<string>Yes, we are very close#Yes, but we don&apos;t get along#Too many#No</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>37-5</string>
+				<key>title</key>
+				<string>Regarding people in general, would you consider yourself _______.</string>
+				<key>answers</key>
+				<string>Not very socialable#Encouraging#Pesky#Easy to get along with</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>37</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>38-1</string>
+				<key>title</key>
+				<string>How To Find A Hobby?</string>
+				<key>answers</key>
+				<string>Eat#Bike#Relax may be listen to some music#Workout</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>38-2</string>
+				<key>title</key>
+				<string>What do you think you should work/go for in a lifetime?</string>
+				<key>answers</key>
+				<string>Happiness#Depressing#Everything you can frisk squeeze out#What is this &quot;life&quot; you speak of?</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>38-3</string>
+				<key>title</key>
+				<string>Are you more extraverted or introverted?</string>
+				<key>answers</key>
+				<string>Extraverted#Introverted#All of above#None of these</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>38-4</string>
+				<key>title</key>
+				<string>What&apos;s your favorite place to be in?</string>
+				<key>answers</key>
+				<string>Kitchen#Disco and ballroom#Football court#All places are great</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>38-5</string>
+				<key>title</key>
+				<string>What&apos;s your favorite food?</string>
+				<key>answers</key>
+				<string>I love any food#Fruits and vegetables#Nothing special#Chocolate</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>38</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>39-1</string>
+				<key>title</key>
+				<string>When you see your ex, their reaction is...</string>
+				<key>answers</key>
+				<string>To totally ignore you#Look at the floor#Smile and keep it moving#Super excited</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>39-2</string>
+				<key>title</key>
+				<string>How often does your ex &quot;pop&quot; up at your favorite hang outs?</string>
+				<key>answers</key>
+				<string>All of the time#Two or three times#Never because they have no idea where you hang out#Once</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>39-3</string>
+				<key>title</key>
+				<string>How do his friends treat you?</string>
+				<key>answers</key>
+				<string>The same as if you were still together#Like you are a disease#They don&apos;t know you at all#They are your friends too.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>39-4</string>
+				<key>title</key>
+				<string>Do you still talk to your exe’s parents?</string>
+				<key>answers</key>
+				<string>You never knew your exes parents#You talk to them all of the time#If you saw them in public, they would say hello#You have spoken to them once or twice</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>39</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>40-1</string>
+				<key>title</key>
+				<string>What does your name start with?</string>
+				<key>answers</key>
+				<string>A-F#G-L#M-R#S-Z</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>40-2</string>
+				<key>title</key>
+				<string>What color eyes do you prefer?</string>
+				<key>answers</key>
+				<string>Blue#Green#Hazel#Other</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>40-3</string>
+				<key>title</key>
+				<string>How do you talk to them?</string>
+				<key>answers</key>
+				<string>Approach them cautiously#Decide not to#Have a friend with you at all times#Just talk</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>40-4</string>
+				<key>title</key>
+				<string>Where would you go an a first date?</string>
+				<key>answers</key>
+				<string>To the movies#To a baseball or basketball game#To dinner#With friends at the upcoming dance</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>40-5</string>
+				<key>title</key>
+				<string>Do you know his favorite color?</string>
+				<key>answers</key>
+				<string>Yes#No#Maybe#What, I have to talk to him?</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>40</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>41-1</string>
+				<key>title</key>
+				<string>What are you worried about the most?</string>
+				<key>answers</key>
+				<string>That he might lose his temper and hurt me.#That he prefers being with his friends to me.#That he might be cheating on me.#That he&apos;s hiding his true self from me.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>41-2</string>
+				<key>title</key>
+				<string>Does he have a history of any of these?</string>
+				<key>answers</key>
+				<string>Cheating on a girlfriend.#A violent or abusive family.#Not opening up to people.#None.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>41-3</string>
+				<key>title</key>
+				<string>How does he act when you&apos;re with male friends?</string>
+				<key>answers</key>
+				<string>Gets really angry.#Gets paranoid that I might be cheating on him.#He doesn&apos;t really mind.#I can&apos;t tell what he thinks about it.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>41-4</string>
+				<key>title</key>
+				<string>How does he act around other girls?</string>
+				<key>answers</key>
+				<string>Sticks close to me, shows he&apos;s my boyfriend.#Flirts with them, makes dirty jokes.#Puts on a fake personality.#Embarrasses me, jokes about me</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>41-5</string>
+				<key>title</key>
+				<string>When you&apos;re not with him, does he?</string>
+				<key>answers</key>
+				<string>Check up on where you are constantly.#Only reply when you call or message him.#Send you messages to say he loves you.#Doesn&apos;t reply, and has excuses later.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>41</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>42-1</string>
+				<key>title</key>
+				<string>Which of these describes a real Fashionista?</string>
+				<key>answers</key>
+				<string>Model#Designer#Consumers#All</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>42-2</string>
+				<key>title</key>
+				<string>You are most likely to be found shopping in?</string>
+				<key>answers</key>
+				<string>Barneys New York.#H&amp;M.#Walter-Mart.#Anywhere with nice clothes</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>42-3</string>
+				<key>title</key>
+				<string>Can you tell me what is &quot;Vogue&quot;?</string>
+				<key>answers</key>
+				<string>An awesome magazine!#A Madonna song?#A Cafe?#I don&apos;t know</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>42-4</string>
+				<key>title</key>
+				<string>Which of these fashion magazines do you like to read?</string>
+				<key>answers</key>
+				<string>Bazaar#Glamour#Cosmopolitan#Elle</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>42-5</string>
+				<key>title</key>
+				<string>Your closet consists of?</string>
+				<key>answers</key>
+				<string>Clothes#Accessories#Makeups#Magazine</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>42</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>43-1</string>
+				<key>title</key>
+				<string>What is your favorite color?</string>
+				<key>answers</key>
+				<string>Red#Green#Black#Purple</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>43-2</string>
+				<key>title</key>
+				<string>What do you want to be when you grow up?</string>
+				<key>answers</key>
+				<string>Firefighter#Artist#Teacher#Cook</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>43-3</string>
+				<key>title</key>
+				<string>What is your favorite sport?</string>
+				<key>answers</key>
+				<string>Baseball#Volleyball#Track#Soccer</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>43-4</string>
+				<key>title</key>
+				<string>What do you like better?</string>
+				<key>answers</key>
+				<string>School#Computer#Hanging with your family#Hanging With your friends</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>43-5</string>
+				<key>title</key>
+				<string>What books are you in to?</string>
+				<key>answers</key>
+				<string>Japanese anime#Horror#I don`t read at all#None of the above</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>43</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>44-1</string>
+				<key>title</key>
+				<string>What is your greatest dream?</string>
+				<key>answers</key>
+				<string>To be a rock star.#I want to become a WWE fighter.#I dream of dreaming.#To become a Hollywood icon.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>44-2</string>
+				<key>title</key>
+				<string>Do you believe in genie and the three wishes?</string>
+				<key>answers</key>
+				<string>I&apos;ll ask Aladdin.#It&apos;s for kids.#My Dad&apos;s got genie&apos;s beer belly.#I’m not sure but maybe.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>44-3</string>
+				<key>title</key>
+				<string>Do you believe in magic?</string>
+				<key>answers</key>
+				<string>Yeah... In fact I have a magic wand.#No, it&apos;s for sillies.#According to my granny, magic does exist.#No comment. It&apos;s uncool..</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>44-4</string>
+				<key>title</key>
+				<string>If given the chance to have another life, what life would you like to have?</string>
+				<key>answers</key>
+				<string>Of course, a life of a millionaire.#The same life I guess.#I want to be like Marilyn Monroe.#Well, I want to be an eagle. </string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>44</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>45-1</string>
+				<key>title</key>
+				<string>Do you like green jokes?</string>
+				<key>answers</key>
+				<string>I am not a pervert.#It gives a good laugh sometimes.#Yeah and it&apos;s not that bad.#I hate anything naughty by nature.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>45-2</string>
+				<key>title</key>
+				<string>Do you like street foods?</string>
+				<key>answers</key>
+				<string>Not at all... I&apos;m afraid of diseases.#It&apos;s delicious and very cheap.#Exciting food to test your tummy&apos;s bravery.#I don&apos;t eat street foods.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>45-3</string>
+				<key>title</key>
+				<string>What is your favorite underwear color?</string>
+				<key>answers</key>
+				<string>Red.#I think black because I just feel it#All of my underwear are white.#Any color as long as it&apos;s clean.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>45-4</string>
+				<key>title</key>
+				<string>Do you mind if somebody will ask for you number?</string>
+				<key>answers</key>
+				<string>Not at all.#It&apos;s personal.#I don&apos;t have a cellphone.#Depends upon the stranger&apos;s look.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>45-5</string>
+				<key>title</key>
+				<string>Have you used the public toilet?</string>
+				<key>answers</key>
+				<string>Yeah and it&apos;s super gross.#If I don&apos;t have a choice.#Not too often.#I never use even once.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>45</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>46-1</string>
+				<key>title</key>
+				<string>How old are you?</string>
+				<key>answers</key>
+				<string>0-18 years#18-25 years#25-45 years#45 years and above</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>46-2</string>
+				<key>title</key>
+				<string>Which of the following adventurous sports is your favorite?</string>
+				<key>answers</key>
+				<string>Bungee Jumping#Skiing#Skydiving#Motorcycling</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>46-3</string>
+				<key>title</key>
+				<string>How do you love to spend your free time?</string>
+				<key>answers</key>
+				<string>Reading &amp; listening to music#Sleeping#Helping the needy people#Stand up against your fears</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>46-4</string>
+				<key>title</key>
+				<string>If you see, someone getting bullied, what will you do?</string>
+				<key>answers</key>
+				<string>Go and ask politely the people to stop bullying#Do nothing and just stare from a distance#Go and fight with those bullying and harassing#Will go and ask for help from others</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>46</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>47-1</string>
+				<key>title</key>
+				<string>Why do you drink?</string>
+				<key>answers</key>
+				<string>To get smashed!#To be with friends, of course!#I like the taste!#To be cool, like everyone around me.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>47-2</string>
+				<key>title</key>
+				<string>Have you ever gotten drunk in front of family members?</string>
+				<key>answers</key>
+				<string>Yes, All the time#A couple of times#I would never do that#I don&apos;t drink often at all</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>47-3</string>
+				<key>title</key>
+				<string>How many times have you ran into trouble, law or otherwise alcohol related only?</string>
+				<key>answers</key>
+				<string>Once#Twice#Three#More than 4</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>47-4</string>
+				<key>title</key>
+				<string>What kind of &apos;drunk&apos; are you?</string>
+				<key>answers</key>
+				<string>I laugh non stop!#I am mellow as can be. #I hit on everything that walks!#I try and beat everyone up!</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>47</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>48-1</string>
+				<key>title</key>
+				<string>Have your friends been to your house or know where you live?</string>
+				<key>answers</key>
+				<string>None of them have a clue where you live#You guys hang out there all of the time#We don&apos;t talk about it#They know where you live</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>48-2</string>
+				<key>title</key>
+				<string>Do your friends know your middle name?</string>
+				<key>answers</key>
+				<string>You tell them everything#You haven&apos;t even told them your real first name#You may have mentioned it to them#They haven&apos;t asked so you didn&apos;t tell</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>48-3</string>
+				<key>title</key>
+				<string>Is the information on your Facebook page real?</string>
+				<key>answers</key>
+				<string>Real name and real picture on there#Fake name and a real picture#Fake name and a fake picture#You don&apos;t have one</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>48-4</string>
+				<key>title</key>
+				<string>Who do you talk to when you have a problem?</string>
+				<key>answers</key>
+				<string>Nobody#Anyone who will listen#A few close friends and family members#Your family only</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>testId</key>
+		<string>48</string>
+		<key>test</key>
+		<array>
+			<dict>
+				<key>headImage</key>
+				<string>49-1</string>
+				<key>title</key>
+				<string>What is your favorite sport?</string>
+				<key>answers</key>
+				<string>Track and field.#I don&apos;t like sports. I am too clumsy for it.#Football or basketball.#Swimming.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>49-2</string>
+				<key>title</key>
+				<string>What is your taste in Music?</string>
+				<key>answers</key>
+				<string>We can&apos;t taste Music hey!#I am more into classical tones.#Contemporary music.#I guess anything good on the ears</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>49-3</string>
+				<key>title</key>
+				<string>Are you a good writer?</string>
+				<key>answers</key>
+				<string>Maybe#Yes. #Sometimes when I am inspired.#I guess not.</string>
+			</dict>
+			<dict>
+				<key>headImage</key>
+				<string>49-4</string>
+				<key>title</key>
+				<string>What is your most liked Book?</string>
+				<key>answers</key>
+				<string>The Bible.#I think Lord of the Rings.#My old fairy tale books.#I don&apos;t read books.</string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>
