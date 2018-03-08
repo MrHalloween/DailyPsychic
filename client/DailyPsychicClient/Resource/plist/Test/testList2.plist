@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>Item0</key>
+<array>
 	<dict>
 		<key>testId</key>
 		<string>7</string>
@@ -14,7 +13,6 @@
 		<key>watchNum</key>
 		<string>101</string>
 	</dict>
-	<key>Item1</key>
 	<dict>
 		<key>testId</key>
 		<string>8</string>
@@ -25,7 +23,6 @@
 		<key>watchNum</key>
 		<string>123</string>
 	</dict>
-	<key>Item2</key>
 	<dict>
 		<key>testId</key>
 		<string>9</string>
@@ -36,7 +33,6 @@
 		<key>watchNum</key>
 		<string>129</string>
 	</dict>
-	<key>Item3</key>
 	<dict>
 		<key>testId</key>
 		<string>10</string>
@@ -47,7 +43,6 @@
 		<key>watchNum</key>
 		<string>152</string>
 	</dict>
-	<key>Item4</key>
 	<dict>
 		<key>testId</key>
 		<string>11</string>
@@ -58,7 +53,6 @@
 		<key>watchNum</key>
 		<string>140</string>
 	</dict>
-	<key>Item5</key>
 	<dict>
 		<key>testId</key>
 		<string>12</string>
@@ -69,7 +63,6 @@
 		<key>watchNum</key>
 		<string>162</string>
 	</dict>
-	<key>Item6</key>
 	<dict>
 		<key>testId</key>
 		<string>13</string>
@@ -80,5 +73,5 @@
 		<key>watchNum</key>
 		<string>148</string>
 	</dict>
-</dict>
+</array>
 </plist>

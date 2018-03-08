@@ -21,7 +21,7 @@
         pHeaderView.backgroundColor = [UIColor clearColor];
         m_pBaseTable.tableHeaderView = pHeaderView;
         m_pTitleLabel.text = @"Test";
-        NSArray *plistData = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"testList1" ofType:@"plist"]];
+        NSArray *plistData = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"testList2" ofType:@"plist"]];
         m_arrData = [NSMutableArray arrayWithArray:plistData];
         self.backgroundColor = [UIColor clearColor];
     }

@@ -78,6 +78,8 @@
 {
     NSDictionary *dict = argData;
     [m_pThumbnail setImage:[UIImage imageNamed:dict[@"headImage"]]];
+//    [m_pThumbnail setImage:[UIImage imageNamed:@"9"]];
+
     m_pTitle.text = dict[@"title"];
     int x = arc4random() % 100;
     NSString *num = dict[@"watchNum"];
