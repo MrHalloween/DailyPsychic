@@ -352,6 +352,32 @@
 		29BFF08A20219E8A00B70DBD /* constellation_detail_counselor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BFF07C20219E8A00B70DBD /* constellation_detail_counselor@2x.png */; };
 		29BFF08B20219E8A00B70DBD /* constellation_detail_palma@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BFF07D20219E8A00B70DBD /* constellation_detail_palma@3x.png */; };
 		29BFF08C20219E8A00B70DBD /* constellation_detail_lockcircle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BFF07E20219E8A00B70DBD /* constellation_detail_lockcircle@2x.png */; };
+		29D4213E2052741300E9A593 /* 27-5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D4212E2052741100E9A593 /* 27-5@2x.png */; };
+		29D4213F2052741300E9A593 /* 27-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D4212F2052741200E9A593 /* 27-3@2x.png */; };
+		29D421402052741300E9A593 /* 27-4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421302052741200E9A593 /* 27-4@3x.png */; };
+		29D421412052741300E9A593 /* 27-1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421312052741200E9A593 /* 27-1@3x.png */; };
+		29D421422052741300E9A593 /* 27-5@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421322052741200E9A593 /* 27-5@3x.png */; };
+		29D421432052741300E9A593 /* 27-7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421332052741200E9A593 /* 27-7@2x.png */; };
+		29D421442052741300E9A593 /* 27-8@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421342052741200E9A593 /* 27-8@3x.png */; };
+		29D421452052741300E9A593 /* 27-6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421352052741200E9A593 /* 27-6@2x.png */; };
+		29D421462052741300E9A593 /* 27-2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421362052741300E9A593 /* 27-2@3x.png */; };
+		29D421472052741300E9A593 /* 27-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421372052741300E9A593 /* 27-1@2x.png */; };
+		29D421482052741300E9A593 /* 27-6@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421382052741300E9A593 /* 27-6@3x.png */; };
+		29D421492052741300E9A593 /* 27-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421392052741300E9A593 /* 27-2@2x.png */; };
+		29D4214A2052741300E9A593 /* 27-8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D4213A2052741300E9A593 /* 27-8@2x.png */; };
+		29D4214B2052741300E9A593 /* 27-4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D4213B2052741300E9A593 /* 27-4@2x.png */; };
+		29D4214C2052741300E9A593 /* 27-3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D4213C2052741300E9A593 /* 27-3@3x.png */; };
+		29D4214D2052741300E9A593 /* 27-7@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D4213D2052741300E9A593 /* 27-7@3x.png */; };
+		29D421582052748900E9A593 /* 40-5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D4214E2052748800E9A593 /* 40-5@2x.png */; };
+		29D421592052748900E9A593 /* 40-2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D4214F2052748800E9A593 /* 40-2@3x.png */; };
+		29D4215A2052748900E9A593 /* 40-5@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421502052748800E9A593 /* 40-5@3x.png */; };
+		29D4215B2052748900E9A593 /* 40-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421512052748800E9A593 /* 40-2@2x.png */; };
+		29D4215C2052748900E9A593 /* 40-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421522052748800E9A593 /* 40-3@2x.png */; };
+		29D4215D2052748900E9A593 /* 40-4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421532052748800E9A593 /* 40-4@2x.png */; };
+		29D4215E2052748900E9A593 /* 40-3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421542052748800E9A593 /* 40-3@3x.png */; };
+		29D4215F2052748900E9A593 /* 40-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421552052748900E9A593 /* 40-1@2x.png */; };
+		29D421602052748900E9A593 /* 40-1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421562052748900E9A593 /* 40-1@3x.png */; };
+		29D421612052748900E9A593 /* 40-4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D421572052748900E9A593 /* 40-4@3x.png */; };
 		D630AF712021DDB40006B16C /* palm_main@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D630AF6F2021DDB40006B16C /* palm_main@3x.png */; };
 		D630AF722021DDB40006B16C /* palm_main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D630AF702021DDB40006B16C /* palm_main@2x.png */; };
 		D6D8795F2025744C00F543EE /* DPImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6D8795E2025744C00F543EE /* DPImageViewCell.xib */; };
@@ -1318,6 +1344,32 @@
 		29BFF07D20219E8A00B70DBD /* constellation_detail_palma@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_detail_palma@3x.png"; sourceTree = "<group>"; };
 		29BFF07E20219E8A00B70DBD /* constellation_detail_lockcircle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constellation_detail_lockcircle@2x.png"; sourceTree = "<group>"; };
 		29BFF08D2021AC6300B70DBD /* Identify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Identify.h; sourceTree = "<group>"; };
+		29D4212E2052741100E9A593 /* 27-5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-5@2x.png"; sourceTree = "<group>"; };
+		29D4212F2052741200E9A593 /* 27-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-3@2x.png"; sourceTree = "<group>"; };
+		29D421302052741200E9A593 /* 27-4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-4@3x.png"; sourceTree = "<group>"; };
+		29D421312052741200E9A593 /* 27-1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-1@3x.png"; sourceTree = "<group>"; };
+		29D421322052741200E9A593 /* 27-5@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-5@3x.png"; sourceTree = "<group>"; };
+		29D421332052741200E9A593 /* 27-7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-7@2x.png"; sourceTree = "<group>"; };
+		29D421342052741200E9A593 /* 27-8@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-8@3x.png"; sourceTree = "<group>"; };
+		29D421352052741200E9A593 /* 27-6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-6@2x.png"; sourceTree = "<group>"; };
+		29D421362052741300E9A593 /* 27-2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-2@3x.png"; sourceTree = "<group>"; };
+		29D421372052741300E9A593 /* 27-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-1@2x.png"; sourceTree = "<group>"; };
+		29D421382052741300E9A593 /* 27-6@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-6@3x.png"; sourceTree = "<group>"; };
+		29D421392052741300E9A593 /* 27-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-2@2x.png"; sourceTree = "<group>"; };
+		29D4213A2052741300E9A593 /* 27-8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-8@2x.png"; sourceTree = "<group>"; };
+		29D4213B2052741300E9A593 /* 27-4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-4@2x.png"; sourceTree = "<group>"; };
+		29D4213C2052741300E9A593 /* 27-3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-3@3x.png"; sourceTree = "<group>"; };
+		29D4213D2052741300E9A593 /* 27-7@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27-7@3x.png"; sourceTree = "<group>"; };
+		29D4214E2052748800E9A593 /* 40-5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40-5@2x.png"; sourceTree = "<group>"; };
+		29D4214F2052748800E9A593 /* 40-2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40-2@3x.png"; sourceTree = "<group>"; };
+		29D421502052748800E9A593 /* 40-5@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40-5@3x.png"; sourceTree = "<group>"; };
+		29D421512052748800E9A593 /* 40-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40-2@2x.png"; sourceTree = "<group>"; };
+		29D421522052748800E9A593 /* 40-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40-3@2x.png"; sourceTree = "<group>"; };
+		29D421532052748800E9A593 /* 40-4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40-4@2x.png"; sourceTree = "<group>"; };
+		29D421542052748800E9A593 /* 40-3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40-3@3x.png"; sourceTree = "<group>"; };
+		29D421552052748900E9A593 /* 40-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40-1@2x.png"; sourceTree = "<group>"; };
+		29D421562052748900E9A593 /* 40-1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40-1@3x.png"; sourceTree = "<group>"; };
+		29D421572052748900E9A593 /* 40-4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40-4@3x.png"; sourceTree = "<group>"; };
 		D630AF6F2021DDB40006B16C /* palm_main@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_main@3x.png"; sourceTree = "<group>"; };
 		D630AF702021DDB40006B16C /* palm_main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm_main@2x.png"; sourceTree = "<group>"; };
 		D6D8795E2025744C00F543EE /* DPImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DPImageViewCell.xib; sourceTree = "<group>"; };
@@ -3040,6 +3092,22 @@
 		D6E5E25820514FC100E0DB90 /* list4 */ = {
 			isa = PBXGroup;
 			children = (
+				29D421372052741300E9A593 /* 27-1@2x.png */,
+				29D421312052741200E9A593 /* 27-1@3x.png */,
+				29D421392052741300E9A593 /* 27-2@2x.png */,
+				29D421362052741300E9A593 /* 27-2@3x.png */,
+				29D4212F2052741200E9A593 /* 27-3@2x.png */,
+				29D4213C2052741300E9A593 /* 27-3@3x.png */,
+				29D4213B2052741300E9A593 /* 27-4@2x.png */,
+				29D421302052741200E9A593 /* 27-4@3x.png */,
+				29D4212E2052741100E9A593 /* 27-5@2x.png */,
+				29D421322052741200E9A593 /* 27-5@3x.png */,
+				29D421352052741200E9A593 /* 27-6@2x.png */,
+				29D421382052741300E9A593 /* 27-6@3x.png */,
+				29D421332052741200E9A593 /* 27-7@2x.png */,
+				29D4213D2052741300E9A593 /* 27-7@3x.png */,
+				29D4213A2052741300E9A593 /* 27-8@2x.png */,
+				29D421342052741200E9A593 /* 27-8@3x.png */,
 				D6E5E25920514FC100E0DB90 /* 26-6@3x.png */,
 				D6E5E25A20514FC100E0DB90 /* 28-1@3x.png */,
 				D6E5E25B20514FC100E0DB90 /* 26-4@2x.png */,
@@ -3202,6 +3270,16 @@
 		D6E5E3822051573300E0DB90 /* list6 */ = {
 			isa = PBXGroup;
 			children = (
+				29D421552052748900E9A593 /* 40-1@2x.png */,
+				29D421562052748900E9A593 /* 40-1@3x.png */,
+				29D421512052748800E9A593 /* 40-2@2x.png */,
+				29D4214F2052748800E9A593 /* 40-2@3x.png */,
+				29D421522052748800E9A593 /* 40-3@2x.png */,
+				29D421542052748800E9A593 /* 40-3@3x.png */,
+				29D421532052748800E9A593 /* 40-4@2x.png */,
+				29D421572052748900E9A593 /* 40-4@3x.png */,
+				29D4214E2052748800E9A593 /* 40-5@2x.png */,
+				29D421502052748800E9A593 /* 40-5@3x.png */,
 				D6E5E3832051573300E0DB90 /* 42-1@2x.png */,
 				D6E5E3842051573300E0DB90 /* 42-3@3x.png */,
 				D6E5E3852051573300E0DB90 /* 38-5@2x.png */,
@@ -3459,6 +3537,7 @@
 				D6E5E2AC20514FC100E0DB90 /* 23-1@3x.png in Resources */,
 				D6E5E49B205158C200E0DB90 /* 49-4@3x.png in Resources */,
 				D6E5E4002051573300E0DB90 /* 37-1@2x.png in Resources */,
+				29D421432052741300E9A593 /* 27-7@2x.png in Resources */,
 				29BABFA820203B8800CE4E51 /* constellation_virgo@3x.png in Resources */,
 				29BABFAD20203B8800CE4E51 /* constellation_aquarius@2x.png in Resources */,
 				D6E5E20B20514C7D00E0DB90 /* 21-2@2x.png in Resources */,
@@ -3498,9 +3577,11 @@
 				29BABFC020203B8800CE4E51 /* constellation_cancer_select@3x.png in Resources */,
 				D6E5E2E120514FC100E0DB90 /* 22-2@3x.png in Resources */,
 				D6E5E40C2051573300E0DB90 /* 42@2x.png in Resources */,
+				29D421482052741300E9A593 /* 27-6@3x.png in Resources */,
 				D6E5E170205149CC00E0DB90 /* 13-2@3x.png in Resources */,
 				D6E5E33D2051555200E0DB90 /* 34-3@3x.png in Resources */,
 				29438F1E20205262006B7497 /* constellation_aries@3x.png in Resources */,
+				29D4215E2052748900E9A593 /* 40-3@3x.png in Resources */,
 				29BABFB320203B8800CE4E51 /* constellation_back@2x.png in Resources */,
 				D6E5E3422051555200E0DB90 /* 34-1@2x.png in Resources */,
 				D6E5E20120514C7D00E0DB90 /* 19-6@3x.png in Resources */,
@@ -3586,6 +3667,7 @@
 				D6E5E49D205158C200E0DB90 /* 46-3@3x.png in Resources */,
 				D6E5E3582051555200E0DB90 /* 32-3@3x.png in Resources */,
 				D6E5E46D205158C200E0DB90 /* 48-3@2x.png in Resources */,
+				29D4214A2052741300E9A593 /* 27-8@2x.png in Resources */,
 				10C87708202AAD12008268BA /* 4-4@3x.png in Resources */,
 				29BABFCA20203B8800CE4E51 /* constellation_gemini_circle@3x.png in Resources */,
 				D6E5E48D205158C200E0DB90 /* 43-2@3x.png in Resources */,
@@ -3621,6 +3703,7 @@
 				29101A2F2023F5B000788AD9 /* basic_inputbg@2x.png in Resources */,
 				D6E5E2D120514FC100E0DB90 /* 23-5@3x.png in Resources */,
 				D6E5E3F02051573300E0DB90 /* 37-1@3x.png in Resources */,
+				29D4215F2052748900E9A593 /* 40-1@2x.png in Resources */,
 				D6E5E190205149CC00E0DB90 /* 12-3@2x.png in Resources */,
 				D6E5E36C2051555200E0DB90 /* 34-2@2x.png in Resources */,
 				29BFF08A20219E8A00B70DBD /* constellation_detail_counselor@2x.png in Resources */,
@@ -3655,6 +3738,7 @@
 				D6E5E2E220514FC100E0DB90 /* 27@2x.png in Resources */,
 				D6E5E48E205158C200E0DB90 /* 43-2@2x.png in Resources */,
 				D6E5E22D20514C7D00E0DB90 /* 18-5@2x.png in Resources */,
+				29D4213E2052741300E9A593 /* 27-5@2x.png in Resources */,
 				D6E5E3812051555200E0DB90 /* 35-4@2x.png in Resources */,
 				D6E5E2E720514FC100E0DB90 /* 23@2x.png in Resources */,
 				D6E5E2DC20514FC100E0DB90 /* 26-5@3x.png in Resources */,
@@ -3666,6 +3750,7 @@
 				29BFF08320219E8A00B70DBD /* constellation_detail_counselor@3x.png in Resources */,
 				29BABFA520203B8800CE4E51 /* constellation_aries_select@2x.png in Resources */,
 				29BABFE020203B8800CE4E51 /* constellation_sagittarius_circle@3x.png in Resources */,
+				29D421472052741300E9A593 /* 27-1@2x.png in Resources */,
 				D6E5E35A2051555200E0DB90 /* 29-7@2x.png in Resources */,
 				10D009362020B85100ADAADB /* test_pic@3x.png in Resources */,
 				1099F1F2201F245E00CE653E /* homepage_bg@3x.png in Resources */,
@@ -3675,6 +3760,7 @@
 				D6E5E2C520514FC100E0DB90 /* 22@2x.png in Resources */,
 				10C876ED202AAD12008268BA /* 3-4@3x.png in Resources */,
 				10C876D9202AAD12008268BA /* 6-2@2x.png in Resources */,
+				29D421582052748900E9A593 /* 40-5@2x.png in Resources */,
 				D6E5E4102051573300E0DB90 /* 38-2@3x.png in Resources */,
 				D6E5E3702051555200E0DB90 /* 29@3x.png in Resources */,
 				10C876E0202AAD12008268BA /* 3@3x.png in Resources */,
@@ -3687,6 +3773,7 @@
 				D6E5E3692051555200E0DB90 /* 32-4@2x.png in Resources */,
 				D6E5E37C2051555200E0DB90 /* 29-4@3x.png in Resources */,
 				D6E5E36B2051555200E0DB90 /* 32-4@3x.png in Resources */,
+				29D421442052741300E9A593 /* 27-8@3x.png in Resources */,
 				29BABFC720203B8800CE4E51 /* constellation_gemini@2x.png in Resources */,
 				29BFF07F20219E8A00B70DBD /* constellation_detail_selectdate@2x.png in Resources */,
 				29BFF08C20219E8A00B70DBD /* constellation_detail_lockcircle@2x.png in Resources */,
@@ -3726,6 +3813,7 @@
 				10C876E1202AAD12008268BA /* 6-4@3x.png in Resources */,
 				10C876CB202AAD12008268BA /* 6-2@3x.png in Resources */,
 				D6E5E3512051555200E0DB90 /* 33-1@3x.png in Resources */,
+				29D421612052748900E9A593 /* 40-4@3x.png in Resources */,
 				10C876FE202AAD12008268BA /* 2-4@2x.png in Resources */,
 				D6E5E189205149CC00E0DB90 /* 10-2@3x.png in Resources */,
 				D6E5E3F82051573300E0DB90 /* 42-2@2x.png in Resources */,
@@ -3744,6 +3832,7 @@
 				D6E5E485205158C200E0DB90 /* 43@2x.png in Resources */,
 				D6E5E498205158C200E0DB90 /* 43-4@3x.png in Resources */,
 				29BABFD520203B8800CE4E51 /* constellation_main@2x.png in Resources */,
+				29D421462052741300E9A593 /* 27-2@3x.png in Resources */,
 				D6E5E21920514C7D00E0DB90 /* 18-2@2x.png in Resources */,
 				D6E5E3462051555200E0DB90 /* 29-3@3x.png in Resources */,
 				2977F7FB2022AEC10016B617 /* palm_getresult@2x.png in Resources */,
@@ -3766,6 +3855,7 @@
 				1006BD1220158E6C0041DC86 /* README.md in Resources */,
 				D6E5E2C620514FC100E0DB90 /* 25-1@2x.png in Resources */,
 				1058E62120286386007F2D66 /* camera.png in Resources */,
+				29D4214B2052741300E9A593 /* 27-4@2x.png in Resources */,
 				29BABFB820203B8800CE4E51 /* constellation_libra_circle@3x.png in Resources */,
 				D6E5E3472051555200E0DB90 /* 35-1@3x.png in Resources */,
 				29BABFE920203B8800CE4E51 /* constellation_taurus@2x.png in Resources */,
@@ -3859,6 +3949,7 @@
 				D6E5E2C320514FC100E0DB90 /* 25-3@3x.png in Resources */,
 				10C876F5202AAD12008268BA /* 6@2x.png in Resources */,
 				D6E5E22020514C7D00E0DB90 /* 19-2@3x.png in Resources */,
+				29D4215D2052748900E9A593 /* 40-4@2x.png in Resources */,
 				29BABFD820203B8800CE4E51 /* constellation_pisces@3x.png in Resources */,
 				D6E5E3502051555200E0DB90 /* 32-1@3x.png in Resources */,
 				D6E5E159205149CB00E0DB90 /* 13-2@2x.png in Resources */,
@@ -3873,6 +3964,7 @@
 				D6E5E21A20514C7D00E0DB90 /* 16-5@2x.png in Resources */,
 				D6E5E471205158C200E0DB90 /* 49-1@3x.png in Resources */,
 				10DB6D3A2022EFC70084FC35 /* palm_camera@3x.png in Resources */,
+				29D4215B2052748900E9A593 /* 40-2@2x.png in Resources */,
 				D6E5E463205158C200E0DB90 /* 49-1@2x.png in Resources */,
 				D6E5E46A205158C200E0DB90 /* 47-4@2x.png in Resources */,
 				10C876F2202AAD12008268BA /* 6-1@2x.png in Resources */,
@@ -3882,6 +3974,7 @@
 				29BFF08B20219E8A00B70DBD /* constellation_detail_palma@3x.png in Resources */,
 				D6E5E3CC2051573300E0DB90 /* 42-3@3x.png in Resources */,
 				D6E5E165205149CB00E0DB90 /* 9-3@2x.png in Resources */,
+				29D4215C2052748900E9A593 /* 40-3@2x.png in Resources */,
 				10990FB1202C607D00A62EB0 /* testList1.plist in Resources */,
 				10990FB2202C607D00A62EB0 /* testResult.plist in Resources */,
 				29BABFC620203B8800CE4E51 /* constellation_capricorn_select@3x.png in Resources */,
@@ -3898,6 +3991,7 @@
 				D6E5E2C420514FC100E0DB90 /* 24-3@3x.png in Resources */,
 				D6E5E2A720514FC100E0DB90 /* 26-6@3x.png in Resources */,
 				D6E5E24020514C7D00E0DB90 /* 17-4@2x.png in Resources */,
+				29D421452052741300E9A593 /* 27-6@2x.png in Resources */,
 				D6E5E3FD2051573300E0DB90 /* 39-4@3x.png in Resources */,
 				D6E5E22120514C7D00E0DB90 /* 18-2@3x.png in Resources */,
 				D6E5E3792051555200E0DB90 /* 33@3x.png in Resources */,
@@ -3979,16 +4073,19 @@
 				D6E5E46C205158C200E0DB90 /* 49@2x.png in Resources */,
 				D6E5E24920514C7D00E0DB90 /* 21@3x.png in Resources */,
 				D6E5E4B6205173F000E0DB90 /* 12@2x.png in Resources */,
+				29D421422052741300E9A593 /* 27-5@3x.png in Resources */,
 				D6E5E23C20514C7D00E0DB90 /* 15-1@3x.png in Resources */,
 				29BABFDA20203B8800CE4E51 /* constellation_pisces_circle@3x.png in Resources */,
 				D6E5E4BA205173F000E0DB90 /* 10@2x.png in Resources */,
 				D6E5E19F205149CC00E0DB90 /* 11-2@2x.png in Resources */,
+				29D421412052741300E9A593 /* 27-1@3x.png in Resources */,
 				2966C391202C3BEA0024B4B6 /* constellation_upward@3x.png in Resources */,
 				D6E5E3FA2051573300E0DB90 /* 37-3@3x.png in Resources */,
 				10C87701202AAD12008268BA /* 2@3x.png in Resources */,
 				D6E5E4A6205158C200E0DB90 /* 44-2@3x.png in Resources */,
 				10C876E4202AAD12008268BA /* 1-2@3x.png in Resources */,
 				D6E5E14D205149CB00E0DB90 /* 9-5@3x.png in Resources */,
+				29D4214D2052741300E9A593 /* 27-7@3x.png in Resources */,
 				D6E5E3F92051573300E0DB90 /* 36-3@3x.png in Resources */,
 				D6E5E2CF20514FC100E0DB90 /* 24-3@2x.png in Resources */,
 				D6E5E3D92051573300E0DB90 /* 42-3@2x.png in Resources */,
@@ -4000,6 +4097,7 @@
 				D6E5E4A5205158C200E0DB90 /* 43-4@2x.png in Resources */,
 				10C87705202AAD12008268BA /* 5-4@2x.png in Resources */,
 				D6E5E37A2051555200E0DB90 /* 33@2x.png in Resources */,
+				29D4213F2052741300E9A593 /* 27-3@2x.png in Resources */,
 				29BABFC920203B8800CE4E51 /* constellation_gemini_circle@2x.png in Resources */,
 				10C87707202AAD12008268BA /* 5-4@3x.png in Resources */,
 				29438F1D20205262006B7497 /* constellation_scorpio_select@2x.png in Resources */,
@@ -4008,6 +4106,7 @@
 				D6E5E3572051555200E0DB90 /* 33-3@2x.png in Resources */,
 				D6E5E46B205158C200E0DB90 /* 46-4@2x.png in Resources */,
 				D6E5E3E92051573300E0DB90 /* 39-3@3x.png in Resources */,
+				29D4214C2052741300E9A593 /* 27-3@3x.png in Resources */,
 				D6E5E2EE20514FC100E0DB90 /* 23-4@3x.png in Resources */,
 				D6E5E2E020514FC100E0DB90 /* 23-2@3x.png in Resources */,
 				D6E5E3D82051573300E0DB90 /* 38-5@3x.png in Resources */,
@@ -4051,6 +4150,7 @@
 				D6E5E47F205158C200E0DB90 /* 44-1@2x.png in Resources */,
 				D6E5E466205158C200E0DB90 /* 49-3@3x.png in Resources */,
 				D6E5E475205158C200E0DB90 /* 43-1@3x.png in Resources */,
+				29D421402052741300E9A593 /* 27-4@3x.png in Resources */,
 				D6E5E3772051555200E0DB90 /* 29-4@2x.png in Resources */,
 				10C876D2202AAD12008268BA /* 5-1@3x.png in Resources */,
 				D6E5E20C20514C7D00E0DB90 /* 19-6@2x.png in Resources */,
@@ -4065,6 +4165,7 @@
 				29BABFD320203B8800CE4E51 /* constellation_leo_select@2x.png in Resources */,
 				D6E5E187205149CC00E0DB90 /* 14-3@2x.png in Resources */,
 				29BABFD720203B8800CE4E51 /* constellation_pisces@2x.png in Resources */,
+				29D4215A2052748900E9A593 /* 40-5@3x.png in Resources */,
 				D6E5E25620514C7D00E0DB90 /* 18-3@3x.png in Resources */,
 				D6E5E4B2205173F000E0DB90 /* 13@2x.png in Resources */,
 				D6E5E24A20514C7D00E0DB90 /* 15@3x.png in Resources */,
@@ -4083,6 +4184,7 @@
 				D6E5E20720514C7D00E0DB90 /* 15-2@2x.png in Resources */,
 				D6E5E158205149CB00E0DB90 /* 14-4@3x.png in Resources */,
 				D6E5E481205158C200E0DB90 /* 45-3@3x.png in Resources */,
+				29D421602052748900E9A593 /* 40-1@3x.png in Resources */,
 				D6E5E3612051555200E0DB90 /* 32@2x.png in Resources */,
 				29BABFEB20203B8800CE4E51 /* constellation_taurus_circle@2x.png in Resources */,
 				D6E5E48B205158C200E0DB90 /* 44-4@2x.png in Resources */,
@@ -4095,6 +4197,7 @@
 				D6E5E184205149CC00E0DB90 /* 9-6@3x.png in Resources */,
 				D6E5E3DE2051573300E0DB90 /* 38-3@2x.png in Resources */,
 				1099F1EC201F245E00CE653E /* homepage_card_hand@3x.png in Resources */,
+				29D421592052748900E9A593 /* 40-2@3x.png in Resources */,
 				D6E5E3482051555200E0DB90 /* 34-1@3x.png in Resources */,
 				10C876DA202AAD12008268BA /* 7-2@2x.png in Resources */,
 				D6E5E182205149CC00E0DB90 /* 11-4@2x.png in Resources */,
@@ -4105,6 +4208,7 @@
 				D6E5E3E12051573300E0DB90 /* 37-4@2x.png in Resources */,
 				29BABFEC20203B8800CE4E51 /* constellation_taurus_circle@3x.png in Resources */,
 				D6E5E188205149CC00E0DB90 /* 14-1@3x.png in Resources */,
+				29D421492052741300E9A593 /* 27-2@2x.png in Resources */,
 				D6E5E2C720514FC100E0DB90 /* 26-2@2x.png in Resources */,
 				D6E5E15D205149CB00E0DB90 /* 10-1@2x.png in Resources */,
 				29BABFB920203B8800CE4E51 /* constellation_libra_select@2x.png in Resources */,
