@@ -843,7 +843,7 @@
 				<key>title</key>
 				<string>How many pets do you have and what are they?</string>
 				<key>answers</key>
-				<string>Turtles, birds, dogs, cats, exotic animals#No pets#</string>
+				<string>Turtles, birds, dogs, cats, exotic animals#No pets#Dogs#Cats</string>
 			</dict>
 		</array>
 	</dict>
@@ -1720,7 +1720,7 @@
 				<key>headImage</key>
 				<string>36-1</string>
 				<key>title</key>
-				<string>Which Personality Type Are You?</string>
+				<string>Which is your favorite game?</string>
 				<key>answers</key>
 				<string>Chess#Checkers#Backgammon#Dominoes</string>
 			</dict>
@@ -1814,7 +1814,7 @@
 				<key>headImage</key>
 				<string>38-1</string>
 				<key>title</key>
-				<string>How To Find A Hobby?</string>
+				<string>What do you do when you get home from school?</string>
 				<key>answers</key>
 				<string>Eat#Bike#Relax may be listen to some music#Workout</string>
 			</dict>

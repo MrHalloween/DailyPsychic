@@ -195,5 +195,18 @@
     NSString *dateString = [formatter stringFromDate:date];
     return dateString;
 }
-
+//得到当天是周几
++ (NSInteger)getCurrentWeek
+{
+    NSInteger week;
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDate *now;
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    NSInteger unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday |
+    NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    now=[NSDate date];
+    comps = [calendar components:unitFlags fromDate:now];
+    week = [comps weekday];
+    return week;
+}
 @end

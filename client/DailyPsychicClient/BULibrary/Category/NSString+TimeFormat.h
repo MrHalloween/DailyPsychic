@@ -51,5 +51,8 @@
  *  根据时间戳返回年月日
  */
 + (NSString *)timeWithTimeIntervalString:(NSString *)timeString;
-
+/**
+ *  返回当前是周几
+ */
++ (NSInteger)getCurrentWeek;
 @end
