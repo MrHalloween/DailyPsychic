@@ -23,7 +23,6 @@
         m_pBaseTable.tableHeaderView = pHeaderView;
         m_pTitleLabel.text = @"Test";
         NSInteger week =  [NSString getCurrentWeek];
-        week = 3;
         NSString *testname = [NSString stringWithFormat:@"testList%ld",week];
         NSArray *plistData = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle]pathForResource:testname ofType:@"plist"]];
         m_arrData = [NSMutableArray arrayWithArray:plistData];

@@ -30,6 +30,7 @@
     
     //标题
     m_pTitle = [[UILabel alloc]init];
+    m_pTitle.numberOfLines = 0;
     m_pTitle.textAlignment = NSTextAlignmentCenter;
     [m_pTitle SetTextColor:UIColorFromHex(0xffffff) FontName:[TextManager HelveticaNeueFont] FontSize:20 Placehoder:@"Hand"];
     [m_pBgImg addSubview:m_pTitle];

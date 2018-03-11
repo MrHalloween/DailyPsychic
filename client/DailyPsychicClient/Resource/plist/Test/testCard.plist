@@ -866,7 +866,7 @@
 				<key>title</key>
 				<string>What do you prefer to do with your free time?</string>
 				<key>answers</key>
-				<string>Read#Hangout with friends#Hangout with friends#Go out for a hike</string>
+				<string>Read#Hangout with friends#Shopping#Go out for a hike</string>
 			</dict>
 			<dict>
 				<key>headImage</key>
@@ -1949,7 +1949,7 @@
 				<key>title</key>
 				<string>What are you worried about the most?</string>
 				<key>answers</key>
-				<string>That he might lose his temper and hurt me.#That he prefers being with his friends to me.#That he might be cheating on me.#That he&apos;s hiding his true self from me.</string>
+				<string>That he might hurt me.#That he prefers being with his friends.#That he might be cheating on me.#That he&apos;s hiding his true self from me.</string>
 			</dict>
 			<dict>
 				<key>headImage</key>

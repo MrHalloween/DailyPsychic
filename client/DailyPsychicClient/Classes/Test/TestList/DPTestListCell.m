@@ -81,7 +81,7 @@
 //    [m_pThumbnail setImage:[UIImage imageNamed:@"9"]];
 
     m_pTitle.text = dict[@"title"];
-    int x = arc4random() % 100;
+    int x = arc4random() % 50;
     NSString *num = dict[@"watchNum"];
     int intnum = [num intValue] + x;
     m_pCount.text = [NSString IntString:intnum];
