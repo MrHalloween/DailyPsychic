@@ -154,6 +154,8 @@
         UIButton *pLockBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         pLockBtn.bounds = CGRectMake(0, 0, 69 * AdaptRate, 69 * AdaptRate);
         [pLockBtn setBackgroundImage:[UIImage imageNamed:@"constellation_detail_lock"] forState:UIControlStateNormal];
+        pLockBtn.tag = 200 + i;
+        [pLockBtn addTarget:self action:@selector(getRsult:) forControlEvents:UIControlEventTouchUpInside];
         [pCircleBtn addSubview:pLockBtn];
         
         BOOL isBuy = [mUserDefaults boolForKey:@"isbuy"];

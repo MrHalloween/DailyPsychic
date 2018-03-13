@@ -75,6 +75,9 @@
 - (void)PushToNextPage:(id)argData{
     
     NSInteger btnTag = [argData integerValue];
+    if (btnTag >= 200) {
+        btnTag = btnTag - 100;
+    }
     switch (btnTag) {
         case 100:
         {

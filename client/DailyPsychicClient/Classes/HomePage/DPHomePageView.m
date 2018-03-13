@@ -93,6 +93,10 @@
 
 - (void)didSelectCell:(UIView *)subView withSubViewIndex:(NSInteger)subIndex {
     NSLog(@"点击了第%ld张图",(long)subIndex + 1);
+    if (self.proDelegate != nil && [self.proDelegate respondsToSelector:@selector(PushToNextPage:)])
+    {
+        [self.proDelegate PushToNextPage:@(subIndex)];
+    }
 }
 
 - (void)didScrollToPage:(NSInteger)pageNumber inFlowView:(NewPagedFlowView *)flowView {
