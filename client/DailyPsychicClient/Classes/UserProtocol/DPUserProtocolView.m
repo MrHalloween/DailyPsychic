@@ -40,14 +40,11 @@
     
     //恢复购买
     UIButton *pRestore = [UIButton buttonWithType:UIButtonTypeCustom];
-    pRestore.layer.borderColor = [UIColor whiteColor].CGColor;
-    pRestore.layer.borderWidth = 2;
-    pRestore.layer.masksToBounds = YES;
-    pRestore.layer.cornerRadius = 5.0;
     [pRestore addTarget:self action:@selector(Restore:) forControlEvents:UIControlEventTouchUpInside];
-    pRestore.bounds = CGRectMake(0, 0, 300 * AdaptRate, 50 * AdaptRate);
+    pRestore.bounds = CGRectMake(0, 0, 282 * AdaptRate, 63 * AdaptRate);
     pRestore.center = CGPointMake(self.width * 0.5, pText.bottom + 15 * AdaptRate + pRestore.height * 0.5);
     [pRestore setTitle:@"Restore Purchase" forState:0];
+    [pRestore setBackgroundImage:[UIImage imageNamed:@"constellation_bgblue"] forState:UIControlStateNormal];
     pRestore.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:18];
     pRestore.titleLabel.textColor = [UIColor whiteColor];
     [self addSubview:pRestore];
