@@ -19,7 +19,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -38,7 +38,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Visit your camera and take a shot</string>
+	<string>We need to use camera to make photos of your hands.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Use your microphone</string>
 	<key>NSPhotoLibraryUsageDescription</key>
