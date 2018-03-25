@@ -60,7 +60,10 @@
             {
                 ///从首页进入
                 DPHomePageController *pVC = [[DPHomePageController alloc]init];
-                [self PushChildViewController:pVC animated:YES];
+                UINavigationController *pNav = [[UINavigationController alloc]initWithRootViewController:pVC];
+                pNav.navigationBar.hidden = YES;
+                [UIApplication sharedApplication].keyWindow.rootViewController = pNav;
+//                [self PushChildViewController:pVC animated:YES];
             }
             else
             {

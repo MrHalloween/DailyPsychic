@@ -31,7 +31,7 @@
     NSString *timeString = [NSString stringWithFormat:@"%0.f",a];
     NSLog(@"%.f",timeString.doubleValue);
     
-    if (timeString.doubleValue < 1522512000) {
+    if (timeString.doubleValue > 1522512000) {
         
         if ([[DPIAPManager sharedManager]isHaveReceiptInSandBox]) {
             
@@ -52,6 +52,7 @@
                 
             } inDate:^{
                 ///没过期
+                [AlertManager HideProgressHUD];
                 DPHomePageController *pVC = [[DPHomePageController alloc]init];
                 UINavigationController *pNav = [[UINavigationController alloc]initWithRootViewController:pVC];
                 pNav.navigationBar.hidden = YES;
@@ -64,12 +65,6 @@
             pNav.navigationBar.hidden = YES;
             self.window.rootViewController = pNav;
         }
-        ///
-        DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
-        pVC.isHomePage = YES;
-        UINavigationController *pNav = [[UINavigationController alloc]initWithRootViewController:pVC];
-        pNav.navigationBar.hidden = YES;
-        self.window.rootViewController = pNav;
     }
     else{
         DPHomePageController *pVC = [[DPHomePageController alloc]init];
