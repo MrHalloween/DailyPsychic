@@ -16,5 +16,8 @@
 
 @property (nonatomic,copy) NSString *notice;
 
+@property (nonatomic,assign) BOOL isHomePage;
+
+
 
 @end

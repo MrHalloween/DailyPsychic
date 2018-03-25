@@ -38,14 +38,24 @@
     pText.editable = NO;
     [self addSubview:pText];
     
+    //Try Now
+    UIButton *pTryNow = [UIButton buttonWithType:UIButtonTypeCustom];
+    [pTryNow addTarget:self action:@selector(Restore:) forControlEvents:UIControlEventTouchUpInside];
+    pTryNow.bounds = CGRectMake(0, 0, 282 * AdaptRate, 63 * AdaptRate);
+    pTryNow.center = CGPointMake(self.width * 0.5, pText.bottom + pTryNow.height * 0.5);
+    [pTryNow setTitle:@"Try Now" forState:0];
+    [pTryNow setBackgroundImage:[UIImage imageNamed:@"constellation_bgblue"] forState:UIControlStateNormal];
+    pTryNow.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:18];
+    pTryNow.titleLabel.textColor = [UIColor whiteColor];
+    [self addSubview:pTryNow];
+    
     //恢复购买
     UIButton *pRestore = [UIButton buttonWithType:UIButtonTypeCustom];
     [pRestore addTarget:self action:@selector(Restore:) forControlEvents:UIControlEventTouchUpInside];
-    pRestore.bounds = CGRectMake(0, 0, 282 * AdaptRate, 63 * AdaptRate);
-    pRestore.center = CGPointMake(self.width * 0.5, pText.bottom + 15 * AdaptRate + pRestore.height * 0.5);
+    pRestore.bounds = CGRectMake(0, 0, 150 * AdaptRate, 20 * AdaptRate);
+    pRestore.center = CGPointMake(self.width * 0.5, pTryNow.bottom + pRestore.height * 0.5);
     [pRestore setTitle:@"Restore Purchase" forState:0];
-    [pRestore setBackgroundImage:[UIImage imageNamed:@"constellation_bgblue"] forState:UIControlStateNormal];
-    pRestore.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:18];
+    pRestore.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:14];
     pRestore.titleLabel.textColor = [UIColor whiteColor];
     [self addSubview:pRestore];
     
@@ -58,8 +68,8 @@
         }else{
             pProtocol.bounds = CGRectMake(0, 0,  100 * AdaptRate, 30 * AdaptRate);
         }
-        CGFloat centerX = i == 0 ? pRestore.left + pProtocol.width * 0.5 : pRestore.right - pProtocol.width * 0.5;
-        pProtocol.center = CGPointMake(centerX, pRestore.bottom + 15 * AdaptRate + pProtocol.height * 0.5);
+        CGFloat centerX = i == 0 ? pTryNow.left + pProtocol.width * 0.5 : pTryNow.right - pProtocol.width * 0.5;
+        pProtocol.center = CGPointMake(centerX, pRestore.bottom + pProtocol.height * 0.5);
         [pProtocol setTitle:arr[i] forState:0];
         pProtocol.titleLabel.font = [UIFont fontWithName:[TextManager RegularFont] size:16];
         pProtocol.titleLabel.textColor = [UIColor whiteColor];

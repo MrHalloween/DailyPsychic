@@ -13,6 +13,7 @@
 #import "DPConstellationDetailController.h"
 #import "DPIAPManager.h"
 #import "DPPalmResultController.h"
+#import "DPHomePageController.h"
 
 //内购中创建的商品
 #define ProductID_IAP01 @"com.dailypsychic.horoscope01"//购买产品ID号
@@ -53,8 +54,18 @@
             [[DPIAPManager sharedManager]requestProductWithProductId:ProductID_IAP01];
             
         } inDate:^{
+            
             ///没过期
-            [self GetResult];
+            if (self.isHomePage)
+            {
+                ///从首页进入
+                DPHomePageController *pVC = [[DPHomePageController alloc]init];
+                [self PushChildViewController:pVC animated:YES];
+            }
+            else
+            {
+                [self GetResult];
+            }
         }];
     };
 }

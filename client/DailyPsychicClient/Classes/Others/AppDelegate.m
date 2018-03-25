@@ -8,7 +8,9 @@
 
 #import "AppDelegate.h"
 #import "DPHomePageController.h"
+#import "DPUserProtocolController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import "DPIAPManager.h"
 
 @interface AppDelegate ()
 
@@ -23,10 +25,59 @@
     [[FBSDKApplicationDelegate sharedInstance]application:application didFinishLaunchingWithOptions:launchOptions];
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    DPHomePageController *pVC = [[DPHomePageController alloc]init];
-    UINavigationController *pNav = [[UINavigationController alloc]initWithRootViewController:pVC];
-    pNav.navigationBar.hidden = YES;
-    self.window.rootViewController = pNav;
+    
+    NSDate *date = [NSDate dateWithTimeIntervalSinceNow:0];
+    NSTimeInterval a = [date timeIntervalSince1970];
+    NSString *timeString = [NSString stringWithFormat:@"%0.f",a];
+    NSLog(@"%.f",timeString.doubleValue);
+    
+    if (timeString.doubleValue < 1522512000) {
+        
+        if ([[DPIAPManager sharedManager]isHaveReceiptInSandBox]) {
+            
+            [[DPIAPManager sharedManager]checkReceiptIsValid:[AppConfigure GetEnvironment] firstBuy:^{
+                ///第一次购买
+                DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
+                pVC.isHomePage = YES;
+                UINavigationController *pNav = [[UINavigationController alloc]initWithRootViewController:pVC];
+                pNav.navigationBar.hidden = YES;
+                self.window.rootViewController = pNav;
+            } outDate:^{
+                ///过期
+                DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
+                pVC.isHomePage = YES;
+                UINavigationController *pNav = [[UINavigationController alloc]initWithRootViewController:pVC];
+                pNav.navigationBar.hidden = YES;
+                self.window.rootViewController = pNav;
+                
+            } inDate:^{
+                ///没过期
+                DPHomePageController *pVC = [[DPHomePageController alloc]init];
+                UINavigationController *pNav = [[UINavigationController alloc]initWithRootViewController:pVC];
+                pNav.navigationBar.hidden = YES;
+                self.window.rootViewController = pNav;
+            }];
+        }else{
+            DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
+            pVC.isHomePage = YES;
+            UINavigationController *pNav = [[UINavigationController alloc]initWithRootViewController:pVC];
+            pNav.navigationBar.hidden = YES;
+            self.window.rootViewController = pNav;
+        }
+        ///
+        DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
+        pVC.isHomePage = YES;
+        UINavigationController *pNav = [[UINavigationController alloc]initWithRootViewController:pVC];
+        pNav.navigationBar.hidden = YES;
+        self.window.rootViewController = pNav;
+    }
+    else{
+        DPHomePageController *pVC = [[DPHomePageController alloc]init];
+        UINavigationController *pNav = [[UINavigationController alloc]initWithRootViewController:pVC];
+        pNav.navigationBar.hidden = YES;
+        self.window.rootViewController = pNav;
+    }
+
     [self.window makeKeyAndVisible];
     return YES;
 }
