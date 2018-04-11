@@ -8,7 +8,6 @@
 
 #import "DPHomePageView.h"
 #import "NewPagedFlowView.h"
-#import "UIImageView+WebCache.h"
 #import "UILable+TextEffect.h"
 
 @interface DPHomePageView ()<NewPagedFlowViewDelegate, NewPagedFlowViewDataSource>
