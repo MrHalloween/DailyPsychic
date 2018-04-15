@@ -31,7 +31,7 @@
     NSString *timeString = [NSString stringWithFormat:@"%0.f",a];
     NSLog(@"%.f",timeString.doubleValue);
     
-    if (timeString.doubleValue > 1522512000) {
+    if (timeString.doubleValue > 1521982800) {
         
         if ([[DPIAPManager sharedManager]isHaveReceiptInSandBox]) {
             
