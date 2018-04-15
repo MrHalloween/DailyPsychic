@@ -10,7 +10,7 @@
 #define Manager_h
 
 #import "TextManager.h"
-#import "CheckoutManager.h"
+//#import "CheckoutManager.h"
 #import "AlertManager.h"
 
 #endif /* Manager_h */

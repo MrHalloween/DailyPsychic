@@ -113,7 +113,7 @@
     if (m_bIsMainPageViewController)
     {
         m_bIsMainPageViewController = NO;
-        [(AFTabBarViewController *)self.tabBarController ShowTabBar];
+//        [(AFTabBarViewController *)self.tabBarController ShowTabBar];
     }
 }
 
@@ -162,7 +162,7 @@
 -(void)PushChildViewController:(UIViewController*)pController animated:(BOOL)animated
 {
     m_bIsMainPageViewController = self.navigationController.viewControllers.count == 1;
-    [(AFTabBarViewController *)self.tabBarController HideTabBar];
+//    [(AFTabBarViewController *)self.tabBarController HideTabBar];
     [self.navigationController pushViewController:pController animated:animated];
 }
 @end

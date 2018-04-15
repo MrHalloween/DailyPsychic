@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AFTabBarViewController.h"
+//#import "AFTabBarViewController.h"
 
 typedef void(^BackAction)(id object);
 
