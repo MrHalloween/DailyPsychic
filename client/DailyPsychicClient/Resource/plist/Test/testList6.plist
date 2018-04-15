@@ -62,15 +62,5 @@
 		<key>watchNum</key>
 		<string>124</string>
 	</dict>
-	<dict>
-		<key>testId</key>
-		<string>41</string>
-		<key>headImage</key>
-		<string>42</string>
-		<key>title</key>
-		<string>Are you a Fashionista?</string>
-		<key>watchNum</key>
-		<string>177</string>
-	</dict>
 </array>
 </plist>

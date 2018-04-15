@@ -62,15 +62,5 @@
 		<key>watchNum</key>
 		<string>137</string>
 	</dict>
-	<dict>
-		<key>testId</key>
-		<string>27</string>
-		<key>headImage</key>
-		<string>28</string>
-		<key>title</key>
-		<string>Which religion suits you?</string>
-		<key>watchNum</key>
-		<string>157</string>
-	</dict>
 </array>
 </plist>
