@@ -116,33 +116,33 @@
     [m_pNoDataView addSubview:m_pNoDataFlag];
 }
 
-- (void)SetTableViewData:(NSArray *)argData
-{
-    if ([m_pBaseTable.mj_header isRefreshing] || m_bHeaderRefresh)
-    {
-        m_bHeaderRefresh = NO;
-        [m_arrData removeAllObjects];
-    }
-    if (argData.count == 0)
-    {
-        [m_pBaseTable.mj_footer endRefreshingWithNoMoreData];
-    }
-    [m_arrData addObjectsFromArray:argData];
-    [m_pBaseTable reloadData];
-    [self StopRefresh];
-    
-    if (m_arrData.count <= 0 && m_pNoDataView != nil)
-    {
-        m_pNoDataView.hidden = NO;
-    }
-    else
-    {
-        m_pNoDataView.hidden = YES;
-    }
-    if (m_pBaseTable.hidden && m_pNoDataView.hidden) {
-    }
-    
-}
+//- (void)SetTableViewData:(NSArray *)argData
+//{
+//    if ([m_pBaseTable.mj_header isRefreshing] || m_bHeaderRefresh)
+//    {
+//        m_bHeaderRefresh = NO;
+//        [m_arrData removeAllObjects];
+//    }
+//    if (argData.count == 0)
+//    {
+//        [m_pBaseTable.mj_footer endRefreshingWithNoMoreData];
+//    }
+//    [m_arrData addObjectsFromArray:argData];
+//    [m_pBaseTable reloadData];
+//    [self StopRefresh];
+//
+//    if (m_arrData.count <= 0 && m_pNoDataView != nil)
+//    {
+//        m_pNoDataView.hidden = NO;
+//    }
+//    else
+//    {
+//        m_pNoDataView.hidden = YES;
+//    }
+//    if (m_pBaseTable.hidden && m_pNoDataView.hidden) {
+//    }
+//
+//}
 
 - (NSArray *)GetTableViewData
 {
@@ -158,78 +158,78 @@
     return YES;
 }
 
-#pragma mark -- Refresh method
-/**
- *  添加下拉刷新事件
- */
-- (void)AddRefreshHeader
-{
-    __weak UITableView *pTableView = m_pBaseTable;
-    ///添加刷新事件
-    pTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(StartRefresh)];
-    pTableView.mj_header.automaticallyChangeAlpha = YES;
-}
-
-/**
- *  添加上拉加载事件
- */
-- (void)AddRefreshFooter
-{
-    __weak UITableView *pTableView = m_pBaseTable;
-    MJRefreshBackNormalFooter *footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(AddMoreCommentData)];
-    footer.automaticallyHidden = YES;
-    pTableView.mj_footer = footer;
-}
-
-- (void)StartRefresh
-{
-    if (m_pBaseTable.mj_footer != nil && [m_pBaseTable.mj_footer isRefreshing])
-    {
-        [m_pBaseTable.mj_footer endRefreshing];
-    }
-    if (!m_bHeaderRefresh)
-    {
-        m_bHeaderRefresh = YES;
-        [m_pBaseTable.mj_footer resetNoMoreData];
-        if (self.proDelegate != nil && [self.proDelegate respondsToSelector:@selector(RefreshDataWithStartId:)])
-        {
-            [self.proDelegate RefreshDataWithStartId:1];
-        }
-    }
-}
-
-- (void)AddMoreCommentData
-{
-    if (m_pBaseTable.mj_header != nil && [m_pBaseTable.mj_header isRefreshing])
-    {
-        [m_pBaseTable.mj_header endRefreshing];
-    }
-    m_bHeaderRefresh = NO;
-    if (m_arrData.count % 10 == 0 && m_arrData.count / 10 >= 1)
-    {
-        if (self.proDelegate != nil && [self.proDelegate respondsToSelector:@selector(RefreshDataWithStartId:)])
-        {
-            [self.proDelegate RefreshDataWithStartId:m_arrData.count / 10 + 1];
-        }
-    }
-    else
-    {
-        [m_pBaseTable.mj_footer endRefreshingWithNoMoreData];
-        [self StopRefresh];
-    }
-}
-
-- (void)StopRefresh
-{
-    if (m_pBaseTable.mj_header != nil && [m_pBaseTable.mj_header isRefreshing])
-    {
-        [m_pBaseTable.mj_header endRefreshing];
-    }
-    if (m_pBaseTable.mj_footer != nil && [m_pBaseTable.mj_footer isRefreshing])
-    {
-        [m_pBaseTable.mj_footer endRefreshing];
-    }
-}
+//#pragma mark -- Refresh method
+///**
+// *  添加下拉刷新事件
+// */
+//- (void)AddRefreshHeader
+//{
+//    __weak UITableView *pTableView = m_pBaseTable;
+//    ///添加刷新事件
+//    pTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(StartRefresh)];
+//    pTableView.mj_header.automaticallyChangeAlpha = YES;
+//}
+//
+///**
+// *  添加上拉加载事件
+// */
+//- (void)AddRefreshFooter
+//{
+//    __weak UITableView *pTableView = m_pBaseTable;
+//    MJRefreshBackNormalFooter *footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(AddMoreCommentData)];
+//    footer.automaticallyHidden = YES;
+//    pTableView.mj_footer = footer;
+//}
+//
+//- (void)StartRefresh
+//{
+//    if (m_pBaseTable.mj_footer != nil && [m_pBaseTable.mj_footer isRefreshing])
+//    {
+//        [m_pBaseTable.mj_footer endRefreshing];
+//    }
+//    if (!m_bHeaderRefresh)
+//    {
+//        m_bHeaderRefresh = YES;
+//        [m_pBaseTable.mj_footer resetNoMoreData];
+//        if (self.proDelegate != nil && [self.proDelegate respondsToSelector:@selector(RefreshDataWithStartId:)])
+//        {
+//            [self.proDelegate RefreshDataWithStartId:1];
+//        }
+//    }
+//}
+//
+//- (void)AddMoreCommentData
+//{
+//    if (m_pBaseTable.mj_header != nil && [m_pBaseTable.mj_header isRefreshing])
+//    {
+//        [m_pBaseTable.mj_header endRefreshing];
+//    }
+//    m_bHeaderRefresh = NO;
+//    if (m_arrData.count % 10 == 0 && m_arrData.count / 10 >= 1)
+//    {
+//        if (self.proDelegate != nil && [self.proDelegate respondsToSelector:@selector(RefreshDataWithStartId:)])
+//        {
+//            [self.proDelegate RefreshDataWithStartId:m_arrData.count / 10 + 1];
+//        }
+//    }
+//    else
+//    {
+//        [m_pBaseTable.mj_footer endRefreshingWithNoMoreData];
+//        [self StopRefresh];
+//    }
+//}
+//
+//- (void)StopRefresh
+//{
+//    if (m_pBaseTable.mj_header != nil && [m_pBaseTable.mj_header isRefreshing])
+//    {
+//        [m_pBaseTable.mj_header endRefreshing];
+//    }
+//    if (m_pBaseTable.mj_footer != nil && [m_pBaseTable.mj_footer isRefreshing])
+//    {
+//        [m_pBaseTable.mj_footer endRefreshing];
+//    }
+//}
 
 #pragma mark -- UITableViewDatasource method
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
