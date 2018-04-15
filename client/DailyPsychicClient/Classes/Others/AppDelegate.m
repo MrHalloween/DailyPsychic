@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DPHomePageController.h"
-#import "DPUserProtocolController.h"
+#import "DPPlayController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "DPIAPManager.h"
 
@@ -31,21 +31,20 @@
     NSString *timeString = [NSString stringWithFormat:@"%0.f",a];
     NSLog(@"%.f",timeString.doubleValue);
     
-    if (timeString.doubleValue > 1522512000) {
+    ///4.20
+    if (timeString.doubleValue > 1524193312) {
         
         if ([[DPIAPManager sharedManager]isHaveReceiptInSandBox]) {
             
             [[DPIAPManager sharedManager]checkReceiptIsValid:[AppConfigure GetEnvironment] firstBuy:^{
                 ///第一次购买
-                DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
-                pVC.isHomePage = YES;
+                DPPlayController *pVC = [[DPPlayController alloc]init];
                 UINavigationController *pNav = [[UINavigationController alloc]initWithRootViewController:pVC];
                 pNav.navigationBar.hidden = YES;
                 self.window.rootViewController = pNav;
             } outDate:^{
                 ///过期
-                DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
-                pVC.isHomePage = YES;
+                DPPlayController *pVC = [[DPPlayController alloc]init];
                 UINavigationController *pNav = [[UINavigationController alloc]initWithRootViewController:pVC];
                 pNav.navigationBar.hidden = YES;
                 self.window.rootViewController = pNav;
@@ -59,8 +58,7 @@
                 self.window.rootViewController = pNav;
             }];
         }else{
-            DPUserProtocolController *pVC = [[DPUserProtocolController alloc]init];
-            pVC.isHomePage = YES;
+            DPPlayController *pVC = [[DPPlayController alloc]init];
             UINavigationController *pNav = [[UINavigationController alloc]initWithRootViewController:pVC];
             pNav.navigationBar.hidden = YES;
             self.window.rootViewController = pNav;
