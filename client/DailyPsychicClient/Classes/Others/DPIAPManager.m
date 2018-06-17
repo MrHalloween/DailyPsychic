@@ -12,7 +12,7 @@
 //内购中创建的商品
 #define ProductID_IAP01 @"sub.dailytest.weeklypackage"//购买产品ID号
 //共享秘钥
-#define SharedSecretKey @"a727f397ec8d4ff69e35948f1ead6237"//共享秘钥
+#define SharedSecretKey @"e6a40e87f7024bf5b034f7d766db1bf2"//共享秘钥
 
 @interface DPIAPManager()<SKPaymentTransactionObserver,SKProductsRequestDelegate>
 {

@@ -22,7 +22,7 @@
 #define AppStore @"https://buy.itunes.apple.com/verifyReceipt"
 
 //内购中创建的商品
-#define ProductID_IAP01 @"com.dailypsychic.horoscope01"//购买产品ID号
+#define ProductID_IAP01 @"sub.dailytest.weeklypackage"//购买产品ID号
 
 @class DPSelectConstellationController;
 
