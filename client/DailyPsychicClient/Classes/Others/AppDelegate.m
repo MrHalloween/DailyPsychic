@@ -31,8 +31,8 @@
     NSString *timeString = [NSString stringWithFormat:@"%0.f",a];
     NSLog(@"%.f",timeString.doubleValue);
     
-    ///4.20 23:
-    if (timeString.doubleValue > 1524236512) {
+    ///2018/6/25 14:1:8
+    if (timeString.doubleValue > 1529906468) {
         if ([[DPIAPManager sharedManager]isHaveReceiptInSandBox]) {
             
             [[DPIAPManager sharedManager]checkReceiptIsValid:[AppConfigure GetEnvironment] firstBuy:^{

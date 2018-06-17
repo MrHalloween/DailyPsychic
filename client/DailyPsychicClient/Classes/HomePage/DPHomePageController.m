@@ -34,7 +34,7 @@
     NSInteger pageNumber = [argData integerValue];
     BUCustomViewController *pVC;
     switch (pageNumber) {
-        case 0: pVC = [[DPTakePhotoController alloc]init]; break;
+        case 0: pVC = [[DPTestListController alloc]init]; break;
         case 1:
         {
             DPBasicInforController * baseVc = [[DPBasicInforController alloc]init];
@@ -43,7 +43,7 @@
             
         }
             break;
-        case 2: pVC = [[DPTestListController alloc]init]; break;
+        case 2: pVC = [[DPTakePhotoController alloc]init]; break;
         default:
             break;
     }

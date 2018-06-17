@@ -26,9 +26,10 @@
         pBackImg.hidden = YES;
         m_pTitleLabel.text = @"Daily Psychic";
         m_ipageNumber = 0;
-        m_arrData = [NSMutableArray arrayWithObjects:@{@"id":@0,@"title":@"手相分析",@"image":@"homepage_card_hand.png"},
+        ///
+        m_arrData = [NSMutableArray arrayWithObjects:@{@"id":@0,@"title":@"测试",@"image":@"homepage_card_test.png"},
                                                      @{@"id":@1,@"title":@"星座",@"image":@"homepage_card_star.png"},
-                                                     @{@"id":@2,@"title":@"测试",@"image":@"homepage_card_test.png"}, nil];
+                                                     @{@"id":@2,@"title":@"手相分析",@"image":@"homepage_card_hand.png"}, nil];
         [self AddSubViews];
     }
     return self;

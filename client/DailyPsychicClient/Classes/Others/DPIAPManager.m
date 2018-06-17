@@ -10,7 +10,7 @@
 #import <StoreKit/StoreKit.h>
 
 //内购中创建的商品
-#define ProductID_IAP01 @"com.dailypsychic.horoscope01"//购买产品ID号
+#define ProductID_IAP01 @"sub.dailytest.weeklypackage"//购买产品ID号
 //共享秘钥
 #define SharedSecretKey @"a727f397ec8d4ff69e35948f1ead6237"//共享秘钥
 
