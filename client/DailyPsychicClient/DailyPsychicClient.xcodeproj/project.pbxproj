@@ -37,6 +37,44 @@
 		1058E62220286386007F2D66 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 1058E62020286386007F2D66 /* close.png */; };
 		1058E62520286651007F2D66 /* righthand.png in Resources */ = {isa = PBXBuildFile; fileRef = 1058E62320286651007F2D66 /* righthand.png */; };
 		1058E62620286651007F2D66 /* lefthand.png in Resources */ = {isa = PBXBuildFile; fileRef = 1058E62420286651007F2D66 /* lefthand.png */; };
+		10657A4E20DFA40B00865B9E /* launch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A4D20DFA40A00865B9E /* launch@2x.png */; };
+		10657A5420DFA89000865B9E /* DPSplashController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10657A5320DFA89000865B9E /* DPSplashController.m */; };
+		10657A7A20DFABC500865B9E /* splash_28.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A5620DFABC500865B9E /* splash_28.png */; };
+		10657A7B20DFABC500865B9E /* splash_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A5720DFABC500865B9E /* splash_14.png */; };
+		10657A7C20DFABC500865B9E /* splash_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A5820DFABC500865B9E /* splash_01.png */; };
+		10657A7D20DFABC500865B9E /* splash_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A5920DFABC500865B9E /* splash_15.png */; };
+		10657A7E20DFABC500865B9E /* splash_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A5A20DFABC500865B9E /* splash_29.png */; };
+		10657A7F20DFABC500865B9E /* splash_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A5B20DFABC500865B9E /* splash_03.png */; };
+		10657A8020DFABC500865B9E /* splash_17.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A5C20DFABC500865B9E /* splash_17.png */; };
+		10657A8120DFABC500865B9E /* splash_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A5D20DFABC500865B9E /* splash_16.png */; };
+		10657A8220DFABC500865B9E /* splash_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A5E20DFABC500865B9E /* splash_02.png */; };
+		10657A8320DFABC500865B9E /* splash_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A5F20DFABC500865B9E /* splash_06.png */; };
+		10657A8420DFABC500865B9E /* splash_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6020DFABC500865B9E /* splash_12.png */; };
+		10657A8520DFABC500865B9E /* splash_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6120DFABC500865B9E /* splash_13.png */; };
+		10657A8620DFABC500865B9E /* splash_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6220DFABC500865B9E /* splash_07.png */; };
+		10657A8720DFABC500865B9E /* splash_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6320DFABC500865B9E /* splash_11.png */; };
+		10657A8820DFABC500865B9E /* splash_05.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6420DFABC500865B9E /* splash_05.png */; };
+		10657A8920DFABC500865B9E /* splash_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6520DFABC500865B9E /* splash_04.png */; };
+		10657A8A20DFABC500865B9E /* splash_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6620DFABC500865B9E /* splash_10.png */; };
+		10657A8B20DFABC500865B9E /* splash_09.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6720DFABC500865B9E /* splash_09.png */; };
+		10657A8C20DFABC500865B9E /* splash_35.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6820DFABC500865B9E /* splash_35.png */; };
+		10657A8D20DFABC500865B9E /* splash_21.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6920DFABC500865B9E /* splash_21.png */; };
+		10657A8E20DFABC500865B9E /* splash_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6A20DFABC500865B9E /* splash_20.png */; };
+		10657A8F20DFABC500865B9E /* splash_34.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6B20DFABC500865B9E /* splash_34.png */; };
+		10657A9020DFABC500865B9E /* splash_08.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6C20DFABC500865B9E /* splash_08.png */; };
+		10657A9120DFABC500865B9E /* splash_22.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6D20DFABC500865B9E /* splash_22.png */; };
+		10657A9220DFABC500865B9E /* splash_36.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6E20DFABC500865B9E /* splash_36.png */; };
+		10657A9320DFABC500865B9E /* splash_23.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A6F20DFABC500865B9E /* splash_23.png */; };
+		10657A9420DFABC500865B9E /* splash_27.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A7020DFABC500865B9E /* splash_27.png */; };
+		10657A9520DFABC500865B9E /* splash_33.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A7120DFABC500865B9E /* splash_33.png */; };
+		10657A9620DFABC500865B9E /* splash_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A7220DFABC500865B9E /* splash_32.png */; };
+		10657A9720DFABC500865B9E /* splash_26.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A7320DFABC500865B9E /* splash_26.png */; };
+		10657A9820DFABC500865B9E /* splash_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A7420DFABC500865B9E /* splash_30.png */; };
+		10657A9920DFABC500865B9E /* splash_24.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A7520DFABC500865B9E /* splash_24.png */; };
+		10657A9A20DFABC500865B9E /* splash_18.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A7620DFABC500865B9E /* splash_18.png */; };
+		10657A9B20DFABC500865B9E /* splash_19.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A7720DFABC500865B9E /* splash_19.png */; };
+		10657A9C20DFABC500865B9E /* splash_25.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A7820DFABC500865B9E /* splash_25.png */; };
+		10657A9D20DFABC500865B9E /* splash_31.png in Resources */ = {isa = PBXBuildFile; fileRef = 10657A7920DFABC500865B9E /* splash_31.png */; };
 		10990F9B202BE90C00A62EB0 /* DPTakePhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10990F99202BE90C00A62EB0 /* DPTakePhotoView.m */; };
 		10990F9C202BE90C00A62EB0 /* DPTakePhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10990F9A202BE90C00A62EB0 /* DPTakePhotoController.m */; };
 		10990FAD202C607D00A62EB0 /* constellation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10990FA4202C607D00A62EB0 /* constellation.plist */; };
@@ -639,6 +677,45 @@
 		1058E62020286386007F2D66 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		1058E62320286651007F2D66 /* righthand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = righthand.png; sourceTree = "<group>"; };
 		1058E62420286651007F2D66 /* lefthand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lefthand.png; sourceTree = "<group>"; };
+		10657A4D20DFA40A00865B9E /* launch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch@2x.png"; sourceTree = "<group>"; };
+		10657A5220DFA89000865B9E /* DPSplashController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSplashController.h; sourceTree = "<group>"; };
+		10657A5320DFA89000865B9E /* DPSplashController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSplashController.m; sourceTree = "<group>"; };
+		10657A5620DFABC500865B9E /* splash_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_28.png; sourceTree = "<group>"; };
+		10657A5720DFABC500865B9E /* splash_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_14.png; sourceTree = "<group>"; };
+		10657A5820DFABC500865B9E /* splash_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_01.png; sourceTree = "<group>"; };
+		10657A5920DFABC500865B9E /* splash_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_15.png; sourceTree = "<group>"; };
+		10657A5A20DFABC500865B9E /* splash_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_29.png; sourceTree = "<group>"; };
+		10657A5B20DFABC500865B9E /* splash_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_03.png; sourceTree = "<group>"; };
+		10657A5C20DFABC500865B9E /* splash_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_17.png; sourceTree = "<group>"; };
+		10657A5D20DFABC500865B9E /* splash_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_16.png; sourceTree = "<group>"; };
+		10657A5E20DFABC500865B9E /* splash_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_02.png; sourceTree = "<group>"; };
+		10657A5F20DFABC500865B9E /* splash_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_06.png; sourceTree = "<group>"; };
+		10657A6020DFABC500865B9E /* splash_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_12.png; sourceTree = "<group>"; };
+		10657A6120DFABC500865B9E /* splash_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_13.png; sourceTree = "<group>"; };
+		10657A6220DFABC500865B9E /* splash_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_07.png; sourceTree = "<group>"; };
+		10657A6320DFABC500865B9E /* splash_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_11.png; sourceTree = "<group>"; };
+		10657A6420DFABC500865B9E /* splash_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_05.png; sourceTree = "<group>"; };
+		10657A6520DFABC500865B9E /* splash_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_04.png; sourceTree = "<group>"; };
+		10657A6620DFABC500865B9E /* splash_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_10.png; sourceTree = "<group>"; };
+		10657A6720DFABC500865B9E /* splash_09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_09.png; sourceTree = "<group>"; };
+		10657A6820DFABC500865B9E /* splash_35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_35.png; sourceTree = "<group>"; };
+		10657A6920DFABC500865B9E /* splash_21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_21.png; sourceTree = "<group>"; };
+		10657A6A20DFABC500865B9E /* splash_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_20.png; sourceTree = "<group>"; };
+		10657A6B20DFABC500865B9E /* splash_34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_34.png; sourceTree = "<group>"; };
+		10657A6C20DFABC500865B9E /* splash_08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_08.png; sourceTree = "<group>"; };
+		10657A6D20DFABC500865B9E /* splash_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_22.png; sourceTree = "<group>"; };
+		10657A6E20DFABC500865B9E /* splash_36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_36.png; sourceTree = "<group>"; };
+		10657A6F20DFABC500865B9E /* splash_23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_23.png; sourceTree = "<group>"; };
+		10657A7020DFABC500865B9E /* splash_27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_27.png; sourceTree = "<group>"; };
+		10657A7120DFABC500865B9E /* splash_33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_33.png; sourceTree = "<group>"; };
+		10657A7220DFABC500865B9E /* splash_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_32.png; sourceTree = "<group>"; };
+		10657A7320DFABC500865B9E /* splash_26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_26.png; sourceTree = "<group>"; };
+		10657A7420DFABC500865B9E /* splash_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_30.png; sourceTree = "<group>"; };
+		10657A7520DFABC500865B9E /* splash_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_24.png; sourceTree = "<group>"; };
+		10657A7620DFABC500865B9E /* splash_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_18.png; sourceTree = "<group>"; };
+		10657A7720DFABC500865B9E /* splash_19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_19.png; sourceTree = "<group>"; };
+		10657A7820DFABC500865B9E /* splash_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_25.png; sourceTree = "<group>"; };
+		10657A7920DFABC500865B9E /* splash_31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_31.png; sourceTree = "<group>"; };
 		10990F97202BE90C00A62EB0 /* DPTakePhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTakePhotoController.h; sourceTree = "<group>"; };
 		10990F98202BE90C00A62EB0 /* DPTakePhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTakePhotoView.h; sourceTree = "<group>"; };
 		10990F99202BE90C00A62EB0 /* DPTakePhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTakePhotoView.m; sourceTree = "<group>"; };
@@ -1280,6 +1357,7 @@
 		1006BC9B20158D400041DC86 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				10657A5520DFABC500865B9E /* splash */,
 				109B82B120295C2300EA2917 /* TestList */,
 				29101A262023F5B000788AD9 /* BasicInformstion */,
 				D630AF6E2021DDB40006B16C /* PalmAnalysis */,
@@ -1321,6 +1399,8 @@
 				10D2D8E5202D52F400E8379C /* DPIAPManager.m */,
 				D61A991A20819DD100B3413C /* DPPlayController.h */,
 				D61A991B20819DD100B3413C /* DPPlayController.m */,
+				10657A5220DFA89000865B9E /* DPSplashController.h */,
+				10657A5320DFA89000865B9E /* DPSplashController.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -1495,6 +1575,49 @@
 			path = CustomCamera;
 			sourceTree = "<group>";
 		};
+		10657A5520DFABC500865B9E /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				10657A5620DFABC500865B9E /* splash_28.png */,
+				10657A5720DFABC500865B9E /* splash_14.png */,
+				10657A5820DFABC500865B9E /* splash_01.png */,
+				10657A5920DFABC500865B9E /* splash_15.png */,
+				10657A5A20DFABC500865B9E /* splash_29.png */,
+				10657A5B20DFABC500865B9E /* splash_03.png */,
+				10657A5C20DFABC500865B9E /* splash_17.png */,
+				10657A5D20DFABC500865B9E /* splash_16.png */,
+				10657A5E20DFABC500865B9E /* splash_02.png */,
+				10657A5F20DFABC500865B9E /* splash_06.png */,
+				10657A6020DFABC500865B9E /* splash_12.png */,
+				10657A6120DFABC500865B9E /* splash_13.png */,
+				10657A6220DFABC500865B9E /* splash_07.png */,
+				10657A6320DFABC500865B9E /* splash_11.png */,
+				10657A6420DFABC500865B9E /* splash_05.png */,
+				10657A6520DFABC500865B9E /* splash_04.png */,
+				10657A6620DFABC500865B9E /* splash_10.png */,
+				10657A6720DFABC500865B9E /* splash_09.png */,
+				10657A6820DFABC500865B9E /* splash_35.png */,
+				10657A6920DFABC500865B9E /* splash_21.png */,
+				10657A6A20DFABC500865B9E /* splash_20.png */,
+				10657A6B20DFABC500865B9E /* splash_34.png */,
+				10657A6C20DFABC500865B9E /* splash_08.png */,
+				10657A6D20DFABC500865B9E /* splash_22.png */,
+				10657A6E20DFABC500865B9E /* splash_36.png */,
+				10657A6F20DFABC500865B9E /* splash_23.png */,
+				10657A7020DFABC500865B9E /* splash_27.png */,
+				10657A7120DFABC500865B9E /* splash_33.png */,
+				10657A7220DFABC500865B9E /* splash_32.png */,
+				10657A7320DFABC500865B9E /* splash_26.png */,
+				10657A7420DFABC500865B9E /* splash_30.png */,
+				10657A7520DFABC500865B9E /* splash_24.png */,
+				10657A7620DFABC500865B9E /* splash_18.png */,
+				10657A7720DFABC500865B9E /* splash_19.png */,
+				10657A7820DFABC500865B9E /* splash_25.png */,
+				10657A7920DFABC500865B9E /* splash_31.png */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
 		10990F96202BE90B00A62EB0 /* TakePhoto */ = {
 			isa = PBXGroup;
 			children = (
@@ -1544,6 +1667,7 @@
 		1099F1DA201F245E00CE653E /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				10657A4D20DFA40A00865B9E /* launch@2x.png */,
 				D61A991720819D9400B3413C /* bg.jpg */,
 				D61A991620819D9400B3413C /* play.png */,
 				1099F1DB201F245E00CE653E /* homepage_card_star@2x.png */,
@@ -2366,9 +2490,11 @@
 				29BABFED20203B8800CE4E51 /* constellation_taurus_select@2x.png in Resources */,
 				D6E5E3CE2051573300E0DB90 /* 37-2@2x.png in Resources */,
 				29BABFC520203B8800CE4E51 /* constellation_capricorn_select@2x.png in Resources */,
+				10657A9320DFABC500865B9E /* splash_23.png in Resources */,
 				D6E5E3DB2051573300E0DB90 /* 41-4@2x.png in Resources */,
 				10C87706202AAD12008268BA /* 4-4@2x.png in Resources */,
 				2977F7FC2022AEC10016B617 /* palm_getresult@3x.png in Resources */,
+				10657A7D20DFABC500865B9E /* splash_15.png in Resources */,
 				D6E5E24320514C7D00E0DB90 /* 19-1@3x.png in Resources */,
 				D6EB8901202334AC005045B4 /* palm_resultbg@2x.png in Resources */,
 				D6E5E4A0205158C200E0DB90 /* 47-3@2x.png in Resources */,
@@ -2382,15 +2508,18 @@
 				10C876DC202AAD12008268BA /* 3-1@2x.png in Resources */,
 				29BABFAC20203B8800CE4E51 /* constellation_virgo_select@3x.png in Resources */,
 				29BABFC020203B8800CE4E51 /* constellation_cancer_select@3x.png in Resources */,
+				10657A7F20DFABC500865B9E /* splash_03.png in Resources */,
 				D6E5E170205149CC00E0DB90 /* 13-2@3x.png in Resources */,
 				D6C181BC205A8A7800EA444F /* constellation_bgblue@2x.png in Resources */,
 				29438F1E20205262006B7497 /* constellation_aries@3x.png in Resources */,
+				10657A8120DFABC500865B9E /* splash_16.png in Resources */,
 				29D4215E2052748900E9A593 /* 40-3@3x.png in Resources */,
 				29BABFB320203B8800CE4E51 /* constellation_back@2x.png in Resources */,
 				D6E5E20120514C7D00E0DB90 /* 19-6@3x.png in Resources */,
 				D6E5E3E72051573300E0DB90 /* 41@3x.png in Resources */,
 				D6E5E16D205149CC00E0DB90 /* 11-1@3x.png in Resources */,
 				D6E5E3E82051573300E0DB90 /* 38-3@3x.png in Resources */,
+				10657A9620DFABC500865B9E /* splash_32.png in Resources */,
 				10C876D7202AAD12008268BA /* 5@2x.png in Resources */,
 				D6EB890C20235306005045B4 /* palm_analying_one@2x.png in Resources */,
 				D6E5E3DF2051573300E0DB90 /* 39-3@2x.png in Resources */,
@@ -2410,9 +2539,11 @@
 				D6E5E191205149CC00E0DB90 /* 13-3@2x.png in Resources */,
 				D6E5E3E62051573300E0DB90 /* 36-4@3x.png in Resources */,
 				29BFF08920219E8A00B70DBD /* constellation_detail_lock@2x.png in Resources */,
+				10657A9C20DFABC500865B9E /* splash_25.png in Resources */,
 				D6E5E25120514C7D00E0DB90 /* 18-1@2x.png in Resources */,
 				D6E5E49A205158C200E0DB90 /* 47-1@2x.png in Resources */,
 				D6E5E16E205149CC00E0DB90 /* 10-1@3x.png in Resources */,
+				10657A8B20DFABC500865B9E /* splash_09.png in Resources */,
 				D6E5E23B20514C7D00E0DB90 /* 15-3@2x.png in Resources */,
 				D6E5E489205158C200E0DB90 /* 48@3x.png in Resources */,
 				29BABFDF20203B8800CE4E51 /* constellation_sagittarius_circle@2x.png in Resources */,
@@ -2425,6 +2556,7 @@
 				29BABFDE20203B8800CE4E51 /* constellation_sagittarius@3x.png in Resources */,
 				10990FAF202C607D00A62EB0 /* line.plist in Resources */,
 				D6E5E166205149CB00E0DB90 /* 8-3@2x.png in Resources */,
+				10657A8220DFABC500865B9E /* splash_02.png in Resources */,
 				D6E5E18D205149CC00E0DB90 /* 9-2@3x.png in Resources */,
 				D6E5E484205158C200E0DB90 /* 46-2@2x.png in Resources */,
 				D6E5E179205149CC00E0DB90 /* 9-6@2x.png in Resources */,
@@ -2432,6 +2564,8 @@
 				D6E5E160205149CB00E0DB90 /* 11-3@3x.png in Resources */,
 				D6E5E1FD20514C7D00E0DB90 /* 19-4@2x.png in Resources */,
 				D6E5E496205158C200E0DB90 /* 44-2@2x.png in Resources */,
+				10657A9D20DFABC500865B9E /* splash_31.png in Resources */,
+				10657A4E20DFA40B00865B9E /* launch@2x.png in Resources */,
 				D6E5E171205149CC00E0DB90 /* 12-2@3x.png in Resources */,
 				1099F1EA201F245E00CE653E /* homepage_triangle@2x.png in Resources */,
 				1099F1E9201F245E00CE653E /* homepage_ok@2x.png in Resources */,
@@ -2449,9 +2583,11 @@
 				D6E5E478205158C200E0DB90 /* 46-2@3x.png in Resources */,
 				D6E5E47A205158C200E0DB90 /* 44-3@2x.png in Resources */,
 				D6E5E15C205149CB00E0DB90 /* 11-1@2x.png in Resources */,
+				10657A9220DFABC500865B9E /* splash_36.png in Resources */,
 				D6E5E22820514C7D00E0DB90 /* 20@2x.png in Resources */,
 				1058E62620286651007F2D66 /* lefthand.png in Resources */,
 				10C8770A202AAD12008268BA /* 3-2@2x.png in Resources */,
+				10657A8D20DFABC500865B9E /* splash_21.png in Resources */,
 				D6E5E45E205158C200E0DB90 /* 43-1@2x.png in Resources */,
 				D6E5E23820514C7D00E0DB90 /* 19-5@3x.png in Resources */,
 				D6E5E3FC2051573300E0DB90 /* 41-1@2x.png in Resources */,
@@ -2462,10 +2598,12 @@
 				29BABFE420203B8800CE4E51 /* constellation_scorpio@3x.png in Resources */,
 				D6E5E3FF2051573300E0DB90 /* 36-1@2x.png in Resources */,
 				D6E5E49C205158C200E0DB90 /* 48-4@3x.png in Resources */,
+				10657A8C20DFABC500865B9E /* splash_35.png in Resources */,
 				29BABFAA20203B8800CE4E51 /* constellation_virgo_circle@3x.png in Resources */,
 				D630AF712021DDB40006B16C /* palm_main@3x.png in Resources */,
 				29BABFD120203B8800CE4E51 /* constellation_leo_circle@2x.png in Resources */,
 				29101A2F2023F5B000788AD9 /* basic_inputbg@2x.png in Resources */,
+				10657A7C20DFABC500865B9E /* splash_01.png in Resources */,
 				D6E5E3F02051573300E0DB90 /* 37-1@3x.png in Resources */,
 				29D4215F2052748900E9A593 /* 40-1@2x.png in Resources */,
 				D6E5E190205149CC00E0DB90 /* 12-3@2x.png in Resources */,
@@ -2515,12 +2653,14 @@
 				29BFF07F20219E8A00B70DBD /* constellation_detail_selectdate@2x.png in Resources */,
 				29BFF08C20219E8A00B70DBD /* constellation_detail_lockcircle@2x.png in Resources */,
 				D6E5E21F20514C7D00E0DB90 /* 17-5@3x.png in Resources */,
+				10657A9120DFABC500865B9E /* splash_22.png in Resources */,
 				29BABFC120203B8800CE4E51 /* constellation_capricorn@2x.png in Resources */,
 				10C876E5202AAD12008268BA /* 1@3x.png in Resources */,
 				D6E5E474205158C200E0DB90 /* 45-5@3x.png in Resources */,
 				29BABFB720203B8800CE4E51 /* constellation_libra_circle@2x.png in Resources */,
 				D6E5E3D72051573300E0DB90 /* 36-2@3x.png in Resources */,
 				10DB6D372022EFC70084FC35 /* palm_right@2x.png in Resources */,
+				10657A9520DFABC500865B9E /* splash_33.png in Resources */,
 				29101A312023F5B000788AD9 /* basic_ok@2x.png in Resources */,
 				10DB6D212022D5090084FC35 /* test_list_eye@2x.png in Resources */,
 				29BABFD620203B8800CE4E51 /* constellation_main@3x.png in Resources */,
@@ -2549,17 +2689,20 @@
 				D6E5E3EC2051573300E0DB90 /* 41-4@3x.png in Resources */,
 				D6E5E23020514C7D00E0DB90 /* 16-2@2x.png in Resources */,
 				29BFF08720219E8A00B70DBD /* constellation_detail_selectpoint@2x.png in Resources */,
+				10657A7E20DFABC500865B9E /* splash_29.png in Resources */,
 				10C876D0202AAD12008268BA /* 5-3@2x.png in Resources */,
 				D6E5E485205158C200E0DB90 /* 43@2x.png in Resources */,
 				D6E5E498205158C200E0DB90 /* 43-4@3x.png in Resources */,
 				29BABFD520203B8800CE4E51 /* constellation_main@2x.png in Resources */,
 				D6E5E21920514C7D00E0DB90 /* 18-2@2x.png in Resources */,
 				2977F7FB2022AEC10016B617 /* palm_getresult@2x.png in Resources */,
+				10657A9420DFABC500865B9E /* splash_27.png in Resources */,
 				29BABFA420203B8800CE4E51 /* constellation_aries_circle@3x.png in Resources */,
 				10C876D8202AAD12008268BA /* 1-4@3x.png in Resources */,
 				D6E5E23220514C7D00E0DB90 /* 20-1@2x.png in Resources */,
 				D6E5E49F205158C200E0DB90 /* 46-3@2x.png in Resources */,
 				D6E5E3FE2051573300E0DB90 /* 38-4@3x.png in Resources */,
+				10657A8920DFABC500865B9E /* splash_04.png in Resources */,
 				D6E5E21320514C7D00E0DB90 /* 15-4@3x.png in Resources */,
 				10C876DE202AAD12008268BA /* 3-3@3x.png in Resources */,
 				D6E5E4092051573300E0DB90 /* 41-5@2x.png in Resources */,
@@ -2567,9 +2710,11 @@
 				D6E5E40E2051573300E0DB90 /* 37-5@3x.png in Resources */,
 				D6E5E4A3205158C200E0DB90 /* 46-1@3x.png in Resources */,
 				D6E5E18C205149CC00E0DB90 /* 8-2@3x.png in Resources */,
+				10657A8420DFABC500865B9E /* splash_12.png in Resources */,
 				1058E62120286386007F2D66 /* camera.png in Resources */,
 				29BABFB820203B8800CE4E51 /* constellation_libra_circle@3x.png in Resources */,
 				29BABFE920203B8800CE4E51 /* constellation_taurus@2x.png in Resources */,
+				10657A7B20DFABC500865B9E /* splash_14.png in Resources */,
 				D6E5E150205149CB00E0DB90 /* 13-4@2x.png in Resources */,
 				1099F1EE201F245E00CE653E /* homepage_card_test@3x.png in Resources */,
 				29BFF08620219E8A00B70DBD /* constellation_detail_lock@3x.png in Resources */,
@@ -2595,6 +2740,7 @@
 				D6E5E195205149CC00E0DB90 /* 12-1@2x.png in Resources */,
 				D6E5E19D205149CC00E0DB90 /* 9-2@2x.png in Resources */,
 				D6E5E24120514C7D00E0DB90 /* 16-4@2x.png in Resources */,
+				10657A8820DFABC500865B9E /* splash_05.png in Resources */,
 				29BABFBF20203B8800CE4E51 /* constellation_cancer_select@2x.png in Resources */,
 				29BABFC220203B8800CE4E51 /* constellation_capricorn@3x.png in Resources */,
 				D6E5E1FE20514C7D00E0DB90 /* 18-4@2x.png in Resources */,
@@ -2602,7 +2748,9 @@
 				10C876E9202AAD12008268BA /* 2-3@2x.png in Resources */,
 				29BABFE320203B8800CE4E51 /* constellation_scorpio@2x.png in Resources */,
 				D6E5E3D22051573300E0DB90 /* 41-2@2x.png in Resources */,
+				10657A9A20DFABC500865B9E /* splash_18.png in Resources */,
 				29BABFAF20203B8800CE4E51 /* constellation_aquarius_circle@2x.png in Resources */,
+				10657A8020DFABC500865B9E /* splash_17.png in Resources */,
 				29438F1C20205262006B7497 /* constellation_aries@2x.png in Resources */,
 				299FE152204FB91600A6ACB6 /* testList4.plist in Resources */,
 				D6E5E24D20514C7D00E0DB90 /* 17@2x.png in Resources */,
@@ -2617,6 +2765,7 @@
 				D6E5E25720514C7D00E0DB90 /* 19-3@3x.png in Resources */,
 				1058E62520286651007F2D66 /* righthand.png in Resources */,
 				D6E5E3F52051573300E0DB90 /* 36-3@2x.png in Resources */,
+				10657A9B20DFABC500865B9E /* splash_19.png in Resources */,
 				D6E5E487205158C200E0DB90 /* 48-2@3x.png in Resources */,
 				10C876D5202AAD12008268BA /* 4-3@3x.png in Resources */,
 				29BABFB220203B8800CE4E51 /* constellation_aquarius_select@3x.png in Resources */,
@@ -2626,6 +2775,7 @@
 				1006BC8D20158C930041DC86 /* Assets.xcassets in Resources */,
 				D6E5E20E20514C7D00E0DB90 /* 17-3@3x.png in Resources */,
 				29BABFA620203B8800CE4E51 /* constellation_aries_select@3x.png in Resources */,
+				10657A9920DFABC500865B9E /* splash_24.png in Resources */,
 				D6E5E20F20514C7D00E0DB90 /* 19-4@3x.png in Resources */,
 				D6E5E492205158C200E0DB90 /* 48@2x.png in Resources */,
 				D6E5E4BB205173F000E0DB90 /* 10@3x.png in Resources */,
@@ -2634,6 +2784,7 @@
 				D6E5E21B20514C7D00E0DB90 /* 17-5@2x.png in Resources */,
 				D6E5E4B9205173F000E0DB90 /* 11@2x.png in Resources */,
 				10C876CF202AAD12008268BA /* 4-3@2x.png in Resources */,
+				10657A8620DFABC500865B9E /* splash_07.png in Resources */,
 				299FE150204F942A00A6ACB6 /* testList3.plist in Resources */,
 				10C876F5202AAD12008268BA /* 6@2x.png in Resources */,
 				D6E5E22020514C7D00E0DB90 /* 19-2@3x.png in Resources */,
@@ -2642,6 +2793,7 @@
 				D6E5E159205149CB00E0DB90 /* 13-2@2x.png in Resources */,
 				D6E5E40D2051573300E0DB90 /* 36-5@3x.png in Resources */,
 				D6E5E3EE2051573300E0DB90 /* 39@3x.png in Resources */,
+				10657A8520DFABC500865B9E /* splash_13.png in Resources */,
 				D6EB890F20235306005045B4 /* palm_analying_two@3x.png in Resources */,
 				D6E5E4B3205173F000E0DB90 /* 11@3x.png in Resources */,
 				29438F1F20205262006B7497 /* constellation_scorpio_select@3x.png in Resources */,
@@ -2654,6 +2806,7 @@
 				D6E5E165205149CB00E0DB90 /* 9-3@2x.png in Resources */,
 				29D4215C2052748900E9A593 /* 40-3@2x.png in Resources */,
 				10990FB1202C607D00A62EB0 /* testList1.plist in Resources */,
+				10657A8320DFABC500865B9E /* splash_06.png in Resources */,
 				10990FB2202C607D00A62EB0 /* testResult.plist in Resources */,
 				29BABFC620203B8800CE4E51 /* constellation_capricorn_select@3x.png in Resources */,
 				29BABFCD20203B8800CE4E51 /* constellation_hexagona@3x.png in Resources */,
@@ -2676,9 +2829,11 @@
 				D6E5E20820514C7D00E0DB90 /* 16-1@2x.png in Resources */,
 				29BABFBE20203B8800CE4E51 /* constellation_cancer_circle@3x.png in Resources */,
 				10C8770B202AAD12008268BA /* 1-1@2x.png in Resources */,
+				10657A9720DFABC500865B9E /* splash_26.png in Resources */,
 				D6E5E4052051573300E0DB90 /* 39-2@2x.png in Resources */,
 				10C876E8202AAD12008268BA /* 3-3@2x.png in Resources */,
 				29BABFAB20203B8800CE4E51 /* constellation_virgo_select@2x.png in Resources */,
+				10657A9820DFABC500865B9E /* splash_30.png in Resources */,
 				D6E5E24820514C7D00E0DB90 /* 19@2x.png in Resources */,
 				D6E5E17B205149CC00E0DB90 /* 10-4@3x.png in Resources */,
 				D6E5E163205149CB00E0DB90 /* 8-3@3x.png in Resources */,
@@ -2711,6 +2866,7 @@
 				29BABFAE20203B8800CE4E51 /* constellation_aquarius@3x.png in Resources */,
 				29BABFA720203B8800CE4E51 /* constellation_virgo@2x.png in Resources */,
 				D6E5E470205158C200E0DB90 /* 48-1@3x.png in Resources */,
+				10657A8A20DFABC500865B9E /* splash_10.png in Resources */,
 				29101A2E2023F5B000788AD9 /* basic_bg@3x.png in Resources */,
 				10C876E3202AAD12008268BA /* 1-2@2x.png in Resources */,
 				10C87709202AAD12008268BA /* 2-2@2x.png in Resources */,
@@ -2770,6 +2926,7 @@
 				D6E5E156205149CB00E0DB90 /* 10-5@2x.png in Resources */,
 				D6EB890D20235306005045B4 /* palm_analying_one@3x.png in Resources */,
 				D6E5E479205158C200E0DB90 /* 45-3@2x.png in Resources */,
+				10657A8720DFABC500865B9E /* splash_11.png in Resources */,
 				D6E5E20220514C7D00E0DB90 /* 20-2@3x.png in Resources */,
 				29BABFBA20203B8800CE4E51 /* constellation_libra_select@3x.png in Resources */,
 				29BABFCC20203B8800CE4E51 /* constellation_gemini_select@3x.png in Resources */,
@@ -2797,6 +2954,7 @@
 				29BABFD720203B8800CE4E51 /* constellation_pisces@2x.png in Resources */,
 				29D4215A2052748900E9A593 /* 40-5@3x.png in Resources */,
 				D6E5E25620514C7D00E0DB90 /* 18-3@3x.png in Resources */,
+				10657A8F20DFABC500865B9E /* splash_34.png in Resources */,
 				D6E5E4B2205173F000E0DB90 /* 13@2x.png in Resources */,
 				D6E5E24A20514C7D00E0DB90 /* 15@3x.png in Resources */,
 				D6E5E3ED2051573300E0DB90 /* 41-3@2x.png in Resources */,
@@ -2826,6 +2984,9 @@
 				D6E5E3E12051573300E0DB90 /* 37-4@2x.png in Resources */,
 				29BABFEC20203B8800CE4E51 /* constellation_taurus_circle@3x.png in Resources */,
 				D6E5E15D205149CB00E0DB90 /* 10-1@2x.png in Resources */,
+				10657A9020DFABC500865B9E /* splash_08.png in Resources */,
+				10657A7A20DFABC500865B9E /* splash_28.png in Resources */,
+				10657A8E20DFABC500865B9E /* splash_20.png in Resources */,
 				29BABFB920203B8800CE4E51 /* constellation_libra_select@2x.png in Resources */,
 				2977F8032022E0CD0016B617 /* constellation_detail_daytest@3x.png in Resources */,
 				D6E5E17E205149CC00E0DB90 /* 9-4@3x.png in Resources */,
@@ -2903,6 +3064,7 @@
 				10B3F3CB2022043D003ACADE /* DPTestListView.m in Sources */,
 				104079EA20170D9A00700777 /* DPHomePageController.m in Sources */,
 				29438F262020674D006B7497 /* SCHCircleViewCell.m in Sources */,
+				10657A5420DFA89000865B9E /* DPSplashController.m in Sources */,
 				29BFF06B202193C900B70DBD /* DPConstellationDetailController.m in Sources */,
 				1006BD2020158E6C0041DC86 /* AlertManager.m in Sources */,
 				1006BD2220158E6C0041DC86 /* AppConfigure.m in Sources */,
@@ -3043,7 +3205,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dailytest.perfectquiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3072,7 +3234,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DailyPsychicClient/PrefixHeader.pch";
 				INFOPLIST_FILE = DailyPsychicClient/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dailytest.perfectquiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";

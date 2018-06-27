@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+- (void)EnterSplashPage;
+
+- (void)EnterMainPage;
 
 @end
 

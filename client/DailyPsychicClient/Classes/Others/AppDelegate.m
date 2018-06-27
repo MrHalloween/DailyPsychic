@@ -11,6 +11,7 @@
 #import "DPPlayController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "DPIAPManager.h"
+#import "DPSplashController.h"
 
 @interface AppDelegate ()
 
@@ -23,9 +24,22 @@
     // Override point for customization after application launch.
     //facebook
     [[FBSDKApplicationDelegate sharedInstance]application:application didFinishLaunchingWithOptions:launchOptions];
-    
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    
+    [self EnterSplashPage];
+
+    return YES;
+}
+
+- (void)EnterSplashPage
+{
+    DPSplashController *pVC = [[DPSplashController alloc]init];
+    self.window.rootViewController = pVC;
+    [self.window makeKeyAndVisible];
+}
+
+
+- (void)EnterMainPage
+{
     NSDate *date = [NSDate dateWithTimeIntervalSinceNow:0];
     NSTimeInterval a = [date timeIntervalSince1970];
     NSString *timeString = [NSString stringWithFormat:@"%0.f",a];
@@ -69,9 +83,8 @@
         pNav.navigationBar.hidden = YES;
         self.window.rootViewController = pNav;
     }
-
+    
     [self.window makeKeyAndVisible];
-    return YES;
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
