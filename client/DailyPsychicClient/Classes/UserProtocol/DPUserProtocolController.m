@@ -16,7 +16,7 @@
 #import "DPHomePageController.h"
 
 //内购中创建的商品
-#define ProductID_IAP01 @"test.weeklysub.beer"//购买产品ID号
+#define ProductID_IAP01 @"sub.weekly.hitest.dailyquiz"//购买产品ID号
 
 @interface DPUserProtocolController ()<AFBaseTableViewDelegate,DPUserProtocolViewDelegate>
 {

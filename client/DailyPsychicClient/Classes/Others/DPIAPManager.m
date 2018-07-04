@@ -10,7 +10,7 @@
 #import <StoreKit/StoreKit.h>
 
 //内购中创建的商品
-#define ProductID_IAP01 @"test.weeklysub.beer"//购买产品ID号
+#define ProductID_IAP01 @"sub.weekly.hitest.dailyquiz"//购买产品ID号
 //共享秘钥
 #define SharedSecretKey @"7654742431414c2d81bd358b93cdf3ed"//共享秘钥
 
