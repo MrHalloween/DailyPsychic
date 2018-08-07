@@ -21,9 +21,6 @@
 //正式环境验证
 #define AppStore @"https://buy.itunes.apple.com/verifyReceipt"
 
-//内购中创建的商品
-#define ProductID_IAP01 @"sub.weekly.hitest.dailyquiz"//购买产品ID号
-
 @class DPSelectConstellationController;
 
 @interface DPConstellationDetailController ()<AFBaseTableViewDelegate,DPConstellationDetailDelegate>

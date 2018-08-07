@@ -14,9 +14,6 @@
 #import "DPUserProtocolController.h"
 #import "DPIAPManager.h"
 
-//内购中创建的商品
-#define ProductID_IAP01 @"sub.weekly.hitest.dailyquiz"//购买产品ID号
-
 
 @interface DPPalmAnalysisController ()<AFBaseTableViewDelegate>
 {

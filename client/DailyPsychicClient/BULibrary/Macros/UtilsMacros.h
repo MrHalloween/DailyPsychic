@@ -46,4 +46,10 @@ alpha:a]
 #define AdjustsScrollViewInsetNever(controller,view) if(@available(iOS 11.0, *)) {view.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;} else if([controller isKindOfClass:[UIViewController class]]) {controller.automaticallyAdjustsScrollViewInsets = false;}
 
 
+//内购中创建的商品
+#define ProductID_IAP01 @"com.testme.quiz.goods001"
+//共享秘钥
+#define SharedSecretKey @"401eee322b5047919a68b9e33d5cc762"
+
+
 #endif /* UtilsMacros_h */
