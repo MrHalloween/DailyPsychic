@@ -47,9 +47,9 @@ alpha:a]
 
 
 //内购中创建的商品
-#define ProductID_IAP01 @"com.testme.quiz.goods001"
+#define ProductID_IAP01 @"com.mydestiny.tell.member"
 //共享秘钥
-#define SharedSecretKey @"401eee322b5047919a68b9e33d5cc762"
+#define SharedSecretKey @"785b3591e8aa48c28f355184474a4e32"
 
 
 #endif /* UtilsMacros_h */
